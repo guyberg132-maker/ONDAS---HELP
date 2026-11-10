@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ONDAS – IRONWAVE Technical Help</title>
+<meta name="theme-color" content="#0047ff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ONDAS">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --bg:#f2f5fb; --surface:#ffffff; --surface2:#e8eef8; --text:#0a1530; --muted:#55627a;
+  --line:#d6deec; --accent:#0047ff; --accent-ink:#ffffff; --accent2:#00b8f0; --ok:#00a870; --danger:#e5193f;
+  --head:#0047ff; --head-ink:#ffffff; --head-soft:rgba(255,255,255,.16);
+  --code-bg:#0a1530; --code-text:#e6f0ff; --step-bg:#0047ff; --step-fg:#ffffff;
+  --font:"Heebo","Segoe UI",Arial,sans-serif;
+  --mono:"JetBrains Mono",Consolas,"Courier New",monospace;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#050a17; --surface:#0c1427; --surface2:#141f3a; --text:#eaf1ff; --muted:#8e9fc0;
+    --line:#1f2c4b; --accent:#2e6bff; --accent-ink:#ffffff; --accent2:#00d4ff; --ok:#00d68f; --danger:#ff4d6d;
+    --head:#0a1f66; --head-ink:#ffffff; --head-soft:rgba(255,255,255,.12);
+    --code-bg:#02050d; --code-text:#e6f0ff; --step-bg:#2e6bff; --step-fg:#ffffff; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#050a17; --surface:#0c1427; --surface2:#141f3a; --text:#eaf1ff; --muted:#8e9fc0;
+  --line:#1f2c4b; --accent:#2e6bff; --accent-ink:#ffffff; --accent2:#00d4ff; --ok:#00d68f; --danger:#ff4d6d;
+  --head:#0a1f66; --head-ink:#ffffff; --head-soft:rgba(255,255,255,.12);
+  --code-bg:#02050d; --code-text:#e6f0ff; --step-bg:#2e6bff; --step-fg:#ffffff; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--head)}
+button,input,textarea,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+a{color:inherit}
+[hidden]{display:none!important}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--head);color:var(--head-ink);border-bottom:3px solid var(--accent2)}
+.bar{max-width:920px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:12px 16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:1;min-width:0;color:var(--head-ink)}
+.wm{font-weight:800;letter-spacing:.14em;font-size:1.35rem;line-height:1;direction:ltr}
+.bsub{border-inline-start:1px solid rgba(255,255,255,.4);padding-inline-start:12px;min-width:0;overflow:hidden}
+@media (max-width:420px){.wm{font-size:1.1rem;letter-spacing:.1em}.brand{gap:9px}.bsub{padding-inline-start:9px}.pill{padding:5px 10px;font-size:.9rem}}
+.bname{font-weight:500;font-size:.92rem;line-height:1.2;white-space:nowrap}
+.bver{font-size:.75rem;opacity:.8;white-space:nowrap}
+.pill{border:1.5px solid var(--head-ink);background:transparent;color:var(--head-ink);border-radius:8px;padding:6px 14px;font-weight:600;cursor:pointer;min-height:40px}
+.pill:hover{background:var(--head-ink);color:var(--head)}
+.searchrow{max-width:920px;margin:0 auto;padding:0 16px 14px;display:flex;gap:8px;align-items:center}
+.searchrow input{flex:1;min-width:0;border:1px solid transparent;background:var(--head-soft);color:var(--head-ink);border-radius:8px;padding:11px 14px;font-size:1rem}
+.searchrow input::placeholder{color:rgba(255,255,255,.75)}
+.searchrow input:focus{background:var(--surface);color:var(--text)}
+.searchrow input:focus::placeholder{color:var(--muted)}
+.offbtn{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--head-ink);background:transparent;color:var(--head-ink);border-radius:8px;padding:8px 12px;font-size:.85rem;font-weight:600;cursor:pointer;min-height:46px;white-space:nowrap}
+.offbtn::before{content:"";width:9px;height:9px;border-radius:50%;background:#ffb020}
+.offbtn.ok::before{background:#29f0a0}
+.offbtn.need{background:var(--head-ink);color:var(--head)}
+.adminbar{background:var(--accent2);color:#04122e}
+.adminbar .in{max-width:920px;margin:0 auto;padding:8px 16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-weight:600;font-size:.9rem}
+.adminbar .in span{flex:1;min-width:160px}
+.adminbar button{border:1.5px solid #04122e;background:transparent;color:#04122e;border-radius:6px;padding:5px 12px;font-weight:600;cursor:pointer;min-height:38px}
+.adminbar button.solid{background:#04122e;color:#fff}
+body.locked .searchrow{display:none}
+
+main{max-width:920px;margin:0 auto;padding:22px 16px 40px}
+.crumbs{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:.9rem;margin-bottom:12px;flex-wrap:wrap}
+.crumbs a{text-decoration:none;color:var(--accent);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 6px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.15rem;margin:22px 0 10px;font-weight:700}
+.lead{color:var(--muted);margin:0 0 22px;max-width:60ch}
+.note{background:var(--surface);border:1px solid var(--line);border-inline-start:4px solid var(--accent2);padding:10px 14px;border-radius:6px;font-size:.9rem;margin-bottom:14px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tile{display:flex;flex-direction:column;gap:4px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-inline-start:5px solid var(--accent);border-radius:8px;padding:18px 18px 16px;min-height:104px}
+@media (hover:hover){.tile:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}.tile:hover .ct{color:var(--accent-ink);opacity:.85}}
+.tile .nm{font-weight:700;font-size:1.12rem}
+.tile .ct{color:var(--muted);font-size:.85rem;margin-top:auto}
+.tile.add{border:1.5px dashed var(--accent);justify-content:center;align-items:center;color:var(--accent);font-weight:700;cursor:pointer;background:transparent}
+.badge{background:var(--accent2);color:#04122e;font-size:.72rem;font-weight:700;border-radius:4px;padding:1px 7px;margin-inline-start:8px;vertical-align:middle;white-space:nowrap}
+
+.list{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;padding:15px 18px;text-decoration:none;border-bottom:1px solid var(--line);border-inline-start:4px solid transparent}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--surface2);border-inline-start-color:var(--accent)}
+.row .tx{flex:1;min-width:0}
+.row .t1{font-weight:600}
+.row .t2{color:var(--muted);font-size:.88rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtype{font-size:.75rem;font-weight:600;color:var(--accent);background:var(--surface2);border-radius:4px;padding:3px 8px;white-space:nowrap}
+.chev{width:9px;height:9px;border-top:2px solid var(--muted);border-inline-end:2px solid var(--muted);transform:rotate(45deg);flex:none}
+[dir="rtl"] .chev{transform:rotate(-45deg)}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:8px;padding:28px;text-align:center;color:var(--muted)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:8px;padding:10px 18px;font-weight:600;cursor:pointer;min-height:44px;text-decoration:none}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.1)}
+.btn.ghost{background:var(--surface2);color:var(--text)}
+.btn.danger{background:transparent;color:var(--danger);border:1.5px solid var(--danger)}
+.btn.small{min-height:34px;padding:5px 12px;font-size:.85rem}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+
+.meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:.88rem;margin-bottom:18px}
+.tag{background:var(--accent);color:var(--accent-ink);border-radius:4px;padding:2px 10px;font-weight:600;font-size:.8rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
+.prose{white-space:pre-wrap;max-width:70ch}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:48px;padding-block:11px;border-bottom:1px solid var(--line)}
+ol.steps li:last-child{border-bottom:0}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:9px;width:32px;height:32px;border-radius:6px;background:var(--step-bg);color:var(--step-fg);display:grid;place-items:center;font-weight:700;font-size:.95rem}
+.prog{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;margin:4px 0 14px}
+.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .2s}
+.chk{display:flex;gap:12px;align-items:flex-start;padding:12px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.chk:last-child{border-bottom:0}
+.chk input{width:22px;height:22px;accent-color:var(--accent);flex:none;margin-top:2px}
+.chk.done span{color:var(--muted);text-decoration:line-through}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:360px}
+th,td{padding:12px 16px;text-align:start;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:.88rem}
+td.v{font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate;font-weight:600}
+.codebox{position:relative;background:var(--code-bg);color:var(--code-text);border-radius:8px;overflow:hidden;border-inline-start:4px solid var(--accent2)}
+.codebox pre{margin:0;padding:18px;padding-top:48px;overflow-x:auto;font-family:var(--mono);font-size:.9rem;line-height:1.6}
+.codebox .btn{position:absolute;top:8px;inset-inline-end:8px}
+.mono{font-family:var(--mono);font-size:.88rem;direction:ltr;unicode-bidi:isolate;overflow-wrap:anywhere}
+.figure{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px;text-align:center}
+.figure img{max-width:100%;height:auto;border-radius:4px;cursor:zoom-in;display:block;margin:0 auto}
+.figure .cap{color:var(--muted);font-size:.9rem;margin-top:8px}
+.pdfbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.pdfbar .sp{flex:1}
+.pdfbox{background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:10px;overflow:auto;max-height:80vh;min-height:120px}
+.pdfbox canvas{display:block;margin:0 auto 10px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;align-items:baseline;margin-bottom:14px}
+.kv dt{color:var(--muted);font-size:.9rem}
+.kv dd{margin:0;font-weight:600}
+.kv .cp{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+
+.modal{position:fixed;inset:0;background:rgba(4,10,28,.6);z-index:20;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--surface);width:100%;max-width:640px;max-height:92%;overflow:auto;border-radius:14px 14px 0 0;border-top:4px solid var(--accent);padding:20px 18px calc(20px + env(safe-area-inset-bottom,0px))}
+@media (min-width:700px){.modal{align-items:center}.sheet{border-radius:12px;padding-bottom:20px}}
+.sheet h2{margin:0 0 14px;font-size:1.25rem}
+.sheet ol{padding-inline-start:22px}
+.sheet li{margin-bottom:6px}
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.field label{font-size:.85rem;font-weight:600;color:var(--muted)}
+.field input,.field textarea,.field select{border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:10px 12px;width:100%}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px rgba(0,71,255,.18)}
+.field textarea{min-height:110px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+.hint{font-size:.84rem;color:var(--muted)}
+.err{font-size:.88rem;color:var(--danger);min-height:1.2em}
+.bigprog{height:8px;background:var(--surface2);border-radius:99px;overflow:hidden;margin:12px 0}
+.bigprog i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0;transition:width .15s}
+
+.viewer{position:fixed;inset:0;z-index:30;background:#030712;display:flex;flex-direction:column}
+.viewer .vbar{display:flex;gap:8px;justify-content:flex-end;padding:calc(10px + env(safe-area-inset-top,0px)) 12px 10px}
+.viewer .vbar button{background:#0047ff;color:#fff;border:0;border-radius:8px;min-width:46px;min-height:46px;font-size:1.2rem;cursor:pointer}
+.viewer .vscroll{flex:1;overflow:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+.viewer img{display:block;margin:0 auto;max-width:none}
+
+.lockwrap{max-width:380px;margin:9vh auto 0;text-align:center}
+.lockwrap .wm{display:block;font-size:2.6rem;color:var(--accent);margin-bottom:4px}
+.lockwrap .sub{font-weight:500;color:var(--muted);margin-bottom:26px;direction:ltr}
+.lockwrap input{text-align:center;font-size:1.1rem}
+footer{max-width:920px;margin:0 auto;padding:0 16px 28px;color:var(--muted);font-size:.8rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wm2{font-weight:700;letter-spacing:.06em}
+.gh{display:flex;align-items:center;gap:10px;margin:26px 0 10px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.gh::after{content:"";flex:1;height:1px;background:var(--line)}
+.secgrid{margin-bottom:8px}
+.tile .kind{font-size:.72rem;font-weight:700;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
+@media (hover:hover){.tile:hover .kind{color:var(--accent-ink)}}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.mcard{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:8px;padding:16px}
+.mcard .mname{font-weight:700;font-size:1.08rem;margin-bottom:10px}
+.mcard dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.mcard dt{color:var(--muted);font-size:.85rem}
+.mcard dd{margin:0;font-weight:600}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);margin-bottom:18px;overflow-x:auto}
+.tabs button{border:0;background:transparent;padding:10px 16px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;min-height:44px}
+.tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:6px}
+.atprow{display:flex;gap:12px;align-items:flex-start;padding:12px 4px;border-bottom:1px solid var(--line)}
+.atprow:last-child{border-bottom:0}
+.atprow input[type=checkbox]{width:24px;height:24px;accent-color:var(--accent);flex:none;margin-top:2px}
+.atprow .ab{flex:1;min-width:0}
+.atprow .at{display:block;cursor:pointer}
+.atprow.done .at{color:var(--muted)}
+.atprow .an{margin-top:8px;width:100%;border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:7px 10px;font-size:.9rem}
+.atph{font-weight:700;color:var(--accent);padding:16px 4px 6px;border-bottom:1px solid var(--line);font-size:.95rem}
+.sigwrap{border:1.5px dashed var(--accent);border-radius:8px;background:#fff;touch-action:none;position:relative}
+.sigwrap canvas{display:block;width:100%;height:180px;touch-action:none;cursor:crosshair}
+.sigwrap .sighint{position:absolute;inset:auto 0 8px 0;text-align:center;color:#8e9fc0;font-size:.85rem;pointer-events:none}
+.hist{display:flex;flex-direction:column;gap:8px}
+.hrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-inline-start:4px solid var(--accent);border-radius:8px;padding:12px 14px}
+.hrow .tx{flex:1;min-width:180px}
+.hrow .t1{font-weight:600}
+.hrow .t2{color:var(--muted);font-size:.85rem}
+.redit{border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:10px;background:var(--bg)}
+.redit .field input,.redit .field select{background:var(--surface)}
+.redit .rhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-weight:600;font-size:.9rem}
+.linkcard{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.doc{max-width:860px}
+.doc h2{font-size:1.2rem;margin:28px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+.doc h2:first-child{margin-top:4px}
+.doc h3{font-size:1.02rem;margin:20px 0 8px;color:var(--accent)}
+.doc p{margin:8px 0;max-width:72ch}
+.doc ul{margin:8px 0;padding-inline-start:22px}
+.doc ul li{margin:4px 0}
+.doc ol.steps{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 14px;margin:10px 0}
+.doc .tablewrap{margin:12px 0}
+.doc .figure{margin:14px 0}
+.doc .path{display:inline-flex;gap:8px;align-items:center;background:var(--surface2);border-radius:6px;padding:6px 12px;font-weight:600}
+.doc .path .mono{color:var(--accent)}
+.doc b{font-weight:700}
+.doc code{font-family:var(--mono);font-size:.9em;background:var(--surface2);border-radius:4px;padding:1px 6px;direction:ltr;unicode-bidi:isolate}
+.callout{border-radius:8px;padding:12px 14px;margin:14px 0;border-inline-start:4px solid var(--muted);background:var(--surface)}
+.callout .ck{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;color:var(--muted)}
+.callout.important{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--surface))}
+.callout.important .ck{color:var(--accent)}
+.callout.caution{border-color:#ff7a1a;background:color-mix(in srgb,#ff7a1a 10%,var(--surface))}
+.callout.caution .ck{color:#e0620a}
+.callout.tip{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 8%,var(--surface))}
+.callout.tip .ck{color:var(--ok)}
+.sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-inline-end:8px;border:1px solid rgba(0,0,0,.2)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#home"><span class="wm">ONDAS</span><span class="bsub"><div class="bname wm2">IRONWAVE</div><div class="bver" id="appVer"></div></span></a>
+    <button id="langBtn" class="pill" type="button"></button>
+    <button id="helpBtn" class="pill" type="button"></button>
+  </div>
+  <div class="searchrow"><input id="q" type="search" autocomplete="off"><button id="offBtn" class="offbtn" type="button" hidden></button></div>
+  <div id="adminBar" class="adminbar" hidden></div>
+</header>
+<main id="app"></main>
+<footer id="foot"></footer>
+<div id="modal" class="modal" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
+<div id="viewer" class="viewer" hidden></div>
+
+<script>
+const SAMPLE={"app": {"version": 2, "updated": "2026-11-10", "teamHash": "", "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"}, "sections": [{"id": "container", "parent": null, "kind": "", "name": {"he": "UGV Controlled Container", "en": "UGV Controlled Container"}, "desc": {"he": "פרטים טכניים על מערכות המכולה", "en": "Technical details of the container systems"}}, {"id": "bison", "parent": null, "kind": "", "name": {"he": "BISON UGV", "en": "BISON UGV"}, "desc": {"he": "פרטים טכניים על מערכות ה־BISON. חל על BISON 120 ועל BISON 121.", "en": "Technical details of the BISON systems. Applies to BISON 120 and BISON 121."}}, {"id": "comm", "parent": null, "kind": "", "name": {"he": "תקשורת", "en": "Communications"}}, {"id": "comm-tech", "parent": "comm", "kind": "", "name": {"he": "פרטים טכניים", "en": "Technical Details"}}, {"id": "comm-radio", "parent": "comm", "kind": "", "name": {"he": "קינפוג מקמ״שים", "en": "Radio Configuration"}}, {"id": "comm-mon", "parent": "comm", "kind": "", "name": {"he": "ניטור תקשורת", "en": "Communication Monitoring"}}, {"id": "comm-traffic", "parent": "comm", "kind": "", "name": {"he": "בדיקת תעבורה", "en": "Traffic Test"}}, {"id": "comm-air", "parent": "comm", "kind": "", "name": {"he": "מקמ״שים „באוויר”", "en": "Radios On-Air Check"}}, {"id": "maint", "parent": null, "kind": "", "name": {"he": "אחזקה", "en": "Maintenance"}}, {"id": "cfg", "parent": null, "kind": "", "name": {"he": "קינפוגים", "en": "Configurations"}}, {"id": "qa", "parent": null, "kind": "", "name": {"he": "QA", "en": "QA"}}, {"id": "c-lift", "parent": "container", "kind": "assembly", "name": {"he": "רמסע (מגבע נע)", "en": "Mobile Lift (RAMSA)"}}, {"id": "c-mast", "parent": "container", "kind": "assembly", "name": {"he": "תורן", "en": "Mast"}}, {"id": "c-gen", "parent": "container", "kind": "assembly", "name": {"he": "גנרטור", "en": "Generator"}}, {"id": "c-ac", "parent": "container", "kind": "assembly", "name": {"he": "מזגן", "en": "Air Conditioner"}}, {"id": "c-comp", "parent": "container", "kind": "assembly", "name": {"he": "קומפרסור", "en": "Compressor"}}, {"id": "c-screens", "parent": "container", "kind": "assembly", "name": {"he": "מסכים וטלוויזיות", "en": "Screens & TVs"}}, {"id": "c-elec", "parent": "container", "kind": "assembly", "name": {"he": "מערכת חשמל", "en": "Electrical System"}}, {"id": "b-low", "parent": "bison", "kind": "assembly", "name": {"he": "בקרה נמוכה", "en": "Low-Level Control"}}, {"id": "b-high", "parent": "bison", "kind": "", "name": {"he": "בקרה גבוהה", "en": "High-Level Control"}}, {"id": "b-high-gen", "parent": "b-high", "kind": "assembly", "name": {"he": "בקרה גבוהה – כללי", "en": "High-Level Control – General"}}, {"id": "b-cam", "parent": "b-high", "kind": "assembly", "name": {"he": "מצלמות", "en": "Cameras"}}, {"id": "b-weapon", "parent": "b-high", "kind": "assembly", "name": {"he": "מערכת נשק", "en": "Weapon System"}}, {"id": "b-energy", "parent": "bison", "kind": "assembly", "name": {"he": "אנרגיה", "en": "Energy"}}, {"id": "b-mech", "parent": "bison", "kind": "", "name": {"he": "מכניקה", "en": "Mechanics"}}, {"id": "b-engine", "parent": "b-mech", "kind": "assembly", "name": {"he": "מנוע", "en": "Engine"}}, {"id": "b-mech-gen", "parent": "b-mech", "kind": "assembly", "name": {"he": "מכניקה כללית של הרובוט", "en": "General Robot Mechanics"}}], "items": [{"id": "dtc-pdf", "sec": "comm-tech", "type": "pdf", "title": {"he": "מדריך ממשק DTC (PDF)", "en": "DTC Interface Guide (PDF)"}, "summary": {"he": "המסמך המקורי, 21 עמודים", "en": "Original document, 21 pages"}, "body": {"src": "media/dtc-interface-guide.pdf", "note": {"he": "המסמך המקורי המלא (באנגלית).", "en": "The full original document."}}, "updated": "2026-11-10"}, {"id": "dtc-overview", "sec": "comm-tech", "type": "guide", "title": {"he": "מערכת DTC: רכיבים ותצורות עבודה", "en": "DTC system: components & configurations"}, "summary": {"he": "רכיבי הרשת, תצורות וכתובות IP", "en": "Network components, configurations and IP addresses"}, "body": {"he": [{"p": "עמוד השדרה של התקשורת בפרויקט „Terminator” הוא תשתית ה־RF של DTC. כל מקמ״ש במערכת הוא צומת (Node) ברשת **Mesh** אחת."}, {"p": "הממשק מאפשר לראות נתונים חיים מרשת ה־Mesh, להריץ ניתוח ספקטרום של תדרי העבודה, לעקוב אחרי טווח התקשורת האפקטיבי של כל קישור, ולבדוק את מטריצת הממסור בין כל הצמתים."}, {"h": "רכיבי הרשת"}, {"table": {"head": ["רכיב", "תפקיד ברשת"], "rows": [["**Ground Control Station (GCS) – Phase-5**", "תחנת הקרקע המרכזית. בתצורת Mesh היא מציגה את כל הצמתים ברשת."], ["**Operator Box (BLU-SDR)**", "קופסת הקשר של המפעיל. אחת לכל פלטפורמה (פלטפורמה I ופלטפורמה II)."], ["**ROCU-10**", "יחידת השליטה של המפעיל. מתחברת בכבל ל־Operator Box, ודרך הדפדפן המובנה שלה פותחים את הממשק."], ["**רכבים (Bison 1 ו־Bison 2)**", "שני הרכבים הבלתי מאוישים. בכל אחד מהם מקמ״ש DTC."], ["**אנטנת ממסר ראשית**", "אנטנת ממסר קרקעית על נגרר או על תורן חצובה."], ["**רחפן ממסר**", "ממסר אווירי. הגבהה או הזזה שלו מרחיבה ומשפרת את הכיסוי לרכבים."]]}}, {"h": "תצורות עבודה וכתובות IP"}, {"p": "כתובת ה־IP שמקלידים קובעת באיזו תצורה עובדים."}, {"table": {"head": ["תצורה", "כתובת IP", "מה רואים"], "rows": [["**טקטית (BLU-SDR)** – פלטפורמה I", "`192.168.120.131`", "ה־Operator Box של הפלטפורמה שה־ROCU-10 מחובר אליה."], ["**טקטית (BLU-SDR)** – פלטפורמה II", "`192.168.121.131`", "ה־Operator Box של הפלטפורמה שה־ROCU-10 מחובר אליה."], ["**Mesh (Phase-5)**", "`192.168.168.133` (זהה בשתי הפלטפורמות)", "נתונים מכל הצמתים ברשת: GCS, שני הרכבים, אנטנת הממסר הראשית ורחפן הממסר. מאפשר ניתוח של המערכת כולה."]]}}, {"note": "השתמשו בתצורת **Mesh (Phase-5)** כשצריך תמונה מלאה של הרשת, למשל בהקמה, בהחלפת תדר ובאיתור תקלות.", "kind": "tip"}, {"note": "המדריך מכסה רק את הפונקציות וההגדרות החשובות ביותר. לפרטים המלאים ראו את מדריך היצרן (B.A. Microwaves). מקור: מדריך ממשק DTC (Roboteam), 26/10/26.", "kind": "note"}], "en": [{"p": "The central communication backbone of the “Terminator” project is the RF infrastructure supplied by DTC. Every radio in the system is a node in a single **Mesh** network."}, {"p": "The interface lets you view live Mesh data, run a spectral analysis of the operating frequencies, monitor the effective range of each link, and inspect the relay matrix between all nodes."}, {"h": "Network components"}, {"table": {"head": ["Component", "Role in the network"], "rows": [["**Ground Control Station (GCS) – Phase-5**", "Central ground station. In Mesh configuration it provides a view of every node in the network."], ["**Operator Box (BLU-SDR)**", "The operator’s radio box. One per platform (Platform I and Platform II)."], ["**ROCU-10**", "The operator control unit. It connects to the Operator Box by cable, and its built-in browser is used to open the interface."], ["**Vehicles (Bison 1 and Bison 2)**", "The two unmanned ground vehicles, each carrying a DTC radio."], ["**Main relay antenna**", "Ground relay antenna mounted on a trailer or tripod mast."], ["**Relay drone**", "Airborne relay. Raising or repositioning it extends and improves coverage to the vehicles."]]}}, {"h": "Operating configurations and IP addresses"}, {"p": "The IP address you enter determines which configuration you are working in."}, {"table": {"head": ["Configuration", "IP address", "What you see"], "rows": [["**Tactical (BLU-SDR)** – Platform I", "`192.168.120.131`", "The Operator Box of the platform your ROCU-10 is connected to."], ["**Tactical (BLU-SDR)** – Platform II", "`192.168.121.131`", "The Operator Box of the platform your ROCU-10 is connected to."], ["**Mesh (Phase-5)**", "`192.168.168.133` (same for both platforms)", "Data from every node: GCS, both vehicles, main relay antenna and relay drone. Allows analysis of the complete system."]]}}, {"note": "Use the **Mesh (Phase-5)** configuration when you need the full picture of the network, for example during setup, frequency changes and troubleshooting.", "kind": "tip"}, {"note": "This guide covers only the most important functions and settings. For complete details, see the full manufacturer manual (B.A. Microwaves). Source: DTC Operator Interface Guide (Roboteam), 26/10/26.", "kind": "note"}]}, "updated": "2026-11-10"}, {"id": "dtc-glossary", "sec": "comm-tech", "type": "guide", "title": {"he": "מילון מונחים – DTC", "en": "Glossary – DTC"}, "summary": {"he": "המונחים שמופיעים בממשק", "en": "Terms used in the interface"}, "body": {"he": [{"table": {"head": ["מונח", "הסבר"], "rows": [["**BLU-SDR**", "קופסת הקשר של המפעיל (Operator Box). גם שם התצורה הטקטית."], ["**dB / dBm**", "יחידות ליחס אות (SNR, ב־dB) ולעוצמת קליטה מוחלטת (Levels, ב־dBm)."], ["**GCS**", "תחנת קרקע (Ground Control Station)."], ["**Mesh**", "רשת שבה כל מקמ״ש יכול לממסר תעבורה עבור האחרים."], ["**Node**", "כל מקמ״ש שמשתתף ברשת ה־Mesh (צומת)."], ["**Occupancy**", "החלק מרוחב הפס שצומת מנצל, באחוזים."], ["**Phase-5**", "המקמ״ש של ה־GCS. גם שם תצורת ה־Mesh."], ["**Preset**", "סט הגדרות שמור של המקמ״ש."], ["**Relay**", "העברת אות ממקמ״ש למקמ״ש כדי להגדיל טווח (ממסור)."], ["**RF**", "תדר רדיו."], ["**ROCU-10**", "יחידת השליטה של המפעיל, שדרכה פותחים את הממשק."], ["**SNR**", "יחס אות לרעש. גבוה יותר = טוב יותר."], ["**Tx / Rx**", "שידור / קליטה."]]}}], "en": [{"table": {"head": ["Term", "Definition"], "rows": [["**BLU-SDR**", "The Operator Box radio. Also the name of the Tactical configuration."], ["**dB / dBm**", "Units for signal ratio (SNR, in dB) and absolute received power (Levels, in dBm)."], ["**GCS**", "Ground Control Station."], ["**Mesh**", "A network in which every radio can relay traffic for the others."], ["**Node**", "Any radio participating in the Mesh network."], ["**Occupancy**", "The share of bandwidth a node is using, in percent."], ["**Phase-5**", "The GCS radio. Also the name of the Mesh configuration."], ["**Preset**", "A saved set of radio settings."], ["**Relay**", "Passing a signal on from one radio to another to extend range."], ["**RF**", "Radio frequency."], ["**ROCU-10**", "The operator control unit used to open the interface."], ["**SNR**", "Signal-to-noise ratio. Higher is better."], ["**Tx / Rx**", "Transmit / receive."]]}}]}, "updated": "2026-11-10"}, {"id": "dtc-login", "sec": "comm-radio", "type": "guide", "title": {"he": "התחברות לממשק DTC", "en": "Logging in to the DTC interface"}, "summary": {"he": "כתובות IP, סיסמאות ושלבי כניסה", "en": "IP addresses, passwords and login steps"}, "body": {"he": [{"h": "לפני שמתחילים"}, {"ul": ["ה־ROCU-10 מחובר בכבל ל־Operator Box (החיבור הקווי הרגיל).", "ה־Operator Box דולק.", "ידוע באיזו תצורה עובדים ומה כתובת ה־IP שלה (ראו „מערכת DTC: רכיבים ותצורות עבודה”)."]}, {"h": "שלבי ההתחברות"}, {"ol": ["חברו את ה־ROCU-10 ל־Operator Box בכבל.", "פתחו את הדפדפן המובנה ב־ROCU-10.", "הקלידו בשורת הכתובת את כתובת ה־IP של התצורה ולחצו Enter: טקטית פלטפורמה I `192.168.120.131`, טקטית פלטפורמה II `192.168.121.131`, Mesh `192.168.168.133`.", "כשהכתובת נכונה, נפתח מסך הכניסה.", "השאירו את שדה **Username** ריק. בשדה **Password** בלבד הקלידו **Hatal**.", "אם הסיסמה לא מתקבלת, נסו **Eastwood**.", "לחצו על כפתור הכניסה. נפתח מסך הבית (Dashboard)."]}, {"img": "media/dtc-01-login.png", "cap": "מסך הכניסה לממשק"}, {"note": "אם מסך הכניסה לא מופיע, בדקו את הכבל בין ה־ROCU-10 ל־Operator Box וודאו שכתובת ה־IP מתאימה לתצורה.", "kind": "tip"}], "en": [{"h": "Before you start"}, {"ul": ["The ROCU-10 is connected by cable to the Operator Box (the normal wired connection).", "The Operator Box is powered on.", "You know which configuration you need and its IP address (see “DTC system: components & configurations”)."]}, {"h": "Login procedure"}, {"ol": ["Connect the ROCU-10 to the Operator Box with the wired cable.", "Open the built-in web browser on the ROCU-10.", "Type the IP address for your configuration and press Enter: Tactical Platform I `192.168.120.131`, Tactical Platform II `192.168.121.131`, Mesh `192.168.168.133`.", "When the correct address is entered, the login screen opens.", "Leave the **Username** field empty. In the **Password** field only, enter **Hatal**.", "If that password is not accepted, try **Eastwood**.", "Click the login button. The Home screen (Dashboard) opens."]}, {"img": "media/dtc-01-login.png", "cap": "Interface login screen"}, {"note": "If the login screen does not appear, check the cable between the ROCU-10 and the Operator Box and confirm that the IP address matches your configuration.", "kind": "tip"}]}, "updated": "2026-11-10"}, {"id": "dtc-spectrum", "sec": "comm-radio", "type": "guide", "title": {"he": "סריקת ספקטרום (Spectrum Scan)", "en": "Spectrum Scan"}, "summary": {"he": "מציאת טווח התדרים הנקי ביותר", "en": "Finding the cleanest frequency range"}, "body": {"he": [{"p": "מריצים סריקת ספקטרום כשמגיעים לאזור פעילות חדש, כדי למצוא את טווח התדרים עם הכי מעט הפרעות."}, {"path": "Apps > Spectrum Scan", "label": "פתיחה:"}, {"note": "מריצים סריקה **רק כשהרכבים קרובים למפעיל**, כחלק מההכנה למשימה. **אסור להריץ סריקה במהלך פעילות.** כשמקמ״ש מתחיל סריקה התקשורת נופלת לרגע, ורכב רחוק עלול לא להתחבר מחדש כמו שצריך.", "kind": "caution"}, {"h": "הרצת הסריקה"}, {"ol": ["היכנסו ל־**Apps > Spectrum Scan**.", "תחת **Scan Settings** הגדירו **Start frequency** ו־**Stop frequency** של טווח הסריקה.", "לחצו **Start Scan** בתחתית הדף והמתינו שהגרף יתמלא."]}, {"img": "media/dtc-07-spectrum.png", "cap": "Spectrum Scan. המסגרת האדומה מסמנת טווח עם הפרעות מעטות."}, {"h": "קריאת התוצאות"}, {"ul": ["**קפיצות** (עליות חדות וחריגות בגרף) מעידות על הפרעות. הימנעו מהתדרים האלה.", "בחרו טווח תדרים עם הפרעות מעטות, כמו הטווח שמסומן באדום בתמונה."]}, {"note": "אם התדר שנבחר שונה מהתדר הנוכחי, עברו ל־„החלפת תדר עבודה”.", "kind": "note"}], "en": [{"p": "Run a spectrum scan when you arrive in a new area of operations, to find the frequency range with the least interference."}, {"path": "Apps > Spectrum Scan", "label": "To open:"}, {"note": "Run a spectrum scan **only when the vehicles are close to the operator**, as part of pre-mission preparation. **Never run it during an active operation.** When a radio starts a scan, communication drops momentarily. If a vehicle is far away, it may fail to reconnect properly.", "kind": "caution"}, {"h": "Running the scan"}, {"ol": ["Go to **Apps > Spectrum Scan**.", "Under **Scan Settings**, set the **Start frequency** and **Stop frequency** of the scan range.", "Click **Start Scan** at the bottom of the page and wait for the chart to fill in."]}, {"img": "media/dtc-07-spectrum.png", "cap": "Spectrum Scan. The red box marks a range with minor interference."}, {"h": "Reading the results"}, {"ul": ["**Spikes** (sudden, abnormal jumps in the chart) indicate interference. Avoid those frequencies.", "Choose a frequency range where interference is minor, such as the range marked in red in the figure."]}, {"note": "If the chosen frequency differs from the current one, continue to “Changing the operating frequency”.", "kind": "note"}]}, "updated": "2026-11-10"}, {"id": "dtc-freq", "sec": "comm-radio", "type": "guide", "title": {"he": "החלפת תדר עבודה", "en": "Changing the operating frequency"}, "summary": {"he": "עדכון כל הרשת או מקמ״ש אחר מקמ״ש", "en": "Update the whole network or radio by radio"}, "body": {"he": [{"note": "אם התדר שנבחר שונה מהתדר הנוכחי, חובה להגדיר **את אותו תדר בכל המקמ״שים**: שני הרכבים, שתי קופסאות ה־Operator Box, אנטנת הממסר הראשית (חצובה) ורחפן הממסר. מקמ״ש שלא יוגדר לתדר החדש יאבד קשר עם הרשת.", "kind": "important"}, {"note": "לפני שמשנים משהו, **רשמו את התדר הנוכחי**. אם התקשורת גרועה יותר אחרי השינוי, אפשר לחזור אליו.", "kind": "tip"}, {"h": "אפשרות א׳ (מומלצת): עדכון כל הצמתים בפעולה אחת"}, {"p": "כל המקמ״שים חייבים להיות **דולקים ומחוברים לרשת ה־Mesh** לפני שמתחילים."}, {"ol": ["היכנסו ל־**Global Setup > General Settings**.", "תחת **Update Settings** העבירו את **Update all nodes** ל־**Yes**.", "שנו **רק את התדר** (**Presets > Mesh Settings > Frequency**). אל תשנו שום הגדרה אחרת.", "שמרו, הפעילו מחדש את כל המקמ״שים ובדקו (ראו „אחרי ההחלפה”)."]}, {"img": "media/dtc-08-general.png", "cap": "General Settings עם האפשרות Update all nodes"}, {"h": "אפשרות ב׳: הגדרה ידנית בכל מקמ״ש"}, {"ol": ["בכל מקמ״ש היכנסו ל־**Presets > Mesh Settings**.", "באזור **Transmitter** הקלידו את הערך החדש בשדה **Frequency**.", "שמרו.", "חזרו על הפעולה בכל מקמ״ש, לפי הסדר שבטבלה."]}, {"img": "media/dtc-09-mesh.png", "cap": "Mesh Settings. שדה Frequency נמצא באזור Transmitter."}, {"table": {"head": ["סדר", "מקמ״ש"], "rows": [["1", "רכבים: Bison 1 ו־Bison 2"], ["2", "רחפן ממסר"], ["3", "תחנת קרקע (GCS)"], ["4", "Operator Box 1 ו־2"]]}}, {"note": "מגדירים קודם את המקמ״שים הרחוקים ביותר, ואת ה־Operator Box אחרונים, כדי לא לאבד את הדרך למקמ״ש לפני שהוא עודכן.", "kind": "note"}, {"h": "אחרי ההחלפה"}, {"ol": ["הפעילו מחדש את כל המקמ״שים.", "פתחו שוב את הממשק.", "ודאו שכל המקמ״שים מוגדרים ומתקשרים באותה רשת (בדקו ב־Tactical Display וב־Node Table)."]}], "en": [{"note": "If the frequency you choose differs from the current one, you must set the **same frequency on every radio**: both vehicles, both Operator Boxes, the main relay antenna (tripod) and the relay drone. Any radio not set to the new frequency will lose communication with the network.", "kind": "important"}, {"note": "Before you change anything, **write down the current frequency**. If communication is worse after the change, you can return to it.", "kind": "tip"}, {"h": "Option A (recommended): update all nodes in one action"}, {"p": "All radios must be **powered on and connected to the Mesh network** before you start."}, {"ol": ["Go to **Global Setup > General Settings**.", "Under **Update Settings**, set **Update all nodes** to **Yes**.", "Change **only the frequency** (**Presets > Mesh Settings > Frequency**). Do not change any other settings.", "Save, then restart all radios and verify (see “After the change”)."]}, {"img": "media/dtc-08-general.png", "cap": "General Settings with the Update all nodes option"}, {"h": "Option B: configure each radio manually"}, {"ol": ["On each radio, go to **Presets > Mesh Settings**.", "In the **Transmitter** section, enter the new value in the **Frequency** field.", "Save.", "Repeat on every radio, following the order in the table."]}, {"img": "media/dtc-09-mesh.png", "cap": "Mesh Settings. The Frequency field is in the Transmitter section."}, {"table": {"head": ["Order", "Radio"], "rows": [["1", "Vehicles: Bison 1 and Bison 2"], ["2", "Relay drone"], ["3", "Ground Control Station (GCS)"], ["4", "Operator Boxes 1 and 2"]]}}, {"note": "The most distant radios are configured first and the Operator Boxes last, so you do not lose your path to a radio before it has been updated.", "kind": "note"}, {"h": "After the change"}, {"ol": ["Restart all radios.", "Open the interface again.", "Confirm that every radio is configured and communicating on the same network (check the Tactical Display and the Node Table)."]}]}, "updated": "2026-11-10"}, {"id": "dtc-tactical", "sec": "comm-mon", "type": "guide", "title": {"he": "Tactical Display – איכות הקשר", "en": "Tactical Display – link quality"}, "summary": {"he": "סולם צבעים ומה עושים כשהקישור נחלש", "en": "Color scale and what to do when the link weakens"}, "body": {"he": [{"note": "ה־Tactical Display הוא כרגע **המדד החשוב ביותר לאיכות התקשורת**. לפיו מחליטים מתי רכב חייב להפסיק להתקדם.", "kind": "important"}, {"path": "Apps > Tactical Display", "label": "פתיחה:"}, {"p": "המפה מציגה כל מקמ״ש שמחובר כרגע לרשת הממסור: Bison 1 ו־2, אנטנת הממסר הראשית, רחפן הממסר וקופסאות ה־BLU-SDR. כל מקמ״ש מופיע כתגית עם השם שלו. אפשר לגרור את התגיות על המפה כדי לפזר אותן ולקרוא בקלות. המיקום של תגית על המפה לא משנה."}, {"img": "media/dtc-06-tactical.png", "cap": "Tactical Display"}, {"h": "קריאת חיצי הקישור"}, {"ul": ["**חץ יוצא:** איכות האות המשודר.", "**חץ נכנס:** איכות האות הנקלט."]}, {"p": "כשאיכות הקישור משתנה, צבע החץ משתנה בהתאם. תמיד שואפים לעבוד בטווח **כחול עד ירוק**."}, {"h": "סולם איכות האות"}, {"table": {"head": ["רמה", "צבע", "איכות הקישור", "מה עושים"], "rows": [["10–12", {"sw": "#19d3f0", "t": "כחול"}, "מצוינת", "עבודה רגילה."], ["7–9", {"sw": "#22e02a", "t": "ירוק"}, "טובה", "עבודה רגילה."], ["5–6", {"sw": "#e0f03a", "t": "ירוק־צהוב / צהוב"}, "בינונית, הקישור נחלש", "לעקוב מקרוב ולהתכונן לפעול."], ["4", {"sw": "#ff8a1f", "t": "כתום"}, "הנחתה משמעותית", "לפעול עכשיו: לעצור את ההתקדמות ולשפר את הממסר."], ["1–3", {"sw": "#ff2b2b", "t": "אדום"}, "גרועה, קרוב לאובדן קישור", "לפעול מיד."], ["0", {"sw": "#a01010", "t": "אדום כהה"}, "אין קישור שמיש", "לשחזר את הקישור."]]}}, {"note": "כשחץ הופך ל**כתום**, זו כבר הנחתה משמעותית של האות. **אל תמשיכו להתקדם עם הרכב.**", "kind": "caution"}, {"h": "כשאיכות הקישור יורדת"}, {"ol": ["עצרו את התקדמות הרכב.", "אם צריך, החזירו את הרכב שמתקרב לאובדן קישור לאזור עם כיסוי טוב יותר.", "הגביהו או הזיזו את רחפן הממסר.", "במסך הזה ודאו שלאנטנת הממסר הראשית (נגרר/חצובה) יש קישור טוב לרחפן, ושלרחפן יש קישור טוב לרכב."]}], "en": [{"note": "The Tactical Display is currently the **most important indicator of communication quality**. Use it to decide when a vehicle must stop advancing.", "kind": "important"}, {"path": "Apps > Tactical Display", "label": "To open:"}, {"p": "The map shows every radio currently connected to the relay network: Bison 1 and 2, the main relay antenna, the relay drone and the BLU-SDR Operator Boxes. Each radio appears as a tag with its name. You can drag the tags to spread them out for easier reading; the position of a tag on the map is not critical."}, {"img": "media/dtc-06-tactical.png", "cap": "Tactical Display"}, {"h": "Reading the link arrows"}, {"ul": ["**Outgoing arrow:** quality of the signal being transmitted.", "**Incoming arrow:** quality of the signal being received."]}, {"p": "When link quality changes, the arrow color changes accordingly. Always aim to operate in the **blue to green** range."}, {"h": "Signal quality scale"}, {"table": {"head": ["Level", "Color", "Link quality", "What to do"], "rows": [["10–12", {"sw": "#19d3f0", "t": "Blue"}, "Excellent", "Normal operation."], ["7–9", {"sw": "#22e02a", "t": "Green"}, "Good", "Normal operation."], ["5–6", {"sw": "#e0f03a", "t": "Yellow-green / Yellow"}, "Fair, link degrading", "Monitor closely and prepare to act."], ["4", {"sw": "#ff8a1f", "t": "Orange"}, "Significant attenuation", "Act now: stop the advance and improve the relay."], ["1–3", {"sw": "#ff2b2b", "t": "Red"}, "Poor, approaching link loss", "Act immediately."], ["0", {"sw": "#a01010", "t": "Dark red"}, "No usable link", "Recover the link."]]}}, {"note": "When an arrow turns **orange**, it already indicates significant signal attenuation. **Do not continue advancing the vehicle.**", "kind": "caution"}, {"h": "When link quality drops"}, {"ol": ["Stop the vehicle’s advance.", "If needed, move the vehicle that is approaching link loss back toward better coverage.", "Raise or reposition the relay drone.", "On this screen, confirm that the main relay antenna (trailer/tripod) has a good link to the relay drone, and that the drone has a good link to the vehicle."]}]}, "updated": "2026-11-10"}, {"id": "dtc-nodetable", "sec": "comm-mon", "type": "guide", "title": {"he": "Node Table – טבלת צמתים", "en": "Node Table"}, "summary": {"he": "סטטוס כל המקמ״שים ברשת", "en": "Status of every radio in the network"}, "body": {"he": [{"path": "Status > Node Table", "label": "פתיחה:"}, {"p": "הטבלה מציגה כל תחנה פעילה ברשת ה־Mesh, ונותנת תמונת מצב של החיבורים, איכות הממסור והקישורים בין התחנות."}, {"img": "media/dtc-10-nodetable.png", "cap": "Node Table (תצוגת Summary)"}, {"table": {"head": ["עמודה", "מה היא אומרת"], "rows": [["**ID / Unit Name / IP Address**", "מזהה של כל מקמ״ש ברשת."], ["**Battery**", "מתח ההזנה של המקמ״ש."], ["**Temp**", "טמפרטורת המעבד."], ["**Software version**", "גרסת הקושחה שמותקנת במקמ״ש."], ["**Occupancy**", "עומס רוחב הפס של המקמ״ש, באחוזים."], ["**Tx Retries**", "ניסיונות שידור חוזרים. בודקים לפיה שהמקמ״ש משדר כמו שצריך."]]}}, {"note": "**Occupancy מעל 20% היא קריטית.** מקמ״ש עם עומס גבוה מעמיס על כל הרשת.", "kind": "caution"}], "en": [{"path": "Status > Node Table", "label": "To open:"}, {"p": "The Node Table lists every active station in the Mesh network and gives a snapshot of connection status, relay quality and the links between stations."}, {"img": "media/dtc-10-nodetable.png", "cap": "Node Table (Summary view)"}, {"table": {"head": ["Column", "What it tells you"], "rows": [["**ID / Unit Name / IP Address**", "Identifies each radio in the network."], ["**Battery**", "Supply voltage of the radio."], ["**Temp**", "Processor temperature."], ["**Software version**", "Firmware version installed on the radio."], ["**Occupancy**", "Bandwidth load of the radio, in percent."], ["**Tx Retries**", "Transmission retries. Use it to confirm that the radio is transmitting properly."]]}}, {"note": "**An Occupancy above 20% is critical.** A radio with high occupancy loads the whole network.", "kind": "caution"}]}, "updated": "2026-11-10"}, {"id": "dtc-quality", "sec": "comm-mon", "type": "guide", "title": {"he": "Quality Matrix – מטריצת איכות", "en": "Quality Matrix"}, "summary": {"he": "איכות הקישור בין כל זוג מקמ״שים", "en": "Link quality between every pair of radios"}, "body": {"he": [{"path": "Status > Quality Matrix", "label": "פתיחה:"}, {"p": "המטריצה מציגה את איכות השידור והממסור בין כל זוג מקמ״שים ברשת."}, {"table": {"head": ["צבע", "משמעות"], "rows": [[{"sw": "#22e02a", "t": "ירוק"}, "איכות קישור טובה."], [{"sw": "#ff2b2b", "t": "אדום"}, "איכות קישור גרועה."], [{"sw": "#a01010", "t": "אדום כהה"}, "קרוב לאובדן תקשורת."]]}}, {"img": "media/dtc-11-quality.png", "cap": "Quality Matrix"}, {"note": "תאים אדומים או אדומים כהים = קישור חלש בין זוג המקמ״שים. הזיזו את הרכב או את רחפן הממסר.", "kind": "tip"}], "en": [{"path": "Status > Quality Matrix", "label": "To open:"}, {"p": "The Quality Matrix shows the transmission and relay quality between every pair of radios in the network."}, {"table": {"head": ["Color", "Meaning"], "rows": [[{"sw": "#22e02a", "t": "Green"}, "Good link quality."], [{"sw": "#ff2b2b", "t": "Red"}, "Poor link quality."], [{"sw": "#a01010", "t": "Dark red"}, "Approaching loss of communication."]]}}, {"img": "media/dtc-11-quality.png", "cap": "Quality Matrix"}, {"note": "Red or dark red cells mean a weak link between that pair of radios. Reposition the vehicle or the relay drone.", "kind": "tip"}]}, "updated": "2026-11-10"}, {"id": "dtc-levels", "sec": "comm-mon", "type": "guide", "title": {"he": "Levels – SNR ועוצמת אות", "en": "Levels – SNR and signal strength"}, "summary": {"he": "איך לקרוא את טבלת ה־SNR", "en": "How to read the SNR table"}, "body": {"he": [{"path": "Status > Levels", "label": "פתיחה:"}, {"p": "בוחרים את התצוגה בבורר שבפינה הימנית העליונה."}, {"table": {"head": ["תצוגה", "מה היא מראה"], "rows": [["**SNR**", "יחס אות לרעש ב־dB. מדד ישיר לכמה הקישור באמת נקי, והוא קובע אם הרשת יכולה להעביר נתונים בלי שגיאות."], ["**Levels**", "עוצמת האות הנקלטת בפועל בין כל הקישורים ברשת. מראה את רמת ההנחתה או את עוצמת השידור הגולמית."]]}}, {"img": "media/dtc-12-levels.png", "cap": "מסך Levels בתצוגת SNR. המסגרת האדומה מסמנת את הערכים של צומת 1."}, {"h": "איך קוראים את הטבלה"}, {"ul": ["השורות הן המקמ״ש **הקולט** (Rx) והעמודות הן המקמ״ש **המשדר** (Tx). כל תא הוא הערך של הקישור בין שני המקמ״שים.", "**מספר גבוה יותר = קישור טוב יותר.** בתצוגת Levels הערכים שליליים, ולכן ערך רחוק יותר מ־‎−100 (קרוב יותר לאפס) הוא טוב יותר.", "הערך של מקמ״ש מול עצמו (האלכסון) לא רלוונטי. מתעלמים ממנו.", "אם קישור חלש, פועלים כמו ב־Tactical Display: מחזירים את הרכב לאחור או משפרים את מיקום רחפן הממסר."]}, {"h": "דוגמה (לפי התמונה)"}, {"p": "בעמודה של צומת 1: צומת 2 קולט את צומת 1 ב־**32.0 dB**, צומת 4 ב־**28.9 dB** וצומת 10 ב־**25.8 dB**. כלומר לצומת 1 יש את הקישור החזק ביותר עם צומת 2 ואת החלש ביותר עם צומת 10. התא שבו צומת 1 פוגש את עצמו לא נלקח בחשבון."}], "en": [{"path": "Status > Levels", "label": "To open:"}, {"p": "Choose the view with the selector at the top right."}, {"table": {"head": ["View", "What it shows"], "rows": [["**SNR**", "Signal-to-noise ratio in dB. A direct measure of how clean the link really is, and whether the network can pass data without errors."], ["**Levels**", "Physical received signal strength between all links in the network. Shows the level of attenuation or the raw transmit strength."]]}}, {"img": "media/dtc-12-levels.png", "cap": "Levels screen, SNR view. The red box marks the values for Node 1."}, {"h": "How to read the table"}, {"ul": ["Rows are the **receiving** radio (Rx) and columns are the **transmitting** radio (Tx). Each cell is the value for the link between those two radios.", "**A higher number means better link quality.** In the Levels view the values are negative, so a value further above −100 (closer to zero) is better.", "A radio’s value with itself (the diagonal) is not relevant. Ignore it.", "If a link is weak, act as you would for the Tactical Display: move the vehicle back, or improve the position of the relay drone."]}, {"h": "Example (from the figure)"}, {"p": "In the column for Node 1, Node 2 receives Node 1 at **32.0 dB**, Node 4 at **28.9 dB** and Node 10 at **25.8 dB**. Node 1 has its strongest link with Node 2 and its weakest with Node 10. The cell where Node 1 meets itself is ignored."}]}, "updated": "2026-11-10"}, {"id": "dtc-dashboard", "sec": "comm-mon", "type": "guide", "title": {"he": "מסך הבית ותפריטי הממשק", "en": "Home screen & interface menus"}, "summary": {"he": "שורת הסטטוס, לוח המידע והתפריט", "en": "Status bar, info panel and menu"}, "body": {"he": [{"p": "אחרי הכניסה הממשק נפתח במסך הבית. יש בו שלושה אזורים: שורת הסטטוס העליונה, לוח המידע על היחידה והרשת, ותפריט הניווט משמאל."}, {"img": "media/dtc-02-dashboard.png", "cap": "מסך הבית"}, {"h": "שורת הסטטוס העליונה"}, {"p": "מופיעה בראש כל דף."}, {"img": "media/dtc-03-statusbar.png", "cap": "שורת הסטטוס"}, {"table": {"head": ["רכיב", "תיאור"], "rows": [["**שם היחידה המחוברת**", "משמאל, מתחת ל־„NETNode Mesh IP Radio”. זה המקמ״ש שנכנסתם אליו."], ["**תדר מוגדר**", "תדר העבודה שמוגדר כרגע במקמ״ש (למשל 2025 MHz)."], ["**Mesh Zone**", "רשת ה־Mesh שהמקמ״ש שייך אליה."], ["**Node ID**", "המזהה של המקמ״ש ברשת ה־Mesh."], ["**חיווי חיבור קווי**", "מראה שאתם מחוברים למקמ״ש בחיבור קווי."], ["**Preset**", "ה־Preset הפעיל כרגע במקמ״ש."], ["**פס מצב חיבור**", "בצד הימני הקיצוני. חיווי אדום = כשל בחיבור."]]}}, {"h": "לוח מידע על היחידה והרשת"}, {"img": "media/dtc-04-panel.png", "cap": "לוח מידע על היחידה והרשת"}, {"table": {"head": ["אזור", "שדה", "תיאור"], "rows": [["Unit Information", "Unit name", "שם המקמ״ש."], ["Unit Information", "IP address", "כתובת ה־IP של המקמ״ש."], ["Unit Information", "Voltage / Temperature", "מתח הזנה וטמפרטורת היחידה."], ["Unit Information", "Tx retries", "מספר ניסיונות השידור החוזרים."], ["Mesh Information", "Mesh ID / Node ID", "מזהי הרשת והצומת."], ["Mesh Information", "Total nodes", "מספר הצמתים ברשת כרגע, מתוך המקסימום (למשל 1 of 24)."], ["Mesh Information", "Occupancy", "עומס רוחב הפס של הצומת, באחוזים."], ["Remote Nodes", "Node list", "הצמתים שמשתתפים ברשת הממסור."]]}}, {"h": "תפריט הניווט"}, {"img": "media/dtc-05-menu.png", "cap": "תפריט הניווט"}, {"table": {"head": ["פריט בתפריט", "מה יש בו"], "rows": [["**שורת חיפוש**", "מציאה מהירה של הגדרה או פונקציה."], ["**Dashboard**", "חזרה למסך הבית."], ["**Apps**", "פונקציות מבצעיות, כולל Tactical Display ו־Spectrum Scan."], ["**Status**", "סטטוס חי: ערכי SNR, מטריצת איכות ה־Mesh, ניצול מעבד ואיכות הממסור."], ["**Global Setup**", "הגדרות לכל הרשת, כולל General Settings ו־Update all nodes."], ["**Presets**", "הגדרות המקמ״ש לפי Preset, כולל Mesh Settings ותדר העבודה."], ["**System**", "כלי מערכת וניהול."]]}}], "en": [{"p": "After you log in, the interface opens on the Home screen. It has three areas: the top status bar, the unit and mesh information panel, and the navigation menu on the left."}, {"img": "media/dtc-02-dashboard.png", "cap": "Home screen overview"}, {"h": "Top status bar"}, {"p": "Shown at the top of every page."}, {"img": "media/dtc-03-statusbar.png", "cap": "Top status bar"}, {"table": {"head": ["Element", "Description"], "rows": [["**Connected unit name**", "On the left, under “NETNode Mesh IP Radio”. This is the radio you are logged in to."], ["**Configured frequency**", "The operating frequency currently set on the radio (for example, 2025 MHz)."], ["**Mesh Zone**", "The Mesh network the radio belongs to."], ["**Node ID**", "The radio’s identifier within the Mesh network."], ["**Wired connection indicator**", "Shows that you are connected over the wired connection."], ["**Preset**", "The preset currently active on the radio."], ["**Connection status bar**", "Far right. A red indication means a connection failure."]]}}, {"h": "Unit and mesh information panel"}, {"img": "media/dtc-04-panel.png", "cap": "Unit and mesh information panel"}, {"table": {"head": ["Section", "Field", "Description"], "rows": [["Unit Information", "Unit name", "Name of the radio."], ["Unit Information", "IP address", "IP address of the radio."], ["Unit Information", "Voltage / Temperature", "Supply voltage and unit temperature."], ["Unit Information", "Tx retries", "Number of transmission retries."], ["Mesh Information", "Mesh ID / Node ID", "Network and node identifiers."], ["Mesh Information", "Total nodes", "Nodes currently in the network, out of the maximum (for example, 1 of 24)."], ["Mesh Information", "Occupancy", "Bandwidth load of this node, in percent."], ["Remote Nodes", "Node list", "The nodes participating in the Mesh relay network."]]}}, {"h": "Navigation menu"}, {"img": "media/dtc-05-menu.png", "cap": "Navigation menu"}, {"table": {"head": ["Menu item", "What it contains"], "rows": [["**Search bar**", "Find a specific setting or function quickly."], ["**Dashboard**", "Returns to the Home screen."], ["**Apps**", "Operational functions, including Tactical Display and Spectrum Scan."], ["**Status**", "Live status: SNR values, the Mesh quality matrix, CPU usage and relay quality."], ["**Global Setup**", "Network-wide settings, including General Settings and Update all nodes."], ["**Presets**", "Radio settings saved per preset, including Mesh Settings and the operating frequency."], ["**System**", "System tools and administration."]]}}]}, "updated": "2026-11-10"}, {"id": "dtc-checklist", "sec": "comm", "type": "checklist", "title": {"he": "צ׳קליסט לפני משימה – תקשורת", "en": "Pre-mission checklist – communications"}, "summary": {"he": "DTC – 7 בדיקות לפני יציאה", "en": "DTC – 7 checks before going out"}, "body": {"he": ["להדליק את כל המקמ״שים: שני הרכבים, שתי קופסאות ה־Operator Box, אנטנת הממסר הראשית, רחפן הממסר וה־GCS.", "לחבר את ה־ROCU-10 ל־Operator Box ולהתחבר לממשק (התחברות לממשק DTC).", "לוודא שכל המקמ״שים מופיעים ברשת (Tactical Display / Node Table).", "כשהרכבים קרובים למפעיל, להריץ סריקת ספקטרום (Apps > Spectrum Scan).", "אם מחליפים תדר: לרשום את התדר הנוכחי, להגדיר את החדש בכל המקמ״שים, להפעיל מחדש ולבדוק (החלפת תדר עבודה).", "לבדוק שכל הקישורים ירוקים (Status > Quality Matrix).", "לבדוק שאף מקמ״ש לא עובר 20% Occupancy (Status > Node Table)."], "en": ["Power on all radios: both vehicles, both Operator Boxes, main relay antenna, relay drone and GCS.", "Connect the ROCU-10 to the Operator Box and log in (Logging in to the DTC interface).", "Confirm that every radio appears in the network (Tactical Display / Node Table).", "With the vehicles near the operator, run a spectrum scan (Apps > Spectrum Scan).", "If changing frequency: record the current frequency, set the new one on all radios, restart and verify (Changing the operating frequency).", "Check that all links are green (Status > Quality Matrix).", "Check that no radio is above 20% occupancy (Status > Node Table)."]}, "updated": "2026-11-10"}, {"id": "dtc-trouble", "sec": "comm", "type": "guide", "title": {"he": "תקלות ופתרונות – תקשורת DTC", "en": "Troubleshooting – DTC communications"}, "summary": {"he": "תסמין, סיבה ומה עושים", "en": "Symptom, cause and action"}, "body": {"he": [{"table": {"head": ["תסמין", "סיבה אפשרית", "מה עושים"], "rows": [["**הממשק לא נפתח בדפדפן**", "כתובת IP שגויה או אין חיבור קווי", "בדקו את הכבל ואת כתובת ה־IP של התצורה (מערכת DTC: רכיבים ותצורות עבודה)."], ["**הסיסמה לא מתקבלת**", "ביחידה מוגדרת סיסמה אחרת", "נסו את הסיסמה החלופית (התחברות לממשק DTC)."], ["**חץ הופך לכתום או אדום במהלך פעילות**", "הנחתה או גבול טווח", "עצרו את ההתקדמות, החזירו את הרכב לאחור, הגביהו או הזיזו את רחפן הממסר."], ["**מקמ״ש חסר אחרי החלפת תדר**", "המקמ״ש לא הוגדר לתדר החדש", "הגדירו את התדר במקמ״ש הזה ידנית (החלפת תדר עבודה, אפשרות ב׳)."], ["**התקשורת גרועה יותר אחרי החלפת תדר**", "התדר החדש לא טוב יותר", "חזרו לתדר שרשמתם לפני ההחלפה."], ["**הרשת איטית**", "מקמ״ש עם Occupancy מעל 20%", "זהו את המקמ״ש ב־Node Table."], ["**תאים אדומים או אדומים כהים ב־Quality Matrix**", "קישור חלש בין זוג המקמ״שים", "הזיזו את הרכב או את רחפן הממסר."]]}}], "en": [{"table": {"head": ["Symptom", "Likely cause", "Action"], "rows": [["**Interface does not open in the browser**", "Wrong IP address or no wired connection", "Check the cable and the IP address for your configuration (DTC system: components & configurations)."], ["**Password rejected**", "A different password is set on this unit", "Try the alternate password (Logging in to the DTC interface)."], ["**Arrow turns orange or red during operation**", "Attenuation or range limit", "Stop the advance, move the vehicle back, raise or reposition the relay drone."], ["**A radio is missing after a frequency change**", "That radio was not set to the new frequency", "Set the frequency on that radio manually (Changing the operating frequency, Option B)."], ["**Communication is worse after a frequency change**", "The new frequency is not better", "Return to the frequency you recorded before the change."], ["**Network performance is slow**", "A radio has occupancy above 20%", "Identify the radio in the Node Table."], ["**Red or dark red cells in the Quality Matrix**", "Weak link between that pair of radios", "Reposition the vehicle or the relay drone."]]}}]}, "updated": "2026-11-10"}, {"id": "m-pre", "sec": "maint", "type": "checklist", "title": {"he": "טיפול לפני תנועה", "en": "Pre-Operation Service"}, "summary": {"he": "BISON UGV", "en": "BISON UGV"}, "body": {"he": ["שורה לדוגמה 1 – להחליף בתוכן מהמסמך", "שורה לדוגמה 2 – להחליף בתוכן מהמסמך", "שורה לדוגמה 3 – להחליף בתוכן מהמסמך", "שורה לדוגמה 4 – להחליף בתוכן מהמסמך"], "en": ["Sample line 1 – replace with content from the document", "Sample line 2 – replace with content from the document", "Sample line 3 – replace with content from the document", "Sample line 4 – replace with content from the document"]}, "updated": "2026-11-10"}, {"id": "m-post", "sec": "maint", "type": "checklist", "title": {"he": "טיפול אחרי תנועה", "en": "Post-Operation Service"}, "summary": {"he": "BISON UGV", "en": "BISON UGV"}, "body": {"he": ["שורה לדוגמה 1 – להחליף בתוכן מהמסמך", "שורה לדוגמה 2 – להחליף בתוכן מהמסמך", "שורה לדוגמה 3 – להחליף בתוכן מהמסמך", "שורה לדוגמה 4 – להחליף בתוכן מהמסמך"], "en": ["Sample line 1 – replace with content from the document", "Sample line 2 – replace with content from the document", "Sample line 3 – replace with content from the document", "Sample line 4 – replace with content from the document"]}, "updated": "2026-11-10"}, {"id": "m-prev", "sec": "maint", "type": "pdf", "title": {"he": "אחזקה מונעת", "en": "Preventive Maintenance"}, "summary": {"he": "", "en": ""}, "body": {"src": "", "note": {"he": "", "en": ""}}, "updated": "2026-11-10"}, {"id": "m-data", "sec": "maint", "type": "maint", "title": {"he": "טיפולים כלליים – נתוני אחזקה", "en": "General Service – Maintenance Data"}, "summary": {"he": "שמנים, נוזלים, מסננים וחלקים מתכלים", "en": "Oils, fluids, filters and consumables"}, "body": {"rows": [{"kind": "fluid", "name": {"he": "שמן מנוע", "en": "Engine oil"}, "spec": "", "qty": "", "point": "", "interval": "", "pn": "", "note": {"he": "", "en": ""}}, {"kind": "fluid", "name": {"he": "שמן גיר", "en": "Gear oil"}, "spec": "", "qty": "", "point": "", "interval": "", "pn": "", "note": {"he": "", "en": ""}}, {"kind": "fluid", "name": {"he": "שמן ברקס", "en": "Brake fluid"}, "spec": "", "qty": "", "point": "", "interval": "", "pn": "", "note": {"he": "", "en": ""}}, {"kind": "fluid", "name": {"he": "דלק", "en": "Fuel"}, "spec": "", "qty": "", "point": "", "interval": "", "pn": "", "note": {"he": "", "en": ""}}, {"kind": "filter", "name": {"he": "מסנן שמן", "en": "Oil filter"}, "spec": "", "qty": "", "point": "", "interval": "", "pn": "", "note": {"he": "", "en": ""}}, {"kind": "filter", "name": {"he": "מסנן אוויר", "en": "Air filter"}, "spec": "", "qty": "", "point": "", "interval": "", "pn": "", "note": {"he": "", "en": ""}}, {"kind": "filter", "name": {"he": "מסנן דלק", "en": "Fuel filter"}, "spec": "", "qty": "", "point": "", "interval": "", "pn": "", "note": {"he": "", "en": ""}}], "note": {"he": "סוגים, כמויות ותדירויות יוזנו מתוך מסמך הטיפולים.", "en": "Types, quantities and intervals will be filled in from the service document."}}, "updated": "2026-11-10"}, {"id": "cfg-radio", "sec": "cfg", "type": "link", "title": {"he": "קינפוג מקמ״שים", "en": "Radio Configuration"}, "summary": {"he": "", "en": ""}, "body": {"targetSec": "comm-radio"}, "updated": "2026-11-10"}, {"id": "cfg-act", "sec": "cfg", "type": "steps", "title": {"he": "כיול אקטואטורים", "en": "Actuator Calibration"}, "summary": {"he": "", "en": ""}, "body": {"he": "", "en": ""}, "updated": "2026-11-10"}, {"id": "b-engine-maint", "sec": "b-engine", "type": "link", "title": {"he": "נתוני אחזקה: שמנים ונוזלים", "en": "Maintenance data: oils & fluids"}, "summary": {"he": "", "en": ""}, "body": {"target": "m-data"}, "updated": "2026-11-10", "group": "tech"}, {"id": "qc1", "sec": "qa", "type": "pdf", "title": {"he": "QC 1", "en": "QC 1"}, "summary": {"he": "", "en": ""}, "body": {"src": "", "note": {"he": "", "en": ""}}, "updated": "2026-11-10"}, {"id": "qc2", "sec": "qa", "type": "pdf", "title": {"he": "QC 2", "en": "QC 2"}, "summary": {"he": "", "en": ""}, "body": {"src": "", "note": {"he": "", "en": ""}}, "updated": "2026-11-10"}, {"id": "qc3", "sec": "qa", "type": "pdf", "title": {"he": "QC 3", "en": "QC 3"}, "summary": {"he": "", "en": ""}, "body": {"src": "", "note": {"he": "", "en": ""}}, "updated": "2026-11-10"}, {"id": "qc4", "sec": "qa", "type": "pdf", "title": {"he": "QC 4", "en": "QC 4"}, "summary": {"he": "", "en": ""}, "body": {"src": "", "note": {"he": "", "en": ""}}, "updated": "2026-11-10"}, {"id": "qc5", "sec": "qa", "type": "pdf", "title": {"he": "QC 5", "en": "QC 5"}, "summary": {"he": "", "en": ""}, "body": {"src": "", "note": {"he": "", "en": ""}}, "updated": "2026-11-10"}, {"id": "atp-sys", "sec": "qa", "type": "pdf", "title": {"he": "ATP System", "en": "ATP System"}, "summary": {"he": "", "en": ""}, "body": {"src": "", "note": {"he": "", "en": ""}}, "updated": "2026-11-10"}, {"id": "atp-field", "sec": "qa", "type": "atp", "title": {"he": "ATP Field", "en": "ATP Field"}, "summary": {"he": "מסמך לקריאה או בדיקה שורה שורה עם חתימה", "en": "Read the document or run it line by line with a signature"}, "body": {"src": "", "rows": {"he": ["# פרק לדוגמה – הכנה", "בדיקה לדוגמה 1 – להחליף בשורות ממסמך ה־ATP", "בדיקה לדוגמה 2", "בדיקה לדוגמה 3", "# פרק לדוגמה – תפקוד", "בדיקה לדוגמה 4", "בדיקה לדוגמה 5"], "en": ["# Sample chapter – preparation", "Sample check 1 – replace with lines from the ATP document", "Sample check 2", "Sample check 3", "# Sample chapter – function", "Sample check 4", "Sample check 5"]}}, "updated": "2026-11-10"}]};
+const CDN="https://cdnjs.cloudflare.com/ajax/libs/";
+const LIB={
+  pdf:["lib/pdf.min.js",CDN+"pdf.js/3.11.174/pdf.min.js"],
+  pdfw:["lib/pdf.worker.min.js",CDN+"pdf.js/3.11.174/pdf.worker.min.js"],
+  zip:["lib/jszip.min.js",CDN+"jszip/3.10.1/jszip.min.js"],
+  h2c:["lib/html2canvas.min.js",CDN+"html2canvas/1.4.1/html2canvas.min.js"],
+  jspdf:["lib/jspdf.umd.min.js",CDN+"jspdf/2.5.1/jspdf.umd.min.js"]
+};
+const LIBTEST={pdf:()=>window.pdfjsLib,zip:()=>window.JSZip,h2c:()=>window.html2canvas,jspdf:()=>window.jspdf};
+const MAX_MB=25;
+const GROUPS=["tech","docs","trouble","software"];
+const KINDS=["fluid","filter","part"];
+const PLATFORMS=["BISON 120","BISON 121"];
+
+/* ================= texts ================= */
+const STR={
+he:{vshort:v=>"גרסה "+v,toggle:"English",helpBtn:"עזרה",tagline:"בחרו חלק כדי להמשיך.",search:"חיפוש בכל התכנים…",
+ home:"ראשי",items:n=>n===1?"פריט אחד":n+" פריטים",ver:(v,d)=>"גרסה "+v+" · "+d,isNew:"חדש",newCount:n=>n+" חדשים",
+ results:"תוצאות חיפוש",noResults:"לא נמצאו תוצאות. נסו מילה אחרת, בעברית או באנגלית.",
+ empty:"התוכן יתווסף בהמשך.",fallback:"אין תרגום לעברית, מוצג באנגלית",resetChecks:"איפוס הרשימה",
+ copy:"העתקה",copied:"הועתק",param:"פרמטר",value:"ערך",updated:"עודכן",assembly:"מכלול",subs:n=>n+" תתי־חלקים",
+ groups:{tech:"פרטים טכניים",docs:"מסמכים ושרטוטים",trouble:"תקלות ופתרונות",software:"תוכנות",other:"כללי"},
+ callout:{important:"חשוב",caution:"זהירות",tip:"טיפ",note:"הערה"},types:{guide:"מדריך",steps:"נוהל",checklist:"צ׳קליסט",table:"דף נתונים",code:"קונפיגורציה",text:"מסמך",image:"שרטוט",pdf:"PDF",software:"תוכנה",link:"קישור",maint:"נתוני אחזקה",atp:"ATP"},
+ kinds:{fluid:"שמנים ונוזלים",filter:"מסננים",part:"חלקים מתכלים"},
+ m:{spec:"סוג / מפרט",qty:"כמות",point:"נקודת מילוי / מיקום",interval:"תדירות החלפה",pn:"מק״ט",note:"הערות"},
+ sw:{ver:"גרסה עדכנית",file:"שם הקובץ",path:"מיקום במחשב",install:"התקנה",open:"פתיחה",note:"את קבצי ההתקנה מעתיקים מהשרת של החברה למחשב הנייד, לפני הנסיעה. בדקו שהגרסה אצלכם תואמת לגרסה שכאן."},
+ pdf:{loading:"טוען את הקובץ…",err:"לא ניתן להציג את הקובץ.",open:"פתיחה בחלון חדש",pages:n=>n+" עמודים",zin:"הגדלה",zout:"הקטנה",none:"המסמך יתווסף בהמשך."},
+ link:{go:"מעבר לפריט",target:"פריט היעד",broken:"פריט היעד נמחק."},
+ atp:{tDoc:"מסמך",tRun:"בדיקה",tHist:"היסטוריה",platform:"פלטפורמה",site:"אתר",customer:"לקוח",tester:"שם הבודק",date:"תאריך",
+   prog:(a,b)=>a+" מתוך "+b+" סומנו",note:"הערה לשורה",general:"הערות כלליות",sign:"חתימת הבודק",signHint:"חתמו כאן באצבע",clearSig:"ניקוי חתימה",
+   save:"שמירה ויצירת PDF",reset:"בדיקה חדשה",confirmReset:"להתחיל בדיקה חדשה? הסימונים הנוכחיים יימחקו.",
+   needSig:"צריך לחתום לפני השמירה.",needTester:"צריך למלא שם בודק.",notAll:(a,b)=>"סומנו "+a+" מתוך "+b+" שורות. לשמור בכל זאת?",
+   making:"יוצר קובץ PDF…",saved:"הבדיקה נשמרה.",download:"הורדת PDF",share:"שיתוף",noHist:"עוד אין בדיקות שמורות במכשיר הזה.",
+   del:"מחיקה",confirmDel:"למחוק את הבדיקה מההיסטוריה?",done:"בוצע",pdfErr:"לא הצלחתי ליצור PDF. נסו שוב.",
+   rTitle:"דוח בדיקת ATP Field",rItem:"בדיקה",rDone:"בוצע",rNote:"הערה",noRows:"עוד לא הוגדרו שורות בדיקה."},
+ off:{ready:"שמור במכשיר",need:"שמירה במכשיר",update:"יש עדכון",title:"שמירה לשימוש בלי אינטרנט",
+   hint:"כל התוכן, כולל שרטוטים ו־PDF, יישמר במכשיר. השאירו את המסך פתוח עד הסוף.",start:"התחלת הורדה",
+   prog:(a,b)=>a+" מתוך "+b,done:"הכול שמור במכשיר. האפליקציה תעבוד גם בלי אינטרנט.",
+   errs:n=>n+" קבצים לא ירדו. נסו שוב כשיש חיבור טוב.",net:"צריך חיבור לאינטרנט כדי להוריד.",close:"סגירה",
+   readyLong:v=>"גרסה "+v+" שמורה במכשיר וזמינה בלי אינטרנט.",again:"הורדה מחדש"},
+ help:{title:"התקנה ועזרה",
+   ios:"<b>אייפון:</b> פתחו את הקישור ב־Safari, לחצו על כפתור השיתוף ובחרו „הוספה למסך הבית”.",
+   android:"<b>אנדרואיד:</b> פתחו את הקישור ב־Chrome, לחצו על ⋮ ובחרו „התקנת אפליקציה” או „הוספה למסך הבית”.",
+   pc:"<b>מחשב נייד:</b> פתחו את הקישור ב־Chrome או Edge ולחצו על סמל ההתקנה בשורת הכתובת.",
+   offline:"אחרי ההתקנה, לחצו „שמירה במכשיר” כדי שהכול יעבוד גם בלי אינטרנט. כשיוצאת גרסה חדשה הכפתור יסומן שוב.",
+   admin:"כניסת מנהלים",logout:"התנתקות מהאפליקציה"},
+ lock:{hint:"הזינו את סיסמת הצוות",pw:"סיסמה",enter:"כניסה",wrong:"הסיסמה שגויה."},
+ adm:{title:"כניסת מנהלים",pw:"סיסמת מנהלים",enter:"כניסה למצב עריכה",bar:"מצב עריכה",dirty:"יש שינויים שעוד לא פורסמו",clean:"אין שינויים שלא פורסמו",
+   publish:"פרסום גרסה",exit:"יציאה",addItem:"הוספת פריט",addSec:"הוספת תת־חלק",editSec:"עריכת חלק",delSec:"מחיקת חלק",
+   editItem:"עריכת פריט",del:"מחיקה",save:"שמירה",cancel:"ביטול",settings:"סיסמאות",discard:"ביטול כל השינויים",
+   up:"למעלה",down:"למטה",addRow:"הוספת שורה",rmRow:"הסרה",row:n=>"שורה "+n,
+   teamPw:"סיסמת צוות חדשה",adminPw:"סיסמת מנהלים חדשה",pwHint:"השאירו ריק כדי לא לשנות. הסיסמה החדשה תיכנס לתוקף אחרי הפרסום.",
+   confirmDiscard:"לבטל את כל השינויים שלא פורסמו?",confirmDel:"למחוק את הפריט?",secNotEmpty:"אפשר למחוק רק חלק ריק, בלי פריטים ובלי תתי־חלקים.",
+   need:"חובה למלא כותרת לפחות בשפה אחת.",needTarget:"צריך לבחור פריט יעד.",tooBig:mb=>"הקובץ גדול מדי ("+mb+"MB). דרך הדפדפן אפשר להעלות ל־GitHub קבצים עד "+MAX_MB+"MB.",
+   working:"מכין את הקובץ…",pubTitle:v=>"גרסה "+v+" מוכנה",
+   pubSteps:["הקובץ ondas-update.zip ירד למחשב. חלצו אותו.","היכנסו למאגר ב־GitHub ולחצו Add file ← Upload files.","גררו את content.json ואת תיקיית media (אם יש).","לחצו Commit changes. אחרי כ־2 דקות כל הטכנאים יקבלו את העדכון כשיתחברו לאינטרנט.","שלחו לצוות הודעה: „יצאה גרסה X, לחצו על שמירה במכשיר”."],
+   pubDone:"העליתי ל־GitHub, אפשר לנקות את הטיוטה",preview:"בתצוגה המקדימה כאן אי אפשר להוריד קבצים. הפרסום יעבוד בגרסה שמותקנת מ־GitHub."},
+ f:{sec:"מיקום באפליקציה",group:"קבוצה בתוך המכלול",type:"סוג תוכן",titleHe:"כותרת בעברית",titleEn:"כותרת באנגלית",sumHe:"תיאור קצר בעברית",sumEn:"תיאור קצר באנגלית",
+   bodyHe:"תוכן בעברית",bodyEn:"תוכן באנגלית",lines:"שורה לכל צעד או פריט",code:"קונפיגורציה / קוד (ללא תרגום)",noteHe:"הערה בעברית",noteEn:"הערה באנגלית",
+   table:"שורה לכל פרמטר: פרמטר בעברית | פרמטר באנגלית | ערך",capHe:"כיתוב בעברית",capEn:"כיתוב באנגלית",
+   img:"קובץ תמונה (JPG, PNG). תמונות גדולות יוקטנו אוטומטית.",pdfFile:"קובץ PDF",pdfOpt:"קובץ PDF של המסמך הרשמי (לא חובה)",current:"קובץ נוכחי:",
+   swVer:"גרסה",swFile:"שם קובץ ההתקנה",swPath:"מיקום במחשב הנייד",swUrl:"כתובת לפתיחה בדפדפן (לא חובה, למשל http://192.168.1.10)",instHe:"שלבי התקנה בעברית",instEn:"שלבי התקנה באנגלית",
+   nameHe:"שם בעברית",nameEn:"שם באנגלית",kind:"סוג",assembly:"מכלול (תוכן מחולק לפרטים טכניים, מסמכים, תקלות ותוכנות)",
+   guideJson:"תוכן המדריך (מבנה JSON, בדרך כלל נערך דרך Claude)",atpRows:"שורות הבדיקה: שורה לכל בדיקה. שורה שמתחילה ב־# היא כותרת של פרק. אותו מספר שורות בשתי השפות."},
+ preview:"תצוגה מקדימה. אחרי ההעלאה ל־GitHub התוכן ייטען מהקובץ content.json.",
+ foot:v=>"ONDAS · IRONWAVE – Technical Help · גרסה "+v},
+en:{vshort:v=>"v"+v,toggle:"עברית",helpBtn:"Help",tagline:"Pick a section to continue.",search:"Search all content…",
+ home:"Home",items:n=>n===1?"1 item":n+" items",ver:(v,d)=>"Version "+v+" · "+d,isNew:"New",newCount:n=>n+" new",
+ results:"Search results",noResults:"No results. Try another word, in English or Hebrew.",
+ empty:"Content will be added soon.",fallback:"No English translation, showing Hebrew",resetChecks:"Reset list",
+ copy:"Copy",copied:"Copied",param:"Parameter",value:"Value",updated:"Updated",assembly:"Assembly",subs:n=>n+" sub-sections",
+ groups:{tech:"Technical details",docs:"Documents & drawings",trouble:"Troubleshooting",software:"Software",other:"General"},
+ callout:{important:"Important",caution:"Caution",tip:"Tip",note:"Note"},types:{guide:"Guide",steps:"Procedure",checklist:"Checklist",table:"Datasheet",code:"Configuration",text:"Document",image:"Drawing",pdf:"PDF",software:"Software",link:"Link",maint:"Maintenance data",atp:"ATP"},
+ kinds:{fluid:"Oils & fluids",filter:"Filters",part:"Consumable parts"},
+ m:{spec:"Type / spec",qty:"Quantity",point:"Fill point / location",interval:"Replacement interval",pn:"Part number",note:"Notes"},
+ sw:{ver:"Current version",file:"Installer file",path:"Location on laptop",install:"Installation",open:"Open",note:"Copy installers from the company server to your laptop before you travel. Check that your version matches the one shown here."},
+ pdf:{loading:"Loading file…",err:"Can’t display this file.",open:"Open in new window",pages:n=>n+" pages",zin:"Zoom in",zout:"Zoom out",none:"The document will be added soon."},
+ link:{go:"Go to item",target:"Target item",broken:"The target item was deleted."},
+ atp:{tDoc:"Document",tRun:"Test",tHist:"History",platform:"Platform",site:"Site",customer:"Customer",tester:"Tester name",date:"Date",
+   prog:(a,b)=>a+" of "+b+" checked",note:"Note for this line",general:"General notes",sign:"Tester signature",signHint:"Sign here with your finger",clearSig:"Clear signature",
+   save:"Save and create PDF",reset:"New test",confirmReset:"Start a new test? Current checks will be cleared.",
+   needSig:"Please sign before saving.",needTester:"Please fill in the tester name.",notAll:(a,b)=>a+" of "+b+" lines are checked. Save anyway?",
+   making:"Creating PDF…",saved:"Test saved.",download:"Download PDF",share:"Share",noHist:"No saved tests on this device yet.",
+   del:"Delete",confirmDel:"Delete this test from history?",done:"Done",pdfErr:"Couldn’t create the PDF. Try again.",
+   rTitle:"ATP Field test report",rItem:"Check",rDone:"Done",rNote:"Note",noRows:"No test lines defined yet."},
+ off:{ready:"Saved on device",need:"Save on device",update:"Update available",title:"Save for offline use",
+   hint:"All content, including drawings and PDFs, will be saved on this device. Keep this screen open until it finishes.",start:"Start download",
+   prog:(a,b)=>a+" of "+b,done:"Everything is saved. The app will work without internet.",
+   errs:n=>n+" files didn’t download. Try again with a better connection.",net:"You need an internet connection to download.",close:"Close",
+   readyLong:v=>"Version "+v+" is saved on this device and available offline.",again:"Download again"},
+ help:{title:"Install & help",
+   ios:"<b>iPhone:</b> open the link in Safari, tap Share and choose “Add to Home Screen”.",
+   android:"<b>Android:</b> open the link in Chrome, tap ⋮ and choose “Install app” or “Add to Home screen”.",
+   pc:"<b>Laptop:</b> open the link in Chrome or Edge and click the install icon in the address bar.",
+   offline:"After installing, tap “Save on device” so everything works offline. When a new version is out, the button lights up again.",
+   admin:"Admin login",logout:"Sign out of the app"},
+ lock:{hint:"Enter the team password",pw:"Password",enter:"Sign in",wrong:"Wrong password."},
+ adm:{title:"Admin login",pw:"Admin password",enter:"Enter edit mode",bar:"Edit mode",dirty:"You have unpublished changes",clean:"No unpublished changes",
+   publish:"Publish version",exit:"Exit",addItem:"Add item",addSec:"Add sub-section",editSec:"Edit section",delSec:"Delete section",
+   editItem:"Edit item",del:"Delete",save:"Save",cancel:"Cancel",settings:"Passwords",discard:"Discard all changes",
+   up:"Move up",down:"Move down",addRow:"Add row",rmRow:"Remove",row:n=>"Row "+n,
+   teamPw:"New team password",adminPw:"New admin password",pwHint:"Leave empty to keep the current one. A new password takes effect after publishing.",
+   confirmDiscard:"Discard all unpublished changes?",confirmDel:"Delete this item?",secNotEmpty:"Only an empty section can be deleted, with no items and no sub-sections.",
+   need:"Fill in a title in at least one language.",needTarget:"Choose a target item.",tooBig:mb=>"This file is too big ("+mb+" MB). GitHub browser uploads are limited to "+MAX_MB+" MB.",
+   working:"Preparing the file…",pubTitle:v=>"Version "+v+" is ready",
+   pubSteps:["ondas-update.zip has been downloaded. Extract it.","Open your GitHub repository and click Add file → Upload files.","Drag in content.json and the media folder (if any).","Click Commit changes. About 2 minutes later, every technician gets the update when they’re online.","Message the team: “Version X is out, tap Save on device.”"],
+   pubDone:"I’ve uploaded it to GitHub, clear the draft",preview:"Downloads don’t work in this preview. Publishing works in the version installed from GitHub."},
+ f:{sec:"Location in the app",group:"Group inside the assembly",type:"Content type",titleHe:"Title in Hebrew",titleEn:"Title in English",sumHe:"Short description in Hebrew",sumEn:"Short description in English",
+   bodyHe:"Content in Hebrew",bodyEn:"Content in English",lines:"One line per step or item",code:"Configuration / code (not translated)",noteHe:"Note in Hebrew",noteEn:"Note in English",
+   table:"One line per parameter: Hebrew name | English name | value",capHe:"Caption in Hebrew",capEn:"Caption in English",
+   img:"Image file (JPG, PNG). Large images are resized automatically.",pdfFile:"PDF file",pdfOpt:"PDF of the official document (optional)",current:"Current file:",
+   swVer:"Version",swFile:"Installer file name",swPath:"Location on laptop",swUrl:"Browser address to open (optional, e.g. http://192.168.1.10)",instHe:"Install steps in Hebrew",instEn:"Install steps in English",
+   nameHe:"Name in Hebrew",nameEn:"Name in English",kind:"Kind",assembly:"Assembly (content split into technical details, documents, troubleshooting and software)",
+   guideJson:"Guide content (JSON structure, usually edited through Claude)",atpRows:"Test lines: one line per check. A line starting with # is a chapter heading. Same number of lines in both languages."},
+ preview:"Preview. Once uploaded to GitHub, content loads from content.json.",
+ foot:v=>"ONDAS · IRONWAVE – Technical Help · version "+v}
+};
+
+/* ================= helpers ================= */
+const $=id=>document.getElementById(id);
+const ls={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v);return true}catch(e){return false}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+const ss={get(k){try{return sessionStorage.getItem(k)}catch(e){return null}},set(k,v){try{sessionStorage.setItem(k,v)}catch(e){}},del(k){try{sessionStorage.removeItem(k)}catch(e){}}};
+const jget=(k,d)=>{try{const v=JSON.parse(ls.get(k));return v??d}catch(e){return d}};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const has=v=>Array.isArray(v)?v.length>0:!!(v&&String(v).trim());
+const clone=o=>JSON.parse(JSON.stringify(o));
+const today=()=>new Date().toISOString().slice(0,10);
+const fmtDate=d=>{if(!d)return"";const p=String(d).slice(0,10).split("-");return p.length===3?p[2]+"."+p[1]+"."+p[0]:d};
+const uid=p=>p+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+const safeUrl=u=>/^https?:\/\//i.test(u||"")?u:"";
+async function sha(s){if(!(window.crypto&&crypto.subtle))return null;const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function loadScript(src){return new Promise((res,rej)=>{const s=document.createElement("script");s.src=src;s.onload=res;s.onerror=()=>{s.remove();rej(new Error(src))};document.head.appendChild(s)})}
+const libLocal={};
+async function needLib(k){
+  if(LIBTEST[k]&&LIBTEST[k]())return;
+  try{await loadScript(LIB[k][0]);libLocal[k]=true}catch(e){await loadScript(LIB[k][1])}
+  if(k==="pdf")pdfjsLib.GlobalWorkerOptions.workerSrc=libLocal.pdf?LIB.pdfw[0]:LIB.pdfw[1];
+}
+
+/* ================= state ================= */
+let lang=ls.get("fk-lang")==="en"?"en":"he";
+let published=null,draft=null,admin=false,isPreview=false,swOK=false,query="",view={v:"home"},prevSeen=null,atpTab="doc";
+const pending=new Map(),pendingURL=new Map();
+const T=()=>STR[lang];
+const other=()=>lang==="he"?"en":"he";
+const data=()=>admin&&draft?draft:published;
+const dirOf=l=>l==="he"?"rtl":"ltr";
+const sec=id=>data().sections.find(s=>s.id===id);
+const kids=id=>data().sections.filter(s=>(s.parent||null)===(id||null));
+const itemsOf=id=>data().items.filter(i=>i.sec===id);
+const item=id=>data().items.find(i=>i.id===id);
+const mediaSrc=s=>pendingURL.get(s)||s;
+function pathOf(id){const out=[];let s=sec(id),guard=0;while(s&&guard++<20){out.unshift(s);s=s.parent?sec(s.parent):null}return out}
+function countDeep(id){let n=itemsOf(id).length;for(const k of kids(id))n+=countDeep(k.id);return n}
+function newDeep(id){let n=itemsOf(id).filter(isNew).length;for(const k of kids(id))n+=newDeep(k.id);return n}
+function pick(o){if(!o)return{v:"",l:lang,fb:false};if(has(o[lang]))return{v:o[lang],l:lang,fb:false};if(has(o[other()]))return{v:o[other()],l:other(),fb:true};return{v:Array.isArray(o[lang])?[]:"",l:lang,fb:false}}
+const P=o=>pick(o).v;
+const isNew=it=>!admin&&prevSeen&&it.updated&&it.updated>prevSeen;
+const isDirty=()=>admin&&draft&&JSON.stringify(draft)!==JSON.stringify(published);
+const secLabel=id=>pathOf(id).map(s=>P(s.name)).join(" › ");
+function saveDraft(){ls.set("fk-draft",JSON.stringify(draft))}
+
+/* ---- IndexedDB for pending media (admin) ---- */
+const idb={db:null,
+  open(){return this.db?Promise.resolve(this.db):new Promise((res,rej)=>{const r=indexedDB.open("ondas",1);r.onupgradeneeded=()=>r.result.createObjectStore("media");r.onsuccess=()=>res(this.db=r.result);r.onerror=()=>rej(r.error)})},
+  async put(k,v){const db=await this.open();return new Promise((res,rej)=>{const t=db.transaction("media","readwrite");t.objectStore("media").put(v,k);t.oncomplete=res;t.onerror=()=>rej(t.error)})},
+  async clear(){const db=await this.open();return new Promise((res,rej)=>{const t=db.transaction("media","readwrite");t.objectStore("media").clear();t.oncomplete=res;t.onerror=()=>rej(t.error)})},
+  async all(){const db=await this.open();return new Promise((res,rej)=>{const out=new Map();const c=db.transaction("media").objectStore("media").openCursor();c.onsuccess=()=>{const cur=c.result;if(cur){out.set(cur.key,cur.value);cur.continue()}else res(out)};c.onerror=()=>rej(c.error)})}
+};
+async function loadPending(){try{const m=await idb.all();for(const [k,b] of m){pending.set(k,b);pendingURL.set(k,URL.createObjectURL(b))}}catch(e){}}
+
+/* ================= chrome ================= */
+function offState(){const v=String(published.app.version),s=ls.get("fk-offline");return s===v?"ready":s?"update":"need"}
+function chrome(){
+  const t=T(),d=published.app;
+  document.documentElement.lang=lang;document.documentElement.dir=dirOf(lang);
+  $("appVer").textContent="Technical Help";
+  $("langBtn").textContent=t.toggle;$("helpBtn").textContent=t.helpBtn;
+  const q=$("q");q.placeholder=t.search;q.dir=dirOf(lang);
+  const ob=$("offBtn");ob.hidden=!swOK;
+  if(swOK){const s=offState();ob.className="offbtn "+(s==="ready"?"ok":"need");ob.textContent=s==="ready"?t.off.ready:s==="update"?t.off.update:t.off.need}
+  const ab=$("adminBar");ab.hidden=!admin;
+  if(admin){const dirty=isDirty();
+    ab.innerHTML=`<div class="in"><span>${esc(t.adm.bar)} · ${esc(dirty?t.adm.dirty:t.adm.clean)}</span>
+      <button data-act="settings">${esc(t.adm.settings)}</button>
+      ${dirty?`<button data-act="discard">${esc(t.adm.discard)}</button><button class="solid" data-act="publish">${esc(t.adm.publish)}</button>`:""}
+      <button data-act="exitAdmin">${esc(t.adm.exit)}</button></div>`}
+  $("foot").textContent=t.foot(d.version);
+}
+
+/* ================= views ================= */
+function crumbs(secs,extra){
+  const parts=secs.map(s=>`<a href="#s-${esc(s.id)}">${esc(P(s.name))}</a>`);
+  return `<nav class="crumbs"><a href="#home">${esc(T().home)}</a>${parts.map(p=>`<span aria-hidden="true">/</span>${p}`).join("")}${extra||""}</nav>`;
+}
+function tileHTML(s){
+  const t=T(),n=countDeep(s.id),nn=newDeep(s.id),k=kids(s.id).length;
+  return `<a class="tile" href="#s-${esc(s.id)}">${s.kind==="assembly"?`<span class="kind">${esc(t.assembly)}</span>`:""}<span class="nm">${esc(P(s.name))}</span>
+   <span class="ct">${esc(k?t.subs(k):t.items(n))}${nn?`<span class="badge">${esc(t.newCount(nn))}</span>`:""}</span></a>`;
+}
+function rowHTML(it,showPath){
+  const t=T(),ti=pick(it.title),su=pick(it.summary);
+  const sub=showPath?secLabel(it.sec)+(su.v?" · "+su.v:""):su.v;
+  return `<a class="row" href="#i-${esc(it.id)}"><span class="tx"><div class="t1"><span dir="${dirOf(ti.l)}">${esc(ti.v)}</span>${isNew(it)?`<span class="badge">${esc(t.isNew)}</span>`:""}</div>${sub?`<div class="t2">${esc(sub)}</div>`:""}</span>
+   ${admin&&!showPath?`<button class="btn ghost small" data-act="up" data-id="${esc(it.id)}" aria-label="${esc(t.adm.up)}">▲</button><button class="btn ghost small" data-act="down" data-id="${esc(it.id)}" aria-label="${esc(t.adm.down)}">▼</button>`:""}
+   <span class="rtype">${esc(t.types[it.type]||"")}</span><span class="chev" aria-hidden="true"></span></a>`;
+}
+function vHome(){
+  const t=T();let h="";
+  if(isPreview)h+=`<div class="note">${esc(t.preview)}</div>`;
+  h+=`<h1>IRONWAVE</h1><p class="lead">${esc(t.tagline)}</p><p class="hint" style="margin-top:-14px;margin-bottom:20px">${esc(t.ver(published.app.version,fmtDate(published.app.updated)))}</p><div class="grid">${kids(null).map(tileHTML).join("")}</div>`;
+  return h;
+}
+function vSec(id){
+  const t=T(),s=sec(id);if(!s)return vHome();
+  const path=pathOf(id),subs=kids(id),its=itemsOf(id);
+  let h=crumbs(path.slice(0,-1))+`<h1>${esc(P(s.name))}</h1>`;
+  if(s.desc&&P(s.desc))h+=`<p class="lead">${esc(P(s.desc))}</p>`;else h+=`<div style="height:12px"></div>`;
+  if(admin)h+=`<div class="btnrow"><button class="btn primary" data-act="addItem">${esc(t.adm.addItem)}</button><button class="btn ghost" data-act="addSec">${esc(t.adm.addSec)}</button><button class="btn ghost" data-act="editSec">${esc(t.adm.editSec)}</button><button class="btn danger" data-act="delSec">${esc(t.adm.delSec)}</button></div>`;
+  if(subs.length)h+=`<div class="grid secgrid">${subs.map(tileHTML).join("")}</div>`;
+  if(s.kind==="assembly"&&its.length){
+    for(const g of [...GROUPS,"other"]){const gi=its.filter(i=>(GROUPS.includes(i.group)?i.group:"other")===g);if(!gi.length)continue;
+      h+=`<div class="gh">${esc(t.groups[g])}</div><div class="list">${gi.map(i=>rowHTML(i,false)).join("")}</div>`}
+  }else if(its.length){h+=`${subs.length?`<div style="height:18px"></div>`:""}<div class="list">${its.map(i=>rowHTML(i,false)).join("")}</div>`}
+  if(!subs.length&&!its.length)h+=`<div class="empty">${esc(t.empty)}</div>`;
+  return h;
+}
+function noteOf(o){const n=pick(o);return n.v?`<div class="note" dir="${dirOf(n.l)}">${esc(n.v)}</div>`:""}
+function fbNote(p){return p.fb?`<div class="note">${esc(T().fallback)}</div>`:""}
+function pdfBlock(src){
+  const t=T();
+  if(!src)return `<div class="empty">${esc(t.pdf.none)}</div>`;
+  return `<div class="pdfbar"><span class="hint" id="pdfInfo"></span><span class="sp"></span>
+   <button class="btn ghost small" data-act="pdfOut" aria-label="${esc(t.pdf.zout)}">−</button><button class="btn ghost small" data-act="pdfIn" aria-label="${esc(t.pdf.zin)}">+</button>
+   ${!String(src).startsWith("data:")?`<a class="btn ghost small" href="${esc(mediaSrc(src))}" target="_blank" rel="noopener">${esc(t.pdf.open)}</a>`:""}</div><div class="pdfbox" id="pdfBox"></div>`;
+}
+function vItem(id){
+  const t=T(),it=item(id);if(!it)return vHome();
+  const ti=pick(it.title),su=pick(it.summary),b=it.body||{};
+  let h=crumbs(pathOf(it.sec));
+  h+=`<h1 dir="${dirOf(ti.l)}">${esc(ti.v)}</h1>`;
+  if(su.v)h+=`<p class="lead" dir="${dirOf(su.l)}">${esc(su.v)}</p>`;
+  h+=`<div class="meta"><span class="tag">${esc(t.types[it.type]||"")}</span>${it.updated?`<span>${esc(t.updated)}: ${esc(fmtDate(it.updated))}</span>`:""}${isNew(it)?`<span class="badge">${esc(t.isNew)}</span>`:""}</div>`;
+  if(admin)h+=`<div class="btnrow"><button class="btn primary" data-act="editItem">${esc(t.adm.editItem)}</button><button class="btn danger" data-act="delItem">${esc(t.adm.del)}</button></div>`;
+  switch(it.type){
+    case"steps":{const p=pick(b);h+=fbNote(p)+(p.v.length?`<div class="card" dir="${dirOf(p.l)}"><ol class="steps">${p.v.map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>`:`<div class="empty">${esc(t.empty)}</div>`);break}
+    case"checklist":{const p=pick(b);const st=jget("fk-chk-"+it.id,[]);
+      if(!p.v.length){h+=`<div class="empty">${esc(t.empty)}</div>`;break}
+      const done=p.v.filter((_,i)=>st.includes(i)).length;
+      h+=fbNote(p)+`<div class="card" dir="${dirOf(p.l)}"><div class="hint" id="chkCount">${done} / ${p.v.length}</div><div class="prog"><i id="chkBar" style="width:${done/p.v.length*100}%"></i></div>`+
+        p.v.map((s,i)=>`<label class="chk${st.includes(i)?" done":""}"><input type="checkbox" data-chk="${i}" ${st.includes(i)?"checked":""}><span>${esc(s)}</span></label>`).join("")+
+        `</div><div class="btnrow"><button class="btn ghost" data-act="resetChk">${esc(t.resetChecks)}</button></div>`;break}
+    case"table":{h+=noteOf(b.note);const rows=b.rows||[];
+      h+=rows.length?`<div class="tablewrap"><table><thead><tr><th>${esc(t.param)}</th><th>${esc(t.value)}</th></tr></thead><tbody>`+
+      rows.map(r=>{const p=pick(r.p);return `<tr><td dir="${dirOf(p.l)}">${esc(p.v)}</td><td class="v"><span dir="ltr">${esc(r.v)}</span></td></tr>`}).join("")+`</tbody></table></div>`:`<div class="empty">${esc(t.empty)}</div>`;break}
+    case"code":{h+=noteOf(b.note)+`<div class="codebox" dir="ltr"><button class="btn primary small" data-act="copyCode">${esc(t.copy)}</button><pre><code>${esc(b.code)}</code></pre></div>`;break}
+    case"image":{const cp=pick(b.caption);h+=b.src?`<div class="figure"><img src="${esc(mediaSrc(b.src))}" alt="${esc(ti.v)}" data-act="zoomImg" loading="lazy">${cp.v?`<div class="cap" dir="${dirOf(cp.l)}">${esc(cp.v)}</div>`:""}</div>`:`<div class="empty">${esc(t.empty)}</div>`;break}
+    case"pdf":{h+=noteOf(b.note)+pdfBlock(b.src);break}
+    case"software":{const url=safeUrl(b.url);
+      h+=`<div class="card"><dl class="kv">
+        <dt>${esc(t.sw.ver)}</dt><dd class="mono">${esc(b.ver)}</dd>
+        <dt>${esc(t.sw.file)}</dt><dd class="cp"><span class="mono">${esc(b.file)}</span>${b.file?`<button class="btn ghost small" data-act="copyTxt" data-txt="${esc(b.file)}">${esc(t.copy)}</button>`:""}</dd>
+        <dt>${esc(t.sw.path)}</dt><dd class="cp"><span class="mono">${esc(b.path)}</span>${b.path?`<button class="btn ghost small" data-act="copyTxt" data-txt="${esc(b.path)}">${esc(t.copy)}</button>`:""}</dd>
+       </dl>${url?`<div class="btnrow"><a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener">${esc(t.sw.open)}</a></div>`:""}<div class="note">${esc(t.sw.note)}</div>`;
+      const p=pick(b.install);if(p.v.length)h+=`<h2>${esc(t.sw.install)}</h2>`+fbNote(p)+`<ol class="steps" dir="${dirOf(p.l)}">${p.v.map(s=>`<li>${esc(s)}</li>`).join("")}</ol>`;
+      h+=`</div>`+noteOf(b.note);break}
+    case"link":{if(b.targetSec){const ts=sec(b.targetSec);h+=ts?`<div class="card linkcard"><span style="flex:1"><b>${esc(secLabel(ts.id))}</b></span><a class="btn primary" href="#s-${esc(ts.id)}">${esc(t.link.go)}</a></div>`:`<div class="empty">${esc(t.link.broken)}</div>`;break}
+      const tg=item(b.target);
+      h+=tg?`<div class="card linkcard"><span style="flex:1">${esc(secLabel(tg.sec))} › <b>${esc(P(tg.title))}</b></span><a class="btn primary" href="#i-${esc(tg.id)}">${esc(t.link.go)}</a></div>`:`<div class="empty">${esc(t.link.broken)}</div>`;break}
+    case"maint":{h+=noteOf(b.note);const rows=b.rows||[];
+      if(!rows.length){h+=`<div class="empty">${esc(t.empty)}</div>`;break}
+      for(const k of KINDS){const kr=rows.filter(r=>(r.kind||"fluid")===k);if(!kr.length)continue;
+        h+=`<div class="gh">${esc(t.kinds[k])}</div><div class="mgrid">`+kr.map(r=>{
+          const nm=pick(r.name),nt=pick(r.note);
+          const f=[[t.m.spec,r.spec],[t.m.qty,r.qty],[t.m.point,r.point],[t.m.interval,r.interval],[t.m.pn,r.pn]].filter(x=>has(x[1]));
+          return `<div class="mcard"><div class="mname" dir="${dirOf(nm.l)}">${esc(nm.v)}</div><dl>${f.map(x=>`<dt>${esc(x[0])}</dt><dd dir="auto" style="text-align:start">${esc(x[1])}</dd>`).join("")}${nt.v?`<dt>${esc(t.m.note)}</dt><dd dir="${dirOf(nt.l)}" style="font-weight:400">${esc(nt.v)}</dd>`:""}</dl></div>`}).join("")+`</div>`}
+      break}
+    case"atp":{h+=vAtp(it);break}
+    case"guide":{const p=pick(b);h+=fbNote(p)+(p.v.length?guideHTML(p.v,p.l):`<div class="empty">${esc(t.empty)}</div>`);break}
+    default:{const p=pick(b);h+=fbNote(p)+(p.v?`<div class="card"><div class="prose" dir="${dirOf(p.l)}">${esc(p.v)}</div></div>`:`<div class="empty">${esc(t.empty)}</div>`)}
+  }
+  return h;
+}
+
+
+function fmt(x){return esc(x).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`(.+?)`/g,"<code>$1</code>")}
+function cellHTML(c){return c&&typeof c==="object"?`<span class="sw" style="background:${esc(c.sw)}"></span>${fmt(c.t)}`:fmt(c)}
+function guideHTML(blocks,l){const t=T();return `<div class="doc" dir="${dirOf(l)}">`+blocks.map(b=>{
+  if(b.h)return `<h2>${fmt(b.h)}</h2>`;
+  if(b.h3)return `<h3>${fmt(b.h3)}</h3>`;
+  if(b.p)return `<p>${fmt(b.p)}</p>`;
+  if(b.path)return `<p><span class="path"><span>${esc(b.label||"")}</span><span class="mono" dir="ltr">${esc(b.path)}</span></span></p>`;
+  if(b.ul)return `<ul>${b.ul.map(x=>`<li>${fmt(x)}</li>`).join("")}</ul>`;
+  if(b.ol)return `<ol class="steps">${b.ol.map(x=>`<li>${fmt(x)}</li>`).join("")}</ol>`;
+  if(b.note)return `<div class="callout ${esc(b.kind||"note")}"><div class="ck">${esc(t.callout[b.kind||"note"]||"")}</div>${fmt(b.note)}</div>`;
+  if(b.img)return `<figure class="figure" style="margin-inline:0"><img src="${esc(mediaSrc(b.img))}" data-act="zoomImg" loading="lazy" alt="${esc(b.cap||"")}">${b.cap?`<figcaption class="cap">${fmt(b.cap)}</figcaption>`:""}</figure>`;
+  if(b.table)return `<div class="tablewrap"><table><thead><tr>${b.table.head.map(x=>`<th>${fmt(x)}</th>`).join("")}</tr></thead><tbody>${b.table.rows.map(r=>`<tr>${r.map(c=>`<td>${cellHTML(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  return "";}).join("")+`</div>`}
+function guideText(bl){if(!Array.isArray(bl))return"";return bl.map(b=>[b.h,b.h3,b.p,b.path,b.note,b.cap,...(b.ul||[]),...(b.ol||[]),...(b.table?[...b.table.head,...b.table.rows.flat().map(c=>c&&typeof c==="object"?c.t:c)]:[])].filter(Boolean).join(" ")).join(" ")}
+function mediaOf(it){const b=it.body||{},out=[];if(b.src)out.push(b.src);for(const l of ["he","en"])if(Array.isArray(b[l]))for(const x of b[l])if(x&&x.img)out.push(x.img);return out}
+
+/* ================= ATP Field ================= */
+function atpRows(it){const p=pick((it.body||{}).rows);return{l:p.l,fb:p.fb,rows:(p.v||[]).map(s=>{const hd=s.trim().startsWith("#");return{h:hd,text:hd?s.trim().replace(/^#+\s*/,""):s}})}}
+function runKey(it){return "fk-atp-run-"+it.id}
+function histKey(it){return "fk-atp-hist-"+it.id}
+function getRun(it){return jget(runKey(it),null)||{f:{platform:PLATFORMS[0],site:"",customer:"",tester:"",date:today()},chk:{},note:{},general:"",sig:""}}
+function vAtp(it){
+  const t=T(),a=t.atp,b=it.body||{},hist=jget(histKey(it),[]);
+  let h=`<div class="tabs" role="tablist">${[["doc",a.tDoc],["run",a.tRun],["hist",a.tHist+(hist.length?" ("+hist.length+")":"")]].map(([k,l])=>`<button role="tab" class="${atpTab===k?"on":""}" data-tab="${k}">${esc(l)}</button>`).join("")}</div>`;
+  const R=atpRows(it);
+  if(atpTab==="doc"){
+    if(b.src)h+=pdfBlock(b.src);
+    else if(R.rows.length)h+=fbNote(R)+`<div class="card" dir="${dirOf(R.l)}">${R.rows.map((r,i)=>r.h?`<div class="atph">${esc(r.text)}</div>`:`<div class="atprow"><div class="ab">${esc(r.text)}</div></div>`).join("")}</div>`;
+    else h+=`<div class="empty">${esc(t.pdf.none)}</div>`;
+  }else if(atpTab==="run"){
+    if(!R.rows.filter(r=>!r.h).length)return h+`<div class="empty">${esc(a.noRows)}</div>`;
+    const run=getRun(it),total=R.rows.filter(r=>!r.h).length,done=R.rows.filter((r,i)=>!r.h&&run.chk[i]).length;
+    h+=`<div class="card"><div class="fields">
+      ${fld(a.platform,`<select data-run="f:platform">${PLATFORMS.map(p=>`<option${run.f.platform===p?" selected":""}>${p}</option>`).join("")}</select>`)}
+      ${fld(a.site,`<input data-run="f:site" value="${esc(run.f.site)}">`)}
+      ${fld(a.customer,`<input data-run="f:customer" value="${esc(run.f.customer)}">`)}
+      ${fld(a.tester,`<input data-run="f:tester" value="${esc(run.f.tester)}">`)}
+      ${fld(a.date,`<input type="date" data-run="f:date" value="${esc(run.f.date)}">`)}
+    </div></div>
+    <div class="hint" style="margin-top:16px" id="atpCount">${esc(a.prog(done,total))}</div><div class="prog"><i id="atpBar" style="width:${done/total*100}%"></i></div>
+    ${fbNote(R)}<div class="card" dir="${dirOf(R.l)}">${R.rows.map((r,i)=>r.h?`<div class="atph">${esc(r.text)}</div>`:
+      `<div class="atprow${run.chk[i]?" done":""}" id="ar${i}"><input type="checkbox" id="ac${i}" data-run="chk:${i}" ${run.chk[i]?"checked":""}><div class="ab"><label class="at" for="ac${i}">${esc(r.text)}</label><input class="an" data-run="note:${i}" placeholder="${esc(a.note)}" value="${esc(run.note[i]||"")}"></div></div>`).join("")}</div>
+    <h2>${esc(a.general)}</h2><div class="field"><textarea data-run="general">${esc(run.general)}</textarea></div>
+    <h2>${esc(a.sign)}</h2><div class="sigwrap"><canvas id="sig"></canvas><div class="sighint" id="sigHint"${run.sig?" hidden":""}>${esc(a.signHint)}</div></div>
+    <div class="btnrow"><button class="btn ghost small" data-act="clearSig">${esc(a.clearSig)}</button></div>
+    <div class="err" id="atpErr"></div>
+    <div class="btnrow"><button class="btn primary" data-act="atpSave">${esc(a.save)}</button><button class="btn ghost" data-act="atpReset">${esc(a.reset)}</button></div>`;
+  }else{
+    h+=hist.length?`<div class="hist">${hist.slice().reverse().map(r=>`<div class="hrow"><div class="tx"><div class="t1">${esc(r.f.platform)} · ${esc(fmtDate(r.f.date))}</div><div class="t2">${esc(r.f.tester)}${r.f.site?" · "+esc(r.f.site):""} · ${esc(a.prog(r.done,r.total))}</div></div>
+      <button class="btn primary small" data-act="histPdf" data-id="${esc(r.id)}">${esc(a.download)}</button>${canShareFiles()?`<button class="btn ghost small" data-act="histShare" data-id="${esc(r.id)}">${esc(a.share)}</button>`:""}<button class="btn danger small" data-act="histDel" data-id="${esc(r.id)}">${esc(a.del)}</button></div>`).join("")}</div>`:`<div class="empty">${esc(a.noHist)}</div>`;
+  }
+  return h;
+}
+function canShareFiles(){try{return !!(navigator.canShare&&navigator.canShare({files:[new File([""],"x.pdf",{type:"application/pdf"})]}))}catch(e){return false}}
+let sigCtx=null;
+function setupSig(it){
+  const c=$("sig");if(!c)return;const run=getRun(it);
+  const dpr=Math.max(1,window.devicePixelRatio||1),w=c.clientWidth,hgt=180;
+  c.width=w*dpr;c.height=hgt*dpr;const x=c.getContext("2d");x.scale(dpr,dpr);x.lineWidth=2.4;x.lineCap="round";x.lineJoin="round";x.strokeStyle="#0a1530";sigCtx=x;
+  if(run.sig){const im=new Image();im.onload=()=>x.drawImage(im,0,0,w,hgt);im.src=run.sig}
+  let drawing=false,last=null;
+  const pos=e=>{const r=c.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top]};
+  c.onpointerdown=e=>{drawing=true;last=pos(e);c.setPointerCapture(e.pointerId);$("sigHint").hidden=true;e.preventDefault()};
+  c.onpointermove=e=>{if(!drawing)return;const p=pos(e);x.beginPath();x.moveTo(last[0],last[1]);x.lineTo(p[0],p[1]);x.stroke();last=p;e.preventDefault()};
+  const end=()=>{if(!drawing)return;drawing=false;const r=getRun(it);r.sig=c.toDataURL("image/png");ls.set(runKey(it),JSON.stringify(r))};
+  c.onpointerup=end;c.onpointercancel=end;c.onpointerleave=end;
+}
+function reportHTML(rec){
+  const a=STR[rec.lang].atp,dir=dirOf(rec.lang),al=dir==="rtl"?"right":"left";
+  const cell="border:1px solid #c9d3e6;padding:7px 9px;vertical-align:top;text-align:"+al;
+  let n=0;
+  return `<div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:4px solid #0047ff;padding-bottom:12px;margin-bottom:18px" data-br>
+    <div><div style="font-weight:800;letter-spacing:.14em;font-size:24px;color:#0047ff;direction:ltr">ONDAS</div><div style="font-size:13px;color:#55627a;direction:ltr">IRONWAVE · Technical Help</div></div>
+    <div style="text-align:${dir==="rtl"?"left":"right"}"><div style="font-weight:700;font-size:20px">${esc(a.rTitle)}</div><div style="font-size:13px;color:#55627a">${esc(rec.title)}</div></div></div>
+   <table style="border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px" data-br><tbody>
+    ${[[a.platform,rec.f.platform],[a.date,fmtDate(rec.f.date)],[a.site,rec.f.site],[a.customer,rec.f.customer],[a.tester,rec.f.tester],["",a.prog(rec.done,rec.total)]].map(([k,v])=>`<tr><td style="${cell};background:#eef3ff;font-weight:600;width:28%">${esc(k)}</td><td style="${cell}">${esc(v)}</td></tr>`).join("")}
+   </tbody></table>
+   <table style="border-collapse:collapse;width:100%;font-size:13px"><thead><tr data-br>
+    <th style="${cell};background:#0047ff;color:#fff;width:32px">#</th><th style="${cell};background:#0047ff;color:#fff">${esc(a.rItem)}</th><th style="${cell};background:#0047ff;color:#fff;width:56px;text-align:center">${esc(a.rDone)}</th><th style="${cell};background:#0047ff;color:#fff;width:30%">${esc(a.rNote)}</th></tr></thead><tbody>
+    ${rec.rows.map(r=>r.h?`<tr data-br><td colspan="4" style="${cell};background:#eef3ff;font-weight:700;color:#0047ff">${esc(r.text)}</td></tr>`:
+      `<tr data-br><td style="${cell}">${++n}</td><td style="${cell}">${esc(r.text)}</td><td style="${cell};text-align:center;font-weight:700;color:${r.done?"#00a870":"#e5193f"}">${r.done?"✓":"✗"}</td><td style="${cell}">${esc(r.note||"")}</td></tr>`).join("")}
+   </tbody></table>
+   ${rec.general?`<div style="margin-top:16px;font-size:13px" data-br><div style="font-weight:700;margin-bottom:4px">${esc(a.general)}</div><div style="white-space:pre-wrap;border:1px solid #c9d3e6;padding:9px">${esc(rec.general)}</div></div>`:""}
+   <div style="margin-top:22px;font-size:13px;display:flex;gap:24px;align-items:flex-end" data-br>
+    <div><div style="font-weight:700">${esc(a.sign)}</div><div>${esc(rec.f.tester)} · ${esc(fmtDate(rec.f.date))}</div></div>
+    <img src="${rec.sig}" style="height:90px;border-bottom:1.5px solid #0a1530">
+   </div>`;
+}
+async function makePdf(rec){
+  await needLib("h2c");await needLib("jspdf");
+  const box=document.createElement("div");
+  box.style.cssText="position:fixed;left:-12000px;top:0;width:794px;background:#fff;color:#0a1530;font-family:Heebo,Arial,sans-serif;padding:40px;box-sizing:border-box;line-height:1.45";
+  box.dir=dirOf(rec.lang);box.innerHTML=reportHTML(rec);document.body.appendChild(box);
+  try{
+    if(document.fonts&&document.fonts.ready)await document.fonts.ready;
+    const img=box.querySelector("img");if(img&&!img.complete)await new Promise(r=>{img.onload=img.onerror=r});
+    const top=box.getBoundingClientRect().top;
+    const bounds=[...box.querySelectorAll("[data-br]")].map(e=>e.getBoundingClientRect().bottom-top).sort((a,b)=>a-b);
+    const totalH=box.scrollHeight;bounds.push(totalH);
+    const S=2,canvas=await html2canvas(box,{scale:S,backgroundColor:"#ffffff",useCORS:true});
+    const pageH=Math.floor(794*297/210),margin=40;
+    const pdf=new jspdf.jsPDF({unit:"pt",format:"a4"});const pw=pdf.internal.pageSize.getWidth();
+    let s=0,first=true;
+    while(s<totalH-1){
+      const lim=s+pageH-(first?0:margin);let e=s;for(const b of bounds)if(b>s&&b<=lim)e=b;if(e<=s)e=Math.min(lim,totalH);
+      const pc=document.createElement("canvas");pc.width=canvas.width;pc.height=Math.ceil((e-s+(first?0:margin))*S);
+      const x=pc.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,pc.width,pc.height);
+      x.drawImage(canvas,0,s*S,canvas.width,(e-s)*S,0,first?0:margin*S,canvas.width,(e-s)*S);
+      if(!first)pdf.addPage();pdf.addImage(pc.toDataURL("image/jpeg",.92),"JPEG",0,0,pw,pc.height/S*pw/794);
+      s=e;first=false;
+    }
+    return pdf.output("blob");
+  }finally{box.remove()}
+}
+function pdfName(rec){return `ATP-Field_${rec.f.platform.replace(/\s+/g,"-")}_${rec.f.date}.pdf`}
+function downloadBlob(blob,name){const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000)}
+async function sharePdf(blob,name){try{await navigator.share({files:[new File([blob],name,{type:"application/pdf"})],title:name})}catch(e){if(e&&e.name!=="AbortError")downloadBlob(blob,name)}}
+async function saveAtp(it){
+  const a=T().atp,R=atpRows(it),run=getRun(it),err=$("atpErr");
+  if(!run.f.tester.trim()){err.textContent=a.needTester;return}
+  if(!run.sig){err.textContent=a.needSig;return}
+  const total=R.rows.filter(r=>!r.h).length,done=R.rows.filter((r,i)=>!r.h&&run.chk[i]).length;
+  if(done<total&&!confirm(a.notAll(done,total)))return;
+  const rec={id:uid("r"),lang,title:P(it.title),f:clone(run.f),rows:R.rows.map((r,i)=>({h:r.h,text:r.text,done:!!run.chk[i],note:run.note[i]||""})),general:run.general,sig:run.sig,done,total,savedAt:new Date().toISOString()};
+  err.textContent="";openModal(`<h2>${esc(a.making)}</h2><div class="bigprog"><i style="width:60%"></i></div>`);
+  let blob;try{blob=await makePdf(rec)}catch(e){$("sheet").innerHTML=`<p class="err">${esc(a.pdfErr)}</p><button class="btn ghost" onclick="closeModal()">${esc(T().off.close)}</button>`;return}
+  const hist=jget(histKey(it),[]);hist.push(rec);
+  if(!ls.set(histKey(it),JSON.stringify(hist))){hist.shift();ls.set(histKey(it),JSON.stringify(hist))}
+  ls.del(runKey(it));
+  const name=pdfName(rec);
+  openModal(`<h2>${esc(a.saved)}</h2><p class="hint">${esc(name)}</p><div class="btnrow"><button class="btn primary" id="pDl">${esc(a.download)}</button>${canShareFiles()?`<button class="btn ghost" id="pSh">${esc(a.share)}</button>`:""}<button class="btn ghost" id="pCl">${esc(T().off.close)}</button></div>`);
+  $("pDl").onclick=()=>downloadBlob(blob,name);if($("pSh"))$("pSh").onclick=()=>sharePdf(blob,name);
+  $("pCl").onclick=()=>{closeModal();atpTab="hist";render()};
+}
+async function histAction(it,id,mode){
+  const a=T().atp,rec=jget(histKey(it),[]).find(r=>r.id===id);if(!rec)return;
+  if(mode==="del"){if(!confirm(a.confirmDel))return;ls.set(histKey(it),JSON.stringify(jget(histKey(it),[]).filter(r=>r.id!==id)));render();return}
+  openModal(`<h2>${esc(a.making)}</h2><div class="bigprog"><i style="width:60%"></i></div>`);
+  try{const blob=await makePdf(rec);closeModal();mode==="share"?sharePdf(blob,pdfName(rec)):downloadBlob(blob,pdfName(rec))}
+  catch(e){$("sheet").innerHTML=`<p class="err">${esc(a.pdfErr)}</p><button class="btn ghost" onclick="closeModal()">${esc(T().off.close)}</button>`}
+}
+
+/* ================= search / lock / render ================= */
+function textOf(it){const b=it.body||{};const j=v=>Array.isArray(v)?v.join(" "):(v||"");
+  return [it.title?.he,it.title?.en,it.summary?.he,it.summary?.en,j(b.he),j(b.en),b.code,b.note?.he,b.note?.en,b.caption?.he,b.caption?.en,b.ver,b.file,b.path,j(b.install?.he),j(b.install?.en),j(b.rows?.he),j(b.rows?.en),
+   guideText(b.he),guideText(b.en),...(Array.isArray(b.rows)?b.rows:[]).flatMap(r=>[r.p?.he,r.p?.en,r.v,r.name?.he,r.name?.en,r.spec,r.qty,r.point,r.interval,r.pn,r.note?.he,r.note?.en]),secLabel(it.sec)].join(" ").toLowerCase()}
+function vSearch(){
+  const t=T(),words=query.toLowerCase().split(/\s+/).filter(Boolean);
+  const res=data().items.filter(it=>{const s=textOf(it);return words.every(w=>s.includes(w))});
+  return `<h1>${esc(t.results)}</h1><p class="lead">${esc(t.items(res.length))}</p>`+(res.length?`<div class="list">${res.map(i=>rowHTML(i,true)).join("")}</div>`:`<div class="empty">${esc(t.noResults)}</div>`);
+}
+function vLock(){const t=T();
+  return `<div class="lockwrap"><span class="wm">ONDAS</span><div class="sub">IRONWAVE · Technical Help</div><p class="lead">${esc(t.lock.hint)}</p>
+   <div class="field"><input id="lockPw" type="password" autocomplete="current-password" aria-label="${esc(t.lock.pw)}" placeholder="${esc(t.lock.pw)}"></div>
+   <div class="err" id="lockErr"></div><button class="btn primary" style="width:100%" data-act="unlock">${esc(t.lock.enter)}</button></div>`}
+function locked(){const h=published.app.teamHash;return !!h&&!admin&&ls.get("fk-auth")!==h}
+function render(){
+  chrome();const app=$("app");
+  if(locked()){document.body.classList.add("locked");app.innerHTML=vLock();const i=$("lockPw");i&&i.focus();return}
+  document.body.classList.remove("locked");
+  app.innerHTML=query.trim()?vSearch():view.v==="sec"?vSec(view.id):view.v==="item"?vItem(view.id):vHome();
+  if(!query.trim()&&view.v==="item"){const it=item(view.id);if(!it)return;
+    if(it.type==="pdf"&&it.body.src)openPdf(it.body.src);
+    if(it.type==="atp"){if(atpTab==="doc"&&it.body.src)openPdf(it.body.src);if(atpTab==="run")setupSig(it)}}
+}
+let lastItem=null;
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1));
+  view=h.startsWith("s-")?{v:"sec",id:h.slice(2)}:h.startsWith("i-")?{v:"item",id:h.slice(2)}:{v:"home"};
+  if(view.v==="item"){const it=item(view.id);if(it&&it.type==="link"&&!admin){if(it.body.targetSec&&sec(it.body.targetSec)){location.replace("#s-"+it.body.targetSec);return}if(item(it.body.target)){location.replace("#i-"+it.body.target);return}}
+    if(lastItem!==view.id){atpTab="doc";lastItem=view.id}}
+  if(query){query="";$("q").value=""}
+  render();window.scrollTo(0,0);
+}
+
+/* ================= PDF viewer ================= */
+let pdfState=null;
+function dataToBytes(u){const b=atob(u.split(",")[1]);const a=new Uint8Array(b.length);for(let i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return a}
+async function openPdf(src){
+  const t=T(),box=$("pdfBox");if(!box)return;const token={};pdfState={token,zoom:1,doc:null};
+  box.innerHTML=`<p class="hint">${esc(t.pdf.loading)}</p>`;
+  try{await needLib("pdf");const s=mediaSrc(src);
+    const doc=await pdfjsLib.getDocument(String(s).startsWith("data:")?{data:dataToBytes(s)}:s).promise;
+    if(pdfState.token!==token)return;pdfState.doc=doc;const info=$("pdfInfo");if(info)info.textContent=t.pdf.pages(doc.numPages);drawPdf();
+  }catch(e){if(pdfState.token===token)box.innerHTML=`<p class="err">${esc(t.pdf.err)}</p>`}
+}
+async function drawPdf(){
+  const st=pdfState,box=$("pdfBox");if(!st||!st.doc||!box)return;
+  const token=st.token,zoom=st.zoom,dpr=Math.min(window.devicePixelRatio||1,2),w=box.clientWidth-20;box.innerHTML="";
+  for(let i=1;i<=st.doc.numPages;i++){const page=await st.doc.getPage(i);if(pdfState.token!==token||pdfState.zoom!==zoom)return;
+    const scale=(w/page.getViewport({scale:1}).width)*zoom,vp=page.getViewport({scale:scale*dpr});
+    const c=document.createElement("canvas");c.width=Math.floor(vp.width);c.height=Math.floor(vp.height);c.style.width=Math.floor(vp.width/dpr)+"px";
+    box.appendChild(c);await page.render({canvasContext:c.getContext("2d"),viewport:vp}).promise}
+}
+function openViewer(src){
+  const v=$("viewer");let z=1;
+  v.innerHTML=`<div class="vbar"><button data-z="-1" aria-label="-">−</button><button data-z="1" aria-label="+">+</button><button data-z="0" aria-label="close">✕</button></div><div class="vscroll"><img src="${esc(src)}" alt=""></div>`;
+  const img=v.querySelector("img"),fit=()=>{img.style.width=(z*Math.min(window.innerWidth,img.naturalWidth||window.innerWidth))+"px"};
+  img.onload=fit;fit();v.hidden=false;
+  v.onclick=e=>{const b=e.target.closest("[data-z]");if(!b)return;const d=+b.dataset.z;if(d===0){v.hidden=true;v.innerHTML="";return}z=Math.max(.5,Math.min(5,z*(d>0?1.5:1/1.5)));fit()};
+}
+
+/* ================= modal ================= */
+let dlRunning=false;
+function openModal(html){$("sheet").innerHTML=html;$("modal").hidden=false;const f=$("sheet").querySelector("input,textarea,select,button");f&&f.focus()}
+function closeModal(){$("modal").hidden=true;$("sheet").innerHTML=""}
+$("modal").addEventListener("click",e=>{if(e.target===$("modal")&&!dlRunning)closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!$("viewer").hidden){$("viewer").hidden=true;$("viewer").innerHTML=""}else if(!$("modal").hidden&&!dlRunning)closeModal()}});
+const fld=(label,inner)=>`<div class="field"><label>${esc(label)}</label>${inner}</div>`;
+const ta=(id,val,dir,cls="")=>`<textarea id="${id}" dir="${dir}" class="${cls}">${esc(val)}</textarea>`;
+const inp=(id,val,dir,type="text")=>`<input id="${id}" type="${type}" dir="${dir}" value="${esc(val)}">`;
+
+function helpModal(){
+  const t=T().help;
+  openModal(`<h2>${esc(t.title)}</h2><p>${t.ios}</p><p>${t.android}</p><p>${t.pc}</p><p class="hint">${esc(t.offline)}</p>
+   <div class="btnrow">${admin?"":`<button class="btn ghost" id="hAdmin">${esc(t.admin)}</button>`}${published.app.teamHash?`<button class="btn ghost" id="hOut">${esc(t.logout)}</button>`:""}<button class="btn primary" id="hClose">${esc(T().off.close)}</button></div>`);
+  $("hClose").onclick=closeModal;if($("hAdmin"))$("hAdmin").onclick=adminLogin;
+  if($("hOut"))$("hOut").onclick=()=>{ls.del("fk-auth");admin=false;ss.del("fk-admin");closeModal();render()};
+}
+
+/* ---- offline ---- */
+function allUrls(){
+  const u=new Set(["./","index.html","content.json","manifest.webmanifest","icon-192.png","icon-512.png",LIB.pdf[0],LIB.pdfw[0],LIB.h2c[0],LIB.jspdf[0]]);
+  for(const it of published.items)for(const s of mediaOf(it))if(!String(s).startsWith("data:"))u.add(s);
+  return [...u];
+}
+function offModal(){
+  const t=T().off,s=offState();
+  openModal(`<h2>${esc(t.title)}</h2>${s==="ready"?`<p>${esc(t.readyLong(published.app.version))}</p>`:""}<p class="hint">${esc(t.hint)}</p>
+   <div class="bigprog"><i id="dlBar"></i></div><p id="dlTxt" class="hint"></p><div id="dlErr" class="err"></div>
+   <div class="btnrow"><button class="btn primary" id="dlGo">${esc(s==="ready"?t.again:t.start)}</button><button class="btn ghost" id="dlClose">${esc(t.close)}</button></div>`);
+  $("dlClose").onclick=()=>{if(!dlRunning)closeModal()};$("dlGo").onclick=runDownload;
+}
+async function runDownload(){
+  const t=T().off;if(dlRunning)return;
+  if(!navigator.onLine){$("dlErr").textContent=t.net;return}
+  dlRunning=true;$("dlGo").disabled=true;$("dlClose").disabled=true;$("dlErr").textContent="";
+  try{if(navigator.storage&&navigator.storage.persist)await navigator.storage.persist()}catch(e){}
+  const urls=allUrls();let n=0,bad=0;const media=await caches.open("ondas-media"),shell=await caches.open("ondas-shell");
+  for(const u of urls){
+    try{const isShell=["./","index.html","content.json","manifest.webmanifest"].includes(u);
+      const r=await fetch(u,{cache:isShell?"no-store":"default"});if(r.ok)await (isShell?shell:media).put(u,r);else bad++}catch(e){bad++}
+    n++;$("dlBar").style.width=(n/urls.length*100)+"%";$("dlTxt").textContent=t.prog(n,urls.length);
+  }
+  dlRunning=false;$("dlGo").disabled=false;$("dlClose").disabled=false;
+  if(bad)$("dlErr").textContent=t.errs(bad);else{ls.set("fk-offline",String(published.app.version));$("dlTxt").textContent=t.done;chrome()}
+}
+
+/* ---- admin ---- */
+function adminLogin(){
+  const t=T().adm;
+  openModal(`<h2>${esc(t.title)}</h2>${fld(t.pw,inp("aPw","","ltr","password"))}<div class="err" id="aErr"></div>
+   <div class="btnrow"><button class="btn primary" id="aGo">${esc(t.enter)}</button><button class="btn ghost" id="aCancel">${esc(t.cancel)}</button></div>`);
+  $("aCancel").onclick=closeModal;
+  const go=async()=>{const h=await sha($("aPw").value);if(h&&h===published.app.adminHash){await enterAdmin();closeModal();render()}else $("aErr").textContent=T().lock.wrong};
+  $("aGo").onclick=go;$("aPw").onkeydown=e=>{if(e.key==="Enter")go()};
+}
+async function enterAdmin(){admin=true;ss.set("fk-admin","1");const d=jget("fk-draft",null);draft=d&&d.items&&d.sections?d:clone(published);await loadPending()}
+function exitAdmin(){admin=false;ss.del("fk-admin");render()}
+function secOptions(selected){
+  const out=[];const walk=(pid,depth)=>{for(const s of kids(pid)){out.push(`<option value="${esc(s.id)}"${s.id===selected?" selected":""}>${"— ".repeat(depth)}${esc(P(s.name))}</option>`);walk(s.id,depth+1)}};
+  walk(null,0);return out.join("");
+}
+let mRows=[];
+function maintRowsHTML(){
+  const t=T(),a=t.adm;
+  return mRows.map((r,i)=>`<div class="redit" data-mi="${i}"><div class="rhead"><span>${esc(a.row(i+1))}</span><button class="btn danger small" data-mrm="${i}" type="button">${esc(a.rmRow)}</button></div>
+   <div class="two">${fld(t.f.kind,`<select data-mf="kind">${KINDS.map(k=>`<option value="${k}"${(r.kind||"fluid")===k?" selected":""}>${esc(t.kinds[k])}</option>`).join("")}</select>`)}${fld(t.m.pn,`<input data-mf="pn" dir="ltr" value="${esc(r.pn||"")}">`)}</div>
+   <div class="two">${fld(t.f.nameHe,`<input data-mf="name.he" dir="rtl" value="${esc(r.name?.he||"")}">`)}${fld(t.f.nameEn,`<input data-mf="name.en" dir="ltr" value="${esc(r.name?.en||"")}">`)}</div>
+   <div class="two">${fld(t.m.spec,`<input data-mf="spec" dir="auto" value="${esc(r.spec||"")}">`)}${fld(t.m.qty,`<input data-mf="qty" dir="auto" value="${esc(r.qty||"")}">`)}</div>
+   <div class="two">${fld(t.m.point,`<input data-mf="point" dir="auto" value="${esc(r.point||"")}">`)}${fld(t.m.interval,`<input data-mf="interval" dir="auto" value="${esc(r.interval||"")}">`)}</div>
+   <div class="two">${fld(t.f.noteHe,`<input data-mf="note.he" dir="rtl" value="${esc(r.note?.he||"")}">`)}${fld(t.f.noteEn,`<input data-mf="note.en" dir="ltr" value="${esc(r.note?.en||"")}">`)}</div></div>`).join("")
+   +`<button class="btn ghost" type="button" data-madd="1">${esc(a.addRow)}</button>`;
+}
+function bodyFields(type,b,selfId){
+  const t=T(),f=t.f;b=b||{};const arr=v=>Array.isArray(v)?v.join("\n"):"";
+  const notes=`<div class="two">${fld(f.noteHe,inp("nHe",b.note?.he||"","rtl"))}${fld(f.noteEn,inp("nEn",b.note?.en||"","ltr"))}</div>`;
+  const cur=b.src?`<p class="hint">${esc(f.current)} <span class="mono">${esc(String(b.src).startsWith("data:")?"(sample)":b.src)}</span></p>`:"";
+  switch(type){
+    case"steps":case"checklist":return `<p class="hint">${esc(f.lines)}</p><div class="two">${fld(f.bodyHe,ta("bHe",arr(b.he),"rtl"))}${fld(f.bodyEn,ta("bEn",arr(b.en),"ltr"))}</div>`;
+    case"table":return fld(f.table,ta("bRaw",(b.rows||[]).map(r=>[r.p?.he||"",r.p?.en||"",r.v||""].join(" | ")).join("\n"),"auto","mono"))+notes;
+    case"code":return fld(f.code,ta("bCode",b.code||"","ltr","mono"))+notes;
+    case"image":return fld(f.img,`<input id="bFile" type="file" accept="image/*">`)+cur+`<div class="two">${fld(f.capHe,inp("cHe",b.caption?.he||"","rtl"))}${fld(f.capEn,inp("cEn",b.caption?.en||"","ltr"))}</div>`;
+    case"pdf":return fld(f.pdfFile,`<input id="bFile" type="file" accept="application/pdf">`)+cur+notes;
+    case"software":return `<div class="two">${fld(f.swVer,inp("sVer",b.ver||"","ltr"))}${fld(f.swFile,inp("sFile",b.file||"","ltr"))}</div>${fld(f.swPath,inp("sPath",b.path||"","ltr"))}${fld(f.swUrl,inp("sUrl",b.url||"","ltr"))}
+      <p class="hint">${esc(f.lines)}</p><div class="two">${fld(f.instHe,ta("iHe",arr(b.install?.he),"rtl"))}${fld(f.instEn,ta("iEn",arr(b.install?.en),"ltr"))}</div>`+notes;
+    case"link":{const opts=data().items.filter(i=>i.id!==selfId&&i.type!=="link").map(i=>`<option value="${esc(i.id)}"${i.id===b.target?" selected":""}>${esc(secLabel(i.sec))} › ${esc(P(i.title))}</option>`).join("");
+      const sopts=data().sections.map(z=>`<option value="s:${esc(z.id)}"${z.id===b.targetSec?" selected":""}>${esc(secLabel(z.id))}</option>`).join("");
+      return fld(t.link.target,`<select id="lTarget"><option value=""></option><optgroup label="${esc(t.home)}">${sopts}</optgroup><optgroup label="${esc(t.items(2).replace(/[0-9]/g,"").trim())}">${opts}</optgroup></select>`)}
+    case"maint":mRows=clone(Array.isArray(b.rows)?b.rows:[]);return `<div id="mBox">${maintRowsHTML()}</div>`+notes;
+    case"guide":return `<p class="hint">${esc(f.guideJson)}</p>`+fld(t.f.bodyHe,ta("gHe",JSON.stringify(b.he||[],null,1),"ltr","mono"))+fld(t.f.bodyEn,ta("gEn",JSON.stringify(b.en||[],null,1),"ltr","mono"));
+    case"atp":return fld(f.pdfOpt,`<input id="bFile" type="file" accept="application/pdf">`)+cur+`<p class="hint">${esc(f.atpRows)}</p><div class="two">${fld(f.bodyHe,ta("rHe",arr(b.rows?.he),"rtl"))}${fld(f.bodyEn,ta("rEn",arr(b.rows?.en),"ltr"))}</div>`;
+    default:return `<div class="two">${fld(f.bodyHe,ta("bHe",typeof b.he==="string"?b.he:"","rtl"))}${fld(f.bodyEn,ta("bEn",typeof b.en==="string"?b.en:"","ltr"))}</div>`;
+  }
+}
+async function compressImage(file){
+  if(file.size<800*1024||/svg|gif/.test(file.type))return file;
+  try{const bmp=await createImageBitmap(file);const sc=Math.min(1,2000/Math.max(bmp.width,bmp.height));
+    const c=document.createElement("canvas");c.width=Math.round(bmp.width*sc);c.height=Math.round(bmp.height*sc);
+    const x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,c.width,c.height);x.drawImage(bmp,0,0,c.width,c.height);
+    const out=await new Promise(r=>c.toBlob(r,"image/jpeg",.85));return out&&out.size<file.size?out:file}catch(e){return file}
+}
+async function takeFile(type,id,old){
+  const f=$("bFile")?.files?.[0];if(!f)return old||"";
+  const blob=type==="image"?await compressImage(f):f;const mb=blob.size/1048576;if(mb>MAX_MB)throw new Error(T().adm.tooBig(mb.toFixed(1)));
+  const ext=type==="image"?(blob.type==="image/jpeg"?"jpg":(f.name.split(".").pop()||"png").toLowerCase().replace(/[^a-z0-9]/g,"")):"pdf";
+  const slug=f.name.replace(/\.[^.]+$/,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40);
+  const src="media/"+id+(slug?"-"+slug:"")+"."+ext;
+  pending.set(src,blob);pendingURL.set(src,URL.createObjectURL(blob));try{await idb.put(src,blob)}catch(e){}
+  return src;
+}
+async function readBody(type,old,id){
+  const v=k=>($(k)?.value||"");const lines=k=>v(k).split("\n").map(s=>s.trim()).filter(Boolean);
+  const note={he:v("nHe").trim(),en:v("nEn").trim()};old=old||{};
+  switch(type){
+    case"steps":case"checklist":return{he:lines("bHe"),en:lines("bEn")};
+    case"table":return{rows:lines("bRaw").map(l=>{const p=l.split("|").map(s=>s.trim());return p.length>=3?{p:{he:p[0],en:p[1]},v:p.slice(2).join(" | ")}:{p:{he:p[0]||"",en:p[0]||""},v:p[1]||""}}),note};
+    case"code":return{code:v("bCode"),note};
+    case"software":return{ver:v("sVer").trim(),file:v("sFile").trim(),path:v("sPath").trim(),url:v("sUrl").trim(),install:{he:lines("iHe"),en:lines("iEn")},note};
+    case"image":return{src:await takeFile("image",id,old.src),caption:{he:v("cHe").trim(),en:v("cEn").trim()}};
+    case"pdf":return{src:await takeFile("pdf",id,old.src),note};
+    case"link":{const tg=v("lTarget");if(!tg)throw new Error(T().adm.needTarget);return tg.startsWith("s:")?{targetSec:tg.slice(2)}:{target:tg}}
+    case"maint":return{rows:mRows.filter(r=>has(r.name?.he)||has(r.name?.en)),note};
+    case"guide":{const pj=k=>{try{const x=JSON.parse(v(k)||"[]");if(!Array.isArray(x))throw 0;return x}catch(e){throw new Error("JSON")}};return{he:pj("gHe"),en:pj("gEn")}}
+    case"atp":return{src:await takeFile("pdf",id,old.src),rows:{he:lines("rHe"),en:lines("rEn")}};
+    default:return{he:v("bHe"),en:v("bEn")};
+  }
+}
+function itemEditor(existing){
+  const t=T(),f=t.f,a=t.adm;
+  const it=existing?clone(existing):{id:uid("i"),sec:view.id,type:"text",title:{he:"",en:""},summary:{he:"",en:""},body:{}};
+  const types=Object.keys(t.types).map(k=>`<option value="${k}"${k===it.type?" selected":""}>${esc(t.types[k])}</option>`).join("");
+  const groups=GROUPS.map(g=>`<option value="${g}"${g===it.group?" selected":""}>${esc(t.groups[g])}</option>`).join("");
+  openModal(`<h2>${esc(existing?a.editItem:a.addItem)}</h2>
+   ${fld(f.sec,`<select id="eSec">${secOptions(it.sec)}</select>`)}
+   <div class="two"><div id="grpBox">${fld(f.group,`<select id="eGrp">${groups}</select>`)}</div>${fld(f.type,`<select id="eType">${types}</select>`)}</div>
+   <div class="two">${fld(f.titleHe,inp("tHe",it.title.he,"rtl"))}${fld(f.titleEn,inp("tEn",it.title.en,"ltr"))}</div>
+   <div class="two">${fld(f.sumHe,inp("sHe",it.summary?.he||"","rtl"))}${fld(f.sumEn,inp("sEn",it.summary?.en||"","ltr"))}</div>
+   <div id="bodyBox">${bodyFields(it.type,it.body,it.id)}</div><div id="err" class="err"></div>
+   <div class="btnrow"><button class="btn primary" id="saveIt">${esc(a.save)}</button><button class="btn ghost" id="cancelIt">${esc(a.cancel)}</button></div>`);
+  const sel=$("eType"),secSel=$("eSec");
+  const syncGrp=()=>{$("grpBox").style.visibility=sec(secSel.value)?.kind==="assembly"?"visible":"hidden"};syncGrp();secSel.onchange=syncGrp;
+  sel.onchange=()=>{$("bodyBox").innerHTML=bodyFields(sel.value,sel.value===it.type?it.body:{},it.id)};
+  $("bodyBox").addEventListener("input",e=>{const box=e.target.closest("[data-mi]");if(!box||!e.target.dataset.mf)return;const r=mRows[+box.dataset.mi];const [k,l]=e.target.dataset.mf.split(".");if(l){r[k]=r[k]||{};r[k][l]=e.target.value}else r[k]=e.target.value});
+  $("bodyBox").addEventListener("change",e=>{const box=e.target.closest("[data-mi]");if(box&&e.target.dataset.mf==="kind")mRows[+box.dataset.mi].kind=e.target.value});
+  $("bodyBox").addEventListener("click",e=>{const rm=e.target.closest("[data-mrm]"),ad=e.target.closest("[data-madd]");
+    if(rm){mRows.splice(+rm.dataset.mrm,1);$("mBox").innerHTML=maintRowsHTML()}
+    if(ad){mRows.push({kind:"fluid",name:{he:"",en:""}});$("mBox").innerHTML=maintRowsHTML()}});
+  $("cancelIt").onclick=closeModal;
+  $("saveIt").onclick=async()=>{
+    const g=k=>$(k).value.trim();
+    if(!g("tHe")&&!g("tEn")){$("err").textContent=a.need;return}
+    $("saveIt").disabled=true;
+    try{
+      const body=await readBody(sel.value,sel.value===it.type?it.body:null,it.id);
+      const s=sec(secSel.value);
+      const upd={...it,sec:secSel.value,group:s&&s.kind==="assembly"?$("eGrp").value:undefined,type:sel.value,title:{he:g("tHe"),en:g("tEn")},summary:{he:g("sHe"),en:g("sEn")},body,updated:today()};
+      if(!upd.group)delete upd.group;
+      const ix=draft.items.findIndex(x=>x.id===upd.id);if(ix>=0)draft.items[ix]=upd;else draft.items.push(upd);
+      saveDraft();closeModal();if(location.hash==="#i-"+upd.id)render();else location.hash="i-"+upd.id;
+    }catch(e){$("err").textContent=e.message;$("saveIt").disabled=false}
+  };
+}
+function secEditor(existing,parent){
+  const t=T(),f=t.f,a=t.adm,s=existing||{id:uid("s"),parent:parent||null,kind:"",name:{he:"",en:""}};
+  openModal(`<h2>${esc(existing?a.editSec:a.addSec)}</h2>
+   <div class="two">${fld(f.nameHe,inp("cHe",s.name.he,"rtl"))}${fld(f.nameEn,inp("cEn",s.name.en,"ltr"))}</div>
+   <label class="chk" style="border:0"><input type="checkbox" id="cAsm" ${s.kind==="assembly"?"checked":""}><span>${esc(f.assembly)}</span></label>
+   <div id="err" class="err"></div>
+   <div class="btnrow"><button class="btn primary" id="saveC">${esc(a.save)}</button><button class="btn ghost" id="cancelC">${esc(a.cancel)}</button></div>`);
+  $("cancelC").onclick=closeModal;
+  $("saveC").onclick=()=>{const g=k=>$(k).value.trim();
+    if(!g("cHe")&&!g("cEn")){$("err").textContent=a.need;return}
+    const upd={...s,kind:$("cAsm").checked?"assembly":"",name:{he:g("cHe"),en:g("cEn")}};
+    const ix=draft.sections.findIndex(x=>x.id===s.id);if(ix>=0)draft.sections[ix]=upd;else draft.sections.push(upd);
+    saveDraft();closeModal();if(existing)render();else location.hash="s-"+upd.id};
+}
+function settingsModal(){
+  const a=T().adm;
+  openModal(`<h2>${esc(a.settings)}</h2><p class="hint">${esc(a.pwHint)}</p>${fld(a.teamPw,inp("pT","","ltr","password"))}${fld(a.adminPw,inp("pA","","ltr","password"))}
+   <div class="btnrow"><button class="btn primary" id="pSave">${esc(a.save)}</button><button class="btn ghost" id="pCancel">${esc(a.cancel)}</button></div>`);
+  $("pCancel").onclick=closeModal;
+  $("pSave").onclick=async()=>{const tp=$("pT").value,ap=$("pA").value;if(tp)draft.app.teamHash=await sha(tp);if(ap)draft.app.adminHash=await sha(ap);saveDraft();closeModal();render()};
+}
+async function publish(){
+  const a=T().adm;openModal(`<h2>${esc(a.publish)}</h2><p class="hint">${esc(a.working)}</p>`);
+  try{
+    await needLib("zip");
+    const next=clone(draft);next.app.version=(+published.app.version||0)+1;next.app.updated=today();
+    const zip=new JSZip();zip.file("content.json",JSON.stringify(next,null,1));
+    const used=new Set(next.items.flatMap(mediaOf).filter(s=>s.startsWith("media/")));
+    for(const [p,b] of pending)if(used.has(p))zip.file(p,b);
+    downloadBlob(await zip.generateAsync({type:"blob"}),"ondas-update.zip");
+    draft=next;saveDraft();
+    openModal(`<h2>${esc(a.pubTitle(next.app.version))}</h2>${isPreview?`<div class="note">${esc(a.preview)}</div>`:""}<ol>${a.pubSteps.map(s=>`<li>${esc(s.replace("X",next.app.version))}</li>`).join("")}</ol>
+      <div class="btnrow"><button class="btn primary" id="pubDone">${esc(a.pubDone)}</button><button class="btn ghost" id="pubLater">${esc(a.cancel)}</button></div>`);
+    $("pubLater").onclick=closeModal;
+    $("pubDone").onclick=async()=>{try{await idb.clear()}catch(e){}ls.del("fk-draft");location.reload()};
+  }catch(e){$("sheet").innerHTML=`<p class="err">${esc(e.message||String(e))}</p><button class="btn ghost" onclick="closeModal()">${esc(a.cancel)}</button>`}
+}
+function moveItem(id,dir){
+  const its=draft.items,ix=its.findIndex(i=>i.id===id);if(ix<0)return;
+  const s=its[ix].sec;let j=ix+dir;while(j>=0&&j<its.length&&its[j].sec!==s)j+=dir;
+  if(j<0||j>=its.length)return;[its[ix],its[j]]=[its[j],its[ix]];saveDraft();render();
+}
+async function copyText(txt,btn){
+  let ok=false;try{await navigator.clipboard.writeText(txt);ok=true}catch(e){}
+  if(!ok){const x=document.createElement("textarea");x.value=txt;x.style.position="fixed";x.style.opacity="0";document.body.appendChild(x);x.select();try{document.execCommand("copy")}catch(e){}x.remove()}
+  if(btn){const o=btn.textContent;btn.textContent=T().copied;setTimeout(()=>btn.textContent=o,1400)}
+}
+
+/* ================= events ================= */
+$("langBtn").onclick=()=>{lang=other();ls.set("fk-lang",lang);render()};
+$("helpBtn").onclick=helpModal;
+$("offBtn").onclick=offModal;
+$("q").addEventListener("input",e=>{query=e.target.value;render()});
+document.addEventListener("click",async e=>{
+  const tab=e.target.closest("[data-tab]");if(tab&&tab.closest("#app")){atpTab=tab.dataset.tab;render();return}
+  const b=e.target.closest("[data-act]");if(!b||!b.closest("#app,#adminBar"))return;
+  const a=b.dataset.act,t=T();
+  if(a==="up"||a==="down"){e.preventDefault();e.stopPropagation();moveItem(b.dataset.id,a==="up"?-1:1);return}
+  if(a==="unlock"){const h=await sha($("lockPw").value);if(h===published.app.teamHash){ls.set("fk-auth",h);render()}else $("lockErr").textContent=t.lock.wrong}
+  else if(a==="addItem")itemEditor(null);
+  else if(a==="editItem")itemEditor(item(view.id));
+  else if(a==="delItem"){if(confirm(t.adm.confirmDel)){const s=item(view.id)?.sec;draft.items=draft.items.filter(i=>i.id!==view.id);saveDraft();location.hash=s?"s-"+s:"home"}}
+  else if(a==="addSec")secEditor(null,view.id);
+  else if(a==="editSec")secEditor(sec(view.id));
+  else if(a==="delSec"){if(kids(view.id).length||itemsOf(view.id).length){alert(t.adm.secNotEmpty);return}const p=sec(view.id)?.parent;draft.sections=draft.sections.filter(s=>s.id!==view.id);saveDraft();location.hash=p?"s-"+p:"home"}
+  else if(a==="settings")settingsModal();
+  else if(a==="discard"){if(confirm(t.adm.confirmDiscard)){draft=clone(published);ls.del("fk-draft");try{await idb.clear()}catch(_){}pending.clear();pendingURL.clear();render()}}
+  else if(a==="publish")publish();
+  else if(a==="exitAdmin")exitAdmin();
+  else if(a==="copyCode")copyText(item(view.id)?.body?.code||"",b);
+  else if(a==="copyTxt")copyText(b.dataset.txt||"",b);
+  else if(a==="resetChk"){ls.set("fk-chk-"+view.id,"[]");render()}
+  else if(a==="zoomImg")openViewer(b.src);
+  else if(a==="pdfIn"||a==="pdfOut"){if(pdfState&&pdfState.doc){pdfState.zoom=Math.max(.5,Math.min(4,pdfState.zoom*(a==="pdfIn"?1.4:1/1.4)));drawPdf()}}
+  else if(a==="clearSig"){const it=item(view.id),r=getRun(it);r.sig="";ls.set(runKey(it),JSON.stringify(r));render()}
+  else if(a==="atpSave")saveAtp(item(view.id));
+  else if(a==="atpReset"){if(confirm(t.atp.confirmReset)){ls.del(runKey(item(view.id)));render()}}
+  else if(a==="histPdf")histAction(item(view.id),b.dataset.id,"dl");
+  else if(a==="histShare")histAction(item(view.id),b.dataset.id,"share");
+  else if(a==="histDel")histAction(item(view.id),b.dataset.id,"del");
+});
+document.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.id==="lockPw"){const b=document.querySelector('[data-act="unlock"]');b&&b.click()}});
+function onRun(e){
+  const el=e.target.closest("[data-run]");if(!el)return;const it=item(view.id);if(!it)return;
+  const r=getRun(it),[k,x]=el.dataset.run.split(":");
+  if(k==="f")r.f[x]=el.value;else if(k==="chk"){r.chk[x]=el.checked;$("ar"+x)?.classList.toggle("done",el.checked)}else if(k==="note")r.note[x]=el.value;else if(k==="general")r.general=el.value;
+  ls.set(runKey(it),JSON.stringify(r));
+  if(k==="chk"){const R=atpRows(it),total=R.rows.filter(z=>!z.h).length,done=R.rows.filter((z,i)=>!z.h&&r.chk[i]).length;$("atpCount").textContent=T().atp.prog(done,total);$("atpBar").style.width=(done/total*100)+"%"}
+}
+$("app").addEventListener("input",onRun);
+$("app").addEventListener("change",e=>{
+  if(e.target.closest("[data-run]")){onRun(e);return}
+  const c=e.target.closest("[data-chk]");if(!c)return;
+  const it=item(view.id),p=pick(it.body);let st=jget("fk-chk-"+view.id,[]);const i=+c.dataset.chk;
+  st=c.checked?[...new Set([...st,i])]:st.filter(x=>x!==i);ls.set("fk-chk-"+view.id,JSON.stringify(st));
+  c.closest(".chk").classList.toggle("done",c.checked);
+  const done=p.v.filter((_,j)=>st.includes(j)).length;$("chkCount").textContent=done+" / "+p.v.length;$("chkBar").style.width=(done/p.v.length*100)+"%";
+});
+window.addEventListener("hashchange",route);
+window.addEventListener("online",()=>published&&chrome());
+
+/* ================= start ================= */
+(async function init(){
+  let c=null;
+  try{const r=await fetch("content.json",{cache:"no-store"});if(r.ok)c=await r.json()}catch(e){}
+  if(!c||!Array.isArray(c.items)||!Array.isArray(c.sections)){c=SAMPLE;isPreview=true}
+  published=c;
+  const seen=ls.get("fk-seen");if(seen!==published.app.updated){if(seen)ls.set("fk-seen-prev",seen);ls.set("fk-seen",published.app.updated)}
+  prevSeen=ls.get("fk-seen-prev");
+  if(ss.get("fk-admin")==="1")await enterAdmin();
+  route();
+  if(!isPreview&&"serviceWorker" in navigator){try{await navigator.serviceWorker.register("sw.js");swOK=true;chrome()}catch(e){}}
+})();
+</script>
+</body>
+</html>
