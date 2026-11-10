@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 15,
+  "version": 16,
   "updated": "2026-11-10",
   "teamHash": "81336e9189125819028ccb30e60c191974a48efc3206777b9773bfe65832c22b",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -87,6 +87,15 @@
    "name": {
     "he": "מקמ״שים „באוויר”",
     "en": "Radios On-Air Check"
+   }
+  },
+  {
+   "id": "comm-deploy",
+   "parent": "comm",
+   "kind": "",
+   "name": {
+    "he": "פריסת מערכת – תצורות הפעלה",
+    "en": "System deployment – operating configurations"
    }
   },
   {
@@ -274,6 +283,1729 @@
   }
  ],
  "items": [
+  {
+   "id": "dep-tactical",
+   "sec": "comm-deploy",
+   "type": "guide",
+   "title": {
+    "he": "תצורה טקטית (BLUSDR) – הקמת עמדה",
+    "en": "Tactical configuration (BLUSDR) – station setup"
+   },
+   "summary": {
+    "he": "טווח ~900 מ׳ · קופסת מפעיל ואנטנות",
+    "en": "~900 m range · operator box and antennas"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "p": "תקשורת ישירה מקופסת המפעיל לכלים דרך אנטנות BLUSDR. טווח: **כ־900 מ׳**."
+     },
+     {
+      "h": "ציוד (ל־2 ביזונים)"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "קופסת מפעיל",
+         "ASSY800388-A",
+         "2"
+        ],
+        [
+         "ישל״ט ROCU-10 + כבל",
+         "OEM00356 / ASSY800410-A",
+         "2"
+        ],
+        [
+         "ישל״ט מערכת נשק + כבל",
+         "OEM00382 / ASSY800409-A",
+         "2"
+        ],
+        [
+         "טאבלט מפקד + כבל",
+         "OEM00388 / CBL01305-A",
+         "1"
+        ],
+        [
+         "אנטנות BLUSDR",
+         "ANT00072",
+         "4"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סדר פעולות"
+     },
+     {
+      "ol": [
+       "הכניסו 2 סוללות 2791.",
+       "ודאו שמתג התקשורת **BLUSDR/INT.COMM** במצב **ON**.",
+       "חברו את אנטנות ה־BLUSDR לקופסת המפעיל.",
+       "הדליקו את קופסת המפעיל.",
+       "חברו את ישל״ט ROCU-10 לקופסת המפעיל בשקע **DRIVER**. בצד הישל״ט: מחבר מתח מימין (4 פינים) ומחבר תקשורת משמאל (10 פינים). **חשוב מאוד לא לחבר הפוך!**",
+       "הדליקו את הישל״ט והזינו סיסמה: `Q1w2as34`. אחרי הפתיחה היכנסו לאפליקציית חט״ל.",
+       "חברו את ישל״ט מערכת הנשק לקופסת המפעיל בשקע **GUNNER**, הדליקו אותו והיכנסו לאפליקציית מערכת הנשק.",
+       "הדליקו את הכלי והמתינו לעליית תקשורת."
+      ]
+     },
+     {
+      "img": "media/um-rocu-conn.jpg",
+      "cap": "חיבורי ישל״ט ROCU-10: ימין – מתח (4 פינים), שמאל – תקשורת (10 פינים)"
+     },
+     {
+      "img": "media/um-tactical.jpg",
+      "cap": "סכמת חיבורי תצורה טקטית"
+     },
+     {
+      "img": "media/um-opbox.jpg",
+      "cap": "קופסת מפעיל: אנטנות, סוללות, מתג תקשורת טקטית, PWR IN, שקעי ישל״ט, מתג הפעלה ומפסק EMO"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Direct link from the operator box to the vehicles via BLUSDR antennas. Range: **about 900 m**."
+     },
+     {
+      "h": "Equipment (for 2 BISONs)"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Operator box",
+         "ASSY800388-A",
+         "2"
+        ],
+        [
+         "ROCU-10 + cable",
+         "OEM00356 / ASSY800410-A",
+         "2"
+        ],
+        [
+         "Gun system controller + cable",
+         "OEM00382 / ASSY800409-A",
+         "2"
+        ],
+        [
+         "Commander tablet + cable",
+         "OEM00388 / CBL01305-A",
+         "1"
+        ],
+        [
+         "BLUSDR antennas",
+         "ANT00072",
+         "4"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Procedure"
+     },
+     {
+      "ol": [
+       "Insert 2 × 2791 batteries.",
+       "Make sure the **BLUSDR/INT.COMM** switch is **ON**.",
+       "Connect the BLUSDR antennas to the operator box.",
+       "Turn on the operator box.",
+       "Connect the ROCU-10 to the operator box at the **DRIVER** socket. On the ROCU side: power connector on the right (4 pins), communication on the left (10 pins). **Never connect them reversed!**",
+       "Turn on the ROCU and enter password `Q1w2as34`. Then open the C2 (Hatal) application.",
+       "Connect the gun system controller to the operator box at the **GUNNER** socket, turn it on and open the gun system application.",
+       "Turn on the vehicle and wait for communication."
+      ]
+     },
+     {
+      "img": "media/um-rocu-conn.jpg",
+      "cap": "ROCU-10 connections: right – power (4 pins), left – communication (10 pins)"
+     },
+     {
+      "img": "media/um-tactical.jpg",
+      "cap": "Tactical configuration wiring"
+     },
+     {
+      "img": "media/um-opbox.jpg",
+      "cap": "Operator box: antennas, batteries, tactical comm switch, PWR IN, controller sockets, power switch and EMO"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dep-relay",
+   "sec": "comm-deploy",
+   "type": "guide",
+   "title": {
+    "he": "תצורת מגנן (ממסר) – הקמת עמדה",
+    "en": "Relay configuration – station setup"
+   },
+   "summary": {
+    "he": "טווח 4.5 ק״מ · חצובה ופליקן ממסר",
+    "en": "4.5 km range · tripod and relay Pelican"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "p": "תקשורת דרך סט ממסר על חצובה. טווח: **4.5 ק״מ**."
+     },
+     {
+      "h": "ציוד (ל־2 ביזונים)"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "קופסת מפעיל",
+         "ASSY800388-A",
+         "2"
+        ],
+        [
+         "ישל״ט ROCU-10 + כבל",
+         "OEM00356 / ASSY800410-A",
+         "2"
+        ],
+        [
+         "ישל״ט מערכת נשק + כבל",
+         "OEM00382 / ASSY800409-A",
+         "2"
+        ],
+        [
+         "טאבלט מפקד + כבל",
+         "OEM00388 / CBL01305-A",
+         "1"
+        ],
+        [
+         "שנאי מתח + כבל",
+         "ASSY800408-A / ASSY800458-A",
+         "2"
+        ],
+        [
+         "חצובה",
+         "GEN00202",
+         "1"
+        ],
+        [
+         "פליקן ממסר + כבל ממסר + ETH ארוך + ETH קצר + שנאי מתח",
+         "ASSY800481-A / CBL01339-A / CBL01340-C / CBL01338-A / ASSY800408-A",
+         "1"
+        ],
+        [
+         "קופסת ממסר",
+         "ASSY800474",
+         "1"
+        ],
+        [
+         "מפצל שקעים",
+         "—",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סדר פעולות"
+     },
+     {
+      "ol": [
+       "הכניסו 2 סוללות 2791, או חברו את שנאי המתח בין מחבר **PWR IN** של קופסת המפעיל למקור מתח. לחצו על כפתור **RESET** ברכיב הפחת (נורה כתומה נדלקת), ואז על כפתור הדלקת המערכת (אור ירוק בקופסת המפעיל).",
+       "חברו את ישל״ט ROCU-10 לקופסת המפעיל בשקע **DRIVER**. בצד הישל״ט: מחבר מתח מימין (4 פינים) ומחבר תקשורת משמאל (10 פינים). **חשוב מאוד לא לחבר הפוך!**",
+       "הדליקו את הישל״ט והזינו סיסמה: `Q1w2as34`. אחרי הפתיחה היכנסו לאפליקציית חט״ל.",
+       "חברו את ישל״ט מערכת הנשק לקופסת המפעיל בשקע **GUNNER**, הדליקו אותו והיכנסו לאפליקציית מערכת הנשק.",
+       "ודאו שמתג התקשורת **BLUSDR/INT.COMM** במצב **OFF**.",
+       "חברו כבל ETH קצר בין קופסאות המפעיל.",
+       "חברו כבל ETH ארוך בין קופסת המפעיל לפליקן הממסר.",
+       "הכניסו 2 סוללות 2791 לפליקן הממסר, או חברו שנאי מתח ל־PWR IN שלו. לחצו על הכפתור הכתום ברכיב הפחת ואז על כפתור ההדלקה (אור כחול).",
+       "מקמו את קופסת הממסר על החצובה.",
+       "חברו את כבל הממסר מפליקן הממסר לקופסת הממסר.",
+       "הגביהו את קופסת הממסר ככל האפשר.",
+       "הדליקו את הכלי והמתינו לעליית תקשורת."
+      ]
+     },
+     {
+      "img": "media/um-relay.jpg",
+      "cap": "סכמת חיבורי תצורת מגנן"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Communication through the relay set on a tripod. Range: **4.5 km**."
+     },
+     {
+      "h": "Equipment (for 2 BISONs)"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Operator box",
+         "ASSY800388-A",
+         "2"
+        ],
+        [
+         "ROCU-10 + cable",
+         "OEM00356 / ASSY800410-A",
+         "2"
+        ],
+        [
+         "Gun system controller + cable",
+         "OEM00382 / ASSY800409-A",
+         "2"
+        ],
+        [
+         "Commander tablet + cable",
+         "OEM00388 / CBL01305-A",
+         "1"
+        ],
+        [
+         "Power adapter + cable",
+         "ASSY800408-A / ASSY800458-A",
+         "2"
+        ],
+        [
+         "Tripod",
+         "GEN00202",
+         "1"
+        ],
+        [
+         "Relay Pelican + relay cable + long ETH + short ETH + power adapter",
+         "ASSY800481-A / CBL01339-A / CBL01340-C / CBL01338-A / ASSY800408-A",
+         "1"
+        ],
+        [
+         "Relay box",
+         "ASSY800474",
+         "1"
+        ],
+        [
+         "Power strip",
+         "—",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Procedure"
+     },
+     {
+      "ol": [
+       "Insert 2 × 2791 batteries, or connect the power adapter between the operator box **PWR IN** and a power source. Press **RESET** on the RCD (orange light on), then the system power button (green light on the operator box).",
+       "Connect the ROCU-10 to the operator box at the **DRIVER** socket. On the ROCU side: power connector on the right (4 pins), communication on the left (10 pins). **Never connect them reversed!**",
+       "Turn on the ROCU and enter password `Q1w2as34`. Then open the C2 (Hatal) application.",
+       "Connect the gun system controller to the operator box at the **GUNNER** socket, turn it on and open the gun system application.",
+       "Make sure the **BLUSDR/INT.COMM** switch is **OFF**.",
+       "Connect a short ETH cable between the operator boxes.",
+       "Connect a long ETH cable between the operator box and the relay Pelican.",
+       "Insert 2 × 2791 batteries in the relay Pelican, or connect a power adapter to its PWR IN. Press the orange RCD button, then the power button (blue light).",
+       "Place the relay box on the tripod.",
+       "Connect the relay cable from the Pelican to the relay box.",
+       "Raise the relay box as high as possible.",
+       "Turn on the vehicle and wait for communication."
+      ]
+     },
+     {
+      "img": "media/um-relay.jpg",
+      "cap": "Relay configuration wiring"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dep-container",
+   "sec": "comm-deploy",
+   "type": "guide",
+   "title": {
+    "he": "תצורת קרון שליטה – הקמת עמדה",
+    "en": "Control container configuration – station setup"
+   },
+   "summary": {
+    "he": "טווח 10 ק״מ · גנרטור, ETH ושיקוף מסכים",
+    "en": "10 km range · generator, ETH and screen mirroring"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "p": "עבודה מתוך הקרון, דרך התורן והתקשורת הקווית שלו. טווח: **10 ק״מ**."
+     },
+     {
+      "h": "ציוד (ל־2 ביזונים)"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "קופסת מפעיל",
+         "ASSY800388-A",
+         "2"
+        ],
+        [
+         "ישל״ט ROCU-10 + כבל",
+         "OEM00356 / ASSY800410-A",
+         "2"
+        ],
+        [
+         "ישל״ט מערכת נשק + כבל",
+         "OEM00382 / ASSY800409-A",
+         "2"
+        ],
+        [
+         "טאבלט מפקד + כבל",
+         "OEM00388 / CBL01305-A",
+         "1"
+        ],
+        [
+         "שנאי מתח + כבל",
+         "ASSY800408-A / ASSY800458-A",
+         "2"
+        ],
+        [
+         "כבל ETH",
+         "CBL01338-A",
+         "2"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סדר פעולות"
+     },
+     {
+      "ol": [
+       "הדליקו את גנרטור הקרון (ודאו שהמתג פתוח ולחצו על כפתור ההדלקה).",
+       "הכניסו 2 סוללות 2791, או חברו את שנאי המתח בין מחבר **PWR IN** של קופסת המפעיל לשקע בקרון. לחצו על כפתור **RESET** ברכיב הפחת (נורה כתומה נדלקת), ואז על כפתור הדלקת המערכת (אור ירוק בקופסת המפעיל).",
+       "חברו את ישל״ט ROCU-10 לקופסת המפעיל בשקע **DRIVER**. בצד הישל״ט: מחבר מתח מימין (4 פינים) ומחבר תקשורת משמאל (10 פינים). **חשוב מאוד לא לחבר הפוך!**",
+       "הדליקו את הישל״ט והזינו סיסמה: `Q1w2as34`. אחרי הפתיחה היכנסו לאפליקציית חט״ל.",
+       "חברו את ישל״ט מערכת הנשק לקופסת המפעיל בשקע **GUNNER**, הדליקו אותו והיכנסו לאפליקציית מערכת הנשק.",
+       "ודאו שמתג התקשורת **BLUSDR/INT.COMM** במצב **OFF**.",
+       "חברו כבל ETH בין כל קופסת מפעיל לתקשורת הקווית של הקרון.",
+       "חברו את ישל״ט ROCU-10 לכבל עם מחבר Micro HDMI לשיקוף מסך.",
+       "חברו את ישל״ט מערכת הנשק לכבל עם מחבר HDMI זוויתי לשיקוף מסך.",
+       "הדליקו את הכלי והמתינו לעליית תקשורת."
+      ]
+     },
+     {
+      "img": "media/um-genpanel.jpg",
+      "cap": "פאנל הגנרטור: כפתור הדלקה ומתג"
+     },
+     {
+      "img": "media/um-container.jpg",
+      "cap": "סכמת חיבורי תצורת קרון שליטה"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Operating from inside the container, through its mast and wired network. Range: **10 km**."
+     },
+     {
+      "h": "Equipment (for 2 BISONs)"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Operator box",
+         "ASSY800388-A",
+         "2"
+        ],
+        [
+         "ROCU-10 + cable",
+         "OEM00356 / ASSY800410-A",
+         "2"
+        ],
+        [
+         "Gun system controller + cable",
+         "OEM00382 / ASSY800409-A",
+         "2"
+        ],
+        [
+         "Commander tablet + cable",
+         "OEM00388 / CBL01305-A",
+         "1"
+        ],
+        [
+         "Power adapter + cable",
+         "ASSY800408-A / ASSY800458-A",
+         "2"
+        ],
+        [
+         "ETH cable",
+         "CBL01338-A",
+         "2"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Procedure"
+     },
+     {
+      "ol": [
+       "Start the container generator (switch open, press the power button).",
+       "Insert 2 × 2791 batteries, or connect the power adapter between the operator box **PWR IN** and a container socket. Press **RESET** on the RCD (orange light on), then the system power button (green light on the operator box).",
+       "Connect the ROCU-10 to the operator box at the **DRIVER** socket. On the ROCU side: power connector on the right (4 pins), communication on the left (10 pins). **Never connect them reversed!**",
+       "Turn on the ROCU and enter password `Q1w2as34`. Then open the C2 (Hatal) application.",
+       "Connect the gun system controller to the operator box at the **GUNNER** socket, turn it on and open the gun system application.",
+       "Make sure the **BLUSDR/INT.COMM** switch is **OFF**.",
+       "Connect an ETH cable from each operator box to the container wired network.",
+       "Connect the ROCU-10 to the Micro HDMI cable for screen mirroring.",
+       "Connect the gun system controller to the angled HDMI cable for screen mirroring.",
+       "Turn on the vehicle and wait for communication."
+      ]
+     },
+     {
+      "img": "media/um-genpanel.jpg",
+      "cap": "Generator panel: power button and switch"
+     },
+     {
+      "img": "media/um-container.jpg",
+      "cap": "Control container configuration wiring"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dep-rocu10",
+   "sec": "comm-deploy",
+   "type": "guide",
+   "title": {
+    "he": "ישל״ט ROCU-10 – בקרות ולחצנים",
+    "en": "ROCU-10 controller – controls and buttons"
+   },
+   "summary": {
+    "he": "מצערת, היגוי, הילוכים ובלם יד",
+    "en": "Throttle, steering, gears and hand brake"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "img": "media/um-rocu10.jpg",
+      "cap": "ישל״ט ROCU-10"
+     },
+     {
+      "table": {
+       "head": [
+        "בקרה",
+        "תפקיד"
+       ],
+       "rows": [
+        [
+         "כפתור הדלקה / כפתור הנעה",
+         "הדלקת הישל״ט / התנעת הכלי"
+        ],
+        [
+         "סטיק מצערת",
+         "גז"
+        ],
+        [
+         "סטיק היגוי",
+         "היגוי"
+        ],
+        [
+         "היגוי רגיש",
+         "היגוי עדין"
+        ],
+        [
+         "שינוי טורים",
+         "העלאת / הורדת סל״ד"
+        ],
+        [
+         "הילוכים",
+         "D, ‏N, ‏R ו־H/L"
+        ],
+        [
+         "בלם יד",
+         "הפעלה / שחרור"
+        ],
+        [
+         "השהייה",
+         "עצירת נסיעה"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "סיסמת הישל״ט: `Q1w2as34`.",
+      "kind": "tip"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "img": "media/um-rocu10.jpg",
+      "cap": "ROCU-10 controller"
+     },
+     {
+      "table": {
+       "head": [
+        "Control",
+        "Function"
+       ],
+       "rows": [
+        [
+         "Power / start button",
+         "Turn on the controller / start the vehicle"
+        ],
+        [
+         "Throttle stick",
+         "Throttle"
+        ],
+        [
+         "Steering stick",
+         "Steering"
+        ],
+        [
+         "Sensitive steering",
+         "Fine steering"
+        ],
+        [
+         "RPM change",
+         "Raise / lower rpm"
+        ],
+        [
+         "Gears",
+         "D, N, R and H/L"
+        ],
+        [
+         "Hand brake",
+         "Engage / release"
+        ],
+        [
+         "Pause",
+         "Stop driving"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Controller password: `Q1w2as34`.",
+      "kind": "tip"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "id": "um-safety",
+   "sec": "bison",
+   "type": "guide",
+   "title": {
+    "he": "בטיחות, אחריות ותמיכה",
+    "en": "Safety, responsibility and support"
+   },
+   "summary": {
+    "he": "חובות, כללי בטיחות, מרחקים ופרטי תמיכה",
+    "en": "Duties, safety rules, distances and support"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "h": "אחריות וחובות"
+     },
+     {
+      "ul": [
+       "השימוש בכל חלק של המערכת באחריות המפעיל בלבד.",
+       "כל המפעילים חייבים לעבור את קורס ההכשרה של „שליחות קטלנית” (Roboteam או שותפיה) ולקבל הסמכה לפני הפעלה.",
+       "זהירות בהסרת חלקים, כדי למנוע פגיעה באצבעות ובאיברי גוף.",
+       "**אין לבצע תחזוקה לפני שווידאתם שהביזון דומם לחלוטין.**",
+       "אין להפעיל עם סוללות אחרות מאלה שבמדריך.",
+       "אין להכניס אצבעות או איברים למנגנון ההנעה (הזחלים) בזמן פעולה."
+      ]
+     },
+     {
+      "h": "בטיחות"
+     },
+     {
+      "ul": [
+       "במערכת חלקים נעים – אין לגעת ביחידה בזמן פעולה.",
+       "חל איסור מוחלט לפרק את המערכת – נזק בלתי הפיך וביטול אחריות.",
+       "אין לגעת בחוטי חשמל חשופים.",
+       "אין לטבול את המערכת במים.",
+       "הפעלה רק על ידי מפעיל מוסמך, ובהשגחה מתמדת (ישירה או דרך הממשק).",
+       "לפני חיבור אנטנה או אביזר לקופסת המפעיל – המערכת כבויה לחלוטין.",
+       "בחיבור אביזר – כל המחברים מחוברים כראוי והכבלים לא נפגעים.",
+       "אין להסתכל ישירות לקרני הלייזר או לתאורת LED (אינפרה־אדום)."
+      ]
+     },
+     {
+      "h": "מרחקים"
+     },
+     {
+      "table": {
+       "head": [
+        "",
+        ""
+       ],
+       "rows": [
+        [
+         "מרחק בטיחות מהכלי",
+         "**15 מ׳**"
+        ],
+        [
+         "מרחק הפעלה מאנטנות",
+         "מ־0.5 מ׳"
+        ],
+        [
+         "מרחק מינימלי בין 2 עמדות מפעיל (BLUSDR)",
+         "2 מ׳"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "תמיכה – Roboteam"
+     },
+     {
+      "p": "אהרון ברט 22, בניין C, פתח תקווה 4951448."
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "Responsibility"
+     },
+     {
+      "ul": [
+       "Using any part of the system is the operator’s sole responsibility.",
+       "All operators must complete the “Terminator” training course (Roboteam or partners) and be certified before operation.",
+       "Take care when removing parts to avoid injuring fingers or limbs.",
+       "**Do not perform any maintenance before the BISON is completely stopped.**",
+       "Do not operate with batteries other than those specified.",
+       "Keep fingers and limbs away from the drive (tracks) while running."
+      ]
+     },
+     {
+      "h": "Safety"
+     },
+     {
+      "ul": [
+       "The system has moving parts – do not touch the unit while it runs.",
+       "Never disassemble the system – irreversible damage and void warranty.",
+       "Do not touch exposed wires.",
+       "Do not immerse the system in water.",
+       "Operate only by a certified operator, under constant supervision (direct or via the interface).",
+       "Turn the system fully off before connecting an antenna or accessory to the operator box.",
+       "When connecting an accessory – all connectors seated properly and cables not damaged.",
+       "Do not look directly into the laser or the LED (infrared) lights."
+      ]
+     },
+     {
+      "h": "Distances"
+     },
+     {
+      "table": {
+       "head": [
+        "",
+        ""
+       ],
+       "rows": [
+        [
+         "Safety distance from the vehicle",
+         "**15 m**"
+        ],
+        [
+         "Operating distance from antennas",
+         "from 0.5 m"
+        ],
+        [
+         "Minimum distance between 2 operator stations (BLUSDR)",
+         "2 m"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Support – Roboteam"
+     },
+     {
+      "p": "22 Aharon Bart St., Building C, Petah Tikva 4951448, Israel."
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bison-overview",
+   "sec": "bison",
+   "type": "guide",
+   "title": {
+    "he": "ביזון – נתונים כלליים",
+    "en": "BISON – general data"
+   },
+   "summary": {
+    "he": "משקל, מידות, מגבלות ובסיס ARGO",
+    "en": "Weight, dimensions, limits and ARGO base"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "הביזון מבוסס על רכב **ARGO Aurora 950** (8×8) עם מנוע VX 950 V-Twin, שעליו מותקנים המבנה הראשי ומערכות הבקרה הנמוכה והגבוהה. מערכת הבקרה שולטת בהנעה, במצלמות (יום ותרמי), בתקשורת, במערכת הנשק, בפנסים, ברמקול, במיקרופון וב־EMO."
+     },
+     {
+      "h": "תצורת ביזון"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "משקל",
+         "950 ק״ג (1,100 ק״ג עם זחלים)"
+        ],
+        [
+         "משקל נמדד בניסוי (אוג׳ 2026)",
+         "1,120 ק״ג, ללא נשק וללא מטען"
+        ],
+        [
+         "אורך",
+         "3,000 מ״מ"
+        ],
+        [
+         "כושר העמסה (יבשה)",
+         "300 ק״ג"
+        ],
+        [
+         "אלטרנטור",
+         "55A ב־3000 סל״ד, ‏15A ב־1100 סל״ד"
+        ],
+        [
+         "מהירות מרבית",
+         "40 קמ״ש"
+        ],
+        [
+         "שיפוע מרבי מאושר (עצירה והחזקה)",
+         "30%"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**מגבלת שיפוע:** לפי ניסוי אוגוסט 2026, הכלי מחזיק את עצמו בבטחה רק עד שיפוע של **30%**. ב־40% הוא מתגלגל מעט אחורה ב־E-STOP, וב־50% הוא לא מחזיק ומתגלגל ברציפות.",
+      "kind": "caution"
+     },
+     {
+      "note": "**אומי גלגלים:** בניסוי נשבר בורג גלגל ונפרד גלגל בגלל אומים רופפים. יש לבדוק חיזוק אומי גלגלים לפני כל הפעלה (טל״ת).",
+      "kind": "important"
+     },
+     {
+      "h": "רכב הבסיס ARGO Aurora 950 (לפני הרכבת ערכת הבקרה)"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מנוע",
+         "VX 950, ‏V-Twin, הזרקת דלק, קירור מאוורר"
+        ],
+        [
+         "שלדה",
+         "8×8"
+        ],
+        [
+         "תמסורת",
+         "Admiral w/APS"
+        ],
+        [
+         "בלמים",
+         "הידראוליים"
+        ],
+        [
+         "מהירות",
+         "40 קמ״ש ביבשה, 5 קמ״ש במים"
+        ],
+        [
+         "מיכל דלק",
+         "32 ליטר"
+        ],
+        [
+         "צמיגים",
+         "ARGO XT117 25×12-9, חישוק Beadlock"
+        ],
+        [
+         "מרווח גחון",
+         "254 מ״מ (צמיגים), 279 מ״מ (זחלים)"
+        ],
+        [
+         "משקל",
+         "668 ק״ג"
+        ],
+        [
+         "רוחב / גובה",
+         "1,524 / 1,295 מ״מ"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001. דוח ניסוי IRONWAVE, אוג׳ 2026.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "BISON is based on the **ARGO Aurora 950** (8×8) with a VX 950 V-Twin engine, fitted with the main structure and the low- and high-level control systems. The control system runs the drive, cameras (day and thermal), communications, gun system, lights, speaker, microphone and EMO."
+     },
+     {
+      "h": "BISON configuration"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Weight",
+         "950 kg (1,100 kg with tracks)"
+        ],
+        [
+         "Measured weight in trial (Aug 2026)",
+         "1,120 kg, unarmed and unladen"
+        ],
+        [
+         "Length",
+         "3,000 mm"
+        ],
+        [
+         "Load capacity (land)",
+         "300 kg"
+        ],
+        [
+         "Alternator",
+         "55 A @ 3000 rpm, 15 A @ 1100 rpm"
+        ],
+        [
+         "Max speed",
+         "40 km/h"
+        ],
+        [
+         "Certified hold-on-grade",
+         "30%"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**Grade limit:** per the August 2026 trial, the vehicle holds position safely only up to a **30%** grade. At 40% it rolls back slightly on E-STOP; at 50% it cannot hold and rolls back continuously.",
+      "kind": "caution"
+     },
+     {
+      "note": "**Wheel nuts:** in the trial a wheel stud sheared and a wheel separated because of loose nuts. Check wheel nut torque before every operation (Pre-Operation).",
+      "kind": "important"
+     },
+     {
+      "h": "Base vehicle ARGO Aurora 950 (before control set assembly)"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Engine",
+         "VX 950, V-Twin, EFI, fan cooled"
+        ],
+        [
+         "Chassis",
+         "8×8"
+        ],
+        [
+         "Transmission",
+         "Admiral w/APS"
+        ],
+        [
+         "Brakes",
+         "Hydraulic"
+        ],
+        [
+         "Speed",
+         "40 km/h land, 5 km/h water"
+        ],
+        [
+         "Fuel tank",
+         "32 L"
+        ],
+        [
+         "Tires",
+         "ARGO XT117 25×12-9, beadlock wheel"
+        ],
+        [
+         "Ground clearance",
+         "254 mm (tires), 279 mm (tracks)"
+        ],
+        [
+         "Weight",
+         "668 kg"
+        ],
+        [
+         "Width / height",
+         "1,524 / 1,295 mm"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001. IRONWAVE trial report, Aug 2026.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "um-data",
+   "sec": "bison",
+   "type": "guide",
+   "title": {
+    "he": "נתוני מערכת – לפי מדריך המפעיל",
+    "en": "System data – per the user manual"
+   },
+   "summary": {
+    "he": "משקל, טווחים, זמני עבודה ונוזלים",
+    "en": "Weight, ranges, run times and fluids"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "img": "media/um-components.jpg",
+      "cap": "רכיבי המערכת"
+     },
+     {
+      "table": {
+       "head": [
+        "מאפיין",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "משקל כלי",
+         "1.1 טון"
+        ],
+        [
+         "אורך / רוחב",
+         "3.1 מ׳ / 1.82 מ׳"
+        ],
+        [
+         "מהירות מרבית",
+         "~40 קמ״ש"
+        ],
+        [
+         "כושר טיפוס",
+         "55% (49.5°)"
+        ],
+        [
+         "שיפועי צד",
+         "20°"
+        ],
+        [
+         "רדיוס סיבוב",
+         "1.82 מ׳"
+        ],
+        [
+         "טווח תקשורת – קרון שליטה",
+         "10 ק״מ"
+        ],
+        [
+         "טווח תקשורת – מגנן (ממסר)",
+         "4.5 ק״מ"
+        ],
+        [
+         "טווח תקשורת – טקטית (BLUSDR)",
+         "~900 מ׳"
+        ],
+        [
+         "זמן עבודה כלי",
+         "15–20 שעות (תלוי בשטח)"
+        ],
+        [
+         "זמן עבודה עמדת הפעלה",
+         "4 שעות לזוג סוללות 2791 (בלי מתח חיצוני)"
+        ],
+        [
+         "סוג דלק / מיכל",
+         "בנזין 95 / 32 ליטר"
+        ],
+        [
+         "שמן מנוע",
+         "CASTROL 10W40, ‏2.3 ליטר"
+        ],
+        [
+         "שמן תמסורת",
+         "VALVOLINE 80W90, ‏1.2 ליטר"
+        ],
+        [
+         "נוזל בלמים",
+         "DOT4"
+        ],
+        [
+         "שמן שרשרת",
+         "PTFE ספריי"
+        ],
+        [
+         "גריז",
+         "Multipurpose"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**סתירות בנתונים בין המסמכים:** שמן מנוע – כאן ובטבלת האחזקה המונעת **10W-40**, ובנוהל היומי ובמפרט ARGO **5W-40**. שמן תמסורת – כאן **80W90**, ובנוהל היומי וב־ARGO **75W-90**. כושר טיפוס – כאן 55%. לבירור מול גורם מוסמך לפני מילוי.",
+      "kind": "caution"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "img": "media/um-components.jpg",
+      "cap": "System components"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Vehicle weight",
+         "1.1 t"
+        ],
+        [
+         "Length / width",
+         "3.1 m / 1.82 m"
+        ],
+        [
+         "Max speed",
+         "~40 km/h"
+        ],
+        [
+         "Climbing",
+         "55% (49.5°)"
+        ],
+        [
+         "Side slope",
+         "20°"
+        ],
+        [
+         "Turning radius",
+         "1.82 m"
+        ],
+        [
+         "Comms range – control container",
+         "10 km"
+        ],
+        [
+         "Comms range – relay",
+         "4.5 km"
+        ],
+        [
+         "Comms range – tactical (BLUSDR)",
+         "~900 m"
+        ],
+        [
+         "Vehicle working time",
+         "15–20 h (terrain dependent)"
+        ],
+        [
+         "Operator station working time",
+         "4 h per pair of 2791 batteries (no external power)"
+        ],
+        [
+         "Fuel / tank",
+         "95 octane / 32 L"
+        ],
+        [
+         "Engine oil",
+         "CASTROL 10W40, 2.3 L"
+        ],
+        [
+         "Transmission oil",
+         "VALVOLINE 80W90, 1.2 L"
+        ],
+        [
+         "Brake fluid",
+         "DOT4"
+        ],
+        [
+         "Chain oil",
+         "PTFE spray"
+        ],
+        [
+         "Grease",
+         "Multipurpose"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**Data conflicts between documents:** engine oil – here and in the preventive maintenance table **10W-40**, in the daily procedure and ARGO spec **5W-40**. Transmission oil – here **80W90**, daily procedure and ARGO **75W-90**. Climbing – 55% here. Confirm with an authorized source before filling.",
+      "kind": "caution"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "id": "um-panel",
+   "sec": "b-low",
+   "type": "guide",
+   "title": {
+    "he": "פאנל חיווי והדלקה (לפי מדריך המפעיל)",
+    "en": "Indication & power panel (per user manual)"
+   },
+   "summary": {
+    "he": "48V, בורר ROCU, נוריות FORT, טעינה",
+    "en": "48 V, ROCU selector, FORT LEDs, charging"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "p": "הפאנל בחזית הכלי. הכלי מודלק במתג ההדלקה שבפאנל. 2 נוריות FORT דולקות ברציפות כשה־FORT מחובר. מתג בורר: **למעלה – ROCU-10**, **למטה – ROCU-1** (שלט מנהלתי)."
+     },
+     {
+      "img": "media/um-panel.jpg",
+      "cap": "פאנל חיווי והדלקה"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "תפקיד"
+       ],
+       "rows": [
+        [
+         "צג אחוז סוללה 48V",
+         "מצב סוללת ה־48V"
+        ],
+        [
+         "מתג שליטה ROCU-10/ROCU-1",
+         "בחירת הישל״ט"
+        ],
+        [
+         "מתג הפעלת מערכת",
+         "הדלקת המערכת"
+        ],
+        [
+         "נוריות FORT-1 / FORT-2",
+         "דולקות ברציפות כשה־FORT מחובר"
+        ],
+        [
+         "חיבור לכבל טכנאי",
+         "ETH ו־CAN"
+        ],
+        [
+         "חיבור למטען",
+         "טעינה"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The panel is at the front of the vehicle. The vehicle is powered with the panel switch. 2 FORT LEDs stay lit when FORT is connected. Selector: **up – ROCU-10**, **down – ROCU-1** (admin remote)."
+     },
+     {
+      "img": "media/um-panel.jpg",
+      "cap": "Indication & power panel"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Function"
+       ],
+       "rows": [
+        [
+         "48 V battery display",
+         "48 V battery status"
+        ],
+        [
+         "ROCU-10/ROCU-1 selector",
+         "Choose the controller"
+        ],
+        [
+         "System power switch",
+         "Turn the system on"
+        ],
+        [
+         "FORT-1 / FORT-2 LEDs",
+         "Steady when FORT is connected"
+        ],
+        [
+         "Tech cable connector",
+         "ETH and CAN"
+        ],
+        [
+         "Charger connector",
+         "Charging"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech"
+  },
+  {
+   "id": "um-dash",
+   "sec": "b-engine",
+   "type": "guide",
+   "title": {
+    "he": "לוח מחוונים בתא המנוע",
+    "en": "Engine compartment dashboard"
+   },
+   "summary": {
+    "he": "מד דלק, נוריות ושעות מנוע",
+    "en": "Fuel gauge, lights and engine hours"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "p": "לוח המחוונים בתוך תא המנוע נותן את המידע לטיפולים התקופתיים: **מד דלק**, **נוריות חיווי** ו**שעות עבודה / ק״מ**."
+     },
+     {
+      "img": "media/um-dashboard.jpg",
+      "cap": "לוח מחוונים"
+     },
+     {
+      "note": "את שעות המנוע לוקחים מכאן כדי לדעת מתי מגיע טיפול 25 או 100 שעות.",
+      "kind": "tip"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The dashboard inside the engine compartment provides the data for periodic service: **fuel gauge**, **indicator lights** and **working hours / km**."
+     },
+     {
+      "img": "media/um-dashboard.jpg",
+      "cap": "Dashboard"
+     },
+     {
+      "note": "Read engine hours here to know when the 25 or 100 hour service is due.",
+      "kind": "tip"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech"
+  },
+  {
+   "id": "um-recovery",
+   "sec": "b-mech-gen",
+   "type": "guide",
+   "title": {
+    "he": "חילוץ וגרירה",
+    "en": "Recovery and towing"
+   },
+   "summary": {
+    "he": "בטיחות, סט חילוץ, סדר פעולות ונקודות ריתום",
+    "en": "Safety, kit, procedure and harness points"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "h": "בטיחות"
+     },
+     {
+      "ul": [
+       "להרחיק מהכלים כל מי שלא מעורב בחילוץ.",
+       "רק נקודות חיבור ייעודיות לחילוץ.",
+       "על כל רצועה מותקן **שובר משקל** (בחיבור 2 רצועות בשאקל אחד – שובר משקל על כל אחת).",
+       "גרירה בירידה (שיפוע שלילי): **שני רכבים גוררים** – אחד מלפנים ואחד מאחור, לשתי נקודות הגרירה. ציוד: 2 רצועות 5 מ׳, 2 רצועות 3 מ׳, 4 שאקלים.",
+       "רכב גורר עם כושר גרירה של **2 טון לפחות**, עדיף 4×4. משקל הביזון – 1.2 טון."
+      ]
+     },
+     {
+      "h": "סט חילוץ"
+     },
+     {
+      "ul": [
+       "רצועה 5 מ׳ (מעל 2 טון)",
+       "רצועה 3 מ׳ (מעל 2 טון)",
+       "4 שאקלים (מעל 2 טון)",
+       "כפפות עבודה",
+       "משקפי מגן"
+      ]
+     },
+     {
+      "img": "media/um-recovery-kit.jpg",
+      "cap": "סט חילוץ"
+     },
+     {
+      "h": "סדר פעולות"
+     },
+     {
+      "ol": [
+       "בחרו כיוון חילוץ לפי השטח (קדימה או אחורה).",
+       "בחרו מיקום לכלי המחלץ לפי האחיזה והמהירות שלו.",
+       "חברו לפי הסדר: רצועה 3 מ׳, רצועה 5 מ׳ ושני שאקלים – אחד לאוזן ימין ואחד לאוזן שמאל.",
+       "אם רצועת ה־5 מ׳ לא מספיקה, מאריכים ברצועה נוספת – אבל **רצועת ה־5 מ׳ חייבת להישאר** כדי לספוג את העומס.",
+       "אם יש תקשורת עם הביזון – להעביר ל**„מצב גרירה”** בתוכנה. המצב משחרר את כל הבלמים.",
+       "מתחילים בתיאום עם הנהג ועם מכוון קרקעי, ולא עוצרים עד שהשני כלים יכולים לנסוע בבטחה."
+      ]
+     },
+     {
+      "img": "media/um-harness.jpg",
+      "cap": "נקודות ריתום קדמיות ואחוריות"
+     },
+     {
+      "img": "media/um-towing.jpg",
+      "cap": "שיטת עגינה – ביזון בתצורת גרירה"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "Safety"
+     },
+     {
+      "ul": [
+       "Keep everyone not involved away from the vehicles.",
+       "Use only dedicated recovery points.",
+       "Fit a **load breaker** on each strap (two straps on one shackle – one on each).",
+       "Towing downhill: **two towing vehicles** – one in front and one behind, on both towing points. Equipment: 2 × 5 m straps, 2 × 3 m straps, 4 shackles.",
+       "Towing vehicle rated for **at least 2 t**, preferably 4×4. BISON weight – 1.2 t."
+      ]
+     },
+     {
+      "h": "Recovery kit"
+     },
+     {
+      "ul": [
+       "5 m strap (over 2 t)",
+       "3 m strap (over 2 t)",
+       "4 shackles (over 2 t)",
+       "Work gloves",
+       "Safety glasses"
+      ]
+     },
+     {
+      "img": "media/um-recovery-kit.jpg",
+      "cap": "Recovery kit"
+     },
+     {
+      "h": "Procedure"
+     },
+     {
+      "ol": [
+       "Choose the recovery direction for the terrain (forward or back).",
+       "Position the recovery vehicle for its grip and speed.",
+       "Connect in this order: 3 m strap, 5 m strap and two shackles – one to the right eye and one to the left eye.",
+       "If the 5 m strap is too short, extend with another strap – but **keep the 5 m strap in the line** to absorb the load.",
+       "If there is communication with the BISON, switch it to **“Tow mode”** in the software. This releases all brakes.",
+       "Start in coordination with the driver and a ground guide, and do not stop until both vehicles can drive safely."
+      ]
+     },
+     {
+      "img": "media/um-harness.jpg",
+      "cap": "Front and rear harness points"
+     },
+     {
+      "img": "media/um-towing.jpg",
+      "cap": "Rigging – BISON ready for towing"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint"
+  },
+  {
+   "id": "um-trouble-mech",
+   "sec": "b-mech-gen",
+   "type": "guide",
+   "title": {
+    "he": "מקרים ותגובות – ביזון מכני",
+    "en": "Cases & responses – BISON mechanical"
+   },
+   "summary": {
+    "he": "רצועה, אקטואטור גיר, בלמים, התנעה וזחל",
+    "en": "Belt, gear actuator, brakes, starting and tracks"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "table": {
+       "head": [
+        "מקרה",
+        "סיבה ותגובה"
+       ],
+       "rows": [
+        [
+         "**הכלי בהילוך, מעלה טורים ולא זז** (לפעמים חריקה ועשן ממכסה המנוע בהוספת גז)",
+         "רצועת הנעה תפוסה או שחוקה. להעביר לניוטרל, להעלות סל״ד ולהחזיר להילוך. אם לא עוזר: רצועה תפוסה – לשחרר במשיכה כלפי חוץ מבסיס הגלגלת. רצועה שחוקה – החלפה על ידי איש אחזקה מוסמך."
+        ],
+        [
+         "**במעבר מניוטרל להילוך – תקתוק מהיר והכלי לא נוסע** (התקתוק מהיר יותר עם הסל״ד)",
+         "בוכנת אקטואטור הגיר לא משלימה מהלך. להעביר להילוך הנגדי ולנסות לנסוע, ואז להחזיר להילוך הרצוי. אם לא נפתר – להפסיק ולקרוא לאיש אחזקה."
+        ],
+        [
+         "**בנסיעה הכלי מושך לימין או לשמאל**",
+         "ברקס היגוי תפוס בצד אחד, או שרשרת הנעה קרועה."
+        ],
+        [
+         "**הכלי מתחיל לנסוע בקפיצה, מתקשה להמשיך, עשן לבן ממכסה המנוע**",
+         "בלם יד תפוס / ברקסים תפוסים / בלם NC תפוס (הכי נפוץ)."
+        ],
+        [
+         "**הכלי לא מניע** (הסטרטר עובד)",
+         "אין דלק או שמצבר ה־12V פרוק. למלא דלק / לטעון מצבר."
+        ],
+        [
+         "**הזחל רפוי ונראה שעומד לצאת**",
+         "לבדוק את לחץ האוויר בגלגלים באותו צד."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "table": {
+       "head": [
+        "Case",
+        "Cause and response"
+       ],
+       "rows": [
+        [
+         "**In gear, revs up but does not move** (sometimes squeal and smoke from the hood on throttle)",
+         "Drive belt stuck or worn. Shift to neutral, raise rpm and shift back. If not solved: stuck belt – release it by pulling outward from the pulley base. Worn belt – replace by an authorized technician."
+        ],
+        [
+         "**Shifting from neutral – fast ticking and no movement** (faster with rpm)",
+         "Gear actuator piston not completing its stroke. Shift to the opposite gear and try to drive, then back to the desired gear. If not solved – stop and call maintenance."
+        ],
+        [
+         "**Vehicle pulls right or left**",
+         "Steering brake stuck on one side, or a drive chain is broken."
+        ],
+        [
+         "**Starts with a jump, struggles to continue, white smoke from the hood**",
+         "Hand brake / brakes / NC brake stuck (most common)."
+        ],
+        [
+         "**Won’t start** (starter works)",
+         "No fuel or 12 V battery flat. Refuel / charge the battery."
+        ],
+        [
+         "**Track loose, looks like it will come off**",
+         "Check tire pressure on that side."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "trouble"
+  },
+  {
+   "id": "um-trouble-app",
+   "sec": "b-high-gen",
+   "type": "guide",
+   "title": {
+    "he": "מקרים ותגובות – ישל״ט ואפליקציה (שו״ב)",
+    "en": "Cases & responses – controller and app (C2)"
+   },
+   "summary": {
+    "he": "תמונה קופאת, ישל״ט לא מגיב, כלי לא מניע, GPS",
+    "en": "Frozen image, unresponsive controller, no start, GPS"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "table": {
+       "head": [
+        "מקרה",
+        "תגובה (לפי הסדר)"
+       ],
+       "rows": [
+        [
+         "**תמונה קופאת**",
+         "1. לחיצה על פטריית חירום. 2. „רענן תוכנה” בתפריט ההגדרות. 3. סגירה ופתיחה מחדש של האפליקציה."
+        ],
+        [
+         "**הישל״ט לא מגיב**",
+         "1. פטריית חירום. 2. ניתוק וחיבור הישל״ט, בדיקת חיבורים. 3. סגירה ופתיחה של האפליקציה."
+        ],
+        [
+         "**הביזון לא מניע**",
+         "1. פטריות החירום משוחררות. 2. מצב FORT – 2 נוריות ירוקות בפאנל החיווי בביזון. 3. דלק במיכל. 4. תקשורת תקינה. 5. סגירה ופתיחה של האפליקציה. 6. כיבוי והדלקה של הביזון ושל קופסת המפעיל, 10 שניות המתנה."
+        ],
+        [
+         "**מיקום שגוי במפה**",
+         "1. „רענן תוכנה”. 2. סגירה ופתיחה של האפליקציה. 3. אם לא עוזר – אין GPS (אפשר להמשיך במשימה באופן מלא)."
+        ],
+        [
+         "**אחר**",
+         "1. פטריית חירום. 2. „רענן תוכנה”. 3. „רענן כלי”. 4. סגירה ופתיחה של האפליקציה. 5. כיבוי והדלקה של הביזון ושל קופסת המפעיל, 10 שניות המתנה."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "table": {
+       "head": [
+        "Case",
+        "Response (in order)"
+       ],
+       "rows": [
+        [
+         "**Frozen image**",
+         "1. Press the emergency stop. 2. “Refresh software” in the settings menu. 3. Close and reopen the app."
+        ],
+        [
+         "**Controller not responding**",
+         "1. Emergency stop. 2. Disconnect and reconnect the controller, check connections. 3. Close and reopen the app."
+        ],
+        [
+         "**BISON won’t start**",
+         "1. Emergency stops released. 2. FORT state – 2 green LEDs on the BISON indication panel. 3. Fuel in the tank. 4. Communication OK. 5. Close and reopen the app. 6. Power-cycle the BISON and the operator box, wait 10 s."
+        ],
+        [
+         "**Wrong map position**",
+         "1. “Refresh software”. 2. Close and reopen the app. 3. If not solved – no GPS (the mission can fully continue)."
+        ],
+        [
+         "**Other**",
+         "1. Emergency stop. 2. “Refresh software”. 3. “Refresh vehicle”. 4. Close and reopen the app. 5. Power-cycle the BISON and the operator box, wait 10 s."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "trouble"
+  },
   {
    "id": "dtc-overview",
    "sec": "comm-tech",
@@ -2033,6 +3765,78 @@
    "updated": "2026-11-10"
   },
   {
+   "id": "um-trouble-comm",
+   "sec": "comm",
+   "type": "guide",
+   "title": {
+    "he": "מקרים ותגובות – תקשורת (ישל״ט וביזון)",
+    "en": "Cases & responses – communication (controller and BISON)"
+   },
+   "summary": {
+    "he": "תקשורת מנותקת, FORT, ריצוד",
+    "en": "Comms down, FORT, flicker"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "table": {
+       "head": [
+        "מקרה",
+        "תגובה (לפי הסדר)"
+       ],
+       "rows": [
+        [
+         "**הישל״ט מראה תקשורת מנותקת למרות שכל שלבי הסד״פ בוצעו**",
+         "1. כיבוי והדלקה של האפליקציה. 2. כיבוי והדלקה של התקשורת בביזון ובקופסת המפעיל, 30 שניות בין כיבוי להדלקה."
+        ],
+        [
+         "**תקשורת תקינה בישל״ט, אבל עצירת חירום פעילה ואי אפשר להניע (FORT)**",
+         "1. פטריית החירום לא לחוצה. 2. כל הכבלים מחוברים ויש מתח תקין. 3. כיבוי והדלקה של האפליקציה. 4. כיבוי והדלקה של התקשורת בביזון ובקופסת המפעיל, 10 שניות המתנה."
+        ],
+        [
+         "**תקשורת מרצדת, פיקסלים ועיכוב בתגובה**",
+         "1. להמתין להתייצבות. 2. לשפר את מיקום עמדת החפ״ק ואת חצובת התקשורת."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "table": {
+       "head": [
+        "Case",
+        "Response (in order)"
+       ],
+       "rows": [
+        [
+         "**Controller shows communication down although all setup steps were done**",
+         "1. Restart the app. 2. Power-cycle communication on the BISON and the operator box, 30 s between off and on."
+        ],
+        [
+         "**Comms OK on the controller, but emergency stop active and cannot start (FORT)**",
+         "1. Emergency stop not pressed. 2. All cables connected and power OK. 3. Restart the app. 4. Power-cycle communication on the BISON and operator box, wait 10 s."
+        ],
+        [
+         "**Flickering link, pixelation and delayed response**",
+         "1. Wait for it to stabilize. 2. Improve the command post position and the comms tripod."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
    "id": "cfg-act",
    "sec": "cfg",
    "type": "steps",
@@ -2411,8 +4215,8 @@
      }
     ],
     "note": {
-     "he": "BISON. לחץ אוויר בצמיגים: קדמי 5, אמצעיים 7, אחורי 6 (PSI). נתוני השמנים אומתו מול מפרט היצרן ARGO Aurora 950.",
-     "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI). Oil data verified against the ARGO Aurora 950 manufacturer spec."
+     "he": "BISON. לחץ אוויר בצמיגים: קדמי 5, אמצעיים 7, אחורי 6 (PSI). **שמן מנוע ושמן תמסורת – יש סתירה בין המסמכים** (5W-40/75W-90 בנוהל היומי וב־ARGO, ‏10W-40/80W90 במדריך המפעיל ובטבלת האחזקה המונעת). לבירור לפני מילוי.",
+     "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI). **Engine and transmission oil – the documents conflict** (5W-40/75W-90 in the daily procedure and ARGO; 10W-40/80W90 in the user manual and preventive maintenance table). Confirm before filling."
     }
    },
    "updated": "2026-11-10"
@@ -2510,6 +4314,182 @@
     ]
    },
    "updated": "2026-11-10"
+  },
+  {
+   "id": "um-maint-extra",
+   "sec": "maint",
+   "type": "guide",
+   "title": {
+    "he": "טיפול לפני ואחרי משימה – השלמות ממדריך המפעיל",
+    "en": "Before/after mission service – user manual additions"
+   },
+   "summary": {
+    "he": "כלים, בדיקות דרך ROCU-10, קרון וסגירת יום",
+    "en": "Tools, ROCU-10 checks, container and close-up"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "he": [
+     {
+      "p": "מדריך המפעיל כולל את אותן בדיקות כמו טל״ת וטא״ת, ועוד כמה דברים שכדאי לדעת:"
+     },
+     {
+      "h": "כלים נדרשים"
+     },
+     {
+      "table": {
+       "head": [
+        "כלי",
+        "לשימוש ב־"
+       ],
+       "rows": [
+        [
+         "מד לחץ אוויר",
+         "לחץ צמיגים (5 / 7 / 6 PSI)"
+        ],
+        [
+         "ידית מומנט דרייב 1/2, מאריך 250 מ״מ, בוקסה 19 מ״מ",
+         "אומי הגלגלים והזחלים"
+        ],
+        [
+         "ראצ׳ט ובוקסה דרייב 1/4, ‏10 מ״מ",
+         "קטבי המצבר"
+        ],
+        [
+         "מטלית מיקרופייבר",
+         "עדשות המצלמות והמסכים"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "בדיקות מערכת דרך ישל״ט ROCU-10 (מערכת דלוקה, בלי הנעה)"
+     },
+     {
+      "ul": [
+       "מצבר 12V ומתח מצבר 48V.",
+       "מפלס דלק (גם בלוח המחוונים אחרי הנעה).",
+       "EMO – 3 לחצנים תקינים בהפעלה בפועל (2 בכלי, 1 בקופסת המפעיל).",
+       "חיבורי הכבלים לפי תצורת הפריסה.",
+       "6 מצלמות יום משדרות ובפוקוס (4 היקפיות, תורן, מערכת נשק).",
+       "5 מצלמות תרמיות משדרות ובפוקוס (4 היקפיות, מערכת נשק).",
+       "מיקרופון ורמקול.",
+       "מערכת הנשק נעה לכל הכיוונים בגבולות התוכנה.",
+       "מכסה המנוע שלם, והמאוורר נכנס לפעולה כשמניעים את הכלי."
+      ]
+     },
+     {
+      "h": "קרון שליטה"
+     },
+     {
+      "ul": [
+       "מפלס דלק בגנרטור (בלוח החיווי שלו) – מילוי בנזין 95 לפי הצורך.",
+       "מזגן – השלט קיים ושלם, אין נזילות.",
+       "מסכים – תקינים, מקובעים ומחוברים לישל״טים.",
+       "עמדות מפעיל – מנגנון השולחן תקין."
+      ]
+     },
+     {
+      "h": "סגירת הכלי בסוף יום"
+     },
+     {
+      "ul": [
+       "ניקוי בוץ, חול ולכלוך.",
+       "ניקוי עדשות המצלמות.",
+       "ניקוי מערכת הנשק וריקון תחמושת לפי הוראות היצרן.",
+       "טעינה עד 100% ותדלוק בנזין 95 לפי הצורך."
+      ]
+     },
+     {
+      "note": "טיפול במערכת הנשק – רק על ידי יצרן מערכת הנשק, בתיאום מראש.",
+      "kind": "important"
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The user manual has the same checks as Pre- and Post-Operation, plus a few additions:"
+     },
+     {
+      "h": "Required tools"
+     },
+     {
+      "table": {
+       "head": [
+        "Tool",
+        "For"
+       ],
+       "rows": [
+        [
+         "Air pressure gauge",
+         "Tire pressure (5 / 7 / 6 psi)"
+        ],
+        [
+         "1/2\" drive torque wrench, 250 mm extension, 19 mm socket",
+         "Wheel and track nuts"
+        ],
+        [
+         "1/4\" drive ratchet and 10 mm socket",
+         "Battery terminals"
+        ],
+        [
+         "Microfiber cloth",
+         "Camera lenses and screens"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "System checks via ROCU-10 (system on, engine off)"
+     },
+     {
+      "ul": [
+       "12 V battery and 48 V battery voltage.",
+       "Fuel level (also on the dashboard after starting).",
+       "EMO – 3 buttons working when actually pressed (2 on the vehicle, 1 on the operator box).",
+       "Cable connections for the deployment configuration.",
+       "6 day cameras streaming and in focus (4 surround, mast, gun system).",
+       "5 thermal cameras streaming and in focus (4 surround, gun system).",
+       "Microphone and speaker.",
+       "Gun system moves in all directions within software limits.",
+       "Hood intact, and the fan starts when the vehicle runs."
+      ]
+     },
+     {
+      "h": "Control container"
+     },
+     {
+      "ul": [
+       "Generator fuel level (on its display) – refill 95 octane as needed.",
+       "AC – remote present and intact, no leaks.",
+       "Screens – working, fixed and connected to the controllers.",
+       "Operator stations – table mechanism OK."
+      ]
+     },
+     {
+      "h": "Closing up at the end of the day"
+     },
+     {
+      "ul": [
+       "Remove mud, sand and dirt.",
+       "Clean the camera lenses.",
+       "Clean the gun system and unload ammunition per the manufacturer.",
+       "Charge to 100% and refuel 95 octane as needed."
+      ]
+     },
+     {
+      "note": "Gun system service – only by the gun system manufacturer, coordinated in advance.",
+      "kind": "important"
+     },
+     {
+      "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
+      "kind": "note"
+     }
+    ]
+   }
   },
   {
    "id": "pm-summary",
@@ -2625,14 +4605,14 @@
         [
          "**ביזון › מנוע › שמן מנוע**",
          "בדיקת שמן מנוע",
-         "`5W-40 (*)`",
+         "`10W-40 (*)`",
          "שדה",
          "חודשי"
         ],
         [
          "**ביזון › מנוע › שמן מנוע**",
          "החלפת שמן מנוע",
-         "`5W-40 (*)`",
+         "`10W-40 (*)`",
          "משק",
          "רבעוני"
         ],
@@ -2794,7 +4774,7 @@
       }
      },
      {
-      "note": "(*) בטבלה המקורית רשום 10W-40. לפי מפרט היצרן (ARGO Aurora 950) ולפי נוהל הטיפולים היומיים, השמן הוא **5W-40 סינתטי**. לשימון שרשרת רשום כאן Putoline DX-11, ובמפרט היצרן ובנוהל היומי – ARGO PTFE.",
+      "note": "(*) **שמן מנוע – יש סתירה בין המסמכים:** כאן ובמדריך המפעיל רשום **10W-40**. בנוהל הטיפולים היומי ובמפרט היצרן ARGO רשום **5W-40**. גם בשמן השרשרת: כאן Putoline DX-11, ובשאר המסמכים PTFE. לבירור מול גורם מוסמך.",
       "kind": "caution"
      },
      {
@@ -2910,14 +4890,14 @@
         [
          "**BISON › Engine › Engine oil**",
          "Engine oil check",
-         "`5W-40 (*)`",
+         "`10W-40 (*)`",
          "Field",
          "Monthly"
         ],
         [
          "**BISON › Engine › Engine oil**",
          "Engine oil change",
-         "`5W-40 (*)`",
+         "`10W-40 (*)`",
          "Workshop",
          "Quarterly"
         ],
@@ -3079,7 +5059,7 @@
       }
      },
      {
-      "note": "(*) The original table lists 10W-40. Per the manufacturer spec (ARGO Aurora 950) and the daily maintenance procedure, the oil is **5W-40 synthetic**. Chain lube is listed here as Putoline DX-11; the manufacturer spec and daily procedure list ARGO PTFE.",
+      "note": "(*) **Engine oil – the documents conflict:** this table and the user manual list **10W-40**; the daily procedure and the ARGO manufacturer spec list **5W-40**. Chain lube also differs: Putoline DX-11 here, PTFE elsewhere. Confirm with an authorized source.",
       "kind": "caution"
      },
      {
@@ -6003,244 +7983,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "bison-overview",
-   "sec": "bison",
-   "type": "guide",
-   "title": {
-    "he": "ביזון – נתונים כלליים",
-    "en": "BISON – general data"
-   },
-   "summary": {
-    "he": "משקל, מידות, מגבלות ובסיס ARGO",
-    "en": "Weight, dimensions, limits and ARGO base"
-   },
-   "body": {
-    "he": [
-     {
-      "p": "הביזון מבוסס על רכב **ARGO Aurora 950** (8×8) עם מנוע VX 950 V-Twin, שעליו מותקנים המבנה הראשי ומערכות הבקרה הנמוכה והגבוהה. מערכת הבקרה שולטת בהנעה, במצלמות (יום ותרמי), בתקשורת, במערכת הנשק, בפנסים, ברמקול, במיקרופון וב־EMO."
-     },
-     {
-      "h": "תצורת ביזון"
-     },
-     {
-      "table": {
-       "head": [
-        "פרמטר",
-        "ערך"
-       ],
-       "rows": [
-        [
-         "משקל",
-         "950 ק״ג (1,100 ק״ג עם זחלים)"
-        ],
-        [
-         "משקל נמדד בניסוי (אוג׳ 2026)",
-         "1,120 ק״ג, ללא נשק וללא מטען"
-        ],
-        [
-         "אורך",
-         "3,000 מ״מ"
-        ],
-        [
-         "כושר העמסה (יבשה)",
-         "300 ק״ג"
-        ],
-        [
-         "אלטרנטור",
-         "55A ב־3000 סל״ד, ‏15A ב־1100 סל״ד"
-        ],
-        [
-         "מהירות מרבית",
-         "40 קמ״ש"
-        ],
-        [
-         "שיפוע מרבי מאושר (עצירה והחזקה)",
-         "30%"
-        ]
-       ]
-      }
-     },
-     {
-      "note": "**מגבלת שיפוע:** לפי ניסוי אוגוסט 2026, הכלי מחזיק את עצמו בבטחה רק עד שיפוע של **30%**. ב־40% הוא מתגלגל מעט אחורה ב־E-STOP, וב־50% הוא לא מחזיק ומתגלגל ברציפות.",
-      "kind": "caution"
-     },
-     {
-      "note": "**אומי גלגלים:** בניסוי נשבר בורג גלגל ונפרד גלגל בגלל אומים רופפים. יש לבדוק חיזוק אומי גלגלים לפני כל הפעלה (טל״ת).",
-      "kind": "important"
-     },
-     {
-      "h": "רכב הבסיס ARGO Aurora 950 (לפני הרכבת ערכת הבקרה)"
-     },
-     {
-      "table": {
-       "head": [
-        "פרמטר",
-        "ערך"
-       ],
-       "rows": [
-        [
-         "מנוע",
-         "VX 950, ‏V-Twin, הזרקת דלק, קירור מאוורר"
-        ],
-        [
-         "שלדה",
-         "8×8"
-        ],
-        [
-         "תמסורת",
-         "Admiral w/APS"
-        ],
-        [
-         "בלמים",
-         "הידראוליים"
-        ],
-        [
-         "מהירות",
-         "40 קמ״ש ביבשה, 5 קמ״ש במים"
-        ],
-        [
-         "מיכל דלק",
-         "32 ליטר"
-        ],
-        [
-         "צמיגים",
-         "ARGO XT117 25×12-9, חישוק Beadlock"
-        ],
-        [
-         "מרווח גחון",
-         "254 מ״מ (צמיגים), 279 מ״מ (זחלים)"
-        ],
-        [
-         "משקל",
-         "668 ק״ג"
-        ],
-        [
-         "רוחב / גובה",
-         "1,524 / 1,295 מ״מ"
-        ]
-       ]
-      }
-     },
-     {
-      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001. דוח ניסוי IRONWAVE, אוג׳ 2026.",
-      "kind": "note"
-     }
-    ],
-    "en": [
-     {
-      "p": "BISON is based on the **ARGO Aurora 950** (8×8) with a VX 950 V-Twin engine, fitted with the main structure and the low- and high-level control systems. The control system runs the drive, cameras (day and thermal), communications, gun system, lights, speaker, microphone and EMO."
-     },
-     {
-      "h": "BISON configuration"
-     },
-     {
-      "table": {
-       "head": [
-        "Parameter",
-        "Value"
-       ],
-       "rows": [
-        [
-         "Weight",
-         "950 kg (1,100 kg with tracks)"
-        ],
-        [
-         "Measured weight in trial (Aug 2026)",
-         "1,120 kg, unarmed and unladen"
-        ],
-        [
-         "Length",
-         "3,000 mm"
-        ],
-        [
-         "Load capacity (land)",
-         "300 kg"
-        ],
-        [
-         "Alternator",
-         "55 A @ 3000 rpm, 15 A @ 1100 rpm"
-        ],
-        [
-         "Max speed",
-         "40 km/h"
-        ],
-        [
-         "Certified hold-on-grade",
-         "30%"
-        ]
-       ]
-      }
-     },
-     {
-      "note": "**Grade limit:** per the August 2026 trial, the vehicle holds position safely only up to a **30%** grade. At 40% it rolls back slightly on E-STOP; at 50% it cannot hold and rolls back continuously.",
-      "kind": "caution"
-     },
-     {
-      "note": "**Wheel nuts:** in the trial a wheel stud sheared and a wheel separated because of loose nuts. Check wheel nut torque before every operation (Pre-Operation).",
-      "kind": "important"
-     },
-     {
-      "h": "Base vehicle ARGO Aurora 950 (before control set assembly)"
-     },
-     {
-      "table": {
-       "head": [
-        "Parameter",
-        "Value"
-       ],
-       "rows": [
-        [
-         "Engine",
-         "VX 950, V-Twin, EFI, fan cooled"
-        ],
-        [
-         "Chassis",
-         "8×8"
-        ],
-        [
-         "Transmission",
-         "Admiral w/APS"
-        ],
-        [
-         "Brakes",
-         "Hydraulic"
-        ],
-        [
-         "Speed",
-         "40 km/h land, 5 km/h water"
-        ],
-        [
-         "Fuel tank",
-         "32 L"
-        ],
-        [
-         "Tires",
-         "ARGO XT117 25×12-9, beadlock wheel"
-        ],
-        [
-         "Ground clearance",
-         "254 mm (tires), 279 mm (tracks)"
-        ],
-        [
-         "Weight",
-         "668 kg"
-        ],
-        [
-         "Width / height",
-         "1,524 / 1,295 mm"
-        ]
-       ]
-      }
-     },
-     {
-      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001. IRONWAVE trial report, Aug 2026.",
-      "kind": "note"
-     }
-    ]
-   },
-   "updated": "2026-11-10"
-  },
-  {
    "id": "cam-spec",
    "sec": "b-cam",
    "type": "guide",
@@ -8062,101 +9804,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "llc-panel",
-   "sec": "b-low",
-   "type": "guide",
-   "title": {
-    "he": "לוח בקרה קדמי",
-    "en": "Front control panel"
-   },
-   "summary": {
-    "he": "מתג הפעלה, טעינה, מחבר טכנאי ו־SOC",
-    "en": "Power switch, charging, tech connector, SOC"
-   },
-   "body": {
-    "he": [
-     {
-      "p": "לוח הבקרה הקדמי נמצא על שלדת הכלי:"
-     },
-     {
-      "table": {
-       "head": [
-        "רכיב",
-        "תפקיד"
-       ],
-       "rows": [
-        [
-         "**מתג הפעלה**",
-         "מדליק ומכבה את חשמל מערכות הבקרה הנמוכה והגבוהה (לא את המנוע)."
-        ],
-        [
-         "**מחבר טעינה**",
-         "לטעינת המצבר הפנימי."
-        ],
-        [
-         "**מתג בורר**",
-         "בחירה בין בקרי ROCU-1 ו־ROCU-7."
-        ],
-        [
-         "**מחבר טכנאי (Tech)**",
-         "חיבור Ethernet ו־CAN Bus לכלי."
-        ],
-        [
-         "**מסך SOC**",
-         "מציג את מצב הסוללה."
-        ]
-       ]
-      }
-     },
-     {
-      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
-      "kind": "note"
-     }
-    ],
-    "en": [
-     {
-      "p": "The front control panel is on the vehicle chassis:"
-     },
-     {
-      "table": {
-       "head": [
-        "Component",
-        "Function"
-       ],
-       "rows": [
-        [
-         "**On/off switch**",
-         "Turns low- and high-level control power on and off (not the engine)."
-        ],
-        [
-         "**Charge connector**",
-         "Charges the internal battery."
-        ],
-        [
-         "**Toggle switch**",
-         "Selects ROCU-1 or ROCU-7 controller."
-        ],
-        [
-         "**Tech connector**",
-         "Ethernet and CAN Bus access to the vehicle."
-        ],
-        [
-         "**SOC display**",
-         "Shows battery status."
-        ]
-       ]
-      }
-     },
-     {
-      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
-      "kind": "note"
-     }
-    ]
-   },
-   "group": "tech",
-   "updated": "2026-11-10"
-  },
-  {
    "id": "gun-spec",
    "sec": "b-weapon",
    "type": "guide",
@@ -8770,574 +10417,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "cfg-radio",
-   "sec": "cfg",
-   "type": "link",
-   "title": {
-    "he": "קינפוג מקמ״שים",
-    "en": "Radio Configuration"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "targetSec": "comm-radio"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "b-engine-maint",
-   "sec": "b-engine",
-   "type": "link",
-   "title": {
-    "he": "נתוני אחזקה: שמנים ונוזלים",
-    "en": "Maintenance data: oils & fluids"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "m-data"
-   },
-   "updated": "2026-11-10",
-   "group": "tech"
-  },
-  {
-   "id": "ln-pm-ac-filters",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › מזגן: ניקוי מסנני אוויר",
-    "en": "Container › AC: air filter cleaning"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-ac-filters"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-table",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: לוח אחזקה",
-    "en": "Container › generator: maintenance schedule"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-table"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-oil",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: החלפת שמן מנוע",
-    "en": "Container › generator: engine oil change"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-oil"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-air",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: ניקוי פילטר אוויר",
-    "en": "Container › generator: air filter cleaning"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-air"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-plug",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: טיפול מצת",
-    "en": "Container › generator: spark plug service"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-plug"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-robox-bison",
-   "sec": "bison",
-   "type": "link",
-   "title": {
-    "he": "ROBOX System Technical Data (PDF)",
-    "en": "ROBOX System Technical Data (PDF)"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "robox-pdf"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "dtc-pdf",
-   "sec": "comm-tech",
-   "type": "pdf",
-   "title": {
-    "he": "מדריך ממשק DTC (PDF)",
-    "en": "DTC Interface Guide (PDF)"
-   },
-   "summary": {
-    "he": "המסמך המקורי, 21 עמודים",
-    "en": "Original document, 21 pages"
-   },
-   "body": {
-    "src": "media/dtc-interface-guide.pdf",
-    "note": {
-     "he": "המסמך המקורי המלא (באנגלית).",
-     "en": "The full original document."
-    },
-    "mb": 0.8
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "m-daily-pdf",
-   "sec": "maint",
-   "type": "pdf",
-   "title": {
-    "he": "נוהל טיפולים יומיים (PDF)",
-    "en": "Daily Maintenance Procedure (PDF)"
-   },
-   "summary": {
-    "he": "המסמך המקורי להדפסה",
-    "en": "Original document for printing"
-   },
-   "body": {
-    "src": "media/daily-maintenance-he.pdf",
-    "note": {
-     "he": "המסמך המקורי, כולל טבלאות רישום ביצוע להדפסה.",
-     "en": "The original document (Hebrew), including printable maintenance log tables."
-    },
-    "mb": 0.2
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "pm-pdf",
-   "sec": "maint-prev",
-   "type": "pdf",
-   "title": {
-    "he": "מדריך אחזקת מנע (PDF)",
-    "en": "Preventive Maintenance Guide (PDF)"
-   },
-   "summary": {
-    "he": "המסמך המלא – 147 עמודים",
-    "en": "Full document – 147 pages"
-   },
-   "body": {
-    "src": "media/preventive-maintenance.pdf",
-    "note": {
-     "he": "DOC00757-A REV.001, 29/09/2026. המסמך המלא, 147 עמודים.",
-     "en": "DOC00757-A REV.001, 29/09/2026. The full document (Hebrew), 147 pages."
-    },
-    "mb": 11.0
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "dtc-pdf-he",
-   "sec": "comm-tech",
-   "type": "pdf",
-   "title": {
-    "he": "מדריך ממשק DTC – גרסה עברית (PDF)",
-    "en": "DTC Interface Guide – Hebrew edition (PDF)"
-   },
-   "summary": {
-    "he": "9 עמודים",
-    "en": "9 pages"
-   },
-   "body": {
-    "src": "media/dtc-interface-guide-he.pdf",
-    "note": {
-     "he": "הגרסה העברית המקורית של המדריך. התוכן שלה כבר מסודר בעמודי התקשורת.",
-     "en": "The original Hebrew edition. Its content is already organized in the communications pages."
-    },
-    "mb": 0.8
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "dtc-replay-pdf",
-   "sec": "comm-mon",
-   "type": "pdf",
-   "title": {
-    "he": "Domo Mesh Replay – מדריך משתמש (PDF)",
-    "en": "Domo Mesh Replay – User Guide (PDF)"
-   },
-   "summary": {
-    "he": "DTC, 13 עמודים",
-    "en": "DTC, 13 pages"
-   },
-   "body": {
-    "src": "media/dtc-mesh-replay-guide.pdf",
-    "note": {
-     "he": "",
-     "en": ""
-    },
-    "mb": 1.2
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "robox-pdf",
-   "sec": "container",
-   "type": "pdf",
-   "title": {
-    "he": "ROBOX System Technical Data (PDF)",
-    "en": "ROBOX System Technical Data (PDF)"
-   },
-   "summary": {
-    "he": "95 עמודים",
-    "en": "95 pages"
-   },
-   "body": {
-    "src": "media/robox-technical-data.pdf",
-    "note": {
-     "he": "DOC00672-A REV.001, 01/09/2026. המסמך הטכני המלא של המערכת: ביזון, קרון, רחפן, בקרים, תוכנה, EMO, בלמים, אנרגיה, תקשורת ומערכת נשק.",
-     "en": "DOC00672-A REV.001, 01/09/2026. The full system technical document: BISON, container, drone, controllers, software, EMO, brakes, energy, communications and gun system."
-    },
-    "mb": 5.7
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "gen-manual",
-   "sec": "c-gen",
-   "type": "pdf",
-   "title": {
-    "he": "Honda EU70is – מדריך בעלים (PDF)",
-    "en": "Honda EU70is – Owner’s Manual (PDF)"
-   },
-   "summary": {
-    "he": "76 עמודים",
-    "en": "76 pages"
-   },
-   "body": {
-    "src": "media/generator-eu70is-manual.pdf",
-    "note": {
-     "he": "",
-     "en": ""
-    },
-    "mb": 4.7
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "comp-manual",
-   "sec": "c-comp",
-   "type": "pdf",
-   "title": {
-    "he": "קומפרסור P185WYM – מדריך הפעלה ואחזקה (PDF)",
-    "en": "Compressor P185WYM – Operating & Maintenance Manual (PDF)"
-   },
-   "summary": {
-    "he": "66 עמודים",
-    "en": "66 pages"
-   },
-   "body": {
-    "src": "media/compressor-p185-manual.pdf",
-    "note": {
-     "he": "",
-     "en": ""
-    },
-    "mb": 1.0
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-spec-pdf",
-   "sec": "b-engine",
-   "type": "pdf",
-   "title": {
-    "he": "ARGO Aurora 950 – מפרט מספר המפעיל (PDF)",
-    "en": "ARGO Aurora 950 – Operator’s Manual specs (PDF)"
-   },
-   "summary": {
-    "he": "2 עמודים",
-    "en": "2 pages"
-   },
-   "body": {
-    "src": "media/argo-aurora950-specs.pdf",
-    "note": {
-     "he": "",
-     "en": ""
-    },
-    "mb": 0.7
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-en",
-   "sec": "b-engine",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – מנוע (Engine System)",
-    "en": "ARGO Service Manual – Engine System"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-en.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק EN. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter EN. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 20.8
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-cs",
-   "sec": "b-engine",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – מצמד (Clutch System)",
-    "en": "ARGO Service Manual – Clutch System"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-cs.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק CS. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter CS. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 16.4
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-gi",
-   "sec": "b-mech-gen",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – מידע כללי וכלים מיוחדים",
-    "en": "ARGO Service Manual – General Information & special tools"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-gi.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק GI. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter GI. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 4.1
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-es",
-   "sec": "b-mech-gen",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – מערכת חשמל",
-    "en": "ARGO Service Manual – Electrical System"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-es.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק ES. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter ES. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 11.5
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-br",
-   "sec": "b-mech-gen",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – מערכת בלמים",
-    "en": "ARGO Service Manual – Brake System"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-br.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק BR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter BR. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 7.6
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-wa",
-   "sec": "b-mech-gen",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – גלגלים וסרנים",
-    "en": "ARGO Service Manual – Wheels & Axles"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-wa.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק WA. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter WA. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 6.7
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-tr1",
-   "sec": "b-mech-gen",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – תמסורת – חלק 1",
-    "en": "ARGO Service Manual – Transmission – part 1"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-tr1.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 14.3
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-tr2",
-   "sec": "b-mech-gen",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – תמסורת – חלק 2",
-    "en": "ARGO Service Manual – Transmission – part 2"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-tr2.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 13.1
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "argo-sm-tr3",
-   "sec": "b-mech-gen",
-   "type": "pdf",
-   "title": {
-    "he": "ספר שירות ARGO – תמסורת – חלק 3",
-    "en": "ARGO Service Manual – Transmission – part 3"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "media/argo-sm-tr3.pdf",
-    "note": {
-     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
-     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
-    },
-    "mb": 9.6
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "bison-energy-pdf",
-   "sec": "b-energy",
-   "type": "pdf",
-   "title": {
-    "he": "מסמך מאזן הספק ואנרגיה – רוויזיה 001 (PDF)",
-    "en": "Power & energy balance – rev 001 (PDF)"
-   },
-   "summary": {
-    "he": "10 עמודים, טיוטה",
-    "en": "10 pages, draft"
-   },
-   "body": {
-    "src": "media/bison-energy-balance-rev001.pdf",
-    "note": {
-     "he": "טיוטה.",
-     "en": "Draft (Hebrew)."
-    },
-    "mb": 0.5
-   },
-   "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
    "id": "atp-sys",
    "sec": "qa",
    "type": "atp",
@@ -9931,6 +11010,177 @@
    "updated": "2026-11-10"
   },
   {
+   "id": "ln-um-container",
+   "sec": "container",
+   "type": "link",
+   "title": {
+    "he": "תצורת קרון שליטה – הקמת עמדה",
+    "en": "Control container configuration – setup"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "dep-container"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-um-pdf-container",
+   "sec": "container",
+   "type": "link",
+   "title": {
+    "he": "מדריך מפעיל מקוצר (PDF)",
+    "en": "Brief user manual (PDF)"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "um-pdf"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "cfg-radio",
+   "sec": "cfg",
+   "type": "link",
+   "title": {
+    "he": "קינפוג מקמ״שים",
+    "en": "Radio Configuration"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "targetSec": "comm-radio"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "b-engine-maint",
+   "sec": "b-engine",
+   "type": "link",
+   "title": {
+    "he": "נתוני אחזקה: שמנים ונוזלים",
+    "en": "Maintenance data: oils & fluids"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "m-data"
+   },
+   "updated": "2026-11-10",
+   "group": "tech"
+  },
+  {
+   "id": "ln-pm-ac-filters",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › מזגן: ניקוי מסנני אוויר",
+    "en": "Container › AC: air filter cleaning"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-ac-filters"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-table",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: לוח אחזקה",
+    "en": "Container › generator: maintenance schedule"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-table"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-oil",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: החלפת שמן מנוע",
+    "en": "Container › generator: engine oil change"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-oil"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-air",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: ניקוי פילטר אוויר",
+    "en": "Container › generator: air filter cleaning"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-air"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-plug",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: טיפול מצת",
+    "en": "Container › generator: spark plug service"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-plug"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-robox-bison",
+   "sec": "bison",
+   "type": "link",
+   "title": {
+    "he": "ROBOX System Technical Data (PDF)",
+    "en": "ROBOX System Technical Data (PDF)"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "robox-pdf"
+   },
+   "updated": "2026-11-10"
+  },
+  {
    "id": "ln-atp-container",
    "sec": "container",
    "type": "link",
@@ -9946,6 +11196,459 @@
     "target": "atp-container"
    },
    "updated": "2026-11-10"
+  },
+  {
+   "id": "dtc-pdf",
+   "sec": "comm-tech",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך ממשק DTC (PDF)",
+    "en": "DTC Interface Guide (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המקורי, 21 עמודים",
+    "en": "Original document, 21 pages"
+   },
+   "body": {
+    "src": "media/dtc-interface-guide.pdf",
+    "note": {
+     "he": "המסמך המקורי המלא (באנגלית).",
+     "en": "The full original document."
+    },
+    "mb": 0.8
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-daily-pdf",
+   "sec": "maint",
+   "type": "pdf",
+   "title": {
+    "he": "נוהל טיפולים יומיים (PDF)",
+    "en": "Daily Maintenance Procedure (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המקורי להדפסה",
+    "en": "Original document for printing"
+   },
+   "body": {
+    "src": "media/daily-maintenance-he.pdf",
+    "note": {
+     "he": "המסמך המקורי, כולל טבלאות רישום ביצוע להדפסה.",
+     "en": "The original document (Hebrew), including printable maintenance log tables."
+    },
+    "mb": 0.2
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-pdf",
+   "sec": "maint-prev",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך אחזקת מנע (PDF)",
+    "en": "Preventive Maintenance Guide (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המלא – 147 עמודים",
+    "en": "Full document – 147 pages"
+   },
+   "body": {
+    "src": "media/preventive-maintenance.pdf",
+    "note": {
+     "he": "DOC00757-A REV.001, 29/09/2026. המסמך המלא, 147 עמודים.",
+     "en": "DOC00757-A REV.001, 29/09/2026. The full document (Hebrew), 147 pages."
+    },
+    "mb": 11.0
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "dtc-pdf-he",
+   "sec": "comm-tech",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך ממשק DTC – גרסה עברית (PDF)",
+    "en": "DTC Interface Guide – Hebrew edition (PDF)"
+   },
+   "summary": {
+    "he": "9 עמודים",
+    "en": "9 pages"
+   },
+   "body": {
+    "src": "media/dtc-interface-guide-he.pdf",
+    "note": {
+     "he": "הגרסה העברית המקורית של המדריך. התוכן שלה כבר מסודר בעמודי התקשורת.",
+     "en": "The original Hebrew edition. Its content is already organized in the communications pages."
+    },
+    "mb": 0.8
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "dtc-replay-pdf",
+   "sec": "comm-mon",
+   "type": "pdf",
+   "title": {
+    "he": "Domo Mesh Replay – מדריך משתמש (PDF)",
+    "en": "Domo Mesh Replay – User Guide (PDF)"
+   },
+   "summary": {
+    "he": "DTC, 13 עמודים",
+    "en": "DTC, 13 pages"
+   },
+   "body": {
+    "src": "media/dtc-mesh-replay-guide.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 1.2
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "robox-pdf",
+   "sec": "container",
+   "type": "pdf",
+   "title": {
+    "he": "ROBOX System Technical Data (PDF)",
+    "en": "ROBOX System Technical Data (PDF)"
+   },
+   "summary": {
+    "he": "95 עמודים",
+    "en": "95 pages"
+   },
+   "body": {
+    "src": "media/robox-technical-data.pdf",
+    "note": {
+     "he": "DOC00672-A REV.001, 01/09/2026. המסמך הטכני המלא של המערכת: ביזון, קרון, רחפן, בקרים, תוכנה, EMO, בלמים, אנרגיה, תקשורת ומערכת נשק.",
+     "en": "DOC00672-A REV.001, 01/09/2026. The full system technical document: BISON, container, drone, controllers, software, EMO, brakes, energy, communications and gun system."
+    },
+    "mb": 5.7
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "gen-manual",
+   "sec": "c-gen",
+   "type": "pdf",
+   "title": {
+    "he": "Honda EU70is – מדריך בעלים (PDF)",
+    "en": "Honda EU70is – Owner’s Manual (PDF)"
+   },
+   "summary": {
+    "he": "76 עמודים",
+    "en": "76 pages"
+   },
+   "body": {
+    "src": "media/generator-eu70is-manual.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 4.7
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "comp-manual",
+   "sec": "c-comp",
+   "type": "pdf",
+   "title": {
+    "he": "קומפרסור P185WYM – מדריך הפעלה ואחזקה (PDF)",
+    "en": "Compressor P185WYM – Operating & Maintenance Manual (PDF)"
+   },
+   "summary": {
+    "he": "66 עמודים",
+    "en": "66 pages"
+   },
+   "body": {
+    "src": "media/compressor-p185-manual.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 1.0
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-spec-pdf",
+   "sec": "b-engine",
+   "type": "pdf",
+   "title": {
+    "he": "ARGO Aurora 950 – מפרט מספר המפעיל (PDF)",
+    "en": "ARGO Aurora 950 – Operator’s Manual specs (PDF)"
+   },
+   "summary": {
+    "he": "2 עמודים",
+    "en": "2 pages"
+   },
+   "body": {
+    "src": "media/argo-aurora950-specs.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 0.7
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-en",
+   "sec": "b-engine",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מנוע (Engine System)",
+    "en": "ARGO Service Manual – Engine System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-en.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק EN. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter EN. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 20.8
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-cs",
+   "sec": "b-engine",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מצמד (Clutch System)",
+    "en": "ARGO Service Manual – Clutch System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-cs.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק CS. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter CS. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 16.4
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-gi",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מידע כללי וכלים מיוחדים",
+    "en": "ARGO Service Manual – General Information & special tools"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-gi.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק GI. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter GI. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 4.1
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-es",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מערכת חשמל",
+    "en": "ARGO Service Manual – Electrical System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-es.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק ES. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter ES. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 11.5
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-br",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מערכת בלמים",
+    "en": "ARGO Service Manual – Brake System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-br.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק BR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter BR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 7.6
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-wa",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – גלגלים וסרנים",
+    "en": "ARGO Service Manual – Wheels & Axles"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-wa.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק WA. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter WA. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 6.7
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-tr1",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – תמסורת – חלק 1",
+    "en": "ARGO Service Manual – Transmission – part 1"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-tr1.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 14.3
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-tr2",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – תמסורת – חלק 2",
+    "en": "ARGO Service Manual – Transmission – part 2"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-tr2.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 13.1
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-tr3",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – תמסורת – חלק 3",
+    "en": "ARGO Service Manual – Transmission – part 3"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-tr3.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 9.6
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "bison-energy-pdf",
+   "sec": "b-energy",
+   "type": "pdf",
+   "title": {
+    "he": "מסמך מאזן הספק ואנרגיה – רוויזיה 001 (PDF)",
+    "en": "Power & energy balance – rev 001 (PDF)"
+   },
+   "summary": {
+    "he": "10 עמודים, טיוטה",
+    "en": "10 pages, draft"
+   },
+   "body": {
+    "src": "media/bison-energy-balance-rev001.pdf",
+    "note": {
+     "he": "טיוטה.",
+     "en": "Draft (Hebrew)."
+    },
+    "mb": 0.5
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "um-pdf",
+   "sec": "bison",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך מפעיל מקוצר – שליחות קטלנית (PDF)",
+    "en": "ROBOX brief user manual (PDF, Hebrew)"
+   },
+   "summary": {
+    "he": "DOC00698-A REV.002, 24 עמודים",
+    "en": "DOC00698-A REV.002, 24 pages"
+   },
+   "updated": "2026-11-10",
+   "body": {
+    "src": "media/robox-user-manual-he.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 1.4
+   }
   }
  ]
 }
