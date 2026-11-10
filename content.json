@@ -1,9 +1,42 @@
 {
  "app": {
-  "version": 6,
+  "version": 8,
   "updated": "2026-11-10",
   "teamHash": "da66e96b63b0fa81900f3eeeb289e2814425612d1a77cdb94c188699555800b1",
-  "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+  "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+  "quick": [
+   "m-pre",
+   "m-post",
+   "dtc-checklist",
+   "m-data",
+   "dtc-tactical",
+   "atp-field",
+   "dtc-login",
+   "dtc-trouble"
+  ],
+  "alerts": [
+   {
+    "item": "bison-overview",
+    "text": {
+     "he": "**אומי גלגלים:** בדקו חיזוק לפני כל הפעלה. בניסוי נפרד גלגל בגלל אומים רופפים.",
+     "en": "**Wheel nuts:** check torque before every operation. A wheel separated in the trial due to loose nuts."
+    }
+   },
+   {
+    "item": "bison-overview",
+    "text": {
+     "he": "**שיפוע מרבי 30%.** מעל זה הכלי לא מחזיק את עצמו בעצירה.",
+     "en": "**Max grade 30%.** Above that the vehicle cannot hold position when stopped."
+    }
+   },
+   {
+    "item": "dtc-tactical",
+    "text": {
+     "he": "**חץ כתום ב־Tactical Display = עוצרים להתקדם** ומשפרים את הממסר.",
+     "en": "**Orange arrow in Tactical Display = stop advancing** and improve the relay."
+    }
+   }
+  ]
  },
  "sections": [
   {
@@ -5986,6 +6019,9 @@
       }
      },
      {
+      "p": "בכל עמדה: 3 שקעי חשמל 230V, שקע HDMI ושקע Ethernet (RJ45). ב־4 עמדות יש גם 2 שקעי RF (SMA) לאנטנות."
+     },
+     {
       "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
@@ -6015,6 +6051,9 @@
         ]
        ]
       }
+     },
+     {
+      "p": "Each station: 3 × 230 V power sockets, one HDMI and one Ethernet (RJ45). Four stations also have 2 RF sockets (SMA) for antennas."
      },
      {
       "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
@@ -7641,44 +7680,844 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "trial-aug2026",
-   "sec": "qa",
-   "type": "guide",
+   "id": "sw-nodefinder",
+   "sec": "comm-air",
+   "type": "software",
    "title": {
-    "he": "דוח סיכום ניסוי IRONWAVE – אוגוסט 2026",
-    "en": "IRONWAVE trial summary report – August 2026"
+    "he": "Domo Node Finder – איתור מקמ״שים באוויר",
+    "en": "Domo Node Finder – find radios on air"
    },
    "summary": {
-    "he": "ATP 44/46, תקשורת 5.2 ק״מ, ממצאים פתוחים",
-    "en": "ATP 44/46, comms 5.2 km, open findings"
+    "he": "תוכנת DTC לזיהוי המקמ״שים הפעילים ברשת · גרסה 2.5.1",
+    "en": "DTC tool to see the active radios on the network · v2.5.1"
+   },
+   "body": {
+    "ver": "2.5.1",
+    "file": "DomoNodeFinder-2.5.1.exe",
+    "path": "Desktop\\DomoNodeFinder.exe",
+    "url": "",
+    "install": {
+     "he": [
+      "מעתיקים את הקובץ DomoNodeFinder-2.5.1.exe מהשרת של החברה למחשב הנייד (הוא שוקל כ־28MB).",
+      "מריצים אותו. אם Windows מבקש אישור – מאשרים.",
+      "שמים קיצור דרך בשולחן העבודה כדי למצוא אותו מהר בשטח.",
+      "מחברים את המחשב לרשת של המקמ״שים ופותחים את התוכנה: היא מציגה את המקמ״שים שנמצאים כרגע באוויר."
+     ],
+     "en": [
+      "Copy DomoNodeFinder-2.5.1.exe from the company server to the laptop (about 28 MB).",
+      "Run it. If Windows asks for permission, allow it.",
+      "Put a desktop shortcut so it is easy to find in the field.",
+      "Connect the laptop to the radio network and open the program: it shows the radios currently on air."
+     ]
+    },
+    "note": {
+     "he": "משמשת לראות אילו מקמ״שים נמצאים באוויר ברגע נתון. תוכנה של DTC – הקובץ עצמו נשמר בשרת של החברה ולא באפליקציה.",
+     "en": "Used to see which radios are on air at a given moment. DTC software – the file itself is kept on the company server, not in the app."
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "llc-brakes",
+   "sec": "b-low",
+   "type": "guide",
+   "title": {
+    "he": "מערכת הבלמים – NC, בלם יד ובלם רגיל",
+    "en": "Brake system – NC, hand brake and standard brake"
+   },
+   "summary": {
+    "he": "בלם NC בטוח בכשל, בלם יד, היגוי בבלימה",
+    "en": "Fail-safe NC brake, hand brake, brake steering"
    },
    "body": {
     "he": [
      {
-      "p": "ניסוי של יומיים (25–26.8.2026) בתצורה החדשה, בנס״א – ישראל, בסמכות צה״ל. פלטפורמה VHCR-V01-00001, תצורת גלגלים, עם RWS (Pitbull) ו־M2 Browning."
+      "p": "לכלי שלוש מערכות בלימה שפועלות במקביל: **בלם NC**, **בלם יד** ו**בלם רגיל** (בלמי הגלגלים)."
      },
      {
-      "h": "שורה תחתונה"
+      "h": "בלם NC (סגור במצב רגיל)"
+     },
+     {
+      "p": "המנגנון מבטיח שהכלי ייעצר לגמרי בכל אובדן חשמל, תקלה או מצב חירום. הבלם **מופעל כברירת מחדל**, כשהמערכת כבויה או לא פעילה."
      },
      {
       "ul": [
-       "**ATP:** מתוך 46 בדיקות – 44 תקין (SAT), 1 חלקי, 1 לא נבדק. אף בדיקה לא נכשלה.",
-       "**בטיחות:** כל מצבי הכשל שהופעלו בכוונה (ניתוק כבל שליטה, ניתוק חשמל, אובדן תקשורת, נפילת מתח) הפעילו E-STOP כנדרש.",
-       "**תקשורת LOS:** קשר נשמר עד **5.2 ק״מ**, ירידת SNR הדרגתית, ללא השפעה בפניות.",
-       "**הטיה:** 45° (המקסימום של המתקן), סטייה קבועה של 1° בין הזווית בפועל לתצוגה.",
-       "**סיבולת:** 50 ק״מ רצופים בחצץ בלי תקלות. מד הדלק ירד שנת אחת ממיכל מלא."
+       "**ידית בלם** – מחוברת מכנית לדוושת הבלם.",
+       "**קפיץ החזרה** – קפיץ במתיחה גבוהה שמושך את הדוושה למצב בלימה.",
+       "**מפעיל לינארי** – מותח את הקפיץ כדי לשחרר את הבלם כשהמערכת פועלת.",
+       "**מנעול אלקטרומגנטי** – מחזיק את הקפיץ מתוח (בלם משוחרר) כל עוד יש חשמל."
       ]
      },
      {
-      "note": "**ממצא קריטי לבטיחות:** בורג גלגל נשבר וגלגל תחנה 2 נפרד בגלל אומים רופפים. חובה: בקרת מומנט ובדיקת חיזוק אומי גלגלים לפני כל הפעלה. (הכלי המשיך לנסוע על 7 גלגלים וחזר לבסיס.)",
-      "kind": "caution"
+      "table": {
+       "head": [
+        "מצב",
+        "מה קורה"
+       ],
+       "rows": [
+        [
+         "**מערכת כבויה / אין חשמל**",
+         "האלקטרומגנט משוחרר, הקפיץ מתכווץ ולוחץ על הדוושה – הכלי בלום."
+        ],
+        [
+         "**מערכת פועלת**",
+         "המפעיל מותח את הקפיץ, האלקטרומגנט נועל אותו – הבלם משוחרר והכלי יכול לנסוע."
+        ],
+        [
+         "**תקלה / נפילת חשמל / כיבוי**",
+         "האלקטרומגנט משחרר את הקפיץ מיד – בלימה מיידית."
+        ]
+       ]
+      }
      },
      {
-      "note": "**מגבלת ניידות:** שיפוע מאושר להחזקה – **30%** בלבד. ב־40% גלגול קל אחורה ב־E-STOP, ב־50% הכלי לא מחזיק.",
-      "kind": "caution"
+      "h": "בלם יד"
      },
      {
-      "h": "תצורת תוכנה וחומרה בניסוי"
+      "p": "כדי להתחיל לנסוע צריך לשחרר את בלם היד. **התנעת המנוע מותרת רק כשבלם היד מופעל.**"
+     },
+     {
+      "h": "בלם רגיל והיגוי"
+     },
+     {
+      "p": "לכל ציר (שמאל וימין) יש בלם משלו. בבלימה רגילה שניהם מופעלים בפקודה אחת. בפנייה הבקרה בולמת ציר אחד: פנייה שמאלה = בלימת הציר הימני, פנייה ימינה = בלימת הציר השמאלי."
+     },
+     {
+      "note": "רכב ה־ARGO יכול להסתובב במקום (Pivot) רק בהילוך **LOW**.",
+      "kind": "tip"
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The vehicle has three parallel brake systems: the **NC brake**, the **hand brake** and the **standard brake** (wheel brakes)."
+     },
+     {
+      "h": "NC brake (Normally Closed)"
+     },
+     {
+      "p": "Ensures a complete stop on any power loss, malfunction or emergency. The brake is **engaged by default** when the system is off or inactive."
+     },
+     {
+      "ul": [
+       "**Brake lever** – mechanically linked to the brake pedal.",
+       "**Return spring** – high-tension spring that pulls the pedal into braking.",
+       "**Linear actuator** – stretches the spring to release the brake when the system is running.",
+       "**Electromagnet lock** – holds the spring stretched (brake released) while powered."
+      ]
+     },
+     {
+      "table": {
+       "head": [
+        "State",
+        "What happens"
+       ],
+       "rows": [
+        [
+         "**System off / no power**",
+         "Electromagnet released, spring contracts and presses the pedal – vehicle braked."
+        ],
+        [
+         "**System running**",
+         "Actuator stretches the spring, electromagnet locks it – brake released, vehicle can move."
+        ],
+        [
+         "**Fault / power loss / shutdown**",
+         "Electromagnet releases the spring instantly – immediate braking."
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Hand brake"
+     },
+     {
+      "p": "Release the hand brake to start moving. **Engine start is allowed only with the hand brake on.**"
+     },
+     {
+      "h": "Standard brake and steering"
+     },
+     {
+      "p": "Each axle side (left, right) has its own brake; normal braking applies both with one command. When turning, the control brakes one side: left turn = right side brake, right turn = left side brake."
+     },
+     {
+      "note": "The ARGO vehicle can pivot (turn on the spot) only in **LOW** gear.",
+      "kind": "tip"
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "llc-emo",
+   "sec": "b-low",
+   "type": "guide",
+   "title": {
+    "he": "EMO – עצירת חירום",
+    "en": "EMO – emergency stop"
+   },
+   "summary": {
+    "he": "3 לחצנים ו־EMO אלחוטי FORT",
+    "en": "3 switches and FORT wireless EMO"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "במערכת שני סוגי EMO: **לחצן EMO** פיזי, ו**EMO אלחוטי** (FORT EPC-1000)."
+     },
+     {
+      "table": {
+       "head": [
+        "מיקום",
+        "לחצן EMO",
+        "EMO אלחוטי (FORT)"
+       ],
+       "rows": [
+        [
+         "כלי (ביזון)",
+         "2",
+         "1"
+        ],
+        [
+         "קופסת מפעיל",
+         "1",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מה קורה בלחיצה"
+     },
+     {
+      "ul": [
+       "**לחצן EMO:** בלם ה־NC נכנס לפעולה, ההילוך עובר ל־**N** והמנוע נכבה.",
+       "**EMO אלחוטי:** לחיצה על ה־EMO בקופסת המפעיל מפעילה את ה־EMO האלחוטי בכלי – בלם NC, הילוך N, כיבוי מנוע."
+      ]
+     },
+     {
+      "note": "בניסוי אוגוסט 2026 כל מצבי הכשל (ניתוק כבל שליטה, ניתוק חשמל, אובדן תקשורת, נפילת מתח) הפעילו E-STOP כנדרש. סגירת אפליקציית השליטה עוצרת את הכלי, אבל **המנוע נשאר מונע**.",
+      "kind": "important"
+     },
+     {
+      "h": "לחצן EMO"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מידות",
+         "72×45×45 מ״מ"
+        ],
+        [
+         "סוג",
+         "Push-Turn"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-20 עד +70°C"
+        ],
+        [
+         "זרם",
+         "5A"
+        ],
+        [
+         "אטימות",
+         "IP69K"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "EMO אלחוטי – FORT EPC-1000"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "תפקיד",
+         "שולח ומקבל פקודות בטיחות SIL 3 (עצירה, זחילה, השהיה) ב־Wi-Fi או Ethernet"
+        ],
+        [
+         "זמן תגובה",
+         "100ms בממוצע + השהיית רשת"
+        ],
+        [
+         "Timeout בטיחות",
+         "250 / 500 / 750 / 1000ms (לבחירה)"
+        ],
+        [
+         "מתח עבודה",
+         "8–32V DC (12V או 24V נומינלי)"
+        ],
+        [
+         "צריכה",
+         "2.18–2.78W"
+        ],
+        [
+         "אטימות / טמפ׳",
+         "IP65 · ‏‎-40°C עד 85°C"
+        ],
+        [
+         "מידות / משקל",
+         "228×174×61 מ״מ · ‏878 גר׳"
+        ],
+        [
+         "CAN",
+         "J1939, CANopen"
+        ],
+        [
+         "הסמכה",
+         "SIL 3 לפי IEC 61508"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The system has two EMO types: a physical **EMO switch** and a **wireless EMO** (FORT EPC-1000)."
+     },
+     {
+      "table": {
+       "head": [
+        "Location",
+        "EMO switch",
+        "Wireless EMO (FORT)"
+       ],
+       "rows": [
+        [
+         "Vehicle (BISON)",
+         "2",
+         "1"
+        ],
+        [
+         "Operator box",
+         "1",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "What happens when pressed"
+     },
+     {
+      "ul": [
+       "**EMO switch:** the NC brake engages, the gear goes to **N** and the engine shuts off.",
+       "**Wireless EMO:** pressing EMO on the operator box triggers the vehicle’s wireless EMO – NC brake, gear N, engine off."
+      ]
+     },
+     {
+      "note": "In the August 2026 trial every failure mode (control cable, power, comms loss, voltage drop) triggered E-STOP as designed. Closing the control application stops the vehicle, but **the engine keeps running**.",
+      "kind": "important"
+     },
+     {
+      "h": "EMO switch"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Dimensions",
+         "72×45×45 mm"
+        ],
+        [
+         "Type",
+         "Push-Turn"
+        ],
+        [
+         "Working temp",
+         "-20 to +70°C"
+        ],
+        [
+         "Current rating",
+         "5 A"
+        ],
+        [
+         "IP rating",
+         "IP69K"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Wireless EMO – FORT EPC-1000"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Role",
+         "Sends and receives SIL 3 safety commands (e-stop, crawl, pause) over Wi-Fi or Ethernet"
+        ],
+        [
+         "Response time",
+         "100 ms avg + network latency"
+        ],
+        [
+         "Safety timeout",
+         "250 / 500 / 750 / 1000 ms (selectable)"
+        ],
+        [
+         "Operating voltage",
+         "8–32 V DC (12 V or 24 V nominal)"
+        ],
+        [
+         "Power draw",
+         "2.18–2.78 W"
+        ],
+        [
+         "Rating / temp",
+         "IP65 · -40°C to 85°C"
+        ],
+        [
+         "Size / weight",
+         "228×174×61 mm · 878 g"
+        ],
+        [
+         "CAN",
+         "J1939, CANopen"
+        ],
+        [
+         "Certification",
+         "SIL 3 per IEC 61508"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "llc-panel",
+   "sec": "b-low",
+   "type": "guide",
+   "title": {
+    "he": "לוח בקרה קדמי",
+    "en": "Front control panel"
+   },
+   "summary": {
+    "he": "מתג הפעלה, טעינה, מחבר טכנאי ו־SOC",
+    "en": "Power switch, charging, tech connector, SOC"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "לוח הבקרה הקדמי נמצא על שלדת הכלי:"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "תפקיד"
+       ],
+       "rows": [
+        [
+         "**מתג הפעלה**",
+         "מדליק ומכבה את חשמל מערכות הבקרה הנמוכה והגבוהה (לא את המנוע)."
+        ],
+        [
+         "**מחבר טעינה**",
+         "לטעינת המצבר הפנימי."
+        ],
+        [
+         "**מתג בורר**",
+         "בחירה בין בקרי ROCU-1 ו־ROCU-7."
+        ],
+        [
+         "**מחבר טכנאי (Tech)**",
+         "חיבור Ethernet ו־CAN Bus לכלי."
+        ],
+        [
+         "**מסך SOC**",
+         "מציג את מצב הסוללה."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The front control panel is on the vehicle chassis:"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Function"
+       ],
+       "rows": [
+        [
+         "**On/off switch**",
+         "Turns low- and high-level control power on and off (not the engine)."
+        ],
+        [
+         "**Charge connector**",
+         "Charges the internal battery."
+        ],
+        [
+         "**Toggle switch**",
+         "Selects ROCU-1 or ROCU-7 controller."
+        ],
+        [
+         "**Tech connector**",
+         "Ethernet and CAN Bus access to the vehicle."
+        ],
+        [
+         "**SOC display**",
+         "Shows battery status."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "gun-spec",
+   "sec": "b-weapon",
+   "type": "guide",
+   "title": {
+    "he": "מערכת נשק Pitbull – נתונים טכניים",
+    "en": "Pitbull gun system – technical data"
+   },
+   "summary": {
+    "he": "FN MAG, ‏24V, ‏80W, מצלמות ומד טווח",
+    "en": "FN MAG, 24 V, 80 W, cameras and LRF"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "מערכת נשק **Pitbull** של General Robotics."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מידות (ללא נשק)",
+         "75×175×63 ס״מ"
+        ],
+        [
+         "קוטר סיבוב עם נשק",
+         "193 ס״מ"
+        ],
+        [
+         "משקל (ללא נשק ותחמושת)",
+         "פחות מ־95 ק״ג"
+        ],
+        [
+         "משקל קרבי כולל",
+         "פחות מ־165 ק״ג"
+        ],
+        [
+         "התקנה",
+         "עיגון מהיר, 4 ברגים"
+        ],
+        [
+         "נשק ראשי",
+         "FN MAG, דריכה מרחוק"
+        ],
+        [
+         "תחמושת",
+         "200 כדורים"
+        ],
+        [
+         "הגבהה",
+         "‎-30° עד +60° (תלוי בבסיס)"
+        ],
+        [
+         "מתח עבודה",
+         "24V נומינלי (22–36V) מהכלי"
+        ],
+        [
+         "צריכה ממוצעת",
+         "80W"
+        ],
+        [
+         "סיבוב אופקי",
+         "N×360°"
+        ],
+        [
+         "דיוק",
+         "0.4 מיליראדיאן"
+        ],
+        [
+         "מהירות סיבוב והגבהה",
+         "90° לשנייה"
+        ],
+        [
+         "מייצב",
+         "2 צירים, דיוק 0.01°"
+        ],
+        [
+         "מצלמה תרמית",
+         "זום 26–105 מ״מ, גילוי אדם עד 1000 מ׳"
+        ],
+        [
+         "מצלמת יום HD",
+         "זום אופטי ×40, גילוי אדם עד 1600 מ׳"
+        ],
+        [
+         "מד טווח לייזר",
+         "5.1 ק״מ (10 ק״מ באופציה), Class 1 ‏1550nm"
+        ],
+        [
+         "יכולות",
+         "Point & Shoot, עקיבה יום ולילה, גילוי מטרות אוטומטי"
+        ],
+        [
+         "תקנים",
+         "MIL-STD-810G, 882E, 461F, 464, 1275D"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "בקר מערכת הנשק"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מידות / משקל",
+         "36×6×21 ס״מ · ‏2.8 ק״ג"
+        ],
+        [
+         "מתח",
+         "12–36VDC"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-30° עד +70°C"
+        ],
+        [
+         "יכולות",
+         "Point & Shoot, ממשק בטיחות FIZ ו־ACS, וידאו בזמן אמת, מונה תחמושת"
+        ],
+        [
+         "חיישנים",
+         "עד 8 חיישנים למעבר אוטומטי למצב בטוח"
+        ],
+        [
+         "אטימות",
+         "IP65, MIL-STD-810G"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "**Pitbull** gun system by General Robotics."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Dimensions (w/o weapon)",
+         "75×175×63 cm"
+        ],
+        [
+         "Rotation diameter with weapon",
+         "193 cm"
+        ],
+        [
+         "Weight (w/o weapon and ammo)",
+         "< 95 kg"
+        ],
+        [
+         "Combat weight",
+         "< 165 kg"
+        ],
+        [
+         "Mount",
+         "Fast mounting, 4 bolts"
+        ],
+        [
+         "Main armament",
+         "FN MAG, remote cocking"
+        ],
+        [
+         "Ammunition",
+         "200 rounds"
+        ],
+        [
+         "Elevation",
+         "-30° to +60° (platform dependent)"
+        ],
+        [
+         "Operating voltage",
+         "24 V nominal (22–36 V) from the vehicle"
+        ],
+        [
+         "Average consumption",
+         "80 W"
+        ],
+        [
+         "Traverse",
+         "N×360°"
+        ],
+        [
+         "Accuracy",
+         "0.4 mrad"
+        ],
+        [
+         "Traverse and tilt speed",
+         "90°/s"
+        ],
+        [
+         "Stabilization",
+         "Dual axis, 0.01° accuracy"
+        ],
+        [
+         "Thermal camera",
+         "Zoom 26–105 mm, human detection < 1000 m"
+        ],
+        [
+         "HD day camera",
+         "40× optical zoom, human detection < 1600 m"
+        ],
+        [
+         "Laser range finder",
+         "5.1 km (10 km option), Class 1 1550 nm"
+        ],
+        [
+         "Features",
+         "Point & Shoot, day/night tracking, automatic target detection"
+        ],
+        [
+         "Standards",
+         "MIL-STD-810G, 882E, 461F, 464, 1275D"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Gun system controller"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Size / weight",
+         "36×6×21 cm · 2.8 kg"
+        ],
+        [
+         "Voltage",
+         "12–36 VDC"
+        ],
+        [
+         "Operating temp",
+         "-30° to +70°C"
+        ],
+        [
+         "Features",
+         "Point & Shoot, FIZ & ACS safety interface, real-time video, ammo counter"
+        ],
+        [
+         "Sensors",
+         "Up to 8 for automatic transition to safe mode"
+        ],
+        [
+         "Rating",
+         "IP65, MIL-STD-810G"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "hlc-sw",
+   "sec": "b-high-gen",
+   "type": "guide",
+   "title": {
+    "he": "בקרה גבוהה – פלטפורמת התוכנה",
+    "en": "High-level control – software platform"
+   },
+   "summary": {
+    "he": "ROS 2, גרסאות בשטח, דרישות רשת",
+    "en": "ROS 2, field versions, network requirements"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "מערכת השליטה וניהול הצי מבוססת על **ROS 2**. המפעיל שולט בכלי דרך ממשק Web, רואה מצלמות וטלמטריה בזמן אמת, ויכול לנהל כמה כלים במקביל."
+     },
+     {
+      "h": "גרסאות בשטח (ניסוי אוגוסט 2026)"
      },
      {
       "table": {
@@ -7687,10 +8526,6 @@
         "גרסה"
        ],
        "rows": [
-        [
-         "Platform Build",
-         "VHCR-V01-00001"
-        ],
         [
          "בקרה נמוכה (LLC)",
          "0.2.14"
@@ -7709,132 +8544,73 @@
         ],
         [
          "קושחת מקמ״ש DTC",
-         "8.4.4"
-        ],
-        [
-         "Waveform",
-         "MeshUltra-M"
+         "8.4.4 · MeshUltra-M"
         ]
        ]
       }
      },
      {
-      "h": "פריטים פתוחים"
+      "h": "דרישות וביצועים"
      },
      {
       "table": {
        "head": [
-        "פריט",
-        "סטטוס",
-        "הערה"
+        "פרמטר",
+        "ערך"
        ],
        "rows": [
         [
-         "תצוגת מפה",
-         "חלקי",
-         "להחזיר את תצוגת הטווח בין הפלטפורמה ל־OCU"
+         "השהיית שליטה",
+         "פחות מ־100ms מקצה לקצה"
         ],
         [
-         "חיווי פנסים",
-         "לא נבדק",
-         "אין פנסים בתצורה זו"
+         "רוחב פס מינימלי",
+         "2Mbps לכל כלי (מומלץ 5–10Mbps)"
         ],
         [
-         "IMU בנסיעה",
-         "לבדיקה",
-         "קפיצות משמעותיות בחיווי ה־IMU בזמן נסיעה"
+         "השהיית רשת מרבית",
+         "200ms"
         ],
         [
-         "כיול IMU",
-         "הערה",
-         "דורש כיול כשהכלי על משטח ישר"
+         "וידאו",
+         "15–30 FPS"
+        ],
+        [
+         "מחשב בכלי",
+         "Jetson Xavier NX ומעלה, 8GB RAM, ‏20GB פנויים"
+        ],
+        [
+         "מחשב מפעיל",
+         "טאבלט/מחשב נייד, 4GB RAM, ‏5GB פנויים, Chrome 100+"
+        ],
+        [
+         "מערכת הפעלה בכלי",
+         "Ubuntu 22.04, ‏ROS 2 Humble, Docker"
         ]
        ]
       }
      },
      {
-      "h": "שקילה (ק״ג)"
+      "note": "אם הווידאו מקרטע או שהשליטה מגיבה לאט, בדקו קודם את איכות הקישור (Tactical Display, ‏Levels): מתחת ל־2Mbps לכלי המערכת לא תעבוד כראוי.",
+      "kind": "tip"
      },
      {
-      "table": {
-       "head": [
-        "נקודת מדידה",
-        "ימין",
-        "שמאל"
-       ],
-       "rows": [
-        [
-         "סה״כ צד",
-         "560",
-         "540"
-        ],
-        [
-         "תחנה 1",
-         "100",
-         "80"
-        ],
-        [
-         "תחנות 1–2",
-         "360",
-         "300"
-        ],
-        [
-         "תחנות 1–3",
-         "500",
-         "440"
-        ],
-        [
-         "תחנות 2–4",
-         "400",
-         "520"
-        ],
-        [
-         "תחנות 3–4",
-         "160",
-         "280"
-        ],
-        [
-         "תחנה 4",
-         "20",
-         "120"
-        ]
-       ]
-      }
+      "h": "כלי אבחון במחשב הכלי"
      },
      {
-      "p": "משקל ברוטו נמדד: **1,120 ק״ג**. קריאות קבוצתיות אינן מצטברות (העברת עומס בין התחנות)."
+      "p": "`htop`, `iotop`, `nethogs`, `docker stats` לניטור משאבים · `journalctl`, `docker logs` ללוגים · `tcpdump`, `iftop`, Wireshark לרשת."
      },
      {
-      "note": "מקור: IRONWAVE UGV New Configuration – Trial Summary Report, 26.8.2026.",
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
     ],
     "en": [
      {
-      "p": "Two-day trial (25–26 Aug 2026) of the new configuration at NASA – Israel, under IDF trial authority. Platform VHCR-V01-00001, wheeled, with RWS (Pitbull) and M2 Browning."
+      "p": "The control and fleet management system is built on **ROS 2**. The operator drives through a web interface, sees cameras and telemetry in real time, and can manage several vehicles at once."
      },
      {
-      "h": "Bottom line"
-     },
-     {
-      "ul": [
-       "**ATP:** of 46 checks – 44 SAT, 1 PARTIAL, 1 NOT TESTED. None UNSAT.",
-       "**Safety:** every induced failure (control cable, power, comms loss, voltage drop) correctly commanded E-STOP.",
-       "**LOS comms:** link held to **5.2 km**, gradual SNR roll-off, no effect from turns.",
-       "**Tilt:** 45° (fixture maximum), constant 1° offset between actual and displayed attitude.",
-       "**Endurance:** 50 km continuous gravel run with no faults. Fuel gauge dropped one bar from full."
-      ]
-     },
-     {
-      "note": "**Safety-critical finding:** a wheel stud sheared and the Station 2 wheel separated due to loose nuts. Mandatory: torque control and a wheel-nut check before every operation. (The vehicle drove home on 7 wheels.)",
-      "kind": "caution"
-     },
-     {
-      "note": "**Mobility limit:** certified hold-on-grade is **30%** only. At 40% slight roll-back on E-STOP; at 50% it cannot hold.",
-      "kind": "caution"
-     },
-     {
-      "h": "Software and hardware baseline"
+      "h": "Field versions (August 2026 trial)"
      },
      {
       "table": {
@@ -7844,15 +8620,11 @@
        ],
        "rows": [
         [
-         "Platform Build",
-         "VHCR-V01-00001"
-        ],
-        [
-         "Low-Level Control (LLC)",
+         "Low-level control (LLC)",
          "0.2.14"
         ],
         [
-         "High-Level Control (HLC)",
+         "High-level control (HLC)",
          "V1"
         ],
         [
@@ -7865,107 +8637,198 @@
         ],
         [
          "DTC radio firmware",
-         "8.4.4"
-        ],
-        [
-         "Waveform",
-         "MeshUltra-M"
+         "8.4.4 · MeshUltra-M"
         ]
        ]
       }
      },
      {
-      "h": "Open items"
+      "h": "Requirements and performance"
      },
      {
       "table": {
        "head": [
-        "Item",
-        "Status",
-        "Note"
+        "Parameter",
+        "Value"
        ],
        "rows": [
         [
-         "Map display",
-         "PARTIAL",
-         "Restore the platform-to-OCU range display"
+         "Control latency",
+         "< 100 ms end-to-end"
         ],
         [
-         "Lights indication",
-         "NOT TESTED",
-         "No lights in this configuration"
+         "Minimum bandwidth",
+         "2 Mbps per vehicle (5–10 recommended)"
         ],
         [
-         "IMU while driving",
-         "To check",
-         "Significant jumps in IMU indication while driving"
+         "Max network latency",
+         "200 ms"
         ],
         [
-         "IMU calibration",
-         "Note",
-         "Requires calibration on level ground"
+         "Video",
+         "15–30 FPS"
+        ],
+        [
+         "Vehicle computer",
+         "Jetson Xavier NX or higher, 8 GB RAM, 20 GB free"
+        ],
+        [
+         "Operator computer",
+         "Tablet/laptop, 4 GB RAM, 5 GB free, Chrome 100+"
+        ],
+        [
+         "Vehicle OS",
+         "Ubuntu 22.04, ROS 2 Humble, Docker"
         ]
        ]
       }
      },
      {
-      "h": "Weighing (kg)"
+      "note": "If video stutters or control is slow, check link quality first (Tactical Display, Levels): below 2 Mbps per vehicle the system will not work properly.",
+      "kind": "tip"
      },
      {
-      "table": {
-       "head": [
-        "Measurement point",
-        "Right",
-        "Left"
-       ],
-       "rows": [
-        [
-         "Side total",
-         "560",
-         "540"
-        ],
-        [
-         "Station 1",
-         "100",
-         "80"
-        ],
-        [
-         "Stations 1–2",
-         "360",
-         "300"
-        ],
-        [
-         "Stations 1–3",
-         "500",
-         "440"
-        ],
-        [
-         "Stations 2–4",
-         "400",
-         "520"
-        ],
-        [
-         "Stations 3–4",
-         "160",
-         "280"
-        ],
-        [
-         "Station 4",
-         "20",
-         "120"
-        ]
-       ]
-      }
+      "h": "Diagnostic tools on the vehicle computer"
      },
      {
-      "p": "Gross measured weight: **1,120 kg**. Group readings are not additive (load transfer between stations)."
+      "p": "`htop`, `iotop`, `nethogs`, `docker stats` for resources · `journalctl`, `docker logs` for logs · `tcpdump`, `iftop`, Wireshark for the network."
      },
      {
-      "note": "Source: IRONWAVE UGV New Configuration – Trial Summary Report, 26 Aug 2026.",
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
     ]
    },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "tripod-spec",
+   "sec": "comm-tech",
+   "type": "guide",
+   "title": {
+    "he": "סט ממסר חצובה (Tripod Relay Set) – נתונים",
+    "en": "Tripod relay set – data"
+   },
+   "summary": {
+    "he": "טווח 5 ק״מ, עד 10 שעות",
+    "en": "5 km range, up to 10 hours"
+   },
+   "body": {
+    "he": [
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "חצובה – מידות",
+         "1.6×1.6×1.9 מ׳, גובה מרבי 3.5 מ׳"
+        ],
+        [
+         "חצובה – משקל / עומס",
+         "5 ק״ג · עד 50 ק״ג"
+        ],
+        [
+         "חצובה – התקנה",
+         "4 אנטנות RF, אנטנת סלולר ו־GPS"
+        ],
+        [
+         "פליקן / קופסת תקשורת",
+         "490×395×157 / 465×335×220 מ״מ · ‏8 ק״ג כל אחת"
+        ],
+        [
+         "ממשקים",
+         "EMO, ‏ROCU-10, בקר Pitbull, 2 סוללות, חשמל חיצוני, 3×ETH, ‏4 אנטנות RF, ‏4 אנטנות סלולר"
+        ],
+        [
+         "תקשורת",
+         "IP MESH Phase 5, סלולר"
+        ],
+        [
+         "טווח (Phase 5)",
+         "5 ק״מ"
+        ],
+        [
+         "הזנה",
+         "2 סוללות MR-2791 או חשמל חיצוני"
+        ],
+        [
+         "זמן עבודה",
+         "עד 10 שעות"
+        ],
+        [
+         "טמפ׳ / אטימות",
+         "‎-20°C עד +60°C · IP65"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Tripod – size",
+         "1.6×1.6×1.9 m, max height 3.5 m"
+        ],
+        [
+         "Tripod – weight / load",
+         "5 kg · up to 50 kg"
+        ],
+        [
+         "Tripod – mounting",
+         "4 RF antennas, cellular and GPS antenna"
+        ],
+        [
+         "Pelican / COM box",
+         "490×395×157 / 465×335×220 mm · 8 kg each"
+        ],
+        [
+         "Interfaces",
+         "EMO, ROCU-10, Pitbull controller, 2 batteries, external power, 3×ETH, 4 RF ants, 4 cellular ants"
+        ],
+        [
+         "Communication",
+         "IP MESH Phase 5, cellular"
+        ],
+        [
+         "Range (Phase 5)",
+         "5 km"
+        ],
+        [
+         "Power",
+         "2 × MR-2791 batteries or external power"
+        ],
+        [
+         "Working time",
+         "Up to 10 hours"
+        ],
+        [
+         "Temp / rating",
+         "-20°C to +60°C · IP65"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
    "updated": "2026-11-10"
   },
   {
@@ -8660,66 +9523,6 @@
     "mb": 0.5
    },
    "group": "docs",
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "trial-aug2026-pdf",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "דוח סיכום ניסוי – אוגוסט 2026 (PDF)",
-    "en": "Trial summary report – August 2026 (PDF)"
-   },
-   "summary": {
-    "he": "15 עמודים, כולל תמונות",
-    "en": "15 pages, with photos"
-   },
-   "body": {
-    "src": "media/ironwave-trial-report-aug2026.pdf",
-    "note": {
-     "he": "",
-     "en": ""
-    },
-    "mb": 1.7
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "sw-nodefinder",
-   "sec": "comm-air",
-   "type": "software",
-   "title": {
-    "he": "Domo Node Finder – איתור מקמ״שים באוויר",
-    "en": "Domo Node Finder – find radios on air"
-   },
-   "summary": {
-    "he": "תוכנת DTC לזיהוי המקמ״שים הפעילים ברשת · גרסה 2.5.1",
-    "en": "DTC tool to see the active radios on the network · v2.5.1"
-   },
-   "body": {
-    "ver": "2.5.1",
-    "file": "DomoNodeFinder-2.5.1.exe",
-    "path": "Desktop\\DomoNodeFinder.exe",
-    "url": "",
-    "install": {
-     "he": [
-      "מעתיקים את הקובץ DomoNodeFinder-2.5.1.exe מהשרת של החברה למחשב הנייד (הוא שוקל כ־28MB).",
-      "מריצים אותו. אם Windows מבקש אישור – מאשרים.",
-      "שמים קיצור דרך בשולחן העבודה כדי למצוא אותו מהר בשטח.",
-      "מחברים את המחשב לרשת של המקמ״שים ופותחים את התוכנה: היא מציגה את המקמ״שים שנמצאים כרגע באוויר."
-     ],
-     "en": [
-      "Copy DomoNodeFinder-2.5.1.exe from the company server to the laptop (about 28 MB).",
-      "Run it. If Windows asks for permission, allow it.",
-      "Put a desktop shortcut so it is easy to find in the field.",
-      "Connect the laptop to the radio network and open the program: it shows the radios currently on air."
-     ]
-    },
-    "note": {
-     "he": "משמשת לראות אילו מקמ״שים נמצאים באוויר ברגע נתון. תוכנה של DTC – הקובץ עצמו נשמר בשרת של החברה ולא באפליקציה.",
-     "en": "Used to see which radios are on air at a given moment. DTC software – the file itself is kept on the company server, not in the app."
-    }
-   },
    "updated": "2026-11-10"
   }
  ]
