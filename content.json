@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 9,
+  "version": 10,
   "updated": "2026-11-10",
   "teamHash": "da66e96b63b0fa81900f3eeeb289e2814425612d1a77cdb94c188699555800b1",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -2159,7 +2159,8 @@
     "note": {
      "he": "בתחילת כל יום עבודה ולפני כל שימוש בכלי. על משטח ישר בלבד. כל חריגה או ליקוי מדווחים מיד לחוליית האחזקה ב־Roboteam ומטופלים לפני שימוש חוזר בכלי. אם יש ספק – עוצרים ומתייעצים.",
      "en": "At the start of every working day and before every use of the vehicle. Level ground only. Any deviation or fault is reported immediately to the Roboteam maintenance team and fixed before the vehicle is used again. If in doubt – stop and consult."
-    }
+    },
+    "sign": true
    },
    "updated": "2026-11-10"
   },
@@ -2215,7 +2216,8 @@
     "note": {
      "he": "בסוף כל יום עבודה ולפני עבודות לילה. על משטח ישר בלבד. כל חריגה או ליקוי מדווחים מיד לחוליית האחזקה ב־Roboteam ומטופלים לפני שימוש חוזר בכלי. אם יש ספק – עוצרים ומתייעצים.",
      "en": "At the end of every working day and before night operations. Level ground only. Any deviation or fault is reported immediately to the Roboteam maintenance team and fixed before the vehicle is used again. If in doubt – stop and consult."
-    }
+    },
+    "sign": true
    },
    "updated": "2026-11-10"
   },
