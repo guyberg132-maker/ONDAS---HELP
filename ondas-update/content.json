@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 2,
+  "version": 3,
   "updated": "2026-11-10",
   "teamHash": "da66e96b63b0fa81900f3eeeb289e2814425612d1a77cdb94c188699555800b1",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -2039,217 +2039,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "m-pre",
-   "sec": "maint",
-   "type": "checklist",
-   "title": {
-    "he": "טיפול לפני תנועה",
-    "en": "Pre-Operation Service"
-   },
-   "summary": {
-    "he": "BISON UGV",
-    "en": "BISON UGV"
-   },
-   "body": {
-    "he": [
-     "שורה לדוגמה 1 – להחליף בתוכן מהמסמך",
-     "שורה לדוגמה 2 – להחליף בתוכן מהמסמך",
-     "שורה לדוגמה 3 – להחליף בתוכן מהמסמך",
-     "שורה לדוגמה 4 – להחליף בתוכן מהמסמך"
-    ],
-    "en": [
-     "Sample line 1 – replace with content from the document",
-     "Sample line 2 – replace with content from the document",
-     "Sample line 3 – replace with content from the document",
-     "Sample line 4 – replace with content from the document"
-    ]
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "m-post",
-   "sec": "maint",
-   "type": "checklist",
-   "title": {
-    "he": "טיפול אחרי תנועה",
-    "en": "Post-Operation Service"
-   },
-   "summary": {
-    "he": "BISON UGV",
-    "en": "BISON UGV"
-   },
-   "body": {
-    "he": [
-     "שורה לדוגמה 1 – להחליף בתוכן מהמסמך",
-     "שורה לדוגמה 2 – להחליף בתוכן מהמסמך",
-     "שורה לדוגמה 3 – להחליף בתוכן מהמסמך",
-     "שורה לדוגמה 4 – להחליף בתוכן מהמסמך"
-    ],
-    "en": [
-     "Sample line 1 – replace with content from the document",
-     "Sample line 2 – replace with content from the document",
-     "Sample line 3 – replace with content from the document",
-     "Sample line 4 – replace with content from the document"
-    ]
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "m-prev",
-   "sec": "maint",
-   "type": "pdf",
-   "title": {
-    "he": "אחזקה מונעת",
-    "en": "Preventive Maintenance"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "m-data",
-   "sec": "maint",
-   "type": "maint",
-   "title": {
-    "he": "טיפולים כלליים – נתוני אחזקה",
-    "en": "General Service – Maintenance Data"
-   },
-   "summary": {
-    "he": "שמנים, נוזלים, מסננים וחלקים מתכלים",
-    "en": "Oils, fluids, filters and consumables"
-   },
-   "body": {
-    "rows": [
-     {
-      "kind": "fluid",
-      "name": {
-       "he": "שמן מנוע",
-       "en": "Engine oil"
-      },
-      "spec": "",
-      "qty": "",
-      "point": "",
-      "interval": "",
-      "pn": "",
-      "note": {
-       "he": "",
-       "en": ""
-      }
-     },
-     {
-      "kind": "fluid",
-      "name": {
-       "he": "שמן גיר",
-       "en": "Gear oil"
-      },
-      "spec": "",
-      "qty": "",
-      "point": "",
-      "interval": "",
-      "pn": "",
-      "note": {
-       "he": "",
-       "en": ""
-      }
-     },
-     {
-      "kind": "fluid",
-      "name": {
-       "he": "שמן ברקס",
-       "en": "Brake fluid"
-      },
-      "spec": "",
-      "qty": "",
-      "point": "",
-      "interval": "",
-      "pn": "",
-      "note": {
-       "he": "",
-       "en": ""
-      }
-     },
-     {
-      "kind": "fluid",
-      "name": {
-       "he": "דלק",
-       "en": "Fuel"
-      },
-      "spec": "",
-      "qty": "",
-      "point": "",
-      "interval": "",
-      "pn": "",
-      "note": {
-       "he": "",
-       "en": ""
-      }
-     },
-     {
-      "kind": "filter",
-      "name": {
-       "he": "מסנן שמן",
-       "en": "Oil filter"
-      },
-      "spec": "",
-      "qty": "",
-      "point": "",
-      "interval": "",
-      "pn": "",
-      "note": {
-       "he": "",
-       "en": ""
-      }
-     },
-     {
-      "kind": "filter",
-      "name": {
-       "he": "מסנן אוויר",
-       "en": "Air filter"
-      },
-      "spec": "",
-      "qty": "",
-      "point": "",
-      "interval": "",
-      "pn": "",
-      "note": {
-       "he": "",
-       "en": ""
-      }
-     },
-     {
-      "kind": "filter",
-      "name": {
-       "he": "מסנן דלק",
-       "en": "Fuel filter"
-      },
-      "spec": "",
-      "qty": "",
-      "point": "",
-      "interval": "",
-      "pn": "",
-      "note": {
-       "he": "",
-       "en": ""
-      }
-     }
-    ],
-    "note": {
-     "he": "סוגים, כמויות ותדירויות יוזנו מתוך מסמך הטיפולים.",
-     "en": "Types, quantities and intervals will be filled in from the service document."
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
    "id": "cfg-radio",
    "sec": "cfg",
    "type": "link",
@@ -2461,6 +2250,463 @@
       "Sample check 4",
       "Sample check 5"
      ]
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-pre",
+   "sec": "maint",
+   "type": "checklist",
+   "title": {
+    "he": "טיפול לפני תנועה (טל״ת)",
+    "en": "Pre-Operation Maintenance"
+   },
+   "summary": {
+    "he": "BISON – בתחילת כל יום עבודה ולפני כל שימוש",
+    "en": "BISON – start of every working day and before every use"
+   },
+   "body": {
+    "he": [
+     "# א. הכנה",
+     "**הדלקת פלטפורמה** – הפלטפורמה דלוקה והתוכנה עלתה.",
+     "**הכנה ראשונית** – הכלי על משטח ישר, מנוע כבוי.",
+     "# ב. תא המנוע – בדיקה קרה (מנוע כבוי, חשמל דלוק)",
+     "**הסתכלות כללית** – אין נזק, חלקים רופפים או גופים זרים.",
+     "**בלמים** – אין קרעים, שברים, שמן או לכלוך.",
+     "**נזילות** – אין נזילות נוזל בלמים, שמן גיר, דלק ושמן מנוע.",
+     "**מפלס שמן מנוע** – במקל המדידה, בתוך הטווח המקווקו.",
+     "**מפלס שמן גיר** – בחלון הצפייה – חצי מלא. למילוי יש לפרק את המכסה העליון.",
+     "**מפלס דלק** – מספיק לפעילות המתוכננת.",
+     "**מצברים 12V ×2** – אומים מהודקים, קטבים נקיים ללא קורוזיה.",
+     "**רצועת הנעה** – ללא קרעים, שחיקה או סדקים.",
+     "**רצועת אלטרנטור** – ללא קרעים, שחיקה או סדקים.",
+     "# ג. סביב הכלי ועל הכלי",
+     "**גחון וצירים** – ללא סדקים או שברים בגחון, הצירים אינם מעוותים.",
+     "**אוזני גרירה** – אוזני הגרירה תקינות.",
+     "**לחצני EMO** – 3 לחצנים קיימים ותקינים – בדיקה בהפעלה.",
+     "**לחץ אוויר בצמיגים** – קדמי 5, אמצעיים 7, אחורי 6 (PSI).",
+     "**מצב צמיגים** – ללא קרעים או שחיקה, ונטיל תקין.",
+     "**אומים בגלגלים** – במקום ומחוזקים.",
+     "**זחל** – גומי תקין, שיניים מקובעות, ללא שחיקה חריגה.",
+     "**מצלמות** – 4 היקפיות (יום ולילה) ומאסט – תקינות ומקובעות.",
+     "**אנטנות תקשורת** – אנטנות RF וסלולר קיימות ומקובעות.",
+     "**ברגים** – ברגי הכלי ומערכת הנשק מקובעים.",
+     "# ד. בדיקה חמה (לאחר 20 דקות הנעה)",
+     "**שמנים ונזילות** – בדיקה חוזרת של שמן מנוע ושמן גיר. אין נזילות חדשות."
+    ],
+    "en": [
+     "# A. Preparation",
+     "**Platform power-up** – Platform is on and the software has loaded.",
+     "**Initial preparation** – Vehicle on level ground, engine off.",
+     "# B. Engine compartment – cold check (engine off, power on)",
+     "**General inspection** – No damage, loose parts or foreign objects.",
+     "**Brakes** – No tears, cracks, oil or dirt.",
+     "**Leaks** – No brake fluid, gear oil, fuel or engine oil leaks.",
+     "**Engine oil level** – On the dipstick, within the hatched range.",
+     "**Gear oil level** – Sight glass half full. Remove the top cover to refill.",
+     "**Fuel level** – Sufficient for the planned activity.",
+     "**Batteries 12V ×2** – Nuts tight, terminals clean with no corrosion.",
+     "**Drive belt** – No tears, wear or cracks.",
+     "**Alternator belt** – No tears, wear or cracks.",
+     "# C. Around and on the vehicle",
+     "**Underbody and axles** – No cracks or breaks in the underbody, axles not bent.",
+     "**Towing eyes** – Towing eyes intact.",
+     "**EMO buttons** – All 3 buttons present and working – test by pressing.",
+     "**Tire pressure** – Front 5, middle 7, rear 6 (PSI).",
+     "**Tire condition** – No tears or wear, valve intact.",
+     "**Wheel nuts** – In place and tightened.",
+     "**Track** – Rubber intact, teeth secured, no abnormal wear.",
+     "**Cameras** – 4 surround (day and night) and mast – working and secured.",
+     "**Communication antennas** – RF and cellular antennas present and secured.",
+     "**Bolts** – Vehicle and weapon system bolts secured.",
+     "# D. Hot check (after 20 minutes of operation)",
+     "**Oils and leaks** – Recheck engine and gear oil. No new leaks."
+    ],
+    "note": {
+     "he": "בתחילת כל יום עבודה ולפני כל שימוש בכלי. על משטח ישר בלבד. כל חריגה או ליקוי מדווחים מיד לחוליית האחזקה ב־Roboteam ומטופלים לפני שימוש חוזר בכלי. אם יש ספק – עוצרים ומתייעצים.",
+     "en": "At the start of every working day and before every use of the vehicle. Level ground only. Any deviation or fault is reported immediately to the Roboteam maintenance team and fixed before the vehicle is used again. If in doubt – stop and consult."
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-post",
+   "sec": "maint",
+   "type": "checklist",
+   "title": {
+    "he": "טיפול אחרי תנועה (טא״ת)",
+    "en": "Post-Operation Maintenance"
+   },
+   "summary": {
+    "he": "BISON – בסוף כל יום עבודה ולפני עבודות לילה",
+    "en": "BISON – end of every working day and before night operations"
+   },
+   "body": {
+    "he": [
+     "# א. לפני דימום הכלי",
+     "**השפרצות** – אין השפרצות שמן או נוזלים בתא המנוע ועל המכסה.",
+     "**ייבוש בלמים** – לאחר מים, בוץ או חול עמוק – לחיצות קלות על הבלם בנסיעה איטית.",
+     "# ב. תא המנוע (לאחר דימום)",
+     "**הסתכלות כללית** – אין נזק, חלקים רופפים או גופים זרים.",
+     "**נזילות** – צינורות וראש מנוע ללא נזילות.",
+     "**רצועת הנעה / אלטרנטור** – ללא קרעים או סימני חריכה.",
+     "**פילטר אוויר** – ניקוי אבק ולכלוך. פילטר שחוק יוחלף (במיוחד במתאר חול ואבק).",
+     "# ג. סביב הכלי",
+     "**צמיגים** – גלגלים תקינים ולחץ אוויר תקין.",
+     "**זחל** – גומי תקין ושיניים מקובעות.",
+     "# ד. סגירת הכלי",
+     "**ניקיון** – הסרת בוץ, חול ולכלוך למניעת קורוזיה.",
+     "**עדשות מצלמות** – ניקוי כל העדשות.",
+     "**תדלוק** – בנזין 95 לפי הצורך.",
+     "**הטענה** – הטענת פלטפורמות לפי הצורך."
+    ],
+    "en": [
+     "# A. Before engine shutdown",
+     "**Oil spray** – No oil or fluid spray in the engine compartment or on the cover.",
+     "**Brake drying** – After water, mud or deep sand – apply the brakes lightly while driving slowly.",
+     "# B. Engine compartment (after shutdown)",
+     "**General inspection** – No damage, loose parts or foreign objects.",
+     "**Leaks** – No leaks from hoses or the cylinder head.",
+     "**Drive / alternator belt** – No tears or burn marks.",
+     "**Air filter** – Clean off dust and dirt. Replace a worn filter (especially in sandy or dusty conditions).",
+     "# C. Around the vehicle",
+     "**Tires** – Wheels intact, tire pressure correct.",
+     "**Track** – Rubber intact, teeth secured.",
+     "# D. Closing up the vehicle",
+     "**Cleaning** – Remove mud, sand and dirt to prevent corrosion.",
+     "**Camera lenses** – Clean all lenses.",
+     "**Refueling** – 95 octane gasoline as needed.",
+     "**Charging** – Charge platforms as needed."
+    ],
+    "note": {
+     "he": "בסוף כל יום עבודה ולפני עבודות לילה. על משטח ישר בלבד. כל חריגה או ליקוי מדווחים מיד לחוליית האחזקה ב־Roboteam ומטופלים לפני שימוש חוזר בכלי. אם יש ספק – עוצרים ומתייעצים.",
+     "en": "At the end of every working day and before night operations. Level ground only. Any deviation or fault is reported immediately to the Roboteam maintenance team and fixed before the vehicle is used again. If in doubt – stop and consult."
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-data",
+   "sec": "maint",
+   "type": "maint",
+   "title": {
+    "he": "טיפולים כלליים – נתוני אחזקה",
+    "en": "General Service – Maintenance Data"
+   },
+   "summary": {
+    "he": "שמנים, נוזלים ומסננים – סוג, כמות ותדירות",
+    "en": "Oils, fluids and filters – type, quantity and interval"
+   },
+   "body": {
+    "rows": [
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "דלק",
+       "en": "Fuel"
+      },
+      "spec": {
+       "he": "בנזין 95",
+       "en": "95 octane gasoline"
+      },
+      "qty": {
+       "he": "32 ליטר (קיבולת מיכל)",
+       "en": "32 L (tank capacity)"
+      },
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "תדלוק לפי הצורך בטא״ת.",
+       "en": "Refuel as needed in Post-Operation."
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "שמן מנוע",
+       "en": "Engine oil"
+      },
+      "spec": "5W-40 Synthetic",
+      "qty": {
+       "he": "2.3 ליטר",
+       "en": "2.3 L"
+      },
+      "point": {
+       "he": "מקל מדידה",
+       "en": "Dipstick"
+      },
+      "interval": {
+       "he": "כל 100 שעות מנוע",
+       "en": "Every 100 engine hours"
+      },
+      "pn": "",
+      "note": {
+       "he": "המפלס בתוך הטווח המקווקו במקל המדידה. מוחלף יחד עם פילטר השמן.",
+       "en": "Level within the hatched range on the dipstick. Changed together with the oil filter."
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "שמן גיר (תמסורת)",
+       "en": "Gear oil (transmission)"
+      },
+      "spec": "75W-90 Synthetic",
+      "qty": {
+       "he": "1.2 ליטר",
+       "en": "1.2 L"
+      },
+      "point": {
+       "he": "חלון צפייה",
+       "en": "Sight glass"
+      },
+      "interval": {
+       "he": "כל 100 שעות מנוע",
+       "en": "Every 100 engine hours"
+      },
+      "pn": "",
+      "note": {
+       "he": "חלון הצפייה חצי מלא. למילוי יש לפרק את המכסה העליון.",
+       "en": "Sight glass half full. Remove the top cover to refill."
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "נוזל בלמים",
+       "en": "Brake fluid"
+      },
+      "spec": "DOT 4",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "שמן שרשרת (ספריי)",
+       "en": "Chain oil (spray)"
+      },
+      "spec": "PTFE",
+      "qty": "",
+      "point": "",
+      "interval": {
+       "he": "כל 25 שעות מנוע",
+       "en": "Every 25 engine hours"
+      },
+      "pn": "",
+      "note": {
+       "he": "שימון שרשרת כל 25 שעות מנוע.",
+       "en": "Chain lubrication every 25 engine hours."
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "גריז",
+       "en": "Grease"
+      },
+      "spec": {
+       "he": "ליתיום",
+       "en": "Lithium"
+      },
+      "qty": "",
+      "point": "",
+      "interval": {
+       "he": "כל 25 שעות מנוע",
+       "en": "Every 25 engine hours"
+      },
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "filter",
+      "name": {
+       "he": "פילטר שמן",
+       "en": "Oil filter"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": {
+       "he": "כל 100 שעות מנוע",
+       "en": "Every 100 engine hours"
+      },
+      "pn": "",
+      "note": {
+       "he": "מוחלף יחד עם שמן המנוע.",
+       "en": "Changed together with the engine oil."
+      }
+     },
+     {
+      "kind": "filter",
+      "name": {
+       "he": "פילטר אוויר",
+       "en": "Air filter"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": {
+       "he": "כל 100 שעות מנוע",
+       "en": "Every 100 engine hours"
+      },
+      "pn": "",
+      "note": {
+       "he": "ניקוי יומי בטא״ת, טיפול יסודי כל 100 שעות מנוע, החלפה כשהפילטר שחוק.",
+       "en": "Daily cleaning in Post-Operation, thorough service every 100 engine hours, replace when worn."
+      }
+     }
+    ],
+    "note": {
+     "he": "BISON. לחץ אוויר בצמיגים: קדמי 5, אמצעיים 7, אחורי 6 (PSI).",
+     "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI)."
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-periodic",
+   "sec": "maint",
+   "type": "guide",
+   "title": {
+    "he": "טיפולים תקופתיים לפי שעות מנוע",
+    "en": "Periodic maintenance by engine hours"
+   },
+   "summary": {
+    "he": "25 ו־100 שעות מנוע",
+    "en": "25 and 100 engine hours"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "הבדיקות היומיות מפורטות בטל״ת ובטא״ת. אלה הטיפולים התקופתיים של ה־BISON:"
+     },
+     {
+      "table": {
+       "head": [
+        "פעולה",
+        "תדירות"
+       ],
+       "rows": [
+        [
+         "**שימון שרשרת**",
+         "כל 25 שעות מנוע"
+        ],
+        [
+         "**גריז**",
+         "כל 25 שעות מנוע"
+        ],
+        [
+         "**החלפת שמן מנוע ופילטר**",
+         "כל 100 שעות מנוע"
+        ],
+        [
+         "**החלפת שמן גיר**",
+         "כל 100 שעות מנוע"
+        ],
+        [
+         "**פילטר אוויר**",
+         "ניקוי יומי בטא״ת, טיפול יסודי כל 100 שעות מנוע, החלפה כשהפילטר שחוק"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "סוגי השמנים והכמויות נמצאים ב־„טיפולים כלליים – נתוני אחזקה”.",
+      "kind": "tip"
+     }
+    ],
+    "en": [
+     {
+      "p": "Daily checks are listed in Pre-Operation and Post-Operation. These are the BISON periodic maintenance tasks:"
+     },
+     {
+      "table": {
+       "head": [
+        "Task",
+        "Interval"
+       ],
+       "rows": [
+        [
+         "**Chain lubrication**",
+         "Every 25 engine hours"
+        ],
+        [
+         "**Grease**",
+         "Every 25 engine hours"
+        ],
+        [
+         "**Engine oil and filter change**",
+         "Every 100 engine hours"
+        ],
+        [
+         "**Gear oil change**",
+         "Every 100 engine hours"
+        ],
+        [
+         "**Air filter**",
+         "Daily cleaning in Post-Operation, thorough service every 100 engine hours, replace when worn"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Oil types and quantities are in “General Service – Maintenance Data”.",
+      "kind": "tip"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-prev",
+   "sec": "maint",
+   "type": "pdf",
+   "title": {
+    "he": "אחזקה מונעת",
+    "en": "Preventive Maintenance"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-daily-pdf",
+   "sec": "maint",
+   "type": "pdf",
+   "title": {
+    "he": "נוהל טיפולים יומיים (PDF)",
+    "en": "Daily Maintenance Procedure (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המקורי להדפסה",
+    "en": "Original document for printing"
+   },
+   "body": {
+    "src": "media/daily-maintenance-he.pdf",
+    "note": {
+     "he": "המסמך המקורי, כולל טבלאות רישום ביצוע להדפסה.",
+     "en": "The original document (Hebrew), including printable maintenance log tables."
     }
    },
    "updated": "2026-11-10"
