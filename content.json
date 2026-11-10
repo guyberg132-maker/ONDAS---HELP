@@ -1,0 +1,735 @@
+{
+ "app": {
+  "version": 1,
+  "updated": "2026-11-10",
+  "teamHash": "da66e96b63b0fa81900f3eeeb289e2814425612d1a77cdb94c188699555800b1",
+  "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+ },
+ "sections": [
+  {
+   "id": "container",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "UGV Controlled Container",
+    "en": "UGV Controlled Container"
+   },
+   "desc": {
+    "he": "פרטים טכניים על מערכות המכולה",
+    "en": "Technical details of the container systems"
+   }
+  },
+  {
+   "id": "bison",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "BISON UGV",
+    "en": "BISON UGV"
+   },
+   "desc": {
+    "he": "פרטים טכניים על מערכות ה־BISON. חל על BISON 120 ועל BISON 121.",
+    "en": "Technical details of the BISON systems. Applies to BISON 120 and BISON 121."
+   }
+  },
+  {
+   "id": "comm",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "תקשורת",
+    "en": "Communications"
+   }
+  },
+  {
+   "id": "maint",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "אחזקה",
+    "en": "Maintenance"
+   }
+  },
+  {
+   "id": "cfg",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "קינפוגים",
+    "en": "Configurations"
+   }
+  },
+  {
+   "id": "qa",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "QA",
+    "en": "QA"
+   }
+  },
+  {
+   "id": "c-lift",
+   "parent": "container",
+   "kind": "assembly",
+   "name": {
+    "he": "רמסע (מגבע נע)",
+    "en": "Mobile Lift (RAMSA)"
+   }
+  },
+  {
+   "id": "c-mast",
+   "parent": "container",
+   "kind": "assembly",
+   "name": {
+    "he": "תורן",
+    "en": "Mast"
+   }
+  },
+  {
+   "id": "c-gen",
+   "parent": "container",
+   "kind": "assembly",
+   "name": {
+    "he": "גנרטור",
+    "en": "Generator"
+   }
+  },
+  {
+   "id": "c-ac",
+   "parent": "container",
+   "kind": "assembly",
+   "name": {
+    "he": "מזגן",
+    "en": "Air Conditioner"
+   }
+  },
+  {
+   "id": "c-comp",
+   "parent": "container",
+   "kind": "assembly",
+   "name": {
+    "he": "קומפרסור",
+    "en": "Compressor"
+   }
+  },
+  {
+   "id": "c-screens",
+   "parent": "container",
+   "kind": "assembly",
+   "name": {
+    "he": "מסכים וטלוויזיות",
+    "en": "Screens & TVs"
+   }
+  },
+  {
+   "id": "c-elec",
+   "parent": "container",
+   "kind": "assembly",
+   "name": {
+    "he": "מערכת חשמל",
+    "en": "Electrical System"
+   }
+  },
+  {
+   "id": "b-low",
+   "parent": "bison",
+   "kind": "assembly",
+   "name": {
+    "he": "בקרה נמוכה",
+    "en": "Low-Level Control"
+   }
+  },
+  {
+   "id": "b-high",
+   "parent": "bison",
+   "kind": "",
+   "name": {
+    "he": "בקרה גבוהה",
+    "en": "High-Level Control"
+   }
+  },
+  {
+   "id": "b-high-gen",
+   "parent": "b-high",
+   "kind": "assembly",
+   "name": {
+    "he": "בקרה גבוהה – כללי",
+    "en": "High-Level Control – General"
+   }
+  },
+  {
+   "id": "b-cam",
+   "parent": "b-high",
+   "kind": "assembly",
+   "name": {
+    "he": "מצלמות",
+    "en": "Cameras"
+   }
+  },
+  {
+   "id": "b-weapon",
+   "parent": "b-high",
+   "kind": "assembly",
+   "name": {
+    "he": "מערכת נשק",
+    "en": "Weapon System"
+   }
+  },
+  {
+   "id": "b-energy",
+   "parent": "bison",
+   "kind": "assembly",
+   "name": {
+    "he": "אנרגיה",
+    "en": "Energy"
+   }
+  },
+  {
+   "id": "b-mech",
+   "parent": "bison",
+   "kind": "",
+   "name": {
+    "he": "מכניקה",
+    "en": "Mechanics"
+   }
+  },
+  {
+   "id": "b-engine",
+   "parent": "b-mech",
+   "kind": "assembly",
+   "name": {
+    "he": "מנוע",
+    "en": "Engine"
+   }
+  },
+  {
+   "id": "b-mech-gen",
+   "parent": "b-mech",
+   "kind": "assembly",
+   "name": {
+    "he": "מכניקה כללית של הרובוט",
+    "en": "General Robot Mechanics"
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": "comm-tech",
+   "sec": "comm",
+   "type": "text",
+   "title": {
+    "he": "פרטים טכניים",
+    "en": "Technical Details"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": "",
+    "en": ""
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "comm-radio",
+   "sec": "comm",
+   "type": "steps",
+   "title": {
+    "he": "קינפוג מקמ״שים",
+    "en": "Radio Configuration"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": "",
+    "en": ""
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "comm-mon",
+   "sec": "comm",
+   "type": "text",
+   "title": {
+    "he": "ניטור תקשורת",
+    "en": "Communication Monitoring"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": "",
+    "en": ""
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "comm-traffic",
+   "sec": "comm",
+   "type": "text",
+   "title": {
+    "he": "בדיקת תעבורה",
+    "en": "Traffic Test"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": "",
+    "en": ""
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "comm-air",
+   "sec": "comm",
+   "type": "text",
+   "title": {
+    "he": "מקמ״שים „באוויר”",
+    "en": "Radios On-Air Check"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": "",
+    "en": ""
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-pre",
+   "sec": "maint",
+   "type": "checklist",
+   "title": {
+    "he": "טיפול לפני תנועה",
+    "en": "Pre-Operation Service"
+   },
+   "summary": {
+    "he": "BISON UGV",
+    "en": "BISON UGV"
+   },
+   "body": {
+    "he": [
+     "שורה לדוגמה 1 – להחליף בתוכן מהמסמך",
+     "שורה לדוגמה 2 – להחליף בתוכן מהמסמך",
+     "שורה לדוגמה 3 – להחליף בתוכן מהמסמך",
+     "שורה לדוגמה 4 – להחליף בתוכן מהמסמך"
+    ],
+    "en": [
+     "Sample line 1 – replace with content from the document",
+     "Sample line 2 – replace with content from the document",
+     "Sample line 3 – replace with content from the document",
+     "Sample line 4 – replace with content from the document"
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-post",
+   "sec": "maint",
+   "type": "checklist",
+   "title": {
+    "he": "טיפול אחרי תנועה",
+    "en": "Post-Operation Service"
+   },
+   "summary": {
+    "he": "BISON UGV",
+    "en": "BISON UGV"
+   },
+   "body": {
+    "he": [
+     "שורה לדוגמה 1 – להחליף בתוכן מהמסמך",
+     "שורה לדוגמה 2 – להחליף בתוכן מהמסמך",
+     "שורה לדוגמה 3 – להחליף בתוכן מהמסמך",
+     "שורה לדוגמה 4 – להחליף בתוכן מהמסמך"
+    ],
+    "en": [
+     "Sample line 1 – replace with content from the document",
+     "Sample line 2 – replace with content from the document",
+     "Sample line 3 – replace with content from the document",
+     "Sample line 4 – replace with content from the document"
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-prev",
+   "sec": "maint",
+   "type": "pdf",
+   "title": {
+    "he": "אחזקה מונעת",
+    "en": "Preventive Maintenance"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-data",
+   "sec": "maint",
+   "type": "maint",
+   "title": {
+    "he": "טיפולים כלליים – נתוני אחזקה",
+    "en": "General Service – Maintenance Data"
+   },
+   "summary": {
+    "he": "שמנים, נוזלים, מסננים וחלקים מתכלים",
+    "en": "Oils, fluids, filters and consumables"
+   },
+   "body": {
+    "rows": [
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "שמן מנוע",
+       "en": "Engine oil"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "שמן גיר",
+       "en": "Gear oil"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "שמן ברקס",
+       "en": "Brake fluid"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "fluid",
+      "name": {
+       "he": "דלק",
+       "en": "Fuel"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "filter",
+      "name": {
+       "he": "מסנן שמן",
+       "en": "Oil filter"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "filter",
+      "name": {
+       "he": "מסנן אוויר",
+       "en": "Air filter"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     },
+     {
+      "kind": "filter",
+      "name": {
+       "he": "מסנן דלק",
+       "en": "Fuel filter"
+      },
+      "spec": "",
+      "qty": "",
+      "point": "",
+      "interval": "",
+      "pn": "",
+      "note": {
+       "he": "",
+       "en": ""
+      }
+     }
+    ],
+    "note": {
+     "he": "סוגים, כמויות ותדירויות יוזנו מתוך מסמך הטיפולים.",
+     "en": "Types, quantities and intervals will be filled in from the service document."
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "cfg-radio",
+   "sec": "cfg",
+   "type": "link",
+   "title": {
+    "he": "קינפוג מקמ״שים",
+    "en": "Radio Configuration"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "comm-radio"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "cfg-act",
+   "sec": "cfg",
+   "type": "steps",
+   "title": {
+    "he": "כיול אקטואטורים",
+    "en": "Actuator Calibration"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": "",
+    "en": ""
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "b-engine-maint",
+   "sec": "b-engine",
+   "type": "link",
+   "title": {
+    "he": "נתוני אחזקה: שמנים ונוזלים",
+    "en": "Maintenance data: oils & fluids"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "m-data"
+   },
+   "updated": "2026-11-10",
+   "group": "tech"
+  },
+  {
+   "id": "qc1",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 1",
+    "en": "QC 1"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc2",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 2",
+    "en": "QC 2"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc3",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 3",
+    "en": "QC 3"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc4",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 4",
+    "en": "QC 4"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc5",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 5",
+    "en": "QC 5"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-sys",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "ATP System",
+    "en": "ATP System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-field",
+   "sec": "qa",
+   "type": "atp",
+   "title": {
+    "he": "ATP Field",
+    "en": "ATP Field"
+   },
+   "summary": {
+    "he": "מסמך לקריאה או בדיקה שורה שורה עם חתימה",
+    "en": "Read the document or run it line by line with a signature"
+   },
+   "body": {
+    "src": "",
+    "rows": {
+     "he": [
+      "# פרק לדוגמה – הכנה",
+      "בדיקה לדוגמה 1 – להחליף בשורות ממסמך ה־ATP",
+      "בדיקה לדוגמה 2",
+      "בדיקה לדוגמה 3",
+      "# פרק לדוגמה – תפקוד",
+      "בדיקה לדוגמה 4",
+      "בדיקה לדוגמה 5"
+     ],
+     "en": [
+      "# Sample chapter – preparation",
+      "Sample check 1 – replace with lines from the ATP document",
+      "Sample check 2",
+      "Sample check 3",
+      "# Sample chapter – function",
+      "Sample check 4",
+      "Sample check 5"
+     ]
+    }
+   },
+   "updated": "2026-11-10"
+  }
+ ]
+}
