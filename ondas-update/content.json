@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 3,
+  "version": 4,
   "updated": "2026-11-10",
   "teamHash": "da66e96b63b0fa81900f3eeeb289e2814425612d1a77cdb94c188699555800b1",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -93,6 +93,15 @@
    "name": {
     "he": "אחזקה",
     "en": "Maintenance"
+   }
+  },
+  {
+   "id": "maint-prev",
+   "parent": "maint",
+   "kind": "",
+   "name": {
+    "he": "אחזקה מונעת",
+    "en": "Preventive Maintenance"
    }
   },
   {
@@ -2670,27 +2679,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "m-prev",
-   "sec": "maint",
-   "type": "pdf",
-   "title": {
-    "he": "אחזקה מונעת",
-    "en": "Preventive Maintenance"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
    "id": "m-daily-pdf",
    "sec": "maint",
    "type": "pdf",
@@ -2708,6 +2696,2380 @@
      "he": "המסמך המקורי, כולל טבלאות רישום ביצוע להדפסה.",
      "en": "The original document (Hebrew), including printable maintenance log tables."
     }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-pdf",
+   "sec": "maint-prev",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך אחזקת מנע (PDF)",
+    "en": "Preventive Maintenance Guide (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המלא – 147 עמודים",
+    "en": "Full document – 147 pages"
+   },
+   "body": {
+    "src": "media/preventive-maintenance.pdf",
+    "note": {
+     "he": "DOC00757-A REV.001, 29/09/2026. המסמך המלא, 147 עמודים.",
+     "en": "DOC00757-A REV.001, 29/09/2026. The full document (Hebrew), 147 pages."
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-summary",
+   "sec": "maint-prev",
+   "type": "guide",
+   "title": {
+    "he": "טבלה מסכמת – דרג מבצע ותדירות",
+    "en": "Summary – maintenance level & interval"
+   },
+   "summary": {
+    "he": "מי מבצע כל פעולה ובאיזו תדירות",
+    "en": "Who performs each task and how often"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "כל פעולות האחזקה המונעת, לפי מערכת ומכלול. **דרג שדה** – הטכנאים בשטח. **דרג משק** – צוות האחזקה. **דרג חברה** – החברה הספקית."
+     },
+     {
+      "table": {
+       "head": [
+        "מערכת › מכלול",
+        "פעולה",
+        "מק״ט / חומר",
+        "דרג",
+        "תדירות"
+       ],
+       "rows": [
+        [
+         "**קרון שליטה › רמסע**",
+         "בדיקה ע״י בוחן צ״י",
+         "",
+         "משק",
+         "שנתי"
+        ],
+        [
+         "**קרון שליטה › מזגן › שלט**",
+         "בדיקת תקינות שלט",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**קרון שליטה › מזגן › מסנני אוויר**",
+         "ניקוי מסנני אוויר",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**קרון שליטה › מזגן › מערכת קירור**",
+         "בדיקת תקינות קירור",
+         "",
+         "משק",
+         "שנתי"
+        ],
+        [
+         "**קרון שליטה › גנרטור › שמן מנוע**",
+         "החלפת שמן מנוע",
+         "",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**קרון שליטה › גנרטור › פילטר אוויר**",
+         "ניקוי פילטר אוויר",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**קרון שליטה › גנרטור › מצת (פלאג)**",
+         "בדיקת תקינות / החלפה",
+         "",
+         "משק",
+         "שנתי"
+        ],
+        [
+         "**קרון שליטה › מסכים וטלוויזיות**",
+         "ניקוי חיצוני מסכים",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**קרון שליטה › תורן**",
+         "בדיקות ע״י חברת הו״ס",
+         "`א.מ.ל`",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**קרון שליטה › קרומפרסור**",
+         "בדיקות ע״י חברת הו״ס",
+         "`א.מ.ל`",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**קרון שליטה › ארון תקשורת / כבילה**",
+         "בדיקות ע״י חברת הו״ס",
+         "`א.מ.ל`",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**קרון שליטה › מערכת חשמל**",
+         "בדיקות ע״י חברת הו״ס",
+         "`א.מ.ל`",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**ביזון › מנוע › שמן מנוע**",
+         "בדיקת שמן מנוע",
+         "`10W-40`",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › מנוע › שמן מנוע**",
+         "החלפת שמן מנוע",
+         "`10W-40`",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**ביזון › מנוע › שמן גיר**",
+         "החלפת שמן גיר",
+         "`75W-90`",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**ביזון › מנוע › פילטר שמן**",
+         "החלפת פילטר שמן",
+         "`39164PH`",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**ביזון › מנוע › פילטר אוויר / פילטר אוויר משני**",
+         "ניקוי פילטר אוויר",
+         "`692519 / 692520`",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › מנוע › וריאטור**",
+         "בדיקת תקינות רצועה",
+         "`HD 127-159`",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › מנוע › מצת (פלאג)**",
+         "החלפת מצת",
+         "`491055S`",
+         "משק",
+         "שנתי"
+        ],
+        [
+         "**ביזון › מנוע › פטמות גירוז**",
+         "גירוז פטמות חיצוניות",
+         "`א.מ.ל`",
+         "שדה",
+         "רבעוני"
+        ],
+        [
+         "**ביזון › מנוע › פטמות גירוז**",
+         "גירוז פטמות פנימיות",
+         "`א.מ.ל`",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**ביזון › מנוע › שרשרת**",
+         "בדיקת מותחני שרשרת",
+         "`א.מ.ל`",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › מנוע › שרשרת**",
+         "שימון שרשרת",
+         "`Putoline DX-11`",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › מנוע › בלם**",
+         "בדיקת רפידות בלם",
+         "`א.מ.ל`",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**ביזון › מנוע › בלם**",
+         "בדיקת נוזל בלם",
+         "`DOT 4`",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**ביזון › מנוע › מחבר דלק**",
+         "בדיקת מחבר דלק",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › בקרה נמוכה › בוכנות**",
+         "ניקוי בוכנות",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › בקרה נמוכה › תיבת בקרה**",
+         "בדיקות ע״י חברת א.צ.מ",
+         "",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**ביזון › בקרה גבוהה › תיבת בקרה**",
+         "בדיקות ע״י חברת ג״ג",
+         "",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**ביזון › חשמל › מצבר 12V**",
+         "בדיקת תקינות מצבר",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**ביזון › חשמל › סוללה 48V**",
+         "בדיקת תקינות סוללה",
+         "",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**ביזון › חשמל › כבילה / מטען / אלטרנטור**",
+         "ATP",
+         "",
+         "חברה",
+         "שנתי"
+        ],
+        [
+         "**קופסת מפעיל › בית סוללות**",
+         "בדיקה ויזואלית",
+         "",
+         "שדה",
+         "חודשי"
+        ],
+        [
+         "**קופסת מפעיל › מחברי אנטנות**",
+         "חיזוק מחברים",
+         "",
+         "משק",
+         "רבעוני"
+        ],
+        [
+         "**סט ערכת ממסר › חצובה / פליקן / כבילה**",
+         "בדיקה ויזואלית",
+         "",
+         "שדה",
+         "רבעוני"
+        ],
+        [
+         "**ROCU-10 / ROCU-1**",
+         "ATP",
+         "",
+         "חברה",
+         "שנתי"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "הטבלה המקורית"
+     },
+     {
+      "img": "media/pm-summary.png",
+      "cap": "טבלה מסכמת דרג מבצע + זמנים (עמ׳ 8 במסמך)"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "All preventive maintenance tasks by system and assembly. **Field** – technicians on site. **Workshop** – the maintenance team. **Company** – the supplier."
+     },
+     {
+      "table": {
+       "head": [
+        "System › assembly",
+        "Task",
+        "Part no. / material",
+        "Level",
+        "Interval"
+       ],
+       "rows": [
+        [
+         "**Control container › Mobile lift**",
+         "Inspection by an authorized vehicle examiner",
+         "",
+         "Workshop",
+         "Annual"
+        ],
+        [
+         "**Control container › Air conditioner › Remote**",
+         "Remote control check",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**Control container › Air conditioner › Air filters**",
+         "Air filter cleaning",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**Control container › Air conditioner › Cooling system**",
+         "Cooling system check",
+         "",
+         "Workshop",
+         "Annual"
+        ],
+        [
+         "**Control container › Generator › Engine oil**",
+         "Engine oil change",
+         "",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**Control container › Generator › Air filter**",
+         "Air filter cleaning",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**Control container › Generator › Spark plug**",
+         "Check / replace",
+         "",
+         "Workshop",
+         "Annual"
+        ],
+        [
+         "**Control container › Screens & TVs**",
+         "External screen cleaning",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**Control container › Mast**",
+         "Inspection by the supplier",
+         "`א.מ.ל`",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**Control container › Compressor**",
+         "Inspection by the supplier",
+         "`א.מ.ל`",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**Control container › Comms cabinet / cabling**",
+         "Inspection by the supplier",
+         "`א.מ.ל`",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**Control container › Electrical system**",
+         "Inspection by the supplier",
+         "`א.מ.ל`",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**BISON › Engine › Engine oil**",
+         "Engine oil check",
+         "`10W-40`",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Engine › Engine oil**",
+         "Engine oil change",
+         "`10W-40`",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**BISON › Engine › Gear oil**",
+         "Gear oil change",
+         "`75W-90`",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**BISON › Engine › Oil filter**",
+         "Oil filter change",
+         "`39164PH`",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**BISON › Engine › Air filter / secondary air filter**",
+         "Air filter cleaning",
+         "`692519 / 692520`",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Engine › Variator**",
+         "Belt check",
+         "`HD 127-159`",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Engine › Spark plug**",
+         "Spark plug replacement",
+         "`491055S`",
+         "Workshop",
+         "Annual"
+        ],
+        [
+         "**BISON › Engine › Grease nipples**",
+         "Grease external nipples",
+         "`א.מ.ל`",
+         "Field",
+         "Quarterly"
+        ],
+        [
+         "**BISON › Engine › Grease nipples**",
+         "Grease internal nipples",
+         "`א.מ.ל`",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**BISON › Engine › Chain**",
+         "Chain tensioner check",
+         "`א.מ.ל`",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Engine › Chain**",
+         "Chain lubrication",
+         "`Putoline DX-11`",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Engine › Brake**",
+         "Brake pad check",
+         "`א.מ.ל`",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**BISON › Engine › Brake**",
+         "Brake fluid check",
+         "`DOT 4`",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**BISON › Engine › Fuel connector**",
+         "Fuel connector check",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Low-level control › Pistons**",
+         "Piston cleaning",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Low-level control › Control box**",
+         "Inspection by A.Z.M",
+         "",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**BISON › High-level control › Control box**",
+         "Inspection by G.G",
+         "",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**BISON › Electrical › 12V battery**",
+         "Battery check",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**BISON › Electrical › 48V battery**",
+         "Battery check",
+         "",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**BISON › Electrical › Cabling / charger / alternator**",
+         "ATP",
+         "",
+         "Company",
+         "Annual"
+        ],
+        [
+         "**Operator box › Battery housing**",
+         "Visual check",
+         "",
+         "Field",
+         "Monthly"
+        ],
+        [
+         "**Operator box › Antenna connectors**",
+         "Tighten connectors",
+         "",
+         "Workshop",
+         "Quarterly"
+        ],
+        [
+         "**Relay kit › Tripod / Pelican case / cabling**",
+         "Visual check",
+         "",
+         "Field",
+         "Quarterly"
+        ],
+        [
+         "**ROCU-10 / ROCU-1**",
+         "ATP",
+         "",
+         "Company",
+         "Annual"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Original table"
+     },
+     {
+      "img": "media/pm-summary.png",
+      "cap": "Summary table – maintenance level + intervals (page 8 of the document, Hebrew)"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-lift",
+   "sec": "c-lift",
+   "type": "guide",
+   "title": {
+    "he": "אחזקה – רמסע",
+    "en": "Maintenance – mobile lift"
+   },
+   "summary": {
+    "he": "בדיקה שנתית",
+    "en": "Annual inspection"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "אחזקה ובדיקה של הרמסע מתבצעות **אחת לשנה** על ידי בוחן צ״י.",
+      "kind": "important"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "Maintenance and inspection of the mobile lift are performed **once a year** by an authorized vehicle examiner.",
+      "kind": "important"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-ac-table",
+   "sec": "c-ac",
+   "type": "guide",
+   "title": {
+    "he": "לוח אחזקה – מזגן",
+    "en": "Maintenance table – air conditioner"
+   },
+   "summary": {
+    "he": "3 פעולות: חודשי ושנתי",
+    "en": "3 tasks: monthly and annual"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "דגם: **TOP-J-INV-22 X WIFI EU**"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "פעולה",
+        "תדירות",
+        "פירוט",
+        "דרג"
+       ],
+       "rows": [
+        [
+         "1",
+         "**בדיקת תקינות שלט**",
+         "חודשי",
+         "וידוא תקינות הצג ופעילותו התקינה של השלט.",
+         "אחזקת שדה"
+        ],
+        [
+         "2",
+         "**ניקוי מסנני אוויר**",
+         "חודשי",
+         "שליפת המסננים ושטיפתם במים להסרת אבק ולכלוך, ייבושם והחזרתם למקומם.",
+         "אחזקת שדה"
+        ],
+        [
+         "3",
+         "**בדיקת מערכת קירור**",
+         "שנתי",
+         "בדיקת לחצי העבודה של גז המזגן ומילוי לפי הצורך.",
+         "טכנאי מזגנים"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Model: **TOP-J-INV-22 X WIFI EU**"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "Task",
+        "Interval",
+        "Details",
+        "Performed by"
+       ],
+       "rows": [
+        [
+         "1",
+         "**Remote control check**",
+         "Monthly",
+         "Verify the display and that the remote works properly.",
+         "Field maintenance"
+        ],
+        [
+         "2",
+         "**Air filter cleaning**",
+         "Monthly",
+         "Remove the filters, rinse with water to remove dust and dirt, dry and refit.",
+         "Field maintenance"
+        ],
+        [
+         "3",
+         "**Cooling system check**",
+         "Annual",
+         "Check the refrigerant working pressures and refill as needed.",
+         "AC technician"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-ac-filters",
+   "sec": "c-ac",
+   "type": "guide",
+   "title": {
+    "he": "ניקוי מסנני אוויר – מזגן",
+    "en": "Air filter cleaning – air conditioner"
+   },
+   "summary": {
+    "he": "6 שלבים עם תמונות",
+    "en": "6 steps with photos"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "חודשי · דרג שדה",
+      "kind": "freq"
+     },
+     {
+      "h3": "שלב 1"
+     },
+     {
+      "p": "וודאו שהמזגן כבוי ומנותק מהחשמל, ופתחו את המכסה משני צידי היחידה כדי לשלוף את הפילטרים."
+     },
+     {
+      "img": "media/pm-p11-1.jpg"
+     },
+     {
+      "h3": "שלב 2"
+     },
+     {
+      "p": "שלפו את שני המסננים כלפי מעלה או קדימה (לפי הדגם) מתוך המסילות שלהם."
+     },
+     {
+      "img": "media/pm-p12-1.jpg"
+     },
+     {
+      "img": "media/pm-p12-2.jpg"
+     },
+     {
+      "h3": "שלב 3"
+     },
+     {
+      "p": "שטפו את המסננים במים נקיים ושפשפו אותם בעדינות להסרת האבק והלכלוך."
+     },
+     {
+      "img": "media/pm-p13-1.jpg"
+     },
+     {
+      "h3": "שלב 4"
+     },
+     {
+      "p": "הניחו את המסננים לייבוש מלא במקום מוצל."
+     },
+     {
+      "img": "media/pm-p13-2.jpg"
+     },
+     {
+      "h3": "שלב 5"
+     },
+     {
+      "p": "החזירו את שני מסנני האוויר למקומם במסילות וודאו שהם מונחים נכון."
+     },
+     {
+      "img": "media/pm-p14-1.jpg"
+     },
+     {
+      "h3": "שלב 6"
+     },
+     {
+      "p": "סגרו את מכסה המזגן."
+     },
+     {
+      "img": "media/pm-p14-2.jpg"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "Monthly · Field level",
+      "kind": "freq"
+     },
+     {
+      "h3": "Step 1"
+     },
+     {
+      "p": "Make sure the AC is off and disconnected from power, and open the cover on both sides of the unit to pull out the filters."
+     },
+     {
+      "img": "media/pm-p11-1.jpg"
+     },
+     {
+      "h3": "Step 2"
+     },
+     {
+      "p": "Pull both filters up or forward (depending on the model) out of their rails."
+     },
+     {
+      "img": "media/pm-p12-1.jpg"
+     },
+     {
+      "img": "media/pm-p12-2.jpg"
+     },
+     {
+      "h3": "Step 3"
+     },
+     {
+      "p": "Rinse the filters with clean water and rub gently to remove dust and dirt."
+     },
+     {
+      "img": "media/pm-p13-1.jpg"
+     },
+     {
+      "h3": "Step 4"
+     },
+     {
+      "p": "Leave the filters to dry completely in a shaded place."
+     },
+     {
+      "img": "media/pm-p13-2.jpg"
+     },
+     {
+      "h3": "Step 5"
+     },
+     {
+      "p": "Return both air filters to their rails and make sure they sit correctly."
+     },
+     {
+      "img": "media/pm-p14-1.jpg"
+     },
+     {
+      "h3": "Step 6"
+     },
+     {
+      "p": "Close the AC cover."
+     },
+     {
+      "img": "media/pm-p14-2.jpg"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-gen-table",
+   "sec": "c-gen",
+   "type": "guide",
+   "title": {
+    "he": "לוח אחזקה – גנרטור",
+    "en": "Maintenance schedule – generator"
+   },
+   "summary": {
+    "he": "תקופות שירות לפי הונדה",
+    "en": "Honda service intervals"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "יש לבצע כל חודש או לפי מרווח שעות הפעולה המצוין – לפי המוקדם מביניהם."
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "פעולה",
+        "בכל שימוש",
+        "חודש ראשון / 20 שעות",
+        "כל 3 חודשים / 50 שעות",
+        "כל 6 חודשים / 100 שעות",
+        "כל שנה / 300 שעות"
+       ],
+       "rows": [
+        [
+         "**שמן מנוע**",
+         "בדיקת מפלס",
+         "●",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "**שמן מנוע**",
+         "החלפה",
+         "",
+         "●",
+         "",
+         "●",
+         ""
+        ],
+        [
+         "**מסנן אוויר**",
+         "בדיקה",
+         "●",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "**מסנן אוויר**",
+         "ניקוי",
+         "",
+         "",
+         "● (1)",
+         "",
+         ""
+        ],
+        [
+         "**מסנן אוויר**",
+         "החלפה",
+         "",
+         "",
+         "",
+         "",
+         "● (*)"
+        ],
+        [
+         "**מצת**",
+         "בדיקה / כוונון",
+         "",
+         "",
+         "",
+         "●",
+         ""
+        ],
+        [
+         "**מצת**",
+         "החלפה",
+         "",
+         "",
+         "",
+         "",
+         "●"
+        ],
+        [
+         "**בולם ניצוצות**",
+         "ניקוי",
+         "",
+         "",
+         "",
+         "●",
+         ""
+        ],
+        [
+         "**מרווח שסתומים**",
+         "בדיקה / כוונון",
+         "",
+         "",
+         "",
+         "",
+         "● (2)"
+        ]
+       ]
+      }
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "פעולה",
+        "תדירות"
+       ],
+       "rows": [
+        [
+         "**מיכל דלק**",
+         "ניקוי",
+         "כל שנתיים או 1,000 שעות (2)"
+        ],
+        [
+         "**מסנן דלק**",
+         "החלפה",
+         "כל שנתיים או 1,000 שעות (2)(4)"
+        ],
+        [
+         "**צינור דלק**",
+         "בדיקה",
+         "כל שנתיים, החלפה לפי הצורך (2)(4)"
+        ]
+       ]
+      }
+     },
+     {
+      "h3": "הערות"
+     },
+     {
+      "ul": [
+       "(*) מחליפים רק את מסנן האוויר מנייר.",
+       "(1) לתחזק בתדירות גבוהה יותר בשימוש באזורים מאובקים.",
+       "(2) פריטים אלה מוסרים לטיפול אצל מפיץ שירות מורשה של הונדה, אלא אם יש לכם את הכלים והידע המכני הנדרש. ראו את מדריך המוסך של הונדה.",
+       "(3) בשימוש מסחרי יש לתעד את שעות הפעולה כדי לקבוע את מרווחי התחזוקה הנכונים.",
+       "(4) במקרה של סדקים או שבר באטם מסנן הדלק ובאטם הרגולטור, מחליפים את החלק בחדש."
+      ]
+     },
+     {
+      "note": "הגנרטור מצויד בממיר קטליטי. אם המנוע לא מתוחזק כראוי, הקטליזטור במשתיק הקול עלול לאבד מיעילותו.",
+      "kind": "caution"
+     },
+     {
+      "note": "לפי הטבלה המסכמת: החלפת שמן – רבעוני (דרג משק), ניקוי פילטר אוויר – חודשי (דרג שדה), מצת – שנתי (דרג משק). מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Perform every month or at the indicated operating-hour interval, whichever comes first."
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Task",
+        "Each use",
+        "First month / 20 h",
+        "Every 3 months / 50 h",
+        "Every 6 months / 100 h",
+        "Every year / 300 h"
+       ],
+       "rows": [
+        [
+         "**Engine oil**",
+         "Check level",
+         "●",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "**Engine oil**",
+         "Change",
+         "",
+         "●",
+         "",
+         "●",
+         ""
+        ],
+        [
+         "**Air filter**",
+         "Check",
+         "●",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "**Air filter**",
+         "Clean",
+         "",
+         "",
+         "● (1)",
+         "",
+         ""
+        ],
+        [
+         "**Air filter**",
+         "Replace",
+         "",
+         "",
+         "",
+         "",
+         "● (*)"
+        ],
+        [
+         "**Spark plug**",
+         "Check / adjust",
+         "",
+         "",
+         "",
+         "●",
+         ""
+        ],
+        [
+         "**Spark plug**",
+         "Replace",
+         "",
+         "",
+         "",
+         "",
+         "●"
+        ],
+        [
+         "**Spark arrester**",
+         "Clean",
+         "",
+         "",
+         "",
+         "●",
+         ""
+        ],
+        [
+         "**Valve clearance**",
+         "Check / adjust",
+         "",
+         "",
+         "",
+         "",
+         "● (2)"
+        ]
+       ]
+      }
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Task",
+        "Interval"
+       ],
+       "rows": [
+        [
+         "**Fuel tank**",
+         "Clean",
+         "Every 2 years or 1,000 h (2)"
+        ],
+        [
+         "**Fuel filter**",
+         "Replace",
+         "Every 2 years or 1,000 h (2)(4)"
+        ],
+        [
+         "**Fuel tube**",
+         "Check",
+         "Every 2 years, replace if needed (2)(4)"
+        ]
+       ]
+      }
+     },
+     {
+      "h3": "Notes"
+     },
+     {
+      "ul": [
+       "(*) Replace the paper air filter element only.",
+       "(1) Service more frequently when used in dusty areas.",
+       "(2) These items should be serviced by an authorized Honda dealer unless you have the proper tools and mechanical knowledge. See the Honda shop manual.",
+       "(3) For commercial use, log operating hours to determine proper maintenance intervals.",
+       "(4) If the fuel filter seal or regulator seal is cracked or broken, replace the part."
+      ]
+     },
+     {
+      "note": "This generator has a catalytic converter. If the engine is not maintained properly, the catalyst in the muffler may lose efficiency.",
+      "kind": "caution"
+     },
+     {
+      "note": "Per the summary table: oil change – quarterly (Workshop), air filter cleaning – monthly (Field), spark plug – annual (Workshop). Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-gen-oil",
+   "sec": "c-gen",
+   "type": "guide",
+   "title": {
+    "he": "החלפת שמן מנוע – גנרטור",
+    "en": "Engine oil change – generator"
+   },
+   "summary": {
+    "he": "9 שלבים עם תמונות",
+    "en": "9 steps with photos"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "רבעוני · דרג משק",
+      "kind": "freq"
+     },
+     {
+      "h": "רשימת כלים"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "פריט"
+       ],
+       "rows": [
+        [
+         "1",
+         "שמן מנוע 5W-40 בתקן API SJ"
+        ],
+        [
+         "2",
+         "מפתח רינג (סגור)"
+        ],
+        [
+         "3",
+         "כלי לניקוז שמן"
+        ],
+        [
+         "4",
+         "משפך"
+        ],
+        [
+         "5",
+         "מברג שטוח"
+        ],
+        [
+         "6",
+         "מטלית מיקרופייבר"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סדר פעולות"
+     },
+     {
+      "h3": "שלב 1"
+     },
+     {
+      "p": "הניחו את הגנרטור על משטח ישר ומקמו את מגש הניקוז."
+     },
+     {
+      "img": "media/pm-p18-1.jpg"
+     },
+     {
+      "h3": "שלב 2"
+     },
+     {
+      "p": "פתחו את מכסה התחזוקה הימני."
+     },
+     {
+      "img": "media/pm-p18-2.jpg"
+     },
+     {
+      "h3": "שלב 3"
+     },
+     {
+      "p": "הסירו את מכסה מילוי השמן."
+     },
+     {
+      "img": "media/pm-p19-1.jpg"
+     },
+     {
+      "h3": "שלב 4"
+     },
+     {
+      "p": "הסירו את בורג ריקון השמן."
+     },
+     {
+      "img": "media/pm-p19-2.jpg"
+     },
+     {
+      "h3": "שלב 5"
+     },
+     {
+      "p": "רוקנו את שמן המנוע לחלוטין."
+     },
+     {
+      "img": "media/pm-p20-1.jpg"
+     },
+     {
+      "h3": "שלב 6"
+     },
+     {
+      "p": "התקינו את בורג ריקון השמן והדקו אותו היטב."
+     },
+     {
+      "img": "media/pm-p20-2.jpg"
+     },
+     {
+      "h3": "שלב 7"
+     },
+     {
+      "p": "מלאו את המנוע בשמן המומלץ (**5W-40 בתקן API SJ**). כשהשמן מתחיל לנזול אל תוך פתח המילוי – המפלס תקין."
+     },
+     {
+      "img": "media/pm-p21-1.jpg"
+     },
+     {
+      "h3": "שלב 8"
+     },
+     {
+      "p": "התקינו את מכסה מילוי השמן."
+     },
+     {
+      "img": "media/pm-p21-2.jpg"
+     },
+     {
+      "h3": "שלב 9"
+     },
+     {
+      "p": "סגרו את מכסה התחזוקה הימני."
+     },
+     {
+      "img": "media/pm-p22-1.jpg"
+     },
+     {
+      "h": "מסמך רלוונטי (הונדה)"
+     },
+     {
+      "img": "media/pm-p16-1.jpg",
+      "cap": "Servicing your generator – Engine oil change"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "Quarterly · Workshop level",
+      "kind": "freq"
+     },
+     {
+      "h": "Tools"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "Item"
+       ],
+       "rows": [
+        [
+         "1",
+         "Engine oil 5W-40, API SJ"
+        ],
+        [
+         "2",
+         "Ring (box-end) wrench"
+        ],
+        [
+         "3",
+         "Oil drain container"
+        ],
+        [
+         "4",
+         "Funnel"
+        ],
+        [
+         "5",
+         "Flat screwdriver"
+        ],
+        [
+         "6",
+         "Microfiber cloth"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Procedure"
+     },
+     {
+      "h3": "Step 1"
+     },
+     {
+      "p": "Place the generator on a level surface and position the drain tray."
+     },
+     {
+      "img": "media/pm-p18-1.jpg"
+     },
+     {
+      "h3": "Step 2"
+     },
+     {
+      "p": "Open the right maintenance cover."
+     },
+     {
+      "img": "media/pm-p18-2.jpg"
+     },
+     {
+      "h3": "Step 3"
+     },
+     {
+      "p": "Remove the oil filler cap."
+     },
+     {
+      "img": "media/pm-p19-1.jpg"
+     },
+     {
+      "h3": "Step 4"
+     },
+     {
+      "p": "Remove the oil drain bolt."
+     },
+     {
+      "img": "media/pm-p19-2.jpg"
+     },
+     {
+      "h3": "Step 5"
+     },
+     {
+      "p": "Drain the engine oil completely."
+     },
+     {
+      "img": "media/pm-p20-1.jpg"
+     },
+     {
+      "h3": "Step 6"
+     },
+     {
+      "p": "Reinstall the oil drain bolt and tighten it securely."
+     },
+     {
+      "img": "media/pm-p20-2.jpg"
+     },
+     {
+      "h3": "Step 7"
+     },
+     {
+      "p": "Fill the engine with the recommended oil (**5W-40, API SJ**). When the oil starts to flow into the filler neck, the level is correct."
+     },
+     {
+      "img": "media/pm-p21-1.jpg"
+     },
+     {
+      "h3": "Step 8"
+     },
+     {
+      "p": "Reinstall the oil filler cap."
+     },
+     {
+      "img": "media/pm-p21-2.jpg"
+     },
+     {
+      "h3": "Step 9"
+     },
+     {
+      "p": "Close the right maintenance cover."
+     },
+     {
+      "img": "media/pm-p22-1.jpg"
+     },
+     {
+      "h": "Related document (Honda)"
+     },
+     {
+      "img": "media/pm-p16-1.jpg",
+      "cap": "Servicing your generator – Engine oil change"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-gen-air",
+   "sec": "c-gen",
+   "type": "guide",
+   "title": {
+    "he": "ניקוי פילטר אוויר – גנרטור",
+    "en": "Air filter cleaning – generator"
+   },
+   "summary": {
+    "he": "13 שלבים עם תמונות",
+    "en": "13 steps with photos"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "חודשי · דרג שדה",
+      "kind": "freq"
+     },
+     {
+      "h": "רשימת כלים"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "פריט"
+       ],
+       "rows": [
+        [
+         "1",
+         "שמן מנוע 5W-40 בתקן API SJ"
+        ],
+        [
+         "2",
+         "מגש ניקוז"
+        ],
+        [
+         "3",
+         "מטלית מיקרופייבר"
+        ],
+        [
+         "4",
+         "מברג שטוח"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סדר פעולות"
+     },
+     {
+      "h3": "שלב 1"
+     },
+     {
+      "p": "פתחו את מכסה התחזוקה השמאלי."
+     },
+     {
+      "img": "media/pm-p25-1.jpg"
+     },
+     {
+      "h3": "שלב 2"
+     },
+     {
+      "p": "שחררו את התפסים והסירו את מכסה מסנן האוויר."
+     },
+     {
+      "img": "media/pm-p25-2.jpg"
+     },
+     {
+      "h3": "שלב 3"
+     },
+     {
+      "p": "הסירו את מסנן הספוג ממכסה מסנן האוויר."
+     },
+     {
+      "img": "media/pm-p26-1.jpg"
+     },
+     {
+      "h3": "שלב 4"
+     },
+     {
+      "p": "נקו את מסנן הספוג במים עם סבון והניחו לו להתייבש."
+     },
+     {
+      "img": "media/pm-p26-2.jpg"
+     },
+     {
+      "h3": "שלב 5"
+     },
+     {
+      "p": "טבלו אותו בשמן מנוע נקי."
+     },
+     {
+      "img": "media/pm-p27-1.jpg"
+     },
+     {
+      "h3": "שלב 6"
+     },
+     {
+      "p": "סחטו אותו."
+     },
+     {
+      "img": "media/pm-p27-2.jpg"
+     },
+     {
+      "h3": "שלב 7"
+     },
+     {
+      "p": "התקינו את מסנן הספוג על מכסה מסנן האוויר."
+     },
+     {
+      "img": "media/pm-p28-1.jpg"
+     },
+     {
+      "h3": "שלב 8"
+     },
+     {
+      "p": "הסירו את המוביל ואת מסנן הנייר."
+     },
+     {
+      "img": "media/pm-p28-2.jpg"
+     },
+     {
+      "h3": "שלב 9"
+     },
+     {
+      "p": "בדקו את מסנן הנייר. אם הוא מלוכלך – החליפו אותו בחדש. **אל תנקו את מסנן הנייר.**"
+     },
+     {
+      "img": "media/pm-p29-1.jpg"
+     },
+     {
+      "h3": "שלב 10"
+     },
+     {
+      "p": "נגבו כל לכלוך מבית מסנן האוויר בעזרת מטלית נקייה ולחה."
+     },
+     {
+      "img": "media/pm-p29-2.jpg"
+     },
+     {
+      "h3": "שלב 11"
+     },
+     {
+      "p": "התקינו את המוביל ואת מסנן הנייר."
+     },
+     {
+      "img": "media/pm-p30-1.jpg"
+     },
+     {
+      "h3": "שלב 12"
+     },
+     {
+      "p": "התקינו את מכסה מסנן האוויר."
+     },
+     {
+      "img": "media/pm-p30-2.jpg"
+     },
+     {
+      "h3": "שלב 13"
+     },
+     {
+      "p": "סגרו את מכסה התחזוקה השמאלי."
+     },
+     {
+      "img": "media/pm-p31-1.jpg"
+     },
+     {
+      "h": "מסמך רלוונטי (הונדה)"
+     },
+     {
+      "img": "media/pm-p23-1.jpg",
+      "cap": "Servicing your generator – Foam air filter cleaning"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "Monthly · Field level",
+      "kind": "freq"
+     },
+     {
+      "h": "Tools"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "Item"
+       ],
+       "rows": [
+        [
+         "1",
+         "Engine oil 5W-40, API SJ"
+        ],
+        [
+         "2",
+         "Drain tray"
+        ],
+        [
+         "3",
+         "Microfiber cloth"
+        ],
+        [
+         "4",
+         "Flat screwdriver"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Procedure"
+     },
+     {
+      "h3": "Step 1"
+     },
+     {
+      "p": "Open the left maintenance cover."
+     },
+     {
+      "img": "media/pm-p25-1.jpg"
+     },
+     {
+      "h3": "Step 2"
+     },
+     {
+      "p": "Release the clips and remove the air filter cover."
+     },
+     {
+      "img": "media/pm-p25-2.jpg"
+     },
+     {
+      "h3": "Step 3"
+     },
+     {
+      "p": "Remove the foam filter from the air filter cover."
+     },
+     {
+      "img": "media/pm-p26-1.jpg"
+     },
+     {
+      "h3": "Step 4"
+     },
+     {
+      "p": "Clean the foam filter in soapy water and let it dry."
+     },
+     {
+      "img": "media/pm-p26-2.jpg"
+     },
+     {
+      "h3": "Step 5"
+     },
+     {
+      "p": "Dip it in clean engine oil."
+     },
+     {
+      "img": "media/pm-p27-1.jpg"
+     },
+     {
+      "h3": "Step 6"
+     },
+     {
+      "p": "Squeeze it out."
+     },
+     {
+      "img": "media/pm-p27-2.jpg"
+     },
+     {
+      "h3": "Step 7"
+     },
+     {
+      "p": "Install the foam filter on the air filter cover."
+     },
+     {
+      "img": "media/pm-p28-1.jpg"
+     },
+     {
+      "h3": "Step 8"
+     },
+     {
+      "p": "Remove the guide and the paper filter."
+     },
+     {
+      "img": "media/pm-p28-2.jpg"
+     },
+     {
+      "h3": "Step 9"
+     },
+     {
+      "p": "Check the paper filter. If it is dirty, replace it. **Do not clean the paper filter.**"
+     },
+     {
+      "img": "media/pm-p29-1.jpg"
+     },
+     {
+      "h3": "Step 10"
+     },
+     {
+      "p": "Wipe any dirt from the air filter housing with a clean, damp cloth."
+     },
+     {
+      "img": "media/pm-p29-2.jpg"
+     },
+     {
+      "h3": "Step 11"
+     },
+     {
+      "p": "Install the guide and the paper filter."
+     },
+     {
+      "img": "media/pm-p30-1.jpg"
+     },
+     {
+      "h3": "Step 12"
+     },
+     {
+      "p": "Install the air filter cover."
+     },
+     {
+      "img": "media/pm-p30-2.jpg"
+     },
+     {
+      "h3": "Step 13"
+     },
+     {
+      "p": "Close the left maintenance cover."
+     },
+     {
+      "img": "media/pm-p31-1.jpg"
+     },
+     {
+      "h": "Related document (Honda)"
+     },
+     {
+      "img": "media/pm-p23-1.jpg",
+      "cap": "Servicing your generator – Foam air filter cleaning"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-gen-plug",
+   "sec": "c-gen",
+   "type": "guide",
+   "title": {
+    "he": "טיפול מצת (פלאג) – גנרטור",
+    "en": "Spark plug service – generator"
+   },
+   "summary": {
+    "he": "8 שלבים עם תמונות",
+    "en": "8 steps with photos"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "שנתי · דרג משק",
+      "kind": "freq"
+     },
+     {
+      "h": "רשימת כלים"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "פריט"
+       ],
+       "rows": [
+        [
+         "1",
+         "מברג שטוח"
+        ],
+        [
+         "2",
+         "מפתח מצתים"
+        ],
+        [
+         "3",
+         "מצת (פלאג) NGK BPR6ES"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סדר פעולות"
+     },
+     {
+      "h3": "שלב 1"
+     },
+     {
+      "p": "פתחו את מכסה התחזוקה השמאלי. אם המנוע היה בשימוש, תנו לו להתקרר לחלוטין לפני הטיפול."
+     },
+     {
+      "img": "media/pm-p35-1.jpg"
+     },
+     {
+      "h3": "שלב 2"
+     },
+     {
+      "p": "הסירו את המצת בעזרת מפתח מצתים."
+     },
+     {
+      "img": "media/pm-p35-2.jpg"
+     },
+     {
+      "h3": "שלב 3"
+     },
+     {
+      "p": "בדקו את המצת: (1) המרווח צריך להיות **0.7–0.8 מ״מ**. (2) מצב תקין. (3) יבש או מפויח (מצבורי פחמן). (4) רטוב (מפויח משמן או דלק)."
+     },
+     {
+      "img": "media/pm-p36-1.jpg"
+     },
+     {
+      "h3": "שלב 4"
+     },
+     {
+      "p": "התקינו את המצת ביד כדי למנוע הברגה עקומה."
+     },
+     {
+      "img": "media/pm-p36-2.jpg"
+     },
+     {
+      "h3": "שלב 5"
+     },
+     {
+      "p": "מצת משומש: הדקו **1/8 עד 1/4 סיבוב** אחרי שהמצת מתיישב במקומו. מצת חדש: הדקו **1/2 סיבוב** אחרי שהמצת מתיישב במקומו."
+     },
+     {
+      "img": "media/pm-p37-1.jpg"
+     },
+     {
+      "h3": "שלב 6"
+     },
+     {
+      "p": "התקינו את מכסה המצת."
+     },
+     {
+      "img": "media/pm-p37-2.jpg"
+     },
+     {
+      "h3": "שלב 7"
+     },
+     {
+      "p": "התקינו את מכסה הבדיקה של המצת."
+     },
+     {
+      "img": "media/pm-p38-1.jpg"
+     },
+     {
+      "h3": "שלב 8"
+     },
+     {
+      "p": "סגרו את מכסה התחזוקה השמאלי."
+     },
+     {
+      "img": "media/pm-p38-2.jpg"
+     },
+     {
+      "h": "מסמכים רלוונטיים (הונדה)"
+     },
+     {
+      "img": "media/pm-p32-1.jpg"
+     },
+     {
+      "img": "media/pm-p33-1.jpg"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "Annual · Workshop level",
+      "kind": "freq"
+     },
+     {
+      "h": "Tools"
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "Item"
+       ],
+       "rows": [
+        [
+         "1",
+         "Flat screwdriver"
+        ],
+        [
+         "2",
+         "Spark plug wrench"
+        ],
+        [
+         "3",
+         "Spark plug NGK BPR6ES"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Procedure"
+     },
+     {
+      "h3": "Step 1"
+     },
+     {
+      "p": "Open the left maintenance cover. If the engine has been running, let it cool completely first."
+     },
+     {
+      "img": "media/pm-p35-1.jpg"
+     },
+     {
+      "h3": "Step 2"
+     },
+     {
+      "p": "Remove the spark plug with the spark plug wrench."
+     },
+     {
+      "img": "media/pm-p35-2.jpg"
+     },
+     {
+      "h3": "Step 3"
+     },
+     {
+      "p": "Inspect the spark plug: (1) the gap should be **0.7–0.8 mm**. (2) Good condition. (3) Dry or fouled (carbon deposits). (4) Wet (fouled with oil or fuel)."
+     },
+     {
+      "img": "media/pm-p36-1.jpg"
+     },
+     {
+      "h3": "Step 4"
+     },
+     {
+      "p": "Install the spark plug by hand to avoid cross-threading."
+     },
+     {
+      "img": "media/pm-p36-2.jpg"
+     },
+     {
+      "h3": "Step 5"
+     },
+     {
+      "p": "Used plug: tighten **1/8–1/4 turn** after it seats. New plug: tighten **1/2 turn** after it seats."
+     },
+     {
+      "img": "media/pm-p37-1.jpg"
+     },
+     {
+      "h3": "Step 6"
+     },
+     {
+      "p": "Reinstall the spark plug cap."
+     },
+     {
+      "img": "media/pm-p37-2.jpg"
+     },
+     {
+      "h3": "Step 7"
+     },
+     {
+      "p": "Reinstall the spark plug inspection cover."
+     },
+     {
+      "img": "media/pm-p38-1.jpg"
+     },
+     {
+      "h3": "Step 8"
+     },
+     {
+      "p": "Close the left maintenance cover."
+     },
+     {
+      "img": "media/pm-p38-2.jpg"
+     },
+     {
+      "h": "Related documents (Honda)"
+     },
+     {
+      "img": "media/pm-p32-1.jpg"
+     },
+     {
+      "img": "media/pm-p33-1.jpg"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-c-screens",
+   "sec": "c-screens",
+   "type": "guide",
+   "title": {
+    "he": "אחזקה – מסכים וטלוויזיות",
+    "en": "Maintenance – Screens & TVs"
+   },
+   "summary": {
+    "he": "בדיקה שנתית ע״י הספק",
+    "en": "Annual inspection by the supplier"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "ניקוי חיצוני של המסכים – **חודשי** (דרג שדה)."
+     },
+     {
+      "note": "כל הבדיקות מתבצעות **אחת לשנה** על ידי נציג מוסמך מטעם חברת הו״ס בלבד.",
+      "kind": "important"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "External screen cleaning – **monthly** (Field level)."
+     },
+     {
+      "note": "All inspections are performed **once a year** by an authorized representative of the supplier only.",
+      "kind": "important"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-c-elec",
+   "sec": "c-elec",
+   "type": "guide",
+   "title": {
+    "he": "אחזקה – מערכת חשמל",
+    "en": "Maintenance – Electrical system"
+   },
+   "summary": {
+    "he": "בדיקה שנתית ע״י הספק",
+    "en": "Annual inspection by the supplier"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "כל הבדיקות מתבצעות **אחת לשנה** על ידי חשמלאי מוסמך מטעם חברת הו״ס בלבד.",
+      "kind": "important"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "All inspections are performed **once a year** by a certified electrician from the supplier only.",
+      "kind": "important"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-c-mast",
+   "sec": "c-mast",
+   "type": "guide",
+   "title": {
+    "he": "אחזקה – תורן",
+    "en": "Maintenance – Mast"
+   },
+   "summary": {
+    "he": "בדיקה שנתית ע״י הספק",
+    "en": "Annual inspection by the supplier"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "כל הבדיקות מתבצעות **אחת לשנה** על ידי נציג מוסמך מטעם חברת הו״ס בלבד.",
+      "kind": "important"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "All inspections are performed **once a year** by an authorized representative of the supplier only.",
+      "kind": "important"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-c-comp",
+   "sec": "c-comp",
+   "type": "guide",
+   "title": {
+    "he": "אחזקה – קומפרסור",
+    "en": "Maintenance – Compressor"
+   },
+   "summary": {
+    "he": "בדיקה שנתית ע״י הספק",
+    "en": "Annual inspection by the supplier"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "כל הבדיקות מתבצעות **אחת לשנה** על ידי נציג מוסמך מטעם חברת הו״ס בלבד.",
+      "kind": "important"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "All inspections are performed **once a year** by an authorized representative of the supplier only.",
+      "kind": "important"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-cabling",
+   "sec": "c-elec",
+   "type": "guide",
+   "title": {
+    "he": "אחזקה – כבילה / ארון תקשורת",
+    "en": "Maintenance – cabling / comms cabinet"
+   },
+   "summary": {
+    "he": "בדיקה שנתית ע״י הספק",
+    "en": "Annual inspection by the supplier"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "כל הבדיקות מתבצעות **אחת לשנה** על ידי נציג מוסמך מטעם חברת הו״ס בלבד.",
+      "kind": "important"
+     },
+     {
+      "note": "מקור: מדריך אחזקת מנע DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "All inspections are performed **once a year** by an authorized representative of the supplier only.",
+      "kind": "important"
+     },
+     {
+      "note": "Source: Preventive Maintenance Guide DOC00757-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "maint",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-ac-filters",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › מזגן: ניקוי מסנני אוויר",
+    "en": "Container › AC: air filter cleaning"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-ac-filters"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-table",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: לוח אחזקה",
+    "en": "Container › generator: maintenance schedule"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-table"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-oil",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: החלפת שמן מנוע",
+    "en": "Container › generator: engine oil change"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-oil"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-air",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: ניקוי פילטר אוויר",
+    "en": "Container › generator: air filter cleaning"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-air"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pm-gen-plug",
+   "sec": "maint-prev",
+   "type": "link",
+   "title": {
+    "he": "קרון שליטה › גנרטור: טיפול מצת",
+    "en": "Container › generator: spark plug service"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "pm-gen-plug"
    },
    "updated": "2026-11-10"
   }
