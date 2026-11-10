@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 4,
+  "version": 6,
   "updated": "2026-11-10",
   "teamHash": "da66e96b63b0fa81900f3eeeb289e2814425612d1a77cdb94c188699555800b1",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -11,7 +11,7 @@
    "parent": null,
    "kind": "",
    "name": {
-    "he": "UGV Controlled Container",
+    "he": "קרון שליטה",
     "en": "UGV Controlled Container"
    },
    "desc": {
@@ -24,8 +24,8 @@
    "parent": null,
    "kind": "",
    "name": {
-    "he": "BISON UGV",
-    "en": "BISON UGV"
+    "he": "פלטפורמה – ביזון",
+    "en": "Platform – BISON"
    },
    "desc": {
     "he": "פרטים טכניים על מערכות ה־BISON. חל על BISON 120 ועל BISON 121.",
@@ -268,27 +268,6 @@
   }
  ],
  "items": [
-  {
-   "id": "dtc-pdf",
-   "sec": "comm-tech",
-   "type": "pdf",
-   "title": {
-    "he": "מדריך ממשק DTC (PDF)",
-    "en": "DTC Interface Guide (PDF)"
-   },
-   "summary": {
-    "he": "המסמך המקורי, 21 עמודים",
-    "en": "Original document, 21 pages"
-   },
-   "body": {
-    "src": "media/dtc-interface-guide.pdf",
-    "note": {
-     "he": "המסמך המקורי המלא (באנגלית).",
-     "en": "The full original document."
-    }
-   },
-   "updated": "2026-11-10"
-  },
   {
    "id": "dtc-overview",
    "sec": "comm-tech",
@@ -2048,23 +2027,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "cfg-radio",
-   "sec": "cfg",
-   "type": "link",
-   "title": {
-    "he": "קינפוג מקמ״שים",
-    "en": "Radio Configuration"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "targetSec": "comm-radio"
-   },
-   "updated": "2026-11-10"
-  },
-  {
    "id": "cfg-act",
    "sec": "cfg",
    "type": "steps",
@@ -2079,150 +2041,6 @@
    "body": {
     "he": "",
     "en": ""
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "b-engine-maint",
-   "sec": "b-engine",
-   "type": "link",
-   "title": {
-    "he": "נתוני אחזקה: שמנים ונוזלים",
-    "en": "Maintenance data: oils & fluids"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "m-data"
-   },
-   "updated": "2026-11-10",
-   "group": "tech"
-  },
-  {
-   "id": "qc1",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 1",
-    "en": "QC 1"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc2",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 2",
-    "en": "QC 2"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc3",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 3",
-    "en": "QC 3"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc4",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 4",
-    "en": "QC 4"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc5",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 5",
-    "en": "QC 5"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "atp-sys",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "ATP System",
-    "en": "ATP System"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
    },
    "updated": "2026-11-10"
   },
@@ -2437,10 +2255,10 @@
        "he": "שמן מנוע",
        "en": "Engine oil"
       },
-      "spec": "5W-40 Synthetic",
+      "spec": "Argo 5W-40 Synthetic",
       "qty": {
-       "he": "2.3 ליטר",
-       "en": "2.3 L"
+       "he": "2.3 ליטר (עם פילטר)",
+       "en": "2.3 L (with filter)"
       },
       "point": {
        "he": "מקל מדידה",
@@ -2462,7 +2280,7 @@
        "he": "שמן גיר (תמסורת)",
        "en": "Gear oil (transmission)"
       },
-      "spec": "75W-90 Synthetic",
+      "spec": "Argo 75W-90 Synthetic",
       "qty": {
        "he": "1.2 ליטר",
        "en": "1.2 L"
@@ -2503,7 +2321,7 @@
        "he": "שמן שרשרת (ספריי)",
        "en": "Chain oil (spray)"
       },
-      "spec": "PTFE",
+      "spec": "ARGO PTFE Chain Lube",
       "qty": "",
       "point": "",
       "interval": {
@@ -2512,8 +2330,8 @@
       },
       "pn": "",
       "note": {
-       "he": "שימון שרשרת כל 25 שעות מנוע.",
-       "en": "Chain lubrication every 25 engine hours."
+       "he": "שימון שרשרת כל 25 שעות מנוע. בטבלה המסכמת של האחזקה המונעת רשום Putoline DX-11.",
+       "en": "Chain lubrication every 25 engine hours. The preventive maintenance summary lists Putoline DX-11."
       }
      },
      {
@@ -2523,8 +2341,8 @@
        "en": "Grease"
       },
       "spec": {
-       "he": "ליתיום",
-       "en": "Lithium"
+       "he": "Argo NLGI #2 ליתיום",
+       "en": "Argo NLGI #2 Lithium"
       },
       "qty": "",
       "point": "",
@@ -2551,7 +2369,7 @@
        "he": "כל 100 שעות מנוע",
        "en": "Every 100 engine hours"
       },
-      "pn": "",
+      "pn": "39164PH",
       "note": {
        "he": "מוחלף יחד עם שמן המנוע.",
        "en": "Changed together with the engine oil."
@@ -2563,23 +2381,67 @@
        "he": "פילטר אוויר",
        "en": "Air filter"
       },
-      "spec": "",
+      "spec": {
+       "he": "נייר, Low Profile",
+       "en": "Low profile paper"
+      },
       "qty": "",
       "point": "",
       "interval": {
        "he": "כל 100 שעות מנוע",
        "en": "Every 100 engine hours"
       },
-      "pn": "",
+      "pn": "692519 / 692520 (משני / secondary)",
       "note": {
        "he": "ניקוי יומי בטא״ת, טיפול יסודי כל 100 שעות מנוע, החלפה כשהפילטר שחוק.",
        "en": "Daily cleaning in Post-Operation, thorough service every 100 engine hours, replace when worn."
       }
+     },
+     {
+      "kind": "part",
+      "name": {
+       "he": "מצת (פלאג)",
+       "en": "Spark plug"
+      },
+      "spec": "NGK BPR4ES",
+      "qty": {
+       "he": "2 (מנוע V-Twin)",
+       "en": "2 (V-twin engine)"
+      },
+      "point": "",
+      "interval": {
+       "he": "שנתי (דרג משק)",
+       "en": "Annual (Workshop)"
+      },
+      "pn": "491055S",
+      "note": {
+       "he": "מרווח: ראו הערה במפרט ARGO.",
+       "en": "Gap: see the note in the ARGO specs."
+      }
+     },
+     {
+      "kind": "part",
+      "name": {
+       "he": "רצועת הנעה (וריאטור)",
+       "en": "Drive belt (variator)"
+      },
+      "spec": "ARGO Frontier",
+      "qty": "1",
+      "point": "",
+      "interval": {
+       "he": "בדיקה חודשית / כל 25 שעות",
+       "en": "Check monthly / every 25 h"
+      },
+      "pn": "127-159 / 127-159HD",
+      "note": {
+       "he": "",
+       "en": ""
+      }
      }
     ],
     "note": {
-     "he": "BISON. לחץ אוויר בצמיגים: קדמי 5, אמצעיים 7, אחורי 6 (PSI).",
-     "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI)."
+     "he": "BISON. לחץ אוויר בצמיגים: קדמי 5, אמצעיים 7, אחורי 6 (PSI). נתוני השמנים אומתו מול מפרט היצרן ARGO Aurora 950.",
+     "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI). Oil data verified against the ARGO Aurora 950 manufacturer spec."
     }
    },
    "updated": "2026-11-10"
@@ -2675,48 +2537,6 @@
       "kind": "tip"
      }
     ]
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "m-daily-pdf",
-   "sec": "maint",
-   "type": "pdf",
-   "title": {
-    "he": "נוהל טיפולים יומיים (PDF)",
-    "en": "Daily Maintenance Procedure (PDF)"
-   },
-   "summary": {
-    "he": "המסמך המקורי להדפסה",
-    "en": "Original document for printing"
-   },
-   "body": {
-    "src": "media/daily-maintenance-he.pdf",
-    "note": {
-     "he": "המסמך המקורי, כולל טבלאות רישום ביצוע להדפסה.",
-     "en": "The original document (Hebrew), including printable maintenance log tables."
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "pm-pdf",
-   "sec": "maint-prev",
-   "type": "pdf",
-   "title": {
-    "he": "מדריך אחזקת מנע (PDF)",
-    "en": "Preventive Maintenance Guide (PDF)"
-   },
-   "summary": {
-    "he": "המסמך המלא – 147 עמודים",
-    "en": "Full document – 147 pages"
-   },
-   "body": {
-    "src": "media/preventive-maintenance.pdf",
-    "note": {
-     "he": "DOC00757-A REV.001, 29/09/2026. המסמך המלא, 147 עמודים.",
-     "en": "DOC00757-A REV.001, 29/09/2026. The full document (Hebrew), 147 pages."
-    }
    },
    "updated": "2026-11-10"
   },
@@ -2834,14 +2654,14 @@
         [
          "**ביזון › מנוע › שמן מנוע**",
          "בדיקת שמן מנוע",
-         "`10W-40`",
+         "`5W-40 (*)`",
          "שדה",
          "חודשי"
         ],
         [
          "**ביזון › מנוע › שמן מנוע**",
          "החלפת שמן מנוע",
-         "`10W-40`",
+         "`5W-40 (*)`",
          "משק",
          "רבעוני"
         ],
@@ -3003,6 +2823,10 @@
       }
      },
      {
+      "note": "(*) בטבלה המקורית רשום 10W-40. לפי מפרט היצרן (ARGO Aurora 950) ולפי נוהל הטיפולים היומיים, השמן הוא **5W-40 סינתטי**. לשימון שרשרת רשום כאן Putoline DX-11, ובמפרט היצרן ובנוהל היומי – ARGO PTFE.",
+      "kind": "caution"
+     },
+     {
       "h": "הטבלה המקורית"
      },
      {
@@ -3115,14 +2939,14 @@
         [
          "**BISON › Engine › Engine oil**",
          "Engine oil check",
-         "`10W-40`",
+         "`5W-40 (*)`",
          "Field",
          "Monthly"
         ],
         [
          "**BISON › Engine › Engine oil**",
          "Engine oil change",
-         "`10W-40`",
+         "`5W-40 (*)`",
          "Workshop",
          "Quarterly"
         ],
@@ -3282,6 +3106,10 @@
         ]
        ]
       }
+     },
+     {
+      "note": "(*) The original table lists 10W-40. Per the manufacturer spec (ARGO Aurora 950) and the daily maintenance procedure, the oil is **5W-40 synthetic**. Chain lube is listed here as Putoline DX-11; the manufacturer spec and daily procedure list ARGO PTFE.",
+      "kind": "caution"
      },
      {
       "h": "Original table"
@@ -4989,6 +4817,3193 @@
    "updated": "2026-11-10"
   },
   {
+   "id": "dtc-replay",
+   "sec": "comm-mon",
+   "type": "guide",
+   "title": {
+    "he": "Domo Mesh Replay – הקלטה והשמעה של הרשת",
+    "en": "Domo Mesh Replay – record and replay the mesh"
+   },
+   "summary": {
+    "he": "תחקיר אחרי פעילות: הקלטה, הורדת לוגים והשמעה",
+    "en": "Debrief: record, download logs and replay"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "**Domo Mesh Replay** היא תוכנת מחשב שמקליטה את נתוני הסטטוס של מקמ״ש Mesh (קובצי JSON בתוך zip), ומאפשרת להשמיע אותם אחר כך דרך ממשק ה־Web של המקמ״ש. שימושית לתחקיר אחרי פעילות: אפשר לראות מה קרה ברשת בכל רגע."
+     },
+     {
+      "h": "התקנה"
+     },
+     {
+      "p": "קובץ ההתקנה זמין מאתר WatchDox של DTC (דרך מנהל החשבון או פורטל התמיכה). מריצים אותו ומשאירים את הגדרות ברירת המחדל. בסוף נוצר קיצור דרך בשולחן העבודה."
+     },
+     {
+      "p": "פותחים את התוכנה, ובתפריט **Mode** בוחרים **Recorder** (הקלטה) או **Player** (השמעה)."
+     },
+     {
+      "h": "הקלטה (Recorder)"
+     },
+     {
+      "ol": [
+       "בשדה **Directory** בוחרים תיקייה לשמירת ההקלטות.",
+       "בשדה **Mesh Address** מקלידים את כתובת ה־IP של המקמ״ש שרוצים להקליט.",
+       "פרטי כניסה: **Username ריק**, **Password = Eastwood** (ברירת המחדל).",
+       "לוחצים **Record** כדי להתחיל ו־**Stop** כדי לעצור.",
+       "אם קורה משהו חשוב בזמן ההקלטה, לוחצים **Add Point Of Interest** ורושמים מה קרה (למשל „הפרעה”). זה ישמש כנקודת קפיצה בהשמעה."
+      ]
+     },
+     {
+      "note": "בכל הקלטה נוצר קובץ zip חדש, וגם כשהקלטה עוברת 64,000 קבצים. שם הקובץ כולל את ה־ESN של המקמ״ש ואת התאריך והשעה, ואפשר לשנות אותו.",
+      "kind": "tip"
+     },
+     {
+      "h": "הורדת לוגים שנשמרו במקמ״ש"
+     },
+     {
+      "ol": [
+       "בממשק ה־Web של המקמ״ש: **Global Setup > Advanced > JSON Logging**.",
+       "**Enable Logging = Yes** ולוחצים **Save**. הלוגים נשמרים בכרטיס ה־SD של המקמ״ש.",
+       "אפשר לכבות את **Log local RF status** ו־**Log spectrum** אם לא צריך. **Max log size** עד 512,000MB.",
+       "בתוכנה, במסך ההקלטה, לוחצים **Download**, בוחרים קבצים ולוחצים **Download**. הם נשמרים בתיקייה שהוגדרה."
+      ]
+     },
+     {
+      "h": "השמעה (Player)"
+     },
+     {
+      "ol": [
+       "עוברים ל־**Mode > Player**. הקובץ האחרון נבחר אוטומטית, או בוחרים קובץ ידנית (אפשר כמה קבצים ברצף).",
+       "בשדה **Mesh Address** מקלידים כתובת של מקמ״ש מחובר. הוא משמש כ־proxy להצגת הנתונים.",
+       "לוחצים **Open Browser** (ייתכן שיתבקשו פרטי כניסה), ואז **Play**. **Stop** עוצר."
+      ]
+     },
+     {
+      "note": "ההקלטות מיועדות בעיקר לנתוני סטטוס. **לא לגלוש** בדפי Dashboard או Apps בזמן ההשמעה.",
+      "kind": "caution"
+     },
+     {
+      "table": {
+       "head": [
+        "כלי ניווט",
+        "מה הוא עושה"
+       ],
+       "rows": [
+        [
+         "**בחירת סוג קובץ**",
+         "קובע את הקפיצות בחיצים: Local RF Status (תת־קבוצה מהירה של הסטטוס), Spectrum (מוצג ב־Status > Spectra), Status (כל דפי הסטטוס)."
+        ],
+        [
+         "**חיצים ◀ ▶**",
+         "קפיצה אחורה או קדימה, ברזולוציה של סוג הקובץ שנבחר."
+        ],
+        [
+         "**Points Of Interest**",
+         "קפיצה לנקודות שסומנו בזמן ההקלטה."
+        ],
+        [
+         "**סרגל זמן**",
+         "מעבר לרגע מסוים בהקלטה. השעה מוצגת ב־Current Time."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "תמיכה של DTC: ‎+44 1489 884 550 (בריטניה), ‎+1 571 563 7077 (ארה״ב).",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "**Domo Mesh Replay** is a PC application that records status data from an IP Mesh radio (JSON files in a zip) and plays it back through the radio’s web interface. Useful for debriefing: you can see what happened in the network at any moment."
+     },
+     {
+      "h": "Installation"
+     },
+     {
+      "p": "The installer is available from DTC’s WatchDox facility (via your account manager or the support portal). Run it and keep the default settings. A desktop shortcut is created."
+     },
+     {
+      "p": "Open the app and choose **Recorder** or **Player** from the **Mode** menu."
+     },
+     {
+      "h": "Recorder"
+     },
+     {
+      "ol": [
+       "Set the **Directory** where recordings are saved.",
+       "Enter the **Mesh Address** (IP) of the radio to record.",
+       "Credentials: **Username blank**, **Password = Eastwood** (default).",
+       "Click **Record** to start and **Stop** to end.",
+       "If something important happens, click **Add Point Of Interest** and describe it (e.g. “Interference”). It becomes a jump point during playback."
+      ]
+     },
+     {
+      "note": "A new zip file is created for each recording, or when a recording exceeds 64,000 files. The file name includes the radio ESN and the start date and time; you can rename it.",
+      "kind": "tip"
+     },
+     {
+      "h": "Downloading logs stored on the radio"
+     },
+     {
+      "ol": [
+       "In the radio web interface: **Global Setup > Advanced > JSON Logging**.",
+       "Set **Enable Logging = Yes** and click **Save**. Logs are saved to the radio’s SD card.",
+       "You can turn off **Log local RF status** and **Log spectrum**. **Max log size** up to 512,000 MB.",
+       "In the app’s Recorder page, click **Download**, select files and click **Download**. They are saved to the Directory."
+      ]
+     },
+     {
+      "h": "Player"
+     },
+     {
+      "ol": [
+       "Switch to **Mode > Player**. The last file is selected automatically, or browse for files (several can play in sequence).",
+       "Enter the **Mesh Address** of a connected radio; it acts as a proxy web interface.",
+       "Click **Open Browser** (credentials may be needed), then **Play**. **Stop** pauses or ends."
+      ]
+     },
+     {
+      "note": "Recordings are mainly for status parameters. **Do not browse** the Dashboard or Apps pages during playback.",
+      "kind": "caution"
+     },
+     {
+      "table": {
+       "head": [
+        "Tool",
+        "What it does"
+       ],
+       "rows": [
+        [
+         "**JSON file selection**",
+         "Sets the arrow step: Local RF Status (fast subset of status), Spectrum (Status > Spectra page), Status (all status pages)."
+        ],
+        [
+         "**Arrows ◀ ▶**",
+         "Step back or forward at the selected file’s resolution."
+        ],
+        [
+         "**Points Of Interest**",
+         "Jump to points added during recording."
+        ],
+        [
+         "**Time slider**",
+         "Move to a moment in the recording; shown in Current Time."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "DTC support: +44 1489 884 550 (UK), +1 571 563 7077 (US).",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "sys-aux",
+   "sec": "comm-tech",
+   "type": "guide",
+   "title": {
+    "he": "בקרים, טאבלט, רחפן וקופסת מפעיל – נתונים",
+    "en": "Controllers, tablet, drone & operator box – specs"
+   },
+   "summary": {
+    "he": "ROCU-10, ROCU-1, טאבלט, רחפן, קופסת מפעיל",
+    "en": "ROCU-10, ROCU-1, tablet, drone, operator box"
+   },
+   "body": {
+    "he": [
+     {
+      "h": "ROCU-10 – בקר המפעיל"
+     },
+     {
+      "p": "מאפשר לנהוג ברכב, להפעיל את הפנסים ולסרוק את השטח בארבע המצלמות."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מסך",
+         "10.1\" מגע, 1920×1200, ‏800 nits"
+        ],
+        [
+         "מעבד / מערכת",
+         "Intel Core i5-1235U · Windows 10/11 IoT LTSC או Linux"
+        ],
+        [
+         "זיכרון / אחסון",
+         "8GB DDR5 · ‏128GB SSD"
+        ],
+        [
+         "רשת",
+         "LAN עם מחבר M8"
+        ],
+        [
+         "סוללה",
+         "11.1V, 6400mAh, 3S2P, החלפה חמה"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-20~60°C (חשמל), ‎-10~50°C (סוללה)"
+        ],
+        [
+         "מידות / משקל",
+         "319.9×188.9×51.5 מ״מ · פחות מ־2 ק״ג"
+        ],
+        [
+         "בקרים",
+         "2 ג׳ויסטיקים, 2 מתגי טוגל, 2 גלגלות, 6 לחצנים, 2 רמקולים"
+        ],
+        [
+         "עמידות",
+         "IP65 · MIL-STD-810H · MIL-STD-461G"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "ROCU-1 – בקר נהיגה קצר טווח (אופציונלי)"
+     },
+     {
+      "p": "לנהיגה בלבד ובטווח קצר (קשר עין)."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מידות / משקל",
+         "60×49×184 מ״מ · ‏0.8 ק״ג"
+        ],
+        [
+         "תקשורת",
+         "DIGI XBEE"
+        ],
+        [
+         "הזנה",
+         "2 סוללות AA ליתיום 1.5V (L91)"
+        ],
+        [
+         "זמן עבודה",
+         "עד 8 שעות"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-20°C עד +60°C"
+        ],
+        [
+         "אטימות",
+         "IP65"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "טאבלט מפקד"
+     },
+     {
+      "p": "לתצפית ושליטה של המפקד כשהוא בשטח, מחוץ לקרון. מתחבר לקופסת המפעיל."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מסך",
+         "12.2\" WUXGA, ‏1,200 nits, קריא באור שמש"
+        ],
+        [
+         "מערכת / זיכרון",
+         "Windows 11 Pro · ‏16GB · ‏256GB SSD"
+        ],
+        [
+         "סוללות",
+         "2 × Li-ion 7.74V, החלפה חמה"
+        ],
+        [
+         "משקל",
+         "1.41 ק״ג"
+        ],
+        [
+         "עמידות",
+         "IP66 · MIL-STD-810H · MIL-STD-461G"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-29°C עד 63°C"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סט רחפן ממסר (Drone COM Set)"
+     },
+     {
+      "p": "מבוסס על רחפן **EVO Max 4T** עם מודול ממסר **BluSDR** שמתחבר לרשת ה־RF/Mesh. משגרים אותו מהקרון, והוא משמש גשר תקשורת בין הכלים, הקרון ועמדות מפעיל מרוחקות, וגם מספק וידאו ומיפוי. מערכת SkyLink 3.0: ‏6 אנטנות, 4 תחומי תדר, הצפנת AES-256, ‏4G אופציונלי."
+     },
+     {
+      "h": "קופסת מפעיל (Operator Box)"
+     },
+     {
+      "p": "מחוברת בין ה־ROCU-10 לבקר מערכת הנשק, לקרון או לחצובת הממסר, וישירות לכלים. עובדת על שתי סוללות או על הזנה חיצונית. כוללת מתג הפעלה ומתג EMO."
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "ROCU-10 – operator controller"
+     },
+     {
+      "p": "Drives the vehicle, operates the LEDs and scans the field with the four cameras."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Display",
+         "10.1\" touch, 1920×1200, 800 nits"
+        ],
+        [
+         "CPU / OS",
+         "Intel Core i5-1235U · Windows 10/11 IoT LTSC or Linux"
+        ],
+        [
+         "Memory / storage",
+         "8GB DDR5 · 128GB SSD"
+        ],
+        [
+         "Network",
+         "LAN with M8 connector"
+        ],
+        [
+         "Battery",
+         "11.1 V, 6400 mAh, 3S2P, hot-swap"
+        ],
+        [
+         "Operating temp",
+         "-20~60°C (AC), -10~50°C (battery)"
+        ],
+        [
+         "Size / weight",
+         "319.9×188.9×51.5 mm · < 2 kg"
+        ],
+        [
+         "Controls",
+         "2 joysticks, 2 toggle switches, 2 rollers, 6 buttons, 2 speakers"
+        ],
+        [
+         "Ruggedness",
+         "IP65 · MIL-STD-810H · MIL-STD-461G"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "ROCU-1 – short-range drive controller (optional)"
+     },
+     {
+      "p": "Driving only, at close range (line of sight)."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Size / weight",
+         "60×49×184 mm · 0.8 kg"
+        ],
+        [
+         "Communication",
+         "DIGI XBEE"
+        ],
+        [
+         "Power",
+         "2 × AA 1.5 V lithium (L91)"
+        ],
+        [
+         "Working time",
+         "Up to 8 hours"
+        ],
+        [
+         "Operating temp",
+         "-20°C to +60°C"
+        ],
+        [
+         "Ingress protection",
+         "IP65"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Commander tablet"
+     },
+     {
+      "p": "For commander observation and control when deployed outside the container. Connects to the operator box."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Display",
+         "12.2\" WUXGA, 1,200 nits, sunlight readable"
+        ],
+        [
+         "OS / memory",
+         "Windows 11 Pro · 16GB · 256GB SSD"
+        ],
+        [
+         "Batteries",
+         "2 × Li-ion 7.74 V, hot-swap"
+        ],
+        [
+         "Weight",
+         "1.41 kg"
+        ],
+        [
+         "Ruggedness",
+         "IP66 · MIL-STD-810H · MIL-STD-461G"
+        ],
+        [
+         "Operating temp",
+         "-29°C to 63°C"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Drone COM Set"
+     },
+     {
+      "p": "Based on the **EVO Max 4T** drone with a **BluSDR** relay module linked to the RF/Mesh network. Launched from the container, it bridges the vehicles, the container and remote operator stations, and provides video and mapping. SkyLink 3.0: 6 antennas, 4 bands, AES-256, optional 4G."
+     },
+     {
+      "h": "Operator Box"
+     },
+     {
+      "p": "Connected between the ROCU-10 and the gun system controller, to the container or tripod relay, and directly to the vehicles. Runs on two batteries or external power. Has a power switch and an EMO switch."
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "container-spec",
+   "sec": "container",
+   "type": "guide",
+   "title": {
+    "he": "קרון שליטה – נתונים כלליים",
+    "en": "Control container – general data"
+   },
+   "summary": {
+    "he": "מידות, תכולה ויכולות",
+    "en": "Dimensions, contents and capabilities"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "הקרון הוא לב מערכת ROBOX: יחידת ISO באורך 20 רגל שמשמשת גם להובלה וגם כמרכז שליטה ובקרה. בזמן הובלה הוא נושא את שני הכלים, הציוד והמטענים. בשטח פורקים את הכלים, והקרון הופך לעמדת שליטה מלאה."
+     },
+     {
+      "ul": [
+       "בתוכו: עמדות המפעילים, מערכות התקשורת, ייצור ואגירת חשמל, ותורן נשלף לאנטנות RF, סלולר ו־GPS.",
+       "גנרטור וניהול חשמל אוטומטי לפעולה רציפה.",
+       "ממוזג, מוגן אבק, עומד ב־MIL-STD-810G."
+      ]
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מידות (א×ר×ג)",
+         "6.953 × 2.531 × 2.785 מ׳"
+        ],
+        [
+         "אורך כולל רמסע",
+         "7.035 מ׳"
+        ],
+        [
+         "סוג",
+         "DVN (פלדה), מתאים להובלה במשאית"
+        ],
+        [
+         "בידוד",
+         "פאנלים מבודדים (SIP)"
+        ],
+        [
+         "עמדות הפעלה",
+         "עד 9 עמדות"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The container is the core of the ROBOX system: a 20-ft ISO unit that serves both as transport and as the command-and-control center. In transport it carries both vehicles, accessories and payloads. On site the vehicles are unloaded and the container becomes a full control hub."
+     },
+     {
+      "ul": [
+       "Inside: operator consoles, communications, power generation and storage, and an extendable mast for RF, cellular and GPS antennas.",
+       "Generator and automatic power management for sustained operation.",
+       "Climate-controlled, dust-protected, MIL-STD-810G compliant."
+      ]
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Dimensions (L×W×H)",
+         "6.953 × 2.531 × 2.785 m"
+        ],
+        [
+         "Length with RAMSA lift",
+         "7.035 m"
+        ],
+        [
+         "Type",
+         "DVN (steel), fit for truck transport"
+        ],
+        [
+         "Insulation",
+         "Structural insulated panels"
+        ],
+        [
+         "Operator stations",
+         "Up to 9"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "mast-spec",
+   "sec": "c-mast",
+   "type": "guide",
+   "title": {
+    "he": "תורן – נתונים",
+    "en": "Mast – data"
+   },
+   "summary": {
+    "he": "גובה 5–15 מ׳, עד 10 ק״מ RF",
+    "en": "Height 5–15 m, up to 10 km RF"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "התורן נושא את קופסת התקשורת (RF, סלולר ו־GPS) שמותקנת על הקרון ומחוברת לקופסת ההפעלה. מאפשר שליטה בכלים מהקרון למרחק רב – **עד 10 ק״מ** בתקשורת RF."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "גובה",
+         "5–15 מ׳"
+        ],
+        [
+         "עומס מרבי בראש התורן",
+         "10 ק״ג"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The mast carries the communication box (RF, cellular and GPS) mounted on the container and connected to the operation box, enabling long-range vehicle control from the container – **up to 10 km** over RF."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Height",
+         "5–15 m"
+        ],
+        [
+         "Max head load",
+         "10 kg"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ac-spec",
+   "sec": "c-ac",
+   "type": "guide",
+   "title": {
+    "he": "מזגן – נתונים טכניים",
+    "en": "Air conditioner – technical data"
+   },
+   "summary": {
+    "he": "Electra Classic INV 170",
+    "en": "Electra Classic INV 170"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "מזגן אינוורטר של Electra."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "דגם",
+         "Classic INV 170 / CMD12DCB"
+        ],
+        [
+         "תפוקת קירור",
+         "3.45 kW"
+        ],
+        [
+         "תפוקת חימום",
+         "3.64 kW"
+        ],
+        [
+         "הספק נקוב / צריכה",
+         "2300 W / 1550 W"
+        ],
+        [
+         "נתיך",
+         "10A (C)"
+        ],
+        [
+         "מקדם הספק",
+         "0.92"
+        ],
+        [
+         "אטימות",
+         "IPX4"
+        ],
+        [
+         "אורך צנרת",
+         "8–20 מ׳"
+        ],
+        [
+         "מילוי גז",
+         "15 גר׳ למטר"
+        ],
+        [
+         "לחץ גבוה / נמוך",
+         "4.2 / 1.5 MPa"
+        ],
+        [
+         "משקל נטו",
+         "20.6 ק״ג"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "שימו לב: במסמך האחזקה המונעת הדגם רשום כ־TOP-J-INV-22 X WIFI EU, ובמסמך הטכני כ־Electra Classic INV 170. לבירור איזה מותקן בפועל.",
+      "kind": "caution"
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Electra inverter air conditioner."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Model",
+         "Classic INV 170 / CMD12DCB"
+        ],
+        [
+         "Rated cooling",
+         "3.45 kW"
+        ],
+        [
+         "Rated heating",
+         "3.64 kW"
+        ],
+        [
+         "Rated power / input",
+         "2300 W / 1550 W"
+        ],
+        [
+         "Fuse",
+         "10A (C)"
+        ],
+        [
+         "Power factor",
+         "0.92"
+        ],
+        [
+         "IP rating",
+         "IPX4"
+        ],
+        [
+         "Pipe length",
+         "8–20 m"
+        ],
+        [
+         "Refrigerant charge",
+         "15 g/m"
+        ],
+        [
+         "High / low pressure",
+         "4.2 / 1.5 MPa"
+        ],
+        [
+         "Net weight",
+         "20.6 kg"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Note: the preventive maintenance guide lists model TOP-J-INV-22 X WIFI EU, while the technical document lists Electra Classic INV 170. Confirm which unit is installed.",
+      "kind": "caution"
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "gen-spec",
+   "sec": "c-gen",
+   "type": "guide",
+   "title": {
+    "he": "גנרטור Honda EU70is – נתונים טכניים",
+    "en": "Generator Honda EU70is – technical data"
+   },
+   "summary": {
+    "he": "5.5/7.0 kVA, שמן 1.1 ל׳, מצת BPR6ES",
+    "en": "5.5/7.0 kVA, oil 1.1 L, plug BPR6ES"
+   },
+   "body": {
+    "he": [
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "דגם",
+         "Honda EU70is (EEJD)"
+        ],
+        [
+         "מנוע",
+         "GX390, ‏4 פעימות, צילינדר אחד, OHV"
+        ],
+        [
+         "נפח",
+         "389 סמ״ק"
+        ],
+        [
+         "סל״ד",
+         "2,400–3,600 (עם Eco-Throttle)"
+        ],
+        [
+         "קירור",
+         "אוויר מאולץ"
+        ],
+        [
+         "כמות שמן מנוע",
+         "1.1 ליטר"
+        ],
+        [
+         "מיכל דלק",
+         "19.2 ליטר"
+        ],
+        [
+         "מצת",
+         "NGK BPR6ES"
+        ],
+        [
+         "מתח / תדר",
+         "230V / 50Hz"
+        ],
+        [
+         "זרם נקוב",
+         "23.9A"
+        ],
+        [
+         "הספק נקוב / מרבי",
+         "5.5 / 7.0 kVA"
+        ],
+        [
+         "מידות",
+         "1,016 × 680 × 722 מ״מ (1,261 עם ידית מורמת)"
+        ],
+        [
+         "משקל יבש",
+         "123.2 ק״ג (כולל מצבר)"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: Honda EU70is Owner’s Manual.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Model",
+         "Honda EU70is (EEJD)"
+        ],
+        [
+         "Engine",
+         "GX390, 4-stroke, single cylinder, OHV"
+        ],
+        [
+         "Displacement",
+         "389 cm³"
+        ],
+        [
+         "Engine speed",
+         "2,400–3,600 rpm (Eco-Throttle ON)"
+        ],
+        [
+         "Cooling",
+         "Forced air"
+        ],
+        [
+         "Engine oil capacity",
+         "1.1 L"
+        ],
+        [
+         "Fuel tank",
+         "19.2 L"
+        ],
+        [
+         "Spark plug",
+         "NGK BPR6ES"
+        ],
+        [
+         "Voltage / frequency",
+         "230 V / 50 Hz"
+        ],
+        [
+         "Rated current",
+         "23.9 A"
+        ],
+        [
+         "Rated / max output",
+         "5.5 / 7.0 kVA"
+        ],
+        [
+         "Dimensions",
+         "1,016 × 680 × 722 mm (1,261 with handle up)"
+        ],
+        [
+         "Dry mass",
+         "123.2 kg (with battery)"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: Honda EU70is Owner’s Manual.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "comp-spec",
+   "sec": "c-comp",
+   "type": "guide",
+   "title": {
+    "he": "קומפרסור P185WYM – נתונים טכניים",
+    "en": "Compressor P185WYM – technical data"
+   },
+   "summary": {
+    "he": "185 CFM, ‏100 psi, דיזל Yanmar",
+    "en": "185 CFM, 100 psi, Yanmar diesel"
+   },
+   "body": {
+    "he": [
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "דגם",
+         "Doosan P185WYM-T4I"
+        ],
+        [
+         "ספיקת אוויר",
+         "185 CFM (87 ליטר/שנ׳)"
+        ],
+        [
+         "לחץ עבודה נקוב",
+         "100 psi (689 kPa)"
+        ],
+        [
+         "כיול שסתום ביטחון",
+         "200 psi (1379 kPa)"
+        ],
+        [
+         "סל״ד (עומס מלא / ללא עומס)",
+         "2600 / 1700"
+        ],
+        [
+         "מנוע",
+         "Yanmar 4TNV84T, דיזל"
+        ],
+        [
+         "מערכת חשמל",
+         "12VDC"
+        ],
+        [
+         "שמן מדחס",
+         "11.4 ליטר"
+        ],
+        [
+         "שמן מנוע",
+         "7.4 ליטר"
+        ],
+        [
+         "מיכל דלק",
+         "103 ליטר"
+        ],
+        [
+         "צמיגים / לחץ",
+         "P215.75RX15 · ‏35 psi"
+        ],
+        [
+         "משקל (עם / בלי דלק)",
+         "2272 / 2086 ליברות"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: Doosan P185WYM Operating & Maintenance Manual.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Model",
+         "Doosan P185WYM-T4I"
+        ],
+        [
+         "Air delivery",
+         "185 CFM (87 L/s)"
+        ],
+        [
+         "Rated operating pressure",
+         "100 psi (689 kPa)"
+        ],
+        [
+         "Safety valve setting",
+         "200 psi (1379 kPa)"
+        ],
+        [
+         "Engine speed (full / no load)",
+         "2600 / 1700 rpm"
+        ],
+        [
+         "Engine",
+         "Yanmar 4TNV84T, diesel"
+        ],
+        [
+         "Electrical system",
+         "12 VDC"
+        ],
+        [
+         "Compressor lubricant",
+         "11.4 L"
+        ],
+        [
+         "Engine oil",
+         "7.4 L"
+        ],
+        [
+         "Fuel tank",
+         "103 L"
+        ],
+        [
+         "Tires / pressure",
+         "P215.75RX15 · 35 psi"
+        ],
+        [
+         "Weight (with / without fuel)",
+         "2272 / 2086 lb"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: Doosan P185WYM Operating & Maintenance Manual.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "screens-spec",
+   "sec": "c-screens",
+   "type": "guide",
+   "title": {
+    "he": "מסכים ועמדות הפעלה – נתונים",
+    "en": "Screens & operator stations – data"
+   },
+   "summary": {
+    "he": "9 מסכי 24\" ו־6 מסכי 32\"",
+    "en": "9 × 24\" and 6 × 32\" screens"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "בקרון עד תשע עמדות הפעלה, כל אחת עם אחסון, זרוע למסך, שולחן ומסכים."
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מסך 24\" (×9)",
+         "23.8\" IPS, ‏100Hz"
+        ],
+        [
+         "מסך 32\" (×6)",
+         "31.5\" IPS, ‏60Hz"
+        ],
+        [
+         "ריהוט",
+         "זרועות למסכים, 3 שולחנות, אחסון"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "The container has up to nine operator stations, each with storage, a screen mount, a table and screens."
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Value"
+       ],
+       "rows": [
+        [
+         "24\" screen (×9)",
+         "23.8\" IPS, 100 Hz"
+        ],
+        [
+         "32\" screen (×6)",
+         "31.5\" IPS, 60 Hz"
+        ],
+        [
+         "Furniture",
+         "Screen mounts, 3 tables, storage"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "bison-overview",
+   "sec": "bison",
+   "type": "guide",
+   "title": {
+    "he": "ביזון – נתונים כלליים",
+    "en": "BISON – general data"
+   },
+   "summary": {
+    "he": "משקל, מידות, מגבלות ובסיס ARGO",
+    "en": "Weight, dimensions, limits and ARGO base"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "הביזון מבוסס על רכב **ARGO Aurora 950** (8×8) עם מנוע VX 950 V-Twin, שעליו מותקנים המבנה הראשי ומערכות הבקרה הנמוכה והגבוהה. מערכת הבקרה שולטת בהנעה, במצלמות (יום ותרמי), בתקשורת, במערכת הנשק, בפנסים, ברמקול, במיקרופון וב־EMO."
+     },
+     {
+      "h": "תצורת ביזון"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "משקל",
+         "950 ק״ג (1,100 ק״ג עם זחלים)"
+        ],
+        [
+         "משקל נמדד בניסוי (אוג׳ 2026)",
+         "1,120 ק״ג, ללא נשק וללא מטען"
+        ],
+        [
+         "אורך",
+         "3,000 מ״מ"
+        ],
+        [
+         "כושר העמסה (יבשה)",
+         "300 ק״ג"
+        ],
+        [
+         "אלטרנטור",
+         "55A ב־3000 סל״ד, ‏15A ב־1100 סל״ד"
+        ],
+        [
+         "מהירות מרבית",
+         "40 קמ״ש"
+        ],
+        [
+         "שיפוע מרבי מאושר (עצירה והחזקה)",
+         "30%"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**מגבלת שיפוע:** לפי ניסוי אוגוסט 2026, הכלי מחזיק את עצמו בבטחה רק עד שיפוע של **30%**. ב־40% הוא מתגלגל מעט אחורה ב־E-STOP, וב־50% הוא לא מחזיק ומתגלגל ברציפות.",
+      "kind": "caution"
+     },
+     {
+      "note": "**אומי גלגלים:** בניסוי נשבר בורג גלגל ונפרד גלגל בגלל אומים רופפים. יש לבדוק חיזוק אומי גלגלים לפני כל הפעלה (טל״ת).",
+      "kind": "important"
+     },
+     {
+      "h": "רכב הבסיס ARGO Aurora 950 (לפני הרכבת ערכת הבקרה)"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מנוע",
+         "VX 950, ‏V-Twin, הזרקת דלק, קירור מאוורר"
+        ],
+        [
+         "שלדה",
+         "8×8"
+        ],
+        [
+         "תמסורת",
+         "Admiral w/APS"
+        ],
+        [
+         "בלמים",
+         "הידראוליים"
+        ],
+        [
+         "מהירות",
+         "40 קמ״ש ביבשה, 5 קמ״ש במים"
+        ],
+        [
+         "מיכל דלק",
+         "32 ליטר"
+        ],
+        [
+         "צמיגים",
+         "ARGO XT117 25×12-9, חישוק Beadlock"
+        ],
+        [
+         "מרווח גחון",
+         "254 מ״מ (צמיגים), 279 מ״מ (זחלים)"
+        ],
+        [
+         "משקל",
+         "668 ק״ג"
+        ],
+        [
+         "רוחב / גובה",
+         "1,524 / 1,295 מ״מ"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001. דוח ניסוי IRONWAVE, אוג׳ 2026.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "BISON is based on the **ARGO Aurora 950** (8×8) with a VX 950 V-Twin engine, fitted with the main structure and the low- and high-level control systems. The control system runs the drive, cameras (day and thermal), communications, gun system, lights, speaker, microphone and EMO."
+     },
+     {
+      "h": "BISON configuration"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Weight",
+         "950 kg (1,100 kg with tracks)"
+        ],
+        [
+         "Measured weight in trial (Aug 2026)",
+         "1,120 kg, unarmed and unladen"
+        ],
+        [
+         "Length",
+         "3,000 mm"
+        ],
+        [
+         "Load capacity (land)",
+         "300 kg"
+        ],
+        [
+         "Alternator",
+         "55 A @ 3000 rpm, 15 A @ 1100 rpm"
+        ],
+        [
+         "Max speed",
+         "40 km/h"
+        ],
+        [
+         "Certified hold-on-grade",
+         "30%"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**Grade limit:** per the August 2026 trial, the vehicle holds position safely only up to a **30%** grade. At 40% it rolls back slightly on E-STOP; at 50% it cannot hold and rolls back continuously.",
+      "kind": "caution"
+     },
+     {
+      "note": "**Wheel nuts:** in the trial a wheel stud sheared and a wheel separated because of loose nuts. Check wheel nut torque before every operation (Pre-Operation).",
+      "kind": "important"
+     },
+     {
+      "h": "Base vehicle ARGO Aurora 950 (before control set assembly)"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Engine",
+         "VX 950, V-Twin, EFI, fan cooled"
+        ],
+        [
+         "Chassis",
+         "8×8"
+        ],
+        [
+         "Transmission",
+         "Admiral w/APS"
+        ],
+        [
+         "Brakes",
+         "Hydraulic"
+        ],
+        [
+         "Speed",
+         "40 km/h land, 5 km/h water"
+        ],
+        [
+         "Fuel tank",
+         "32 L"
+        ],
+        [
+         "Tires",
+         "ARGO XT117 25×12-9, beadlock wheel"
+        ],
+        [
+         "Ground clearance",
+         "254 mm (tires), 279 mm (tracks)"
+        ],
+        [
+         "Weight",
+         "668 kg"
+        ],
+        [
+         "Width / height",
+         "1,524 / 1,295 mm"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001. IRONWAVE trial report, Aug 2026.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "cam-spec",
+   "sec": "b-cam",
+   "type": "guide",
+   "title": {
+    "he": "מצלמות – נתונים טכניים",
+    "en": "Cameras – technical data"
+   },
+   "summary": {
+    "he": "4 מצלמות היקפיות ומצלמת תורן",
+    "en": "4 surround cameras and mast camera"
+   },
+   "body": {
+    "he": [
+     {
+      "h": "4 מצלמות היקפיות יום ותרמי"
+     },
+     {
+      "p": "קדמית, שמאלית, ימנית ואחורית."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מידות",
+         "6.7 × 7.6 × 4.6 ס״מ"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-40°C עד 60°C"
+        ],
+        [
+         "שדה ראייה",
+         "D=90°, H=48°, V=38°"
+        ],
+        [
+         "רזולוציה",
+         "תרמי 640×512, ‏12μm · יום עד 2688×1520"
+        ],
+        [
+         "ראיית לילה",
+         "תרמית"
+        ],
+        [
+         "אטימות",
+         "IP66"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מצלמת תורן (MAST)"
+     },
+     {
+      "p": "בגב הכלי, מסתכלת קדימה לעומק."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מידות",
+         "80 × 10.9 × 6 ס״מ"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-25°C עד 50°C"
+        ],
+        [
+         "שדה ראייה",
+         "רחבה, D=140°, H=105°, V=66°"
+        ],
+        [
+         "רזולוציה",
+         "6MP"
+        ],
+        [
+         "ראיית לילה",
+         "IR"
+        ],
+        [
+         "אטימות",
+         "IP67"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "4 surround day & thermal cameras"
+     },
+     {
+      "p": "Front, left, right and back."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Dimensions",
+         "6.7 × 7.6 × 4.6 cm"
+        ],
+        [
+         "Operating temp",
+         "-40°C to 60°C"
+        ],
+        [
+         "Field of view",
+         "D=90°, H=48°, V=38°"
+        ],
+        [
+         "Resolution",
+         "Thermal 640×512, 12 μm · day up to 2688×1520"
+        ],
+        [
+         "Night view",
+         "Thermal"
+        ],
+        [
+         "Environment",
+         "IP66"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Mast camera"
+     },
+     {
+      "p": "At the back of the vehicle, looking forward for a deep view."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Dimensions",
+         "80 × 10.9 × 6 cm"
+        ],
+        [
+         "Operating temp",
+         "-25°C to 50°C"
+        ],
+        [
+         "Field of view",
+         "Wide, D=140°, H=105°, V=66°"
+        ],
+        [
+         "Resolution",
+         "6 MP"
+        ],
+        [
+         "Night view",
+         "IR"
+        ],
+        [
+         "Environment",
+         "IP67"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "led-spec",
+   "sec": "b-mech-gen",
+   "type": "guide",
+   "title": {
+    "he": "פנסי LED לבנים – נתונים",
+    "en": "White LED floodlights – data"
+   },
+   "summary": {
+    "he": "2 פנסים, 12V 24W",
+    "en": "2 lights, 12 V 24 W"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "2 פנסי LED רכביים בחזית הכלי, לנהיגת לילה."
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "הספק",
+         "12V, ‏24W"
+        ],
+        [
+         "אור לבן",
+         "5700–6000K, ‏CRI 85"
+        ],
+        [
+         "אור ציאן",
+         "490–515nm"
+        ],
+        [
+         "זווית",
+         "60°"
+        ],
+        [
+         "טמפ׳ עבודה",
+         "‎-40°C עד 85°C"
+        ],
+        [
+         "אטימות",
+         "IP67"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "2 automotive LED floodlights at the front of the vehicle for night driving."
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Power",
+         "12 V, 24 W"
+        ],
+        [
+         "White light",
+         "5700–6000K, CRI 85"
+        ],
+        [
+         "Cyan light",
+         "490–515 nm"
+        ],
+        [
+         "Viewing angle",
+         "60°"
+        ],
+        [
+         "Operating temp",
+         "-40°C to 85°C"
+        ],
+        [
+         "Protection",
+         "IP67"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-spec",
+   "sec": "b-engine",
+   "type": "guide",
+   "title": {
+    "he": "ARGO Aurora 950 – מפרט מנוע, הנעה ונוזלים",
+    "en": "ARGO Aurora 950 – engine, drive & fluids specs"
+   },
+   "summary": {
+    "he": "שמן 5W-40, ‏2.3 ל׳ · גיר 75W-90, ‏1.2 ל׳ · מצת BPR4ES",
+    "en": "Oil 5W-40, 2.3 L · gear 75W-90, 1.2 L · plug BPR4ES"
+   },
+   "body": {
+    "he": [
+     {
+      "h": "מנוע והנעה"
+     },
+     {
+      "table": {
+       "head": [
+        "פרמטר",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "מנוע",
+         "VX 950, ‏993 סמ״ק, V-Twin, קירור אוויר, OHV EFI"
+        ],
+        [
+         "קדח × מהלך",
+         "85.5 × 86 מ״מ"
+        ],
+        [
+         "סל״ד סרק",
+         "1100 ± 50 (ללא עומס)"
+        ],
+        [
+         "סל״ד מרבי (WOT)",
+         "4000 ± 150 (ללא עומס)"
+        ],
+        [
+         "שימון",
+         "שימון בלחץ מלא עם מסנן שמן"
+        ],
+        [
+         "מערכת חשמל / אלטרנטור",
+         "12V / 50A"
+        ],
+        [
+         "מצבר",
+         "12V, ‏30Ah"
+        ],
+        [
+         "תמסורת",
+         "Admiral w/APS"
+        ],
+        [
+         "מצמד",
+         "ITC – צנטריפוגלי"
+        ],
+        [
+         "היגוי / בלמים",
+         "APS · היגוי הידראולי ובלמי דיסק"
+        ],
+        [
+         "שרשראות הנעה",
+         "RC 50 כפולה ו־RC 60 יחידה"
+        ],
+        [
+         "מצת",
+         "NGK BPR4ES"
+        ],
+        [
+         "מרווח מצת (כפי שמופיע במקור)",
+         ".0030 in (.08 mm)"
+        ],
+        [
+         "מסנן אוויר",
+         "נייר, Low Profile"
+        ],
+        [
+         "הזנת דלק",
+         "משאבת דלק חשמלית בלחץ גבוה"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מרווח המצת במסמך היצרן (0.08 מ״מ) נראה כשגיאת הקלדה במקור. הערך המקובל למצת מסוג זה הוא בסביבות 0.76 מ״מ (0.030 אינץ׳). לבדוק מול ספר השירות לפני כיוון.",
+      "kind": "caution"
+     },
+     {
+      "h": "נוזלים וחומרים"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "ערך"
+       ],
+       "rows": [
+        [
+         "דלק",
+         "אוקטן 87 ומעלה (בפועל: בנזין 95)"
+        ],
+        [
+         "מיכל דלק",
+         "32.2 ליטר"
+        ],
+        [
+         "שמן מנוע",
+         "**Argo 5W-40 סינתטי**"
+        ],
+        [
+         "כמות שמן מנוע (עם פילטר)",
+         "2.3 ליטר"
+        ],
+        [
+         "שמן תמסורת",
+         "Argo 75W-90 סינתטי"
+        ],
+        [
+         "כמות שמן תמסורת",
+         "1.2 ליטר"
+        ],
+        [
+         "נוזל בלמים",
+         "DOT 4"
+        ],
+        [
+         "שימון שרשרת",
+         "ARGO PTFE Chain Lube"
+        ],
+        [
+         "גריז",
+         "Argo NLGI #2 ליתיום"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: 2025 Argo Aurora 950 Operator’s Manual, Section 3.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "Engine and drive"
+     },
+     {
+      "table": {
+       "head": [
+        "Parameter",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Engine",
+         "VX 950, 993 cc, V-twin, air cooled, OHV EFI"
+        ],
+        [
+         "Bore × stroke",
+         "85.5 × 86 mm"
+        ],
+        [
+         "Idle rpm",
+         "1100 ± 50 (no load)"
+        ],
+        [
+         "WOT max rpm",
+         "4000 ± 150 (no load)"
+        ],
+        [
+         "Lubrication",
+         "Full pressure with oil cleaner"
+        ],
+        [
+         "Electrical / alternator",
+         "12 V / 50 A"
+        ],
+        [
+         "Battery",
+         "12 V, 30 Ah"
+        ],
+        [
+         "Transmission",
+         "Admiral w/APS"
+        ],
+        [
+         "Clutch",
+         "ITC – centrifugal"
+        ],
+        [
+         "Steering / brakes",
+         "APS · hydraulic steering and disc brakes"
+        ],
+        [
+         "Drive chains",
+         "Double RC 50 and single RC 60"
+        ],
+        [
+         "Spark plug",
+         "NGK BPR4ES"
+        ],
+        [
+         "Spark plug gap (as printed)",
+         ".0030 in (.08 mm)"
+        ],
+        [
+         "Air filter",
+         "Low profile paper"
+        ],
+        [
+         "Fuel delivery",
+         "Electric high-pressure fuel pump"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "The spark plug gap printed in the manufacturer manual (0.08 mm) looks like a typo. The usual value for this plug type is about 0.76 mm (0.030 in). Check against the service manual before gapping.",
+      "kind": "caution"
+     },
+     {
+      "h": "Fluids and lubricants"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Value"
+       ],
+       "rows": [
+        [
+         "Fuel",
+         "87 octane or higher (in practice: 95)"
+        ],
+        [
+         "Fuel tank",
+         "32.2 L"
+        ],
+        [
+         "Engine oil",
+         "**Argo 5W-40 synthetic**"
+        ],
+        [
+         "Engine oil capacity (with filter)",
+         "2.3 L"
+        ],
+        [
+         "Transmission oil",
+         "Argo 75W-90 synthetic"
+        ],
+        [
+         "Transmission capacity",
+         "1.2 L"
+        ],
+        [
+         "Brake fluid",
+         "DOT 4"
+        ],
+        [
+         "Chain lube",
+         "ARGO PTFE Chain Lube"
+        ],
+        [
+         "Grease",
+         "Argo NLGI #2 lithium"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: 2025 Argo Aurora 950 Operator’s Manual, Section 3.",
+      "kind": "note"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-clutch",
+   "sec": "b-engine",
+   "type": "guide",
+   "title": {
+    "he": "מצמד ורצועת הנעה (וריאטור) – שרטוט וחלקים",
+    "en": "Clutch & drive belt (variator) – diagram and parts"
+   },
+   "summary": {
+    "he": "37 חלקים · רצועה 127-159 / HD",
+    "en": "37 parts · belt 127-159 / HD"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "שרטוט פיצוץ של מערכת המצמד (Aurora 950 – 11.0 Clutch) ורשימת החלקים. **רצועת ההנעה: 127-159 (רגילה) או 127-159HD (Heavy Duty)** – זו הרצועה שבטבלה המסכמת מופיעה כ־HD 127-159."
+     },
+     {
+      "img": "media/argo-clutch-diagram.png",
+      "cap": "Aurora 950 – 11.0 Clutch. לחצו להגדלה."
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "מק״ט",
+        "תיאור",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "1",
+         "`500-0094`",
+         "CLUTCH, DRIVE - 53/GRN",
+         "1"
+        ],
+        [
+         "2",
+         "`500-0095`",
+         "CLUTCH, DRIVEN - 36/PUR",
+         "1"
+        ],
+        [
+         "3",
+         "`110-03`",
+         "Key 1/4 x 3/16 x 2.375 RC46",
+         "1"
+        ],
+        [
+         "4",
+         "`108-58`",
+         "WASHER .40x1.37x.12 HI-CARBON",
+         "1"
+        ],
+        [
+         "5",
+         "`500-0104`",
+         "WASHER, DRIVEN - STEPPED",
+         "1"
+        ],
+        [
+         "6",
+         "`500-0110`",
+         "KEY, 1/4 X 1/4 X 35MM 45RC",
+         "1"
+        ],
+        [
+         "7",
+         "`108-06`",
+         "LOCKWASHER 3/8 SPLIT-RING BNZ",
+         "1"
+        ],
+        [
+         "8",
+         "`500-0111`",
+         "SPACER, DRIVEN",
+         "1"
+        ],
+        [
+         "9",
+         "`200-0146-400`",
+         "HHCS, 3/8-16 x 4",
+         "1"
+        ],
+        [
+         "10",
+         "`127-159`",
+         "Drive Belt - Frontier - 11.3\" Cen. Dist",
+         "1"
+        ],
+        [
+         "10",
+         "`127-159HD`",
+         "Drive Belt - Frontier Heavy Duty",
+         "1"
+        ],
+        [
+         "11",
+         "`200-0157-110`",
+         "HHCS, M10x1.5x110 GR8.8 ZN",
+         "1"
+        ],
+        [
+         "12",
+         "`108-36`",
+         "Washer 1.03 x 1.37 x .06 Zn",
+         "2"
+        ],
+        [
+         "13",
+         "`500-0192`",
+         "SHIELD, CLUTCH - 8X8 ROPS",
+         "1"
+        ],
+        [
+         "14",
+         "`200-0019-047`",
+         "WASHER, FLAT 0.469x0.922x0.062 THRU HARD BNZ",
+         "2"
+        ],
+        [
+         "15",
+         "`200-0017-100`",
+         "HHCS, 7/16-14 x 1.00 GR8 BNZ",
+         "2"
+        ],
+        [
+         "16",
+         "`500-0113`",
+         "SHEAVE, STATIONARY - DRIVE",
+         "1"
+        ],
+        [
+         "17",
+         "`500-0116`",
+         "CUP, SPRING - DRIVE",
+         "1"
+        ],
+        [
+         "18",
+         "`500-0120`",
+         "SHEAVE, MOVABLE - DRIVE",
+         "1"
+        ],
+        [
+         "19",
+         "`500-0119-003`",
+         "ROLLER, DRIVE - 53 GRAM",
+         "8"
+        ],
+        [
+         "20",
+         "`500-0117-004`",
+         "SPRING, DRIVE - GREEN",
+         "1"
+        ],
+        [
+         "21",
+         "`500-0121`",
+         "PLATE, MOVABLE - DRIVE",
+         "1"
+        ],
+        [
+         "22",
+         "`500-0123`",
+         "NUT, M24X1.5",
+         "1"
+        ],
+        [
+         "23",
+         "`500-0114`",
+         "BEARING, DRIVE - IDLER",
+         "1"
+        ],
+        [
+         "24",
+         "`500-0115`",
+         "WASHER, DRIVE - VESPEL",
+         "1"
+        ],
+        [
+         "25",
+         "`500-0118`",
+         "SLIDER, DRIVE",
+         "4"
+        ],
+        [
+         "26",
+         "`500-0122`",
+         "WASHER, DRIVE",
+         "1"
+        ],
+        [
+         "27",
+         "`500-0109`",
+         "COLLAR, DRIVE - SHIFT STOP",
+         "1"
+        ],
+        [
+         "28",
+         "`500-0130`",
+         "BUSHING, DRIVEN",
+         "1"
+        ],
+        [
+         "29",
+         "`500-0132`",
+         "SHEAVE, MOVABLE - DRIVEN",
+         "1"
+        ],
+        [
+         "30",
+         "`500-0128`",
+         "HELIX, DRIVEN - 36 DEG",
+         "1"
+        ],
+        [
+         "31",
+         "`500-0135`",
+         "ROLLER, DRIVEN",
+         "2"
+        ],
+        [
+         "32",
+         "`500-0136`",
+         "TAB LOCK, DRIVEN - 10mm",
+         "2"
+        ],
+        [
+         "33",
+         "`500-0137`",
+         "SCREW, CAM ROLLER",
+         "2"
+        ],
+        [
+         "34",
+         "`500-0131`",
+         "SHEAVE, STATIONARY - DRIVEN",
+         "1"
+        ],
+        [
+         "35",
+         "`500-0133`",
+         "SCREW, M8x1.25-25",
+         "4"
+        ],
+        [
+         "36",
+         "`500-0129-001`",
+         "SPRING, DRIVEN - PUR",
+         "1"
+        ],
+        [
+         "37",
+         "`500-0139`",
+         "SPACER, SPRING",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "בדיקת רצועת ההנעה: חודשי (דרג שדה) לפי הטבלה המסכמת, וכל 25 שעות לפי ספר השירות של ARGO (פרק Clutch System).",
+      "kind": "freq"
+     }
+    ],
+    "en": [
+     {
+      "p": "Exploded view of the clutch system (Aurora 950 – 11.0 Clutch) and parts list. **Drive belt: 127-159 (standard) or 127-159HD (Heavy Duty)** – listed as HD 127-159 in the maintenance summary."
+     },
+     {
+      "img": "media/argo-clutch-diagram.png",
+      "cap": "Aurora 950 – 11.0 Clutch. Tap to zoom."
+     },
+     {
+      "table": {
+       "head": [
+        "#",
+        "Part #",
+        "Description",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "1",
+         "`500-0094`",
+         "CLUTCH, DRIVE - 53/GRN",
+         "1"
+        ],
+        [
+         "2",
+         "`500-0095`",
+         "CLUTCH, DRIVEN - 36/PUR",
+         "1"
+        ],
+        [
+         "3",
+         "`110-03`",
+         "Key 1/4 x 3/16 x 2.375 RC46",
+         "1"
+        ],
+        [
+         "4",
+         "`108-58`",
+         "WASHER .40x1.37x.12 HI-CARBON",
+         "1"
+        ],
+        [
+         "5",
+         "`500-0104`",
+         "WASHER, DRIVEN - STEPPED",
+         "1"
+        ],
+        [
+         "6",
+         "`500-0110`",
+         "KEY, 1/4 X 1/4 X 35MM 45RC",
+         "1"
+        ],
+        [
+         "7",
+         "`108-06`",
+         "LOCKWASHER 3/8 SPLIT-RING BNZ",
+         "1"
+        ],
+        [
+         "8",
+         "`500-0111`",
+         "SPACER, DRIVEN",
+         "1"
+        ],
+        [
+         "9",
+         "`200-0146-400`",
+         "HHCS, 3/8-16 x 4",
+         "1"
+        ],
+        [
+         "10",
+         "`127-159`",
+         "Drive Belt - Frontier - 11.3\" Cen. Dist",
+         "1"
+        ],
+        [
+         "10",
+         "`127-159HD`",
+         "Drive Belt - Frontier Heavy Duty",
+         "1"
+        ],
+        [
+         "11",
+         "`200-0157-110`",
+         "HHCS, M10x1.5x110 GR8.8 ZN",
+         "1"
+        ],
+        [
+         "12",
+         "`108-36`",
+         "Washer 1.03 x 1.37 x .06 Zn",
+         "2"
+        ],
+        [
+         "13",
+         "`500-0192`",
+         "SHIELD, CLUTCH - 8X8 ROPS",
+         "1"
+        ],
+        [
+         "14",
+         "`200-0019-047`",
+         "WASHER, FLAT 0.469x0.922x0.062 THRU HARD BNZ",
+         "2"
+        ],
+        [
+         "15",
+         "`200-0017-100`",
+         "HHCS, 7/16-14 x 1.00 GR8 BNZ",
+         "2"
+        ],
+        [
+         "16",
+         "`500-0113`",
+         "SHEAVE, STATIONARY - DRIVE",
+         "1"
+        ],
+        [
+         "17",
+         "`500-0116`",
+         "CUP, SPRING - DRIVE",
+         "1"
+        ],
+        [
+         "18",
+         "`500-0120`",
+         "SHEAVE, MOVABLE - DRIVE",
+         "1"
+        ],
+        [
+         "19",
+         "`500-0119-003`",
+         "ROLLER, DRIVE - 53 GRAM",
+         "8"
+        ],
+        [
+         "20",
+         "`500-0117-004`",
+         "SPRING, DRIVE - GREEN",
+         "1"
+        ],
+        [
+         "21",
+         "`500-0121`",
+         "PLATE, MOVABLE - DRIVE",
+         "1"
+        ],
+        [
+         "22",
+         "`500-0123`",
+         "NUT, M24X1.5",
+         "1"
+        ],
+        [
+         "23",
+         "`500-0114`",
+         "BEARING, DRIVE - IDLER",
+         "1"
+        ],
+        [
+         "24",
+         "`500-0115`",
+         "WASHER, DRIVE - VESPEL",
+         "1"
+        ],
+        [
+         "25",
+         "`500-0118`",
+         "SLIDER, DRIVE",
+         "4"
+        ],
+        [
+         "26",
+         "`500-0122`",
+         "WASHER, DRIVE",
+         "1"
+        ],
+        [
+         "27",
+         "`500-0109`",
+         "COLLAR, DRIVE - SHIFT STOP",
+         "1"
+        ],
+        [
+         "28",
+         "`500-0130`",
+         "BUSHING, DRIVEN",
+         "1"
+        ],
+        [
+         "29",
+         "`500-0132`",
+         "SHEAVE, MOVABLE - DRIVEN",
+         "1"
+        ],
+        [
+         "30",
+         "`500-0128`",
+         "HELIX, DRIVEN - 36 DEG",
+         "1"
+        ],
+        [
+         "31",
+         "`500-0135`",
+         "ROLLER, DRIVEN",
+         "2"
+        ],
+        [
+         "32",
+         "`500-0136`",
+         "TAB LOCK, DRIVEN - 10mm",
+         "2"
+        ],
+        [
+         "33",
+         "`500-0137`",
+         "SCREW, CAM ROLLER",
+         "2"
+        ],
+        [
+         "34",
+         "`500-0131`",
+         "SHEAVE, STATIONARY - DRIVEN",
+         "1"
+        ],
+        [
+         "35",
+         "`500-0133`",
+         "SCREW, M8x1.25-25",
+         "4"
+        ],
+        [
+         "36",
+         "`500-0129-001`",
+         "SPRING, DRIVEN - PUR",
+         "1"
+        ],
+        [
+         "37",
+         "`500-0139`",
+         "SPACER, SPRING",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Drive belt inspection: monthly (Field) per the maintenance summary, and every 25 hours per the ARGO service manual (Clutch System chapter).",
+      "kind": "freq"
+     }
+    ]
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "bison-energy",
+   "sec": "b-energy",
+   "type": "guide",
+   "title": {
+    "he": "מאזן הספק ואנרגיה – ביזון",
+    "en": "Power & energy balance – BISON"
+   },
+   "summary": {
+    "he": "מצברים, צריכה, זמני עבודה ואחסון",
+    "en": "Batteries, consumption, run and storage times"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "**טיוטה** – רוויזיה 001 (20.10.26). עודכן בעקבות הטמעת אלטרנטור משני למערכת המשימה.",
+      "kind": "caution"
+     },
+     {
+      "h": "מבנה מערכת החשמל"
+     },
+     {
+      "ul": [
+       "**מערכת הרכב:** אלטרנטור פנימי ומצבר 12V/30Ah. האלטרנטור נותן כ־5A בסרק ו־50A בסל״ד גבוה. המצבר מתניע את המנוע ומזין את חשמל הרכב ואת פנסי ה־LED.",
+       "**מאוורר המנוע** הוא צרכן גדול (100W), ולכן הוא מוזן ממצבר ה־12V המשני של מערכת המשימה.",
+       "**מערכת המשימה:** אלטרנטור משני על ציר המנוע (פולי 1:2.5) – כ־45A בסרק ועד 80A בסל״ד גבוה – שמזין מצבר AGM משני 12V/60Ah.",
+       "**קופסת האנרגיה (Power Box):** תחום 12V מזין את הבקרה הנמוכה (LLC), את קופסת ההפעלה ואת מטען 12V→48V (350W) שמטעין מצבר LiPo 48V/50Ah (2400Wh). תחום 48V מזין שני ספקים: 24V (בקרה גבוהה) ו־28V (מערכת נשק)."
+      ]
+     },
+     {
+      "img": "media/bison-energy-diagram.png",
+      "cap": "סכמת בלוקים של מערכת האנרגיה"
+     },
+     {
+      "h": "מקורות אנרגיה"
+     },
+     {
+      "table": {
+       "head": [
+        "מצבר",
+        "קיבולת",
+        "אנרגיה אפקטיבית"
+       ],
+       "rows": [
+        [
+         "12V של הרכב",
+         "30Ah / 360Wh",
+         "216Wh (שומרים 40% להתנעה)"
+        ],
+        [
+         "12V משני (משימה)",
+         "60Ah / 720Wh",
+         "432Wh (שומרים 40% לבריאות המצבר)"
+        ],
+        [
+         "LiPo 48V (משימה)",
+         "50Ah / 2400Wh",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "צריכה לפי מצב"
+     },
+     {
+      "table": {
+       "head": [
+        "צרכן",
+        "שקט (מנוע כבוי)",
+        "סרק (~800 סל״ד)",
+        "נסיעה (2,000+ סל״ד)"
+       ],
+       "rows": [
+        [
+         "רכב ARGO (חשמל + LED)",
+         "0W",
+         "55W",
+         "55W"
+        ],
+        [
+         "בקרה נמוכה (LLC)",
+         "40W",
+         "40W",
+         "125W"
+        ],
+        [
+         "מערכת משימה (HLC, מצלמות, נשק, DTC, סלולר...)",
+         "208W",
+         "208W",
+         "208W"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "זמני עבודה ואחסון"
+     },
+     {
+      "table": {
+       "head": [
+        "מצב",
+        "תוצאה"
+       ],
+       "rows": [
+        [
+         "**מצב שקט** – מצבר 12V משני",
+         "~9 שעות (שמרני), עד 15 שעות בקיבולת מלאה"
+        ],
+        [
+         "**מצב שקט** – מצבר 48V",
+         "~11 שעות"
+        ],
+        [
+         "**סרק / נסיעה**",
+         "מאזן חיובי בכל המצברים – פעולה רציפה כל עוד המנוע פועל ויש דלק"
+        ],
+        [
+         "**אחסון כבוי** – מצבר 48V",
+         "עד ~60 יום (בגלל צריכת ה־BMS)"
+        ],
+        [
+         "**אחסון כבוי** – מצבר 12V משני",
+         "~75 יום"
+        ],
+        [
+         "**אחסון כבוי** – מצבר 12V רכב",
+         "~1500 יום"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "כדי להאריך את זמן האחסון של מצבר ה־12V המשני, מנתקים את הצרכנים בלחיצה על כפתור ה־**RESET** של מפסק הפחת הראשי בתא המנוע.",
+      "kind": "tip"
+     },
+     {
+      "note": "הספק טעינת מצבר 12V משני: 26W בסרק ו־447W בנסיעה. כשהמצברים מלאים, האלטרנטור יורד ל־248W בסרק ו־333W בנסיעה.",
+      "kind": "note"
+     },
+     {
+      "note": "במסמך זה המנוע מתואר כ־800 סמ״ק ו־40HP, ובמפרט היצרן כ־VX 950 ‏(993 סמ״ק). לבירור.",
+      "kind": "caution"
+     }
+    ],
+    "en": [
+     {
+      "note": "**DRAFT** – revision 001 (20.10.26). Updated after adding a secondary alternator to the mission system.",
+      "kind": "caution"
+     },
+     {
+      "h": "Power system layout"
+     },
+     {
+      "ul": [
+       "**Vehicle system:** internal alternator and 12 V/30 Ah battery. About 5 A at idle and 50 A at high rpm. The battery starts the engine and feeds vehicle electrics and the LED lights.",
+       "**Engine fan** is a large load (100 W), so it is fed from the mission system’s secondary 12 V battery.",
+       "**Mission system:** secondary alternator on the engine shaft (pulley 1:2.5) – about 45 A at idle up to 80 A at high rpm – charging a 12 V/60 Ah AGM battery.",
+       "**Power Box:** the 12 V side feeds the LLC, the control panel and a 12 V→48 V charger (350 W) for a 48 V/50 Ah LiPo (2400 Wh). The 48 V side feeds two supplies: 24 V (high-level control) and 28 V (gun system)."
+      ]
+     },
+     {
+      "img": "media/bison-energy-diagram.png",
+      "cap": "Power system block diagram"
+     },
+     {
+      "h": "Energy sources"
+     },
+     {
+      "table": {
+       "head": [
+        "Battery",
+        "Capacity",
+        "Effective energy"
+       ],
+       "rows": [
+        [
+         "Vehicle 12 V",
+         "30 Ah / 360 Wh",
+         "216 Wh (40% kept for starting)"
+        ],
+        [
+         "Secondary 12 V (mission)",
+         "60 Ah / 720 Wh",
+         "432 Wh (40% kept for battery health)"
+        ],
+        [
+         "LiPo 48 V (mission)",
+         "50 Ah / 2400 Wh",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Consumption by mode"
+     },
+     {
+      "table": {
+       "head": [
+        "Load",
+        "Silent (engine off)",
+        "Idle (~800 rpm)",
+        "Driving (2,000+ rpm)"
+       ],
+       "rows": [
+        [
+         "ARGO vehicle (electrics + LED)",
+         "0 W",
+         "55 W",
+         "55 W"
+        ],
+        [
+         "Low-level control (LLC)",
+         "40 W",
+         "40 W",
+         "125 W"
+        ],
+        [
+         "Mission system (HLC, cameras, gun, DTC, cellular...)",
+         "208 W",
+         "208 W",
+         "208 W"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Operating and storage times"
+     },
+     {
+      "table": {
+       "head": [
+        "Mode",
+        "Result"
+       ],
+       "rows": [
+        [
+         "**Silent** – secondary 12 V",
+         "~9 h (conservative), up to 15 h at full capacity"
+        ],
+        [
+         "**Silent** – 48 V battery",
+         "~11 h"
+        ],
+        [
+         "**Idle / driving**",
+         "Positive balance on all batteries – continuous while the engine runs and there is fuel"
+        ],
+        [
+         "**Storage (off)** – 48 V",
+         "Up to ~60 days (BMS draw)"
+        ],
+        [
+         "**Storage (off)** – secondary 12 V",
+         "~75 days"
+        ],
+        [
+         "**Storage (off)** – vehicle 12 V",
+         "~1500 days"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "To extend secondary 12 V storage time, disconnect the loads by pressing the **RESET** button of the main RCD breaker in the engine compartment.",
+      "kind": "tip"
+     },
+     {
+      "note": "Secondary 12 V charging power: 26 W at idle, 447 W when driving. With batteries full, the alternator drops to 248 W at idle and 333 W when driving.",
+      "kind": "note"
+     },
+     {
+      "note": "This document describes the engine as 800 cc / 40 HP, while the manufacturer spec lists VX 950 (993 cc). To be confirmed.",
+      "kind": "caution"
+     }
+    ]
+   },
+   "group": "tech",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "trial-aug2026",
+   "sec": "qa",
+   "type": "guide",
+   "title": {
+    "he": "דוח סיכום ניסוי IRONWAVE – אוגוסט 2026",
+    "en": "IRONWAVE trial summary report – August 2026"
+   },
+   "summary": {
+    "he": "ATP 44/46, תקשורת 5.2 ק״מ, ממצאים פתוחים",
+    "en": "ATP 44/46, comms 5.2 km, open findings"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "ניסוי של יומיים (25–26.8.2026) בתצורה החדשה, בנס״א – ישראל, בסמכות צה״ל. פלטפורמה VHCR-V01-00001, תצורת גלגלים, עם RWS (Pitbull) ו־M2 Browning."
+     },
+     {
+      "h": "שורה תחתונה"
+     },
+     {
+      "ul": [
+       "**ATP:** מתוך 46 בדיקות – 44 תקין (SAT), 1 חלקי, 1 לא נבדק. אף בדיקה לא נכשלה.",
+       "**בטיחות:** כל מצבי הכשל שהופעלו בכוונה (ניתוק כבל שליטה, ניתוק חשמל, אובדן תקשורת, נפילת מתח) הפעילו E-STOP כנדרש.",
+       "**תקשורת LOS:** קשר נשמר עד **5.2 ק״מ**, ירידת SNR הדרגתית, ללא השפעה בפניות.",
+       "**הטיה:** 45° (המקסימום של המתקן), סטייה קבועה של 1° בין הזווית בפועל לתצוגה.",
+       "**סיבולת:** 50 ק״מ רצופים בחצץ בלי תקלות. מד הדלק ירד שנת אחת ממיכל מלא."
+      ]
+     },
+     {
+      "note": "**ממצא קריטי לבטיחות:** בורג גלגל נשבר וגלגל תחנה 2 נפרד בגלל אומים רופפים. חובה: בקרת מומנט ובדיקת חיזוק אומי גלגלים לפני כל הפעלה. (הכלי המשיך לנסוע על 7 גלגלים וחזר לבסיס.)",
+      "kind": "caution"
+     },
+     {
+      "note": "**מגבלת ניידות:** שיפוע מאושר להחזקה – **30%** בלבד. ב־40% גלגול קל אחורה ב־E-STOP, ב־50% הכלי לא מחזיק.",
+      "kind": "caution"
+     },
+     {
+      "h": "תצורת תוכנה וחומרה בניסוי"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "גרסה"
+       ],
+       "rows": [
+        [
+         "Platform Build",
+         "VHCR-V01-00001"
+        ],
+        [
+         "בקרה נמוכה (LLC)",
+         "0.2.14"
+        ],
+        [
+         "בקרה גבוהה (HLC)",
+         "V1"
+        ],
+        [
+         "אפליקציית C2 (Optimus)",
+         "4.3.0"
+        ],
+        [
+         "תוכנת צה״ל (SHOR)",
+         "2.5.1"
+        ],
+        [
+         "קושחת מקמ״ש DTC",
+         "8.4.4"
+        ],
+        [
+         "Waveform",
+         "MeshUltra-M"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "פריטים פתוחים"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "סטטוס",
+        "הערה"
+       ],
+       "rows": [
+        [
+         "תצוגת מפה",
+         "חלקי",
+         "להחזיר את תצוגת הטווח בין הפלטפורמה ל־OCU"
+        ],
+        [
+         "חיווי פנסים",
+         "לא נבדק",
+         "אין פנסים בתצורה זו"
+        ],
+        [
+         "IMU בנסיעה",
+         "לבדיקה",
+         "קפיצות משמעותיות בחיווי ה־IMU בזמן נסיעה"
+        ],
+        [
+         "כיול IMU",
+         "הערה",
+         "דורש כיול כשהכלי על משטח ישר"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "שקילה (ק״ג)"
+     },
+     {
+      "table": {
+       "head": [
+        "נקודת מדידה",
+        "ימין",
+        "שמאל"
+       ],
+       "rows": [
+        [
+         "סה״כ צד",
+         "560",
+         "540"
+        ],
+        [
+         "תחנה 1",
+         "100",
+         "80"
+        ],
+        [
+         "תחנות 1–2",
+         "360",
+         "300"
+        ],
+        [
+         "תחנות 1–3",
+         "500",
+         "440"
+        ],
+        [
+         "תחנות 2–4",
+         "400",
+         "520"
+        ],
+        [
+         "תחנות 3–4",
+         "160",
+         "280"
+        ],
+        [
+         "תחנה 4",
+         "20",
+         "120"
+        ]
+       ]
+      }
+     },
+     {
+      "p": "משקל ברוטו נמדד: **1,120 ק״ג**. קריאות קבוצתיות אינן מצטברות (העברת עומס בין התחנות)."
+     },
+     {
+      "note": "מקור: IRONWAVE UGV New Configuration – Trial Summary Report, 26.8.2026.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Two-day trial (25–26 Aug 2026) of the new configuration at NASA – Israel, under IDF trial authority. Platform VHCR-V01-00001, wheeled, with RWS (Pitbull) and M2 Browning."
+     },
+     {
+      "h": "Bottom line"
+     },
+     {
+      "ul": [
+       "**ATP:** of 46 checks – 44 SAT, 1 PARTIAL, 1 NOT TESTED. None UNSAT.",
+       "**Safety:** every induced failure (control cable, power, comms loss, voltage drop) correctly commanded E-STOP.",
+       "**LOS comms:** link held to **5.2 km**, gradual SNR roll-off, no effect from turns.",
+       "**Tilt:** 45° (fixture maximum), constant 1° offset between actual and displayed attitude.",
+       "**Endurance:** 50 km continuous gravel run with no faults. Fuel gauge dropped one bar from full."
+      ]
+     },
+     {
+      "note": "**Safety-critical finding:** a wheel stud sheared and the Station 2 wheel separated due to loose nuts. Mandatory: torque control and a wheel-nut check before every operation. (The vehicle drove home on 7 wheels.)",
+      "kind": "caution"
+     },
+     {
+      "note": "**Mobility limit:** certified hold-on-grade is **30%** only. At 40% slight roll-back on E-STOP; at 50% it cannot hold.",
+      "kind": "caution"
+     },
+     {
+      "h": "Software and hardware baseline"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Version"
+       ],
+       "rows": [
+        [
+         "Platform Build",
+         "VHCR-V01-00001"
+        ],
+        [
+         "Low-Level Control (LLC)",
+         "0.2.14"
+        ],
+        [
+         "High-Level Control (HLC)",
+         "V1"
+        ],
+        [
+         "C2 application (Optimus)",
+         "4.3.0"
+        ],
+        [
+         "IDF software (SHOR)",
+         "2.5.1"
+        ],
+        [
+         "DTC radio firmware",
+         "8.4.4"
+        ],
+        [
+         "Waveform",
+         "MeshUltra-M"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Open items"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Status",
+        "Note"
+       ],
+       "rows": [
+        [
+         "Map display",
+         "PARTIAL",
+         "Restore the platform-to-OCU range display"
+        ],
+        [
+         "Lights indication",
+         "NOT TESTED",
+         "No lights in this configuration"
+        ],
+        [
+         "IMU while driving",
+         "To check",
+         "Significant jumps in IMU indication while driving"
+        ],
+        [
+         "IMU calibration",
+         "Note",
+         "Requires calibration on level ground"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Weighing (kg)"
+     },
+     {
+      "table": {
+       "head": [
+        "Measurement point",
+        "Right",
+        "Left"
+       ],
+       "rows": [
+        [
+         "Side total",
+         "560",
+         "540"
+        ],
+        [
+         "Station 1",
+         "100",
+         "80"
+        ],
+        [
+         "Stations 1–2",
+         "360",
+         "300"
+        ],
+        [
+         "Stations 1–3",
+         "500",
+         "440"
+        ],
+        [
+         "Stations 2–4",
+         "400",
+         "520"
+        ],
+        [
+         "Stations 3–4",
+         "160",
+         "280"
+        ],
+        [
+         "Station 4",
+         "20",
+         "120"
+        ]
+       ]
+      }
+     },
+     {
+      "p": "Gross measured weight: **1,120 kg**. Group readings are not additive (load transfer between stations)."
+     },
+     {
+      "note": "Source: IRONWAVE UGV New Configuration – Trial Summary Report, 26 Aug 2026.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "cfg-radio",
+   "sec": "cfg",
+   "type": "link",
+   "title": {
+    "he": "קינפוג מקמ״שים",
+    "en": "Radio Configuration"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "targetSec": "comm-radio"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "b-engine-maint",
+   "sec": "b-engine",
+   "type": "link",
+   "title": {
+    "he": "נתוני אחזקה: שמנים ונוזלים",
+    "en": "Maintenance data: oils & fluids"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "m-data"
+   },
+   "updated": "2026-11-10",
+   "group": "tech"
+  },
+  {
    "id": "ln-pm-ac-filters",
    "sec": "maint-prev",
    "type": "link",
@@ -5070,6 +8085,640 @@
    },
    "body": {
     "target": "pm-gen-plug"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-robox-bison",
+   "sec": "bison",
+   "type": "link",
+   "title": {
+    "he": "ROBOX System Technical Data (PDF)",
+    "en": "ROBOX System Technical Data (PDF)"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "robox-pdf"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "dtc-pdf",
+   "sec": "comm-tech",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך ממשק DTC (PDF)",
+    "en": "DTC Interface Guide (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המקורי, 21 עמודים",
+    "en": "Original document, 21 pages"
+   },
+   "body": {
+    "src": "media/dtc-interface-guide.pdf",
+    "note": {
+     "he": "המסמך המקורי המלא (באנגלית).",
+     "en": "The full original document."
+    },
+    "mb": 0.8
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc1",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 1",
+    "en": "QC 1"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc2",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 2",
+    "en": "QC 2"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc3",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 3",
+    "en": "QC 3"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc4",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 4",
+    "en": "QC 4"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "qc5",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "QC 5",
+    "en": "QC 5"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-sys",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "ATP System",
+    "en": "ATP System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "",
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "m-daily-pdf",
+   "sec": "maint",
+   "type": "pdf",
+   "title": {
+    "he": "נוהל טיפולים יומיים (PDF)",
+    "en": "Daily Maintenance Procedure (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המקורי להדפסה",
+    "en": "Original document for printing"
+   },
+   "body": {
+    "src": "media/daily-maintenance-he.pdf",
+    "note": {
+     "he": "המסמך המקורי, כולל טבלאות רישום ביצוע להדפסה.",
+     "en": "The original document (Hebrew), including printable maintenance log tables."
+    },
+    "mb": 0.2
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "pm-pdf",
+   "sec": "maint-prev",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך אחזקת מנע (PDF)",
+    "en": "Preventive Maintenance Guide (PDF)"
+   },
+   "summary": {
+    "he": "המסמך המלא – 147 עמודים",
+    "en": "Full document – 147 pages"
+   },
+   "body": {
+    "src": "media/preventive-maintenance.pdf",
+    "note": {
+     "he": "DOC00757-A REV.001, 29/09/2026. המסמך המלא, 147 עמודים.",
+     "en": "DOC00757-A REV.001, 29/09/2026. The full document (Hebrew), 147 pages."
+    },
+    "mb": 11.0
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "dtc-pdf-he",
+   "sec": "comm-tech",
+   "type": "pdf",
+   "title": {
+    "he": "מדריך ממשק DTC – גרסה עברית (PDF)",
+    "en": "DTC Interface Guide – Hebrew edition (PDF)"
+   },
+   "summary": {
+    "he": "9 עמודים",
+    "en": "9 pages"
+   },
+   "body": {
+    "src": "media/dtc-interface-guide-he.pdf",
+    "note": {
+     "he": "הגרסה העברית המקורית של המדריך. התוכן שלה כבר מסודר בעמודי התקשורת.",
+     "en": "The original Hebrew edition. Its content is already organized in the communications pages."
+    },
+    "mb": 0.8
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "dtc-replay-pdf",
+   "sec": "comm-mon",
+   "type": "pdf",
+   "title": {
+    "he": "Domo Mesh Replay – מדריך משתמש (PDF)",
+    "en": "Domo Mesh Replay – User Guide (PDF)"
+   },
+   "summary": {
+    "he": "DTC, 13 עמודים",
+    "en": "DTC, 13 pages"
+   },
+   "body": {
+    "src": "media/dtc-mesh-replay-guide.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 1.2
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "robox-pdf",
+   "sec": "container",
+   "type": "pdf",
+   "title": {
+    "he": "ROBOX System Technical Data (PDF)",
+    "en": "ROBOX System Technical Data (PDF)"
+   },
+   "summary": {
+    "he": "95 עמודים",
+    "en": "95 pages"
+   },
+   "body": {
+    "src": "media/robox-technical-data.pdf",
+    "note": {
+     "he": "DOC00672-A REV.001, 01/09/2026. המסמך הטכני המלא של המערכת: ביזון, קרון, רחפן, בקרים, תוכנה, EMO, בלמים, אנרגיה, תקשורת ומערכת נשק.",
+     "en": "DOC00672-A REV.001, 01/09/2026. The full system technical document: BISON, container, drone, controllers, software, EMO, brakes, energy, communications and gun system."
+    },
+    "mb": 5.7
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "gen-manual",
+   "sec": "c-gen",
+   "type": "pdf",
+   "title": {
+    "he": "Honda EU70is – מדריך בעלים (PDF)",
+    "en": "Honda EU70is – Owner’s Manual (PDF)"
+   },
+   "summary": {
+    "he": "76 עמודים",
+    "en": "76 pages"
+   },
+   "body": {
+    "src": "media/generator-eu70is-manual.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 4.7
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "comp-manual",
+   "sec": "c-comp",
+   "type": "pdf",
+   "title": {
+    "he": "קומפרסור P185WYM – מדריך הפעלה ואחזקה (PDF)",
+    "en": "Compressor P185WYM – Operating & Maintenance Manual (PDF)"
+   },
+   "summary": {
+    "he": "66 עמודים",
+    "en": "66 pages"
+   },
+   "body": {
+    "src": "media/compressor-p185-manual.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 1.0
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-spec-pdf",
+   "sec": "b-engine",
+   "type": "pdf",
+   "title": {
+    "he": "ARGO Aurora 950 – מפרט מספר המפעיל (PDF)",
+    "en": "ARGO Aurora 950 – Operator’s Manual specs (PDF)"
+   },
+   "summary": {
+    "he": "2 עמודים",
+    "en": "2 pages"
+   },
+   "body": {
+    "src": "media/argo-aurora950-specs.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 0.7
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-en",
+   "sec": "b-engine",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מנוע (Engine System)",
+    "en": "ARGO Service Manual – Engine System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-en.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק EN. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter EN. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 20.8
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-cs",
+   "sec": "b-engine",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מצמד (Clutch System)",
+    "en": "ARGO Service Manual – Clutch System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-cs.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק CS. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter CS. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 16.4
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-gi",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מידע כללי וכלים מיוחדים",
+    "en": "ARGO Service Manual – General Information & special tools"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-gi.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק GI. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter GI. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 4.1
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-es",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מערכת חשמל",
+    "en": "ARGO Service Manual – Electrical System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-es.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק ES. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter ES. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 11.5
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-br",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – מערכת בלמים",
+    "en": "ARGO Service Manual – Brake System"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-br.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק BR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter BR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 7.6
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-wa",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – גלגלים וסרנים",
+    "en": "ARGO Service Manual – Wheels & Axles"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-wa.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק WA. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter WA. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 6.7
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-tr1",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – תמסורת – חלק 1",
+    "en": "ARGO Service Manual – Transmission – part 1"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-tr1.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 14.3
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-tr2",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – תמסורת – חלק 2",
+    "en": "ARGO Service Manual – Transmission – part 2"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-tr2.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 13.1
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "argo-sm-tr3",
+   "sec": "b-mech-gen",
+   "type": "pdf",
+   "title": {
+    "he": "ספר שירות ARGO – תמסורת – חלק 3",
+    "en": "ARGO Service Manual – Transmission – part 3"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "src": "media/argo-sm-tr3.pdf",
+    "note": {
+     "he": "ספר השירות של ARGO לכל דגמי 8×8 (2022), פרק TR. הספר המלא חולק לפרקים כי הוא גדול מדי לקובץ אחד.",
+     "en": "ARGO service manual for all 8×8 models (2022), chapter TR. The full manual was split into chapters because it is too large for one file."
+    },
+    "mb": 9.6
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "bison-energy-pdf",
+   "sec": "b-energy",
+   "type": "pdf",
+   "title": {
+    "he": "מסמך מאזן הספק ואנרגיה – רוויזיה 001 (PDF)",
+    "en": "Power & energy balance – rev 001 (PDF)"
+   },
+   "summary": {
+    "he": "10 עמודים, טיוטה",
+    "en": "10 pages, draft"
+   },
+   "body": {
+    "src": "media/bison-energy-balance-rev001.pdf",
+    "note": {
+     "he": "טיוטה.",
+     "en": "Draft (Hebrew)."
+    },
+    "mb": 0.5
+   },
+   "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "trial-aug2026-pdf",
+   "sec": "qa",
+   "type": "pdf",
+   "title": {
+    "he": "דוח סיכום ניסוי – אוגוסט 2026 (PDF)",
+    "en": "Trial summary report – August 2026 (PDF)"
+   },
+   "summary": {
+    "he": "15 עמודים, כולל תמונות",
+    "en": "15 pages, with photos"
+   },
+   "body": {
+    "src": "media/ironwave-trial-report-aug2026.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 1.7
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "sw-nodefinder",
+   "sec": "comm-air",
+   "type": "software",
+   "title": {
+    "he": "Domo Node Finder – איתור מקמ״שים באוויר",
+    "en": "Domo Node Finder – find radios on air"
+   },
+   "summary": {
+    "he": "תוכנת DTC לזיהוי המקמ״שים הפעילים ברשת · גרסה 2.5.1",
+    "en": "DTC tool to see the active radios on the network · v2.5.1"
+   },
+   "body": {
+    "ver": "2.5.1",
+    "file": "DomoNodeFinder-2.5.1.exe",
+    "path": "Desktop\\DomoNodeFinder.exe",
+    "url": "",
+    "install": {
+     "he": [
+      "מעתיקים את הקובץ DomoNodeFinder-2.5.1.exe מהשרת של החברה למחשב הנייד (הוא שוקל כ־28MB).",
+      "מריצים אותו. אם Windows מבקש אישור – מאשרים.",
+      "שמים קיצור דרך בשולחן העבודה כדי למצוא אותו מהר בשטח.",
+      "מחברים את המחשב לרשת של המקמ״שים ופותחים את התוכנה: היא מציגה את המקמ״שים שנמצאים כרגע באוויר."
+     ],
+     "en": [
+      "Copy DomoNodeFinder-2.5.1.exe from the company server to the laptop (about 28 MB).",
+      "Run it. If Windows asks for permission, allow it.",
+      "Put a desktop shortcut so it is easy to find in the field.",
+      "Connect the laptop to the radio network and open the program: it shows the radios currently on air."
+     ]
+    },
+    "note": {
+     "he": "משמשת לראות אילו מקמ״שים נמצאים באוויר ברגע נתון. תוכנה של DTC – הקובץ עצמו נשמר בשרת של החברה ולא באפליקציה.",
+     "en": "Used to see which radios are on air at a given moment. DTC software – the file itself is kept on the company server, not in the app."
+    }
    },
    "updated": "2026-11-10"
   }
