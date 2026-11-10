@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 13,
+  "version": 15,
   "updated": "2026-11-10",
   "teamHash": "81336e9189125819028ccb30e60c191974a48efc3206777b9773bfe65832c22b",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -2047,43 +2047,6 @@
    "body": {
     "he": "",
     "en": ""
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "atp-field",
-   "sec": "qa",
-   "type": "atp",
-   "title": {
-    "he": "ATP Field",
-    "en": "ATP Field"
-   },
-   "summary": {
-    "he": "מסמך לקריאה או בדיקה שורה שורה עם חתימה",
-    "en": "Read the document or run it line by line with a signature"
-   },
-   "body": {
-    "src": "",
-    "rows": {
-     "he": [
-      "# פרק לדוגמה – הכנה",
-      "בדיקה לדוגמה 1 – להחליף בשורות ממסמך ה־ATP",
-      "בדיקה לדוגמה 2",
-      "בדיקה לדוגמה 3",
-      "# פרק לדוגמה – תפקוד",
-      "בדיקה לדוגמה 4",
-      "בדיקה לדוגמה 5"
-     ],
-     "en": [
-      "# Sample chapter – preparation",
-      "Sample check 1 – replace with lines from the ATP document",
-      "Sample check 2",
-      "Sample check 3",
-      "# Sample chapter – function",
-      "Sample check 4",
-      "Sample check 5"
-     ]
-    }
    },
    "updated": "2026-11-10"
   },
@@ -8966,132 +8929,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "qc1",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 1",
-    "en": "QC 1"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc2",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 2",
-    "en": "QC 2"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc3",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 3",
-    "en": "QC 3"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc4",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 4",
-    "en": "QC 4"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "qc5",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "QC 5",
-    "en": "QC 5"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "atp-sys",
-   "sec": "qa",
-   "type": "pdf",
-   "title": {
-    "he": "ATP System",
-    "en": "ATP System"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "src": "",
-    "note": {
-     "he": "",
-     "en": ""
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
    "id": "m-daily-pdf",
    "sec": "maint",
    "type": "pdf",
@@ -9498,6 +9335,616 @@
     "mb": 0.5
    },
    "group": "docs",
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-sys",
+   "sec": "qa",
+   "type": "atp",
+   "title": {
+    "he": "ATP System – ביזון (כל המערכת)",
+    "en": "ATP System – BISON (full system)"
+   },
+   "summary": {
+    "he": "DOC00678-A REV 001 · ויזואלי, רכיבים, נשק, נסיעה, תקשורת ומסירה",
+    "en": "DOC00678-A REV 001 · visual, components, gun, driving, comms, delivery"
+   },
+   "body": {
+    "src": "media/atp-system-bison.pdf",
+    "rows": {
+     "he": [
+      "# בדיקה ויזואלית – ללא זחלים",
+      "אין סדקים ואי־התאמות צבע. השלדה התחתונה והצירים לא מעוותים, כיסוי הפלסטיק שלם ולא פגוע.",
+      "כל 6 הכיסויים העליונים מאובטחים בברגים ודסקיות.",
+      "5 ברגים בכל אחד משמונת הגלגלים, נעולים כראוי.",
+      "אין פגמים בצמיגים ולחץ האוויר תקין: קדמי 5, שני אמצעיים 7, אחורי 6 PSI. לא לעבור 7 PSI.",
+      "2 לחצני חירום על הפלטפורמה עם כיסויים (ימין ושמאל), כל אחד מחובר בשישה ברגים.",
+      "4 מצלמות היקפיות קיימות ותקינות (נהיגה, אחורית, ימין, שמאל): מחוברות, כבלים תקינים, עדשות בלי סדקים.",
+      "מצלמת התורן (MAST) קיימת ותקינה: מחוברת, כבל תקין, עדשה בלי סדקים.",
+      "5 אנטנות קיימות ומחוברות היטב: 4 RF ואחת סלולר ו־GPS.",
+      "מפלס שמן מנוע בין הסימנים L ו־F במקל המדידה, ואין נזילות שמן סביב המנוע.",
+      "מפלס נוזל בלמים תקין ואין נזילות באזור.",
+      "מספיק דלק לבדיקה (בדיקה בלוח השעונים עם מתג הכלי דלוק). לא למלא מעל צוואר המילוי.",
+      "# הדלקת המערכת (מנוע כבוי)",
+      "גרסת התוכנה העדכנית מותקנת וכל ההגדרות מוכנות.",
+      "מתג ה־NC דרוך: התוכנה מראה שהמערכת מחוברת וה־E-STOP כבוי.",
+      "מצבר 12V לפחות 60% (במסך הלוח הקדמי או ב־ROCU10).",
+      "מצבר 48V לפחות 60% (ב־ROCU10).",
+      "יש Ping לכל רכיבי המערכת.",
+      "פנסי ה־LED הקדמיים עובדים.",
+      "# בדיקת רכיבים",
+      "5 מצלמות היום משדרות ובפוקוס: נהיגה, אחורית, ימין, שמאל ותורן.",
+      "4 המצלמות התרמיות משדרות ובפוקוס: נהיגה, אחורית, ימין ושמאל.",
+      "המיקרופון עובד, הקול ברור ובלי השהיה.",
+      "הרמקול עובד, הקול ברור ובלי השהיה.",
+      "התוכנה מראה שהמנוע כבוי (RPM = 0).",
+      "# מערכת נשק – בדיקה ויזואלית",
+      "מערכת הנשק מחוברת ב־4 ברגים ואומים, ושני הכבלים מחוברים נכון ולא פגועים.",
+      "מצלמות מערכת הנשק (יום ותרמית) תקינות, בלי סדקים או שריטות בעדשות.",
+      "עוצר מכני בציר ההגבהה קיים וננעל ידנית. להשאיר אותו חופשי בסוף הבדיקה.",
+      "אין חופש תנועה ברכיבים.",
+      "נורית מצב הטעינה ביחידת הבקרה דולקת.",
+      "הנורית הכחולה בתחתית המגירה האלקטרונית מהבהבת (מפסיקה כשהמערכת מתחברת).",
+      "# מערכת נשק – בדיקה תפקודית",
+      "מסך הפתיחה מוצג בבירור.",
+      "התקשורת בין יחידת הבקרה ל־Pitbull תקינה: סמל התקשורת ירוק תוך פחות מדקה.",
+      "שני העוצרים המכניים בציר קיימים, ננעלים ידנית ונעים בחופשיות. להשאיר חופשיים.",
+      "מצלמות מערכת הנשק (יום ותרמית) משדרות ובפוקוס.",
+      "הזום של מצלמת מערכת הנשק עובד.",
+      "מערכת הנשק נעה בכל הכיוונים (X-Y-Z).",
+      "סיבוב מלא (0°–360°) במהירות נמוכה, בחופשיות.",
+      "תנועה מלאה בציר ההגבהה (‎-30° עד 60°) במהירות נמוכה, בחופשיות.",
+      "בחירת מטרה – נשארת במרכז הצלב בזום.",
+      "שחרור מנגנון הבטיחות וחזרה על הבדיקה עם כוונת הירי.",
+      "בחירת מטרה – נשארת במרכז הצלב במצלמה התרמית.",
+      "שחרור מנגנון הבטיחות וחזרה על הבדיקה עם כוונת הירי.",
+      "מערכת הנשק יציבה בזמן תנועה.",
+      "# לפני התנעה: ההילוך ב־N והאזור פנוי מאנשים! בדיקת חירום",
+      "3 לחצני החירום עובדים (2 על הפלטפורמה ואחד בקופסת המפעיל): המנוע נכבה, והתוכנה מראה E-STOP ומערכת מנותקת.",
+      "# נסיעה – ללא זחלים (שלבים 1–4 על מגבה)",
+      "מצב טעינה: זרם האלטרנטור מעל 40mV (מד צבת TOL00968 על החוט האדום של האלטרנטור למצבר 12V).",
+      "מפעיל הבלם: בלם משוחרר – הילוך N וגז עד 2,000 סל״ד, המיקרו־סוויץ׳ לחוץ. בלם מופעל – מדידת אורך הבוכנה, המיקרו־סוויץ׳ לא לחוץ.",
+      "מצבי N: ב־Neutral standby (מנוע כבוי) ה־RPM נשאר 0 בלחיצה על הגז. ב־Neutral drive (מנוע פועל) ה־RPM משתנה.",
+      "הילוכים ונסיעה: החלפת R-N-D מהבקר במצב ידני (ג׳ויסטיק גז 20 שנ׳), ב־High וב־Low. שני הצדדים מסונכרנים. בפנייה ימינה ב־Low הגלגלים הימניים נעולים, ובפנייה שמאלה – השמאליים.",
+      "בלם היד ננעל ומשתחרר כראוי (לבדוק בעין כשמכסה המנוע פתוח – הבוכנה זזה), והתוכנה מראה את מצבו.",
+      "בהעברה ל־R התצוגה עוברת אוטומטית ממצלמת הנהיגה לאחורית.",
+      "נסיעה 200 מ׳ ב־Low וב־High, קדימה ואחורה, בקו ישר (ב־15 קמ״ש), ועצירה מלאה בבלימה.",
+      "פניות ימינה ושמאלה ב־Low וב־High – הגלגלים נעים נכון.",
+      "סיבוב במקום (Pivot) לשני הכיוונים ב־Low – הגלגל הקדמי באותו צד נשאר במקום.",
+      "נסיעה של שעתיים לפחות על משטח ישר ב־Low וב־High: בלי אובדן תקשורת או רעשים חריגים, מצלמות משדרות.",
+      "עלייה וירידה (שיפוע עד 45°): בלי רעשים חריגים, הבלמים מחזיקים והכלי יציב בלי החלקה.",
+      "שיפוע צד (עד 20°): בלי רעשים חריגים, הבלמים מחזיקים והכלי יציב בלי החלקה.",
+      "בדיקת חירום בנסיעה: המנוע נכבה, והתוכנה מראה E-STOP ומערכת מנותקת.",
+      "# בדיקה ויזואלית – עם זחלים",
+      "הגלגלים הועברו לצד ההפוך להתקנת זחלים (כ־13 ס״מ מקצה הפלסטיק לקצה הגלגל מבפנים).",
+      "שני הזחלים מותקנים, המתיחה תקינה והפינים מאובטחים.",
+      "# נסיעה – עם זחלים (שלבים 1–4 על מגבה)",
+      "מצב טעינה: זרם האלטרנטור מעל 40mV (מד צבת TOL00968).",
+      "מפעיל הבלם: בלם משוחרר – המיקרו־סוויץ׳ לחוץ ב־2,000 סל״ד ב־N. בלם מופעל – מדידת אורך הבוכנה.",
+      "מצבי N: Neutral standby – RPM נשאר 0. Neutral drive – RPM משתנה.",
+      "הילוכים ונסיעה: R-N-D מהבקר ב־High וב־Low, צדדים מסונכרנים, פניות תקינות.",
+      "בלם היד ננעל ומשתחרר והתוכנה מראה את מצבו.",
+      "בהעברה ל־R התצוגה עוברת למצלמה האחורית.",
+      "נסיעה 200 מ׳ ב־Low וב־High, קדימה ואחורה, בקו ישר (15 קמ״ש), ועצירה מלאה.",
+      "פניות ימינה ושמאלה ב־Low וב־High – הגלגלים נעים נכון.",
+      "Pivot לשני הכיוונים ב־Low – הגלגל הקדמי באותו צד נשאר במקום.",
+      "עלייה וירידה (עד 45°): בלי רעשים, בלמים מחזיקים, בלי החלקה.",
+      "שיפוע צד (עד 20°): בלי רעשים, בלמים מחזיקים, בלי החלקה.",
+      "נסיעה של שעתיים בחול רך: בלי רעשים, בלמים מחזיקים, בלי החלקה.",
+      "נסיעה בחול עמוק במהירות מרבית ב־Low במשך 20 דק׳ ברצף, בלי עצירות מיותרות: בלי אובדן תקשורת או רעשים.",
+      "נסיעה של שעתיים על משטח סלעי: בלי רעשים, בלמים מחזיקים, בלי החלקה.",
+      "בדיקת חירום בנסיעה: המנוע נכבה והתוכנה מראה E-STOP.",
+      "# בדיקת טווח תקשורת",
+      "תקשורת סלולרית יציבה – המערכת מזהה את כל כרטיסי ה־SIM.",
+      "תקשורת GPS יציבה – הנתונים משתנים.",
+      "תקשורת RF יציבה עד 1 ק״מ בקו ראייה, בלי סלולר (BLUSDR → PHASE 5).",
+      "# בדיקה ויזואלית לפני מסירה",
+      "מצב טעינה: זרם האלטרנטור מעל 40mV (מד צבת TOL00968).",
+      "מתיחת הזחלים תקינה.",
+      "כל החיבורים תקינים (מכניים וכבלים).",
+      "אין סדקים ואי־התאמות צבע; השלדה התחתונה והצירים לא מעוותים.",
+      "5 ברגים בכל אחד משמונת הגלגלים, נעולים כראוי.",
+      "אין פגמים בצמיגים ולחץ תקין: קדמי 5, אמצעיים 7, אחורי 6 PSI (לא לעבור 7).",
+      "האנטנות מחוברות ולא פגועות."
+     ],
+     "en": [
+      "# Visual inspection – without tracks",
+      "No cracks or paint mismatches. Lower chassis and axles not deformed; plastic cover complete and undamaged.",
+      "All 6 top covers are secured with screws and washers.",
+      "5 bolts on each of the eight wheels, correctly locked.",
+      "No tire defects and correct pressures: front 5, 2× middle 7, rear 6 psi. Never exceed 7 psi.",
+      "Two emergency stop buttons on the platform with covers (right and left), each secured with 6 screws.",
+      "4 peripheral cameras present and intact (drive, rear, right, left): connected, cables OK, no cracked lenses.",
+      "MAST camera present and intact: connected, cable OK, no cracked lens.",
+      "5 antennas present and tight: 4 RF and 1 cellular & GPS.",
+      "Engine oil between the L and F marks on the dipstick; no oil leaks around the engine.",
+      "Brake fluid level OK; no leaks in the area.",
+      "Enough fuel for testing (check on the dashboard with the vehicle switch on). Do not fill above the filler neck.",
+      "# Turn the system on (engine off)",
+      "Latest software version installed and all settings ready.",
+      "NC switch armed: software shows the system connected and E-STOP off.",
+      "12 V battery at least 60% (front panel screen or ROCU10).",
+      "48 V battery at least 60% (ROCU10).",
+      "Ping succeeds to all system components.",
+      "Front LED lights work.",
+      "# Components check",
+      "All 5 day cameras streaming and in focus: drive, rear, right, left and mast.",
+      "All 4 thermal cameras streaming and in focus: drive, rear, right and left.",
+      "Microphone works, sound clear, no delay.",
+      "Speaker works, sound clear, no delay.",
+      "Software shows the engine off (RPM = 0).",
+      "# Gun system – visual inspection",
+      "Gun system fastened with 4 screws and nuts; both cables correctly connected and undamaged.",
+      "Gun system cameras (day & thermal) in good condition, no cracked or scratched lenses.",
+      "Mechanical stopper on the elevation axis present and locks manually. Leave it free after the check.",
+      "No play in any component.",
+      "Charge status indicator on the control unit is lit.",
+      "Blue LED at the bottom of the electronic drawer flashes (stops once connected).",
+      "# Gun system – functional inspection",
+      "Startup screen displayed clearly.",
+      "Control unit to Pitbull communication OK: comms icon green within a minute.",
+      "Both mechanical stoppers on the axis present, lock manually and move freely. Leave free.",
+      "Gun system cameras (day & thermal) streaming and in focus.",
+      "Gun system camera zoom works.",
+      "Gun system moves in all directions (X-Y-Z).",
+      "Full rotation (0°–360°) at slow speed, moving freely.",
+      "Full elevation movement (-30° to 60°) at slow speed, moving freely.",
+      "Select a target – stays centered in the cross when zoomed.",
+      "Release the safety and repeat with the firing reticle.",
+      "Select a target – stays centered in the crosshairs with the thermal camera.",
+      "Release the safety and repeat with the firing reticle.",
+      "Gun system remains stable during motion.",
+      "# Before starting: gear in N and area clear of people! Emergency check",
+      "All 3 emergency stops work (2 on the platform, 1 in the operator box): engine turns off; software shows E-STOP on and system disconnected.",
+      "# Driving check – without tracks (steps 1–4 on a lift)",
+      "Charging mode: alternator current above 40 mV (clamp TOL00968 on the alternator red wire to the 12 V battery).",
+      "Brake actuator: brake off – gear N, throttle to 2,000 rpm, microswitch pressed. Brake on – measure piston length, microswitch not pressed.",
+      "Neutral modes: in neutral standby (engine off) RPM stays 0 on throttle; in neutral drive (engine on) RPM changes.",
+      "Gears and drive: R-N-D shifts from the controller in manual mode (throttle joystick 20 s), in High and Low. Both sides synchronized. Right turn in Low – right wheels locked; left turn – left wheels locked.",
+      "Handbrake engages and releases properly (check visually with the hood open – piston moves); software shows its state.",
+      "Shifting to R switches the display from the drive camera to the rear camera automatically.",
+      "Drive 200 m in Low and High, forward and back, in a straight line (at 15 km/h), and stop completely with the brakes.",
+      "Right and left turns in Low and High – wheels move correctly.",
+      "Pivot in both directions in Low – the front wheel on that side stays stationary.",
+      "Drive at least 2 hours on flat ground in Low and High: no comms loss or unusual noise, cameras streaming.",
+      "Uphill and downhill (max 45°): no unusual noise; brakes hold and the vehicle stays stable without slipping.",
+      "Side slope (max 20°): no unusual noise; brakes hold and the vehicle stays stable without slipping.",
+      "Emergency check while driving: engine turns off; software shows E-STOP on and system disconnected.",
+      "# Visual inspection – with tracks",
+      "Wheels switched to the opposite side for tracks (about 13 cm from the plastic edge to the wheel end, inside).",
+      "Both tracks mounted, tension correct and pins secured.",
+      "# Driving check – with tracks (steps 1–4 on a lift)",
+      "Charging mode: alternator current above 40 mV (clamp TOL00968).",
+      "Brake actuator: brake off – microswitch pressed at 2,000 rpm in N. Brake on – measure piston length.",
+      "Neutral modes: standby – RPM stays 0; drive – RPM changes.",
+      "Gears and drive: R-N-D from the controller in High and Low, sides synchronized, turns correct.",
+      "Handbrake engages and releases; software shows its state.",
+      "Shifting to R switches the display to the rear camera.",
+      "Drive 200 m in Low and High, forward and back, straight (15 km/h), full stop.",
+      "Right and left turns in Low and High – wheels move correctly.",
+      "Pivot both ways in Low – front wheel on that side stays stationary.",
+      "Uphill and downhill (max 45°): no noise, brakes hold, no slipping.",
+      "Side slope (max 20°): no noise, brakes hold, no slipping.",
+      "Drive 2 hours on soft sand: no noise, brakes hold, no slipping.",
+      "Deep sand at max speed in Low for 20 minutes continuously, no unnecessary stops: no comms loss or noise.",
+      "Drive 2 hours on rocky ground: no noise, brakes hold, no slipping.",
+      "Emergency check while driving: engine off, software shows E-STOP.",
+      "# Communication range check",
+      "Stable cellular – system detects all SIM cards.",
+      "Stable GPS – parameters are changing.",
+      "Stable RF up to 1 km line of sight, without cellular (BLUSDR → PHASE 5).",
+      "# Visual inspection before delivery",
+      "Charging mode: alternator current above 40 mV (clamp TOL00968).",
+      "Track tension OK.",
+      "All connections OK (mechanical and cables).",
+      "No cracks or paint mismatches; lower chassis and axles not deformed.",
+      "5 bolts on each of the eight wheels, correctly locked.",
+      "No tire defects, correct pressure: front 5, middle 7, rear 6 psi (never above 7).",
+      "Antennas connected and undamaged."
+     ]
+    },
+    "mb": 0.5
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-container",
+   "sec": "qa",
+   "type": "atp",
+   "title": {
+    "he": "ATP קרון שליטה",
+    "en": "ATP Control Container"
+   },
+   "summary": {
+    "he": "DOC00751-A REV 000 · חוץ, פנים ובדיקה תפקודית",
+    "en": "DOC00751-A REV 000 · external, internal and functional"
+   },
+   "body": {
+    "src": "media/atp-control-container.pdf",
+    "rows": {
+     "he": [
+      "# בדיקה ויזואלית ומכנית – חוץ",
+      "קיימים מסמכי QC לרמסע, לחשמל ולריתוכי הקרון.",
+      "אין שקעים, סדקים, קורוזיה או צבע מתקלף בקירות החיצוניים. הלוגו ברור.",
+      "הרמפות מקובעות ומאובטחות, עולות ויורדות בחלקות, ומנגנון הנעילה תקין (פתיחה בלחיצה על הכפתור האדום). להשאיר את הרמפות למטה לשלב הבא.",
+      "שתי הדלתות האחוריות נפתחות ונסגרות בחלקות ומנגנון הנעילה תקין (דלת ראשית ודלתות כניסת הכלים).",
+      "הדלת האחורית הקטנה נפתחת ונסגרת בחלקות ומנגנון הנעילה תקין (עם מפתח).",
+      "ארבעת כיסויי הפח האחוריים נפתחים ונסגרים בחלקות ומנגנון הנעילה תקין (עם מפתח).",
+      "יחידת המזגן החיצונית מעוגנת, מקובעת ולא פגועה.",
+      "הגנרטור מעוגן ב־4 נקודות ולא פגוע, הכבל מחובר ומאובטח, ומפתח הגנרטור קיים.",
+      "שנאי הפחת (דיפרנציאלי) מעוגן ולא פגוע, וכבלי הכניסה והיציאה מוגנים ומחוברים.",
+      "הקומפרסור מעוגן ולא פגוע, הכבלים (צהובים) מחוברים, הבקר קיים, צינור האוויר (כחול) מחובר ומחברי האוויר מקובעים.",
+      "התורן החיצוני מאובטח וכל התפסים והברגים מהודקים.",
+      "משאבת היד של התורן מעוגנת ומאובטחת, התפסים והברגים מהודקים.",
+      "הסולם מעוגן ב־8 ברגים.",
+      "אין סדקים ב־Hook Lift.",
+      "פאנל אנטנות ה־RF (על הגג) מקובע ב־4 ברגים, 8 מחברי RF מחוברים לפאנל וכיסויי ה־RF קיימים.",
+      "פאנל ה־IO (קיר ימני אחורי) מחובר ב־8 כבלי RF, מעוגן ב־6 ברגים, מחברים וכבלים לא פגועים.",
+      "תווית קיימת.",
+      "לחצן EMO קיים (ליד הסולם).",
+      "שני גלגלי הקרון מעוגנים ב־4 ברגים.",
+      "# בדיקה ויזואלית ומכנית – פנים",
+      "אין שקעים, סדקים, קורוזיה או צבע מתקלף בקירות.",
+      "תווית קיימת (ליד ארון החשמל הראשי).",
+      "החלון נפתח ונסגר בחלקות בשני הצדדים.",
+      "הרצפה (צבע שחור) שלמה, בלי סדקים או עיוותים.",
+      "מנגנון הקלאפה של האחסון העליון נפתח ונסגר בחלקות, יש חבל אחיזה, ושלושת הפאנלים נבדקו.",
+      "האחסון התחתון מתחת לשולחנות, האחסון התחתון בצד ימין (צד הלוח) והדלת העליונה שמעליו נפתחים ונסגרים בחלקות.",
+      "מטף כיבוי קיים, בתוקף, ומד הלחץ בתחום הירוק.",
+      "9 מסכי 24\" ו־6 מסכי 32\" מעוגנים לזרועות ולא פגועים.",
+      "נעילת השולחן תקינה, הזרועות מחוברות לשולחן (2 ברגים כל אחת), ומנגנון השולחן עולה ויורד בחלקות.",
+      "9 פאנלי התקשורת והחשמל שלמים, מחברי Power/ETH/HDMI לא פגועים וכיסויי ה־RF קיימים.",
+      "קופסת התקשורת וכבלי החשמל מחוברים, וכבלי ההארקה (צהוב/ירוק) מחוברים לפאנל.",
+      "המזגן מעוגן לקיר, כבל החשמל מחובר, ושלט המזגן מותקן לקיר (ליד הדלת הראשית).",
+      "ארון החשמל מעוגן לקיר (ליד הדלת הראשית), מנעול הדלת תקין ומפתח הדלת קיים.",
+      "הלוח הלבן מעוגן לקיר.",
+      "קיימים: 9 כיסאות מתקפלים, כבל מאריך, 6 רצועות ראצ׳ט לעיגון הכלים לרצפה (באחסון העליון השמאלי).",
+      "קיימים כבלי HDMI: CBL01434 ×2, ‏CBL01435 ×2, ‏CBL01363 ×2, ‏CBL1436 ×6 (יכולים להיות במדף התקשורת).",
+      "מוט הארקה קיים.",
+      "גלאי עשן קיים ומותקן.",
+      "# בדיקה תפקודית (חשמל, תקשורת, תפעול)",
+      "מפלס השמן והדלק בגנרטור מלאים.",
+      "שני לחצני ה־EMO (בחוץ ובפנים) משוחררים.",
+      "כל המפסקים בארון החשמל החיצוני למעלה, והמתג הראשי על „גנרטור”.",
+      "כל המפסקים בארון החשמל הפנימי למעלה.",
+      "מתג החשמל הראשי של המזגן ב־ON.",
+      "הפעלת הגנרטור: מפסקים ראשיים דלוקים, מתג ראשי ל־I, לחיצה על ON – הנורית הירוקה דולקת, המסך עובד, הנורית האדומה (תקלה) כבויה והגנרטור יציב.",
+      "לחיצה על כל אחד משני לחצני ה־EMO – החשמל בקרון נכבה. לשחרר ולוודא שהחשמל חזר לפני ההמשך.",
+      "תורן עם משאבת יד: לחבר את צינור המשאבה במקום הקומפרסור, לשאוב – התורן עולה 5 מ׳, בלי דליפת אוויר.",
+      "תורן עם קומפרסור: UP – התורן עולה עד הסוף והלחץ יציב. HOLD ל־30 דק׳ – התורן לא יורד ואין דליפה. DOWN – חוזר למצב הבית. בסוף להחזיר ל־HOLD (קומפרסור כבוי).",
+      "מזגן: הפעלה מהשלט, קירור תקין, 30 דק׳ פעולה בלי טפטוף מים.",
+      "תאורה: 5 נורות לבנות, 5 נורות אדומות ו־4 נורות חיצוניות דולקות.",
+      "שקעי החשמל נבדקו עם TOL00947 (9 פאנלים, 27 שקעים).",
+      "שקע ETH בכל אחד מ־9 הפאנלים: כבל RJ45 (CBL01436) למחשב – מהירות 1Gbps (ETH → Network & Internet → Ethernet).",
+      "שקעי HDMI ומסכים: כל שקע מחובר למסך הנכון לפי התוויות, ותמונה תקינה וברורה בכל 15 המסכים.",
+      "8 שקעי ה־RF: עם JIG00301-A משני הצדדים – נורית הג׳יג דולקת וכל שקע מחובר לשקע הנכון בפאנל הגג (1–8), אחד־אחד.",
+      "יציאת כבל התורן (ETH ומתח): CBL01346-A לג׳יג JIG00299-A – ETH במהירות 1Gbps, ובדיקת מתח וזרם עם LOAD (ערך המתח במסמך: TBD). הכבל מחובר לפאנל ה־IO החיצוני.",
+      "כיבוי הגנרטור.",
+      "הרמת הקרון פעמיים: הגלגלים מסתובבים ולא תקועים, ואין נזק לחלקים הפנימיים אחרי ההורדה.",
+      "הקרון מוכן למסירה: רמפות למעלה ונעולות, דלתות נעולות, מפתחות במקום, תורן למטה."
+     ],
+     "en": [
+      "# Visual and mechanical inspection – external",
+      "QC documents for RAMSA, electricity and welding exist.",
+      "No dents, cracks, corrosion or peeling paint on exterior walls. Logo is clear.",
+      "Ramps fixed and secured, move up and down smoothly, locking mechanism OK (push the red button to open). Leave ramps down for the next step.",
+      "Both back doors open and close smoothly; locking OK (main door and vehicle entrance doors).",
+      "Small back door opens and closes smoothly; locking OK (with key).",
+      "Four back sheet-metal covers open and close smoothly; locking OK (with key).",
+      "External AC unit securely mounted, fixed and undamaged.",
+      "Generator mounted at four points and undamaged; cable connected and secured; generator key present.",
+      "Differential transformer securely mounted and undamaged; input and output cables protected and connected.",
+      "Compressor mounted and undamaged; cables (yellow) connected; controller present; air pipe (blue) connected; air connectors fixed.",
+      "External mast secured; all clamps and bolts fixed.",
+      "Mast hand pump mounted and secured; clamps and bolts fixed.",
+      "Ladder mounted and secured with 8 bolts.",
+      "No cracks in the hook lift.",
+      "RF antenna panel (roof bracket) fixed with 4 bolts; 8 RF connectors fixed; RF caps present.",
+      "IO panel (back right wall) connected with 8 RF cables, mounted with 6 bolts; connectors and cables undamaged.",
+      "Label present.",
+      "EMO switch present (next to the ladder).",
+      "Both container wheels mounted with 4 bolts.",
+      "# Visual and mechanical inspection – internal",
+      "No dents, cracks, corrosion or peeling paint on the walls.",
+      "Label present (next to the main power box).",
+      "Window opens and closes smoothly on both sides.",
+      "Floor (black paint) intact, no cracks or deformation.",
+      "Top storage flap opens and closes smoothly; hand rope present; all three panels checked.",
+      "Lower storage under the tables, lower storage on the right (whiteboard side) and the upper door above it open and close smoothly.",
+      "Fire extinguisher present, not expired, gauge in the green zone.",
+      "Nine 24\" and six 32\" screens mounted to brackets and undamaged.",
+      "Table lock OK; brackets fixed to the table (2 bolts each); table moves up and down smoothly.",
+      "Nine communication/power panels intact; Power/ETH/HDMI connectors undamaged; RF caps present.",
+      "Communication box and power cables connected; ground cables (yellow/green) fixed to the panel.",
+      "AC mounted to the wall, power cable connected, AC controller on the wall (next to the main door).",
+      "Electrical box mounted (next to the main door); door lock OK; door key present.",
+      "Whiteboard mounted to the wall.",
+      "Present: nine folding chairs, power extension cord, six ratchets for vehicle floor mounts (left upper storage).",
+      "HDMI cables present: CBL01434 ×2, CBL01435 ×2, CBL01363 ×2, CBL1436 ×6 (may be in the communication shelf box).",
+      "Grounding rod present.",
+      "Smoke detector present and mounted.",
+      "# Functional check (power, communication, operation)",
+      "Generator oil and fuel levels full.",
+      "Both EMO switches (outside and inside) released.",
+      "All outside panel breakers up; main switch set to “Generator”.",
+      "All interior panel breakers up.",
+      "Main AC electrical switch ON.",
+      "Start the generator: main breakers on, main switch to I, press ON – green LED on, screen on, red LED (fault) off, generator stable.",
+      "Press each of the two EMO switches – container power goes off. Release and confirm power is back before continuing.",
+      "Mast with hand pump: connect the hand pump hose instead of the compressor, pump – mast rises 5 m, no air leak.",
+      "Mast with compressor: UP – mast rises fully, pressure stable. HOLD for 30 min – mast holds, no leak. DOWN – returns home. Finish on HOLD (compressor off).",
+      "AC: turn on from the controller, cooling works, 30 min with no water dripping.",
+      "Lights: all 5 white, 5 red and 4 outside lights turn on.",
+      "Power sockets checked with TOL00947 (9 panels, 27 outlets).",
+      "ETH socket in each of the 9 panels: RJ45 cable (CBL01436) to the computer – speed 1 Gbps (ETH → Network & Internet → Ethernet).",
+      "HDMI sockets and screens: each socket goes to the correct screen per the labels; clear image without color issues on all 15 screens.",
+      "8 RF sockets: with JIG00301-A on both sides – jig LED on and each socket goes to the correct roof panel socket (1–8), one by one.",
+      "Mast cable output (ETH and voltage): CBL01346-A to jig JIG00299-A – ETH at 1 Gbps; check voltage and current with LOAD (voltage value in the document: TBD). Cable connected to the outside IO panel.",
+      "Turn off the generator.",
+      "Lift the container twice: wheels turn freely; no internal damage after lowering.",
+      "Container ready for delivery: ramps up and locked, doors locked, keys in place, mast down."
+     ]
+    },
+    "mb": 1.7
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-rocu10",
+   "sec": "qa",
+   "type": "atp",
+   "title": {
+    "he": "ATP ROCU10",
+    "en": "ATP ROCU10"
+   },
+   "summary": {
+    "he": "DOC00752-A REV 000 · בקר ROCU10",
+    "en": "DOC00752-A REV 000 · ROCU10 controller"
+   },
+   "body": {
+    "src": "media/atp-rocu10.pdf",
+    "rows": {
+     "he": [
+      "# בדיקה ויזואלית",
+      "לנער את ה־ROCU ולוודא שאין חלקים זרים בפנים.",
+      "אין סדקים או בעיות צבע בגוף ואין שריטות במסך.",
+      "10 ברגים בגב המכשיר.",
+      "4 ברגים מחזיקים את התושבות בחזית.",
+      "הסוללה מותקנת ב־ROCU.",
+      "# בדיקה תפקודית",
+      "לחבר את CBL01377-A ו־CBL01378-A ל־ROCU – לפי סימוני הצבע: אדום לאדום בכבל החשמל, לבן ללבן בכבל ה־ETH.",
+      "המחברים מתחברים ומתנתקים בקלות ובלי בעיות.",
+      "לחבר את CBL01377-A לחשמל ואת CBL01378-A לכבל ETH.",
+      "להדליק את ה־ROCU ולוודא שהמסך נדלק. כניסה: משתמש user, סיסמה password.",
+      "הצבעים נכונים, התמונה לא מעוותת והבהירות עובדת.",
+      "מסך המגע עובד היטב.",
+      "ה־ROCU נטען דרך CBL01377.",
+      "ניתוק CBL01377 – הטעינה מפסיקה.",
+      "Wi-Fi ו־Bluetooth כבויים.",
+      "חיבור ETH קיים: Settings → Network & Internet מציג „Ethernet Connected”.",
+      "ניתוק CBL01378 – התצוגה משתנה ל־„Not Connected”.",
+      "כל הלחצנים נלחצים בצורה חלקה והג׳ויסטיקים זזים בחופשיות.",
+      "ללחצנים יש תאורה ירוקה ואפשר לכבות אותה."
+     ],
+     "en": [
+      "# Visual inspection",
+      "Shake the ROCU and make sure there are no foreign parts inside.",
+      "No cracks or paint issues on the body and no scratches on the screen.",
+      "10 screws at the back.",
+      "4 screws holding the brackets at the front.",
+      "Battery is mounted in the ROCU.",
+      "# Functional test",
+      "Connect CBL01377-A and CBL01378-A to the ROCU – match colors: red to red for power, white to white for ETH.",
+      "Connectors connect and disconnect easily without issues.",
+      "Connect CBL01377-A to a power outlet and CBL01378-A to an ETH cable.",
+      "Turn on the ROCU and verify the screen turns on. Log in: user / password.",
+      "Colors correct, image not distorted, brightness works.",
+      "Touchscreen works well.",
+      "ROCU charges via CBL01377.",
+      "Disconnect CBL01377 – charging stops.",
+      "Wi-Fi and Bluetooth are disabled.",
+      "ETH connected: Settings → Network & Internet shows “Ethernet Connected”.",
+      "Disconnect CBL01378 – status changes to “Not Connected”.",
+      "All buttons press smoothly and joysticks move freely.",
+      "Buttons have green light and it can be turned off."
+     ]
+    },
+    "mb": 0.5
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-gun",
+   "sec": "qa",
+   "type": "atp",
+   "title": {
+    "he": "ATP Gun System – Pitbull",
+    "en": "ATP Gun System – Pitbull"
+   },
+   "summary": {
+    "he": "DOC00753-A REV 000 · לפני התקנה על הכלי",
+    "en": "DOC00753-A REV 000 · before installation on the vehicle"
+   },
+   "body": {
+    "src": "media/atp-gun-system.pdf",
+    "rows": {
+     "he": [
+      "# בדיקה ויזואלית",
+      "אין סדקים, שריטות או בעיות צבע.",
+      "תווית הזיהוי (ID) קיימת בתחתית.",
+      "כל הברגים והאומים מהודקים.",
+      "כל המחברים קיימים ומחוברים כראוי.",
+      "כל כיסויי המחברים קיימים.",
+      "מחוון הלחות (Desiccant) כחול.",
+      "כל העדשות נקיות, בלי סדקים או נזק.",
+      "עוצר מכני בציר ההגבהה קיים וננעל ידנית. להשאיר חופשי בסוף הבדיקה.",
+      "אין חופש תנועה ברכיבים.",
+      "שני העוצרים המכניים בציר קיימים, ננעלים ידנית ונעים בחופשיות. להשאיר חופשיים.",
+      "פין עצירה אחד מחובר לבסיס ועוד אחד בתיק ערכת הבקרה.",
+      "לחצן EMO קיים.",
+      "קופסת התחמושת נפתחת ונסגרת בחופשיות.",
+      "ידיות ההדק והנצרה זזות בחופשיות וגלגלי ההדק זזים בחלקות.",
+      "# בדיקת קופסת בקרה",
+      "לחבר את ה־Pitbull ואת יחידת הבקרה לקופסת הבקרה.",
+      "לחבר את קופסת הבקרה לחשמל.",
+      "שני צדי המחבר מחוברים עד הסוף ואין נזק לפינים.",
+      "# הדלקת המערכת",
+      "נורית מצב הטעינה ביחידת הבקרה דולקת.",
+      "הנורית הכחולה בתחתית המגירה האלקטרונית מהבהבת (מפסיקה כשהמערכת מתחברת).",
+      "מסך הפתיחה של Pitbull מוצג בבירור.",
+      "התקשורת בין יחידת הבקרה ל־Pitbull תקינה: סמל התקשורת ירוק תוך פחות מדקה.",
+      "במעבר ל־ENABLE אי אפשר לבצע את הפעולות החסומות – המערכת לא מאפשרת אותן.",
+      "START – שידור תקין ממצלמות היום והלילה.",
+      "הזום של מצלמת היום עובד.",
+      "לחיצה על כל לחצן ביחידת הבקרה 10 שניות – מופיעה הודעת „Button is pressed”.",
+      "הזזה מהירה של המתגים כמה פעמים – המערכת מגיבה.",
+      "מתג אפשור התנועה ל־ENABLE – מחוון מצב התנועה ירוק.",
+      "סיבוב מלא (0°–360°) במהירות נמוכה, בחופשיות.",
+      "תנועה מלאה בציר ההגבהה (‎-30° עד 60°) במהירות נמוכה, בחופשיות.",
+      "בחירת מטרה – נשארת במרכז הצלב בזום.",
+      "שחרור הנצרה וחזרה עם כוונת הירי.",
+      "בחירת מטרה – נשארת במרכז הצלב במצלמה התרמית.",
+      "שחרור הנצרה וחזרה עם כוונת הירי.",
+      "נעילת העוצרים המכניים באזימוט ובהטיה ונסיעה אליהם במהירות מרבית 10 שניות – 5 פעמים לכל ציר ובכיוונים שונים.",
+      "אזימוט 0° ולחיצה על „Return to park” – הגעה תוך פחות מ־2 שניות.",
+      "הזנת טווח ידנית – הכוונת זזה בהתאם והטווח נשמר בפס העליון.",
+      "דריכה מהירה, עצירה, והמשך הפעלת הידית ידנית קדימה ואחורה.",
+      "שחרור הנצרה – היא ננעלת אוטומטית אחרי 60 שניות.",
+      "שחרור הנצרה ולחיצה על שני לחצני הירי.",
+      "יש ירי – לחזור 10 פעמים בכל מצב ירי.",
+      "הגדרת אזור ללא תנועה – המערכת „מדלגת” עליו ומוצגת התראה בהתנגשות.",
+      "בסיום פעולות הדריכה הנצרה ננעלת.",
+      "כשהמטרה נעלמת המערכת מפסיקה לעקוב אוטומטית.",
+      "בזמן עקיבה אפשר לתקן ידנית עם הג׳ויסטיק והעקיבה לא נפסקת.",
+      "במצלמת היום – בחירת מטרות ב־4 פינות התצוגה.",
+      "הכוונת מגיעה לתוך גבולות הריבוע הכחול.",
+      "במצלמת היום – בחירת מטרה נעה, וה־Pitbull עוקב אחריה.",
+      "# חיבור ה־Pitbull לכלי",
+      "הפעלת ייצוב ונסיעה 5 דקות – הסחיפה נשארת בתוך ריבוע של 3×3 ס״מ בתצוגה.",
+      "בחירת נקודה סטטית – המערכת נשארת עליה.",
+      "Point & Shoot לפחות 10 פעמים.",
+      "המערכת מגיעה לנקודה הרצויה ונשארת עליה.",
+      "עקיבה אופטית עם מצלמת היום כשהייצוב פעיל.",
+      "עקיבה אופטית עם המצלמה התרמית כשהייצוב פעיל.",
+      "שחרור נצרה וירי בכל בדיקה!"
+     ],
+     "en": [
+      "# Visual inspection",
+      "No cracks, scratches or paint issues.",
+      "ID label present at the bottom.",
+      "All screws and nuts are tight.",
+      "All connectors present and properly connected.",
+      "All connector caps present.",
+      "Desiccant humidity indicator is blue.",
+      "All lenses clean, no cracks or damage.",
+      "Mechanical stopper on the elevation axis present and locks manually. Leave free after the check.",
+      "No play in any component.",
+      "Both mechanical stoppers on the axis present, lock manually and move freely. Leave free.",
+      "One stop pin attached to the base and another in the control kit case.",
+      "EMO button present.",
+      "Ammunition box opens and closes freely.",
+      "Trigger levers and safety move freely; trigger wheels move smoothly.",
+      "# Control box check",
+      "Connect the Pitbull and the control unit to the control box.",
+      "Connect the control box to power.",
+      "Both sides of the connector fully connected; no damage to the pins.",
+      "# Turn the system on",
+      "Charge status indicator on the control unit is lit.",
+      "Blue LED at the bottom of the electronic drawer flashes (stops when connected).",
+      "Pitbull startup screen displayed clearly.",
+      "Control unit to Pitbull communication OK: comms icon green within a minute.",
+      "When switching to ENABLE, the blocked actions cannot be performed.",
+      "Press START – day and night cameras stream properly.",
+      "Day camera zoom works.",
+      "Press each control unit button for 10 seconds – “Button is pressed” appears.",
+      "Move the toggles rapidly several times – the system responds.",
+      "Movement enable toggle to ENABLE – movement status indicator turns green.",
+      "Full rotation (0°–360°) at slow speed, moving freely.",
+      "Full elevation movement (-30° to 60°) at slow speed, moving freely.",
+      "Select a target – stays centered in the cross with zoom.",
+      "Release the safety and repeat with the firing reticle.",
+      "Select a target – stays centered with the thermal camera.",
+      "Release the safety and repeat with the firing reticle.",
+      "Lock the mechanical stoppers in azimuth and tilt and drive into them at max speed for 10 s – 5 times per axis, different directions.",
+      "Set azimuth to 0° and press “Return to park” – arrives in under 2 seconds.",
+      "Enter a range manually – reticle moves accordingly and the range is saved in the top bar.",
+      "Quick charge, stop it, and continue operating the handle manually back and forth.",
+      "Release the safety – it locks automatically after 60 seconds.",
+      "Release the safety and press both firing buttons.",
+      "Fire occurs – repeat 10 times in each firing mode.",
+      "Enter a no-movement zone – the system skips over it and a notification appears on collision.",
+      "After charging actions, the safety locks.",
+      "Tracking stops automatically when the target disappears.",
+      "During tracking, manual joystick corrections are possible and tracking continues.",
+      "Day camera screen – select targets in the 4 corners of the display.",
+      "Reticle reaches inside the blue square boundaries.",
+      "Day camera – select a moving target; Pitbull tracks it.",
+      "# Connect the Pitbull to the vehicle",
+      "Activate stabilization and drive 5 minutes – drift stays within a 3×3 cm area on the display.",
+      "Select a static point – the system stays on it.",
+      "Point & shoot at least 10 times.",
+      "System reaches the desired point and stays on it.",
+      "Optical tracking with the day camera while stabilization is active.",
+      "Optical tracking with the thermal camera while stabilization is active.",
+      "Perform a safety release and firing in each test!"
+     ]
+    },
+    "mb": 0.4
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "atp-field",
+   "sec": "qa",
+   "type": "atp",
+   "title": {
+    "he": "ATP Field",
+    "en": "ATP Field"
+   },
+   "summary": {
+    "he": "מסמך לקריאה או בדיקה שורה שורה עם חתימה",
+    "en": "Read the document or run it line by line with a signature"
+   },
+   "body": {
+    "src": "",
+    "rows": {
+     "he": [
+      "# פרק לדוגמה – הכנה",
+      "בדיקה לדוגמה 1 – להחליף בשורות ממסמך ה־ATP",
+      "בדיקה לדוגמה 2",
+      "בדיקה לדוגמה 3",
+      "# פרק לדוגמה – תפקוד",
+      "בדיקה לדוגמה 4",
+      "בדיקה לדוגמה 5"
+     ],
+     "en": [
+      "# Sample chapter – preparation",
+      "Sample check 1 – replace with lines from the ATP document",
+      "Sample check 2",
+      "Sample check 3",
+      "# Sample chapter – function",
+      "Sample check 4",
+      "Sample check 5"
+     ]
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-atp-container",
+   "sec": "container",
+   "type": "link",
+   "title": {
+    "he": "ATP קרון שליטה",
+    "en": "ATP Control Container"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "atp-container"
+   },
    "updated": "2026-11-10"
   }
  ]
