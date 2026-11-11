@@ -1,145 +1,33 @@
 {
  "app": {
-  "version": 18,
+  "version": 19,
   "updated": "2026-11-10",
   "teamHash": "81336e9189125819028ccb30e60c191974a48efc3206777b9773bfe65832c22b",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
  },
  "sections": [
   {
-   "id": "container",
+   "id": "hw",
    "parent": null,
    "kind": "",
    "name": {
-    "he": "קרון שליטה",
-    "en": "UGV Controlled Container"
+    "he": "מכלולים וחומרה",
+    "en": "Assemblies & hardware"
    },
-   "desc": {
-    "he": "פרטים טכניים על מערכות המכולה",
-    "en": "Technical details of the container systems"
-   },
-   "home": "sys"
+   "num": "1"
   },
   {
-   "id": "bison",
-   "parent": null,
+   "id": "hw-cont",
+   "parent": "hw",
    "kind": "",
    "name": {
-    "he": "פלטפורמה – ביזון",
-    "en": "Platform – BISON"
-   },
-   "desc": {
-    "he": "פרטים טכניים על מערכות ה־BISON. חל על BISON 120 ועל BISON 121.",
-    "en": "Technical details of the BISON systems. Applies to BISON 120 and BISON 121."
-   },
-   "home": "sys"
-  },
-  {
-   "id": "comm",
-   "parent": null,
-   "kind": "",
-   "name": {
-    "he": "תקשורת",
-    "en": "Communications"
-   },
-   "home": "dom"
-  },
-  {
-   "id": "comm-tech",
-   "parent": "comm",
-   "kind": "",
-   "name": {
-    "he": "פרטים טכניים",
-    "en": "Technical Details"
+    "he": "קרון השליטה – תתי־מערכות",
+    "en": "Control container – subsystems"
    }
-  },
-  {
-   "id": "comm-radio",
-   "parent": "comm",
-   "kind": "",
-   "name": {
-    "he": "קינפוג מקמ״שים",
-    "en": "Radio Configuration"
-   }
-  },
-  {
-   "id": "comm-mon",
-   "parent": "comm",
-   "kind": "",
-   "name": {
-    "he": "ניטור תקשורת",
-    "en": "Communication Monitoring"
-   }
-  },
-  {
-   "id": "comm-traffic",
-   "parent": "comm",
-   "kind": "",
-   "name": {
-    "he": "בדיקת תעבורה",
-    "en": "Traffic Test"
-   }
-  },
-  {
-   "id": "comm-air",
-   "parent": "comm",
-   "kind": "",
-   "name": {
-    "he": "מקמ״שים „באוויר”",
-    "en": "Radios On-Air Check"
-   }
-  },
-  {
-   "id": "comm-deploy",
-   "parent": "comm",
-   "kind": "",
-   "name": {
-    "he": "פריסת מערכת – תצורות הפעלה",
-    "en": "System deployment – operating configurations"
-   }
-  },
-  {
-   "id": "maint",
-   "parent": null,
-   "kind": "",
-   "name": {
-    "he": "אחזקה",
-    "en": "Maintenance"
-   },
-   "home": "dom"
-  },
-  {
-   "id": "maint-prev",
-   "parent": "maint",
-   "kind": "",
-   "name": {
-    "he": "אחזקה מונעת",
-    "en": "Preventive Maintenance"
-   }
-  },
-  {
-   "id": "cfg",
-   "parent": null,
-   "kind": "",
-   "name": {
-    "he": "קינפוגים",
-    "en": "Configurations"
-   },
-   "home": "dom"
-  },
-  {
-   "id": "qa",
-   "parent": null,
-   "kind": "",
-   "name": {
-    "he": "QA",
-    "en": "QA"
-   },
-   "home": "dom"
   },
   {
    "id": "c-lift",
-   "parent": "container",
+   "parent": "hw-cont",
    "kind": "assembly",
    "name": {
     "he": "רמסע (מגבע נע)",
@@ -148,7 +36,7 @@
   },
   {
    "id": "c-mast",
-   "parent": "container",
+   "parent": "hw-cont",
    "kind": "assembly",
    "name": {
     "he": "תורן",
@@ -157,7 +45,7 @@
   },
   {
    "id": "c-gen",
-   "parent": "container",
+   "parent": "hw-cont",
    "kind": "assembly",
    "name": {
     "he": "גנרטור",
@@ -166,7 +54,7 @@
   },
   {
    "id": "c-ac",
-   "parent": "container",
+   "parent": "hw-cont",
    "kind": "assembly",
    "name": {
     "he": "מזגן",
@@ -175,7 +63,7 @@
   },
   {
    "id": "c-comp",
-   "parent": "container",
+   "parent": "hw-cont",
    "kind": "assembly",
    "name": {
     "he": "קומפרסור",
@@ -184,7 +72,7 @@
   },
   {
    "id": "c-screens",
-   "parent": "container",
+   "parent": "hw-cont",
    "kind": "assembly",
    "name": {
     "he": "מסכים וטלוויזיות",
@@ -193,7 +81,7 @@
   },
   {
    "id": "c-elec",
-   "parent": "container",
+   "parent": "hw-cont",
    "kind": "assembly",
    "name": {
     "he": "מערכת חשמל",
@@ -201,8 +89,17 @@
    }
   },
   {
+   "id": "hw-plat",
+   "parent": "hw",
+   "kind": "",
+   "name": {
+    "he": "פלטפורמות – ARGO / ביזון",
+    "en": "Platforms – ARGO / BISON"
+   }
+  },
+  {
    "id": "b-low",
-   "parent": "bison",
+   "parent": "hw-plat",
    "kind": "assembly",
    "name": {
     "he": "בקרה נמוכה",
@@ -211,7 +108,7 @@
   },
   {
    "id": "b-high",
-   "parent": "bison",
+   "parent": "hw-plat",
    "kind": "",
    "name": {
     "he": "בקרה גבוהה",
@@ -247,7 +144,7 @@
   },
   {
    "id": "b-energy",
-   "parent": "bison",
+   "parent": "hw-plat",
    "kind": "assembly",
    "name": {
     "he": "אנרגיה",
@@ -256,7 +153,7 @@
   },
   {
    "id": "b-mech",
-   "parent": "bison",
+   "parent": "hw-plat",
    "kind": "",
    "name": {
     "he": "מכניקה",
@@ -282,8 +179,228 @@
    }
   },
   {
+   "id": "hw-spec",
+   "parent": "hw",
+   "kind": "",
+   "name": {
+    "he": "מפרטים ושרטוטים טכניים",
+    "en": "Specifications & technical drawings"
+   },
+   "groups": [
+    {
+     "id": "sys",
+     "he": "נתוני מערכת",
+     "en": "System data"
+    },
+    {
+     "id": "ctrl",
+     "he": "עמדות שליטה, ממסר ורחפן",
+     "en": "Control stations, relay and drone"
+    }
+   ]
+  },
+  {
+   "id": "ops",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "תפעול ותקשורת",
+    "en": "Operation & communication"
+   },
+   "num": "2"
+  },
+  {
+   "id": "ops-map",
+   "parent": "ops",
+   "kind": "",
+   "name": {
+    "he": "מפת כפתורים אינטראקטיבית",
+    "en": "Interactive controls map"
+   }
+  },
+  {
+   "id": "ops-cfg",
+   "parent": "ops",
+   "kind": "",
+   "name": {
+    "he": "קינפוגים – תדרים ורשתות",
+    "en": "Configurations – frequencies & networks"
+   },
+   "groups": [
+    {
+     "id": "deploy",
+     "he": "פריסה ותצורות הפעלה",
+     "en": "Deployment & operating configurations"
+    },
+    {
+     "id": "radio",
+     "he": "קינפוג מקמ״שים ותדרים",
+     "en": "Radio configuration & frequencies"
+    },
+    {
+     "id": "sw",
+     "he": "תוכנות",
+     "en": "Software"
+    },
+    {
+     "id": "cal",
+     "he": "כיולים",
+     "en": "Calibrations"
+    }
+   ]
+  },
+  {
+   "id": "ops-howto",
+   "parent": "ops",
+   "kind": "",
+   "name": {
+    "he": "מדריכי פעולה (How-To)",
+    "en": "How-to guides"
+   },
+   "groups": [
+    {
+     "id": "ops",
+     "he": "תפעול ובטיחות",
+     "en": "Operation & safety"
+    },
+    {
+     "id": "mon",
+     "he": "ניטור תקשורת",
+     "en": "Communication monitoring"
+    },
+    {
+     "id": "trouble",
+     "he": "תקלות ופתרונות",
+     "en": "Troubleshooting"
+    },
+    {
+     "id": "ref",
+     "he": "מונחים",
+     "en": "Glossary"
+    }
+   ]
+  },
+  {
+   "id": "care",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "מערכת טיפולים",
+    "en": "Maintenance system"
+   },
+   "num": "3"
+  },
+  {
+   "id": "care-daily",
+   "parent": "care",
+   "kind": "",
+   "name": {
+    "he": "צ׳קליסט לפני / אחרי תנועה",
+    "en": "Pre / post operation checklists"
+   }
+  },
+  {
+   "id": "care-prev",
+   "parent": "care",
+   "kind": "",
+   "name": {
+    "he": "אחזקת מנע תקופתית",
+    "en": "Periodic preventive maintenance"
+   },
+   "groups": [
+    {
+     "id": "plan",
+     "he": "תוכנית ולוח זמנים",
+     "en": "Plan & schedule"
+    },
+    {
+     "id": "mat",
+     "he": "חומרים ומתכלים",
+     "en": "Materials & consumables"
+    },
+    {
+     "id": "bison",
+     "he": "נהלים – ביזון",
+     "en": "Procedures – BISON"
+    },
+    {
+     "id": "cont",
+     "he": "נהלים – קרון שליטה",
+     "en": "Procedures – control container"
+    }
+   ]
+  },
+  {
+   "id": "care-log",
+   "parent": "care",
+   "kind": "logbook",
+   "name": {
+    "he": "יומן רכבים (Logbook)",
+    "en": "Vehicle logbook"
+   }
+  },
+  {
+   "id": "docs",
+   "parent": null,
+   "kind": "",
+   "name": {
+    "he": "טפסים ומסמכים (ATP)",
+    "en": "Forms & documents (ATP)"
+   },
+   "num": "4"
+  },
+  {
+   "id": "docs-atp",
+   "parent": "docs",
+   "kind": "",
+   "name": {
+    "he": "טופס בדיקת קבלה (ATP)",
+    "en": "Acceptance test forms (ATP)"
+   }
+  },
+  {
+   "id": "docs-pdf",
+   "parent": "docs",
+   "kind": "forms",
+   "name": {
+    "he": "מחולל ייצוא ל־PDF",
+    "en": "PDF export generator"
+   }
+  },
+  {
+   "id": "docs-lit",
+   "parent": "docs",
+   "kind": "",
+   "name": {
+    "he": "ספרות יצרן ומסמכים (User Manuals)",
+    "en": "Manufacturer literature & documents"
+   },
+   "groups": [
+    {
+     "id": "sys",
+     "he": "מסמכי מערכת",
+     "en": "System documents"
+    },
+    {
+     "id": "bison",
+     "he": "ביזון / ARGO",
+     "en": "BISON / ARGO"
+    },
+    {
+     "id": "cont",
+     "he": "קרון שליטה",
+     "en": "Control container"
+    },
+    {
+     "id": "comm",
+     "he": "תקשורת – DTC",
+     "en": "Communication – DTC"
+    }
+   ]
+  },
+  {
    "id": "argo-sm-sec",
-   "parent": "b-mech",
+   "parent": "docs-lit",
    "kind": "",
    "name": {
     "he": "ספר שירות ARGO",
@@ -294,7 +411,7 @@
  "items": [
   {
    "id": "dep-tactical",
-   "sec": "comm-deploy",
+   "sec": "ops-cfg",
    "type": "guide",
    "title": {
     "he": "תצורה טקטית (BLUSDR) – הקמת עמדה",
@@ -456,11 +573,12 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "group": "deploy"
   },
   {
    "id": "dep-relay",
-   "sec": "comm-deploy",
+   "sec": "ops-cfg",
    "type": "guide",
    "title": {
     "he": "תצורת מגנן (ממסר) – הקמת עמדה",
@@ -654,11 +772,12 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "group": "deploy"
   },
   {
    "id": "dep-container",
-   "sec": "comm-deploy",
+   "sec": "ops-cfg",
    "type": "guide",
    "title": {
     "he": "תצורת קרון שליטה – הקמת עמדה",
@@ -826,11 +945,12 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "group": "deploy"
   },
   {
    "id": "dep-rocu10",
-   "sec": "comm-deploy",
+   "sec": "ops-map",
    "type": "guide",
    "title": {
     "he": "ישל״ט ROCU-10 – בקרות ולחצנים",
@@ -958,7 +1078,7 @@
   },
   {
    "id": "um-safety",
-   "sec": "bison",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "בטיחות, אחריות ותמיכה",
@@ -1100,11 +1220,12 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "group": "ops"
   },
   {
    "id": "bison-overview",
-   "sec": "bison",
+   "sec": "hw-plat",
    "type": "guide",
    "title": {
     "he": "ביזון – נתונים כלליים",
@@ -1342,7 +1463,7 @@
   },
   {
    "id": "um-data",
-   "sec": "bison",
+   "sec": "hw-spec",
    "type": "guide",
    "title": {
     "he": "נתוני מערכת – לפי מדריך המפעיל",
@@ -1538,7 +1659,8 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "group": "sys"
   },
   {
    "id": "um-panel",
@@ -1649,7 +1771,10 @@
      }
     ]
    },
-   "group": "tech"
+   "group": "tech",
+   "rel": [
+    "ops-map"
+   ]
   },
   {
    "id": "um-dash",
@@ -1700,11 +1825,14 @@
      }
     ]
    },
-   "group": "tech"
+   "group": "tech",
+   "rel": [
+    "ops-map"
+   ]
   },
   {
    "id": "um-recovery",
-   "sec": "b-mech-gen",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "חילוץ וגרירה",
@@ -1827,11 +1955,14 @@
      }
     ]
    },
-   "group": "maint"
+   "group": "ops",
+   "rel": [
+    "b-mech-gen"
+   ]
   },
   {
    "id": "um-trouble-mech",
-   "sec": "b-mech-gen",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "מקרים ותגובות – ביזון מכני",
@@ -1924,11 +2055,14 @@
      }
     ]
    },
-   "group": "trouble"
+   "group": "trouble",
+   "rel": [
+    "b-mech-gen"
+   ]
   },
   {
    "id": "um-trouble-app",
-   "sec": "b-high-gen",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "מקרים ותגובות – ישל״ט ואפליקציה (שו״ב)",
@@ -2013,11 +2147,14 @@
      }
     ]
    },
-   "group": "trouble"
+   "group": "trouble",
+   "rel": [
+    "b-high-gen"
+   ]
   },
   {
    "id": "dtc-overview",
-   "sec": "comm-tech",
+   "sec": "ops-cfg",
    "type": "guide",
    "title": {
     "he": "מערכת DTC: רכיבים ותצורות עבודה",
@@ -2199,11 +2336,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "deploy"
   },
   {
    "id": "dtc-glossary",
-   "sec": "comm-tech",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "מילון מונחים – DTC",
@@ -2343,11 +2481,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "ref"
   },
   {
    "id": "dtc-login",
-   "sec": "comm-radio",
+   "sec": "ops-cfg",
    "type": "guide",
    "title": {
     "he": "התחברות לממשק DTC",
@@ -2427,11 +2566,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "radio"
   },
   {
    "id": "dtc-spectrum",
-   "sec": "comm-radio",
+   "sec": "ops-cfg",
    "type": "guide",
    "title": {
     "he": "סריקת ספקטרום (Spectrum Scan)",
@@ -2523,11 +2663,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "radio"
   },
   {
    "id": "dtc-freq",
-   "sec": "comm-radio",
+   "sec": "ops-cfg",
    "type": "guide",
    "title": {
     "he": "החלפת תדר עבודה",
@@ -2705,11 +2846,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "radio"
   },
   {
    "id": "dtc-tactical",
-   "sec": "comm-mon",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "Tactical Display – איכות הקשר",
@@ -2947,11 +3089,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "mon"
   },
   {
    "id": "dtc-nodetable",
-   "sec": "comm-mon",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "Node Table – טבלת צמתים",
@@ -3065,11 +3208,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "mon"
   },
   {
    "id": "dtc-quality",
-   "sec": "comm-mon",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "Quality Matrix – מטריצת איכות",
@@ -3177,11 +3321,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "mon"
   },
   {
    "id": "dtc-levels",
-   "sec": "comm-mon",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "Levels – SNR ועוצמת אות",
@@ -3289,11 +3434,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "mon"
   },
   {
    "id": "dtc-dashboard",
-   "sec": "comm-mon",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "מסך הבית ותפריטי הממשק",
@@ -3625,11 +3771,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "mon"
   },
   {
    "id": "dtc-checklist",
-   "sec": "comm",
+   "sec": "care-daily",
    "type": "checklist",
    "title": {
     "he": "צ׳קליסט לפני משימה – תקשורת",
@@ -3663,7 +3810,7 @@
   },
   {
    "id": "dtc-trouble",
-   "sec": "comm",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "תקלות ופתרונות – תקשורת DTC",
@@ -3771,11 +3918,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "trouble"
   },
   {
    "id": "um-trouble-comm",
-   "sec": "comm",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "מקרים ותגובות – תקשורת (ישל״ט וביזון)",
@@ -3843,11 +3991,12 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "group": "trouble"
   },
   {
    "id": "cfg-act",
-   "sec": "cfg",
+   "sec": "ops-cfg",
    "type": "steps",
    "title": {
     "he": "כיול אקטואטורים",
@@ -3861,11 +4010,12 @@
     "he": "",
     "en": ""
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "cal"
   },
   {
    "id": "m-pre",
-   "sec": "maint",
+   "sec": "care-daily",
    "type": "checklist",
    "title": {
     "he": "טיפול לפני תנועה (טל״ת)",
@@ -3942,7 +4092,7 @@
   },
   {
    "id": "m-post",
-   "sec": "maint",
+   "sec": "care-daily",
    "type": "checklist",
    "title": {
     "he": "טיפול אחרי תנועה (טא״ת)",
@@ -3999,7 +4149,7 @@
   },
   {
    "id": "m-data",
-   "sec": "maint",
+   "sec": "care-prev",
    "type": "maint",
    "title": {
     "he": "טיפולים כלליים – נתוני אחזקה",
@@ -4228,11 +4378,15 @@
      "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI). **Engine and transmission oil – the documents conflict** (5W-40/75W-90 in the daily procedure and ARGO; 10W-40/80W90 in the user manual and preventive maintenance table). Confirm before filling."
     }
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "mat",
+   "rel": [
+    "b-engine"
+   ]
   },
   {
    "id": "m-periodic",
-   "sec": "maint",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "טיפולים תקופתיים לפי שעות מנוע",
@@ -4322,11 +4476,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "plan"
   },
   {
    "id": "um-maint-extra",
-   "sec": "maint",
+   "sec": "care-daily",
    "type": "guide",
    "title": {
     "he": "טיפול לפני ואחרי משימה – השלמות ממדריך המפעיל",
@@ -4502,7 +4657,7 @@
   },
   {
    "id": "pm-summary",
-   "sec": "maint-prev",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "טבלה מסכמת – דרג מבצע ותדירות",
@@ -5084,11 +5239,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "plan"
   },
   {
    "id": "pm-lift",
-   "sec": "c-lift",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "אחזקה – רמסע",
@@ -5120,12 +5276,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-lift"
+   ]
   },
   {
    "id": "pm-ac-table",
-   "sec": "c-ac",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "לוח אחזקה – מזגן",
@@ -5223,12 +5382,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-ac"
+   ]
   },
   {
    "id": "pm-ac-filters",
-   "sec": "c-ac",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "ניקוי מסנני אוויר – מזגן",
@@ -5374,12 +5536,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-ac"
+   ]
   },
   {
    "id": "pm-gen-table",
-   "sec": "c-gen",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "לוח אחזקה – גנרטור",
@@ -5685,12 +5850,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-gen"
+   ]
   },
   {
    "id": "pm-gen-oil",
-   "sec": "c-gen",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "החלפת שמן מנוע – גנרטור",
@@ -5978,12 +6146,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-gen"
+   ]
   },
   {
    "id": "pm-gen-air",
-   "sec": "c-gen",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "ניקוי פילטר אוויר – גנרטור",
@@ -6327,12 +6498,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-gen"
+   ]
   },
   {
    "id": "pm-gen-plug",
-   "sec": "c-gen",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "טיפול מצת (פלאג) – גנרטור",
@@ -6582,12 +6756,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-gen"
+   ]
   },
   {
    "id": "pm-c-screens",
-   "sec": "c-screens",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "אחזקה – מסכים וטלוויזיות",
@@ -6625,12 +6802,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-screens"
+   ]
   },
   {
    "id": "pm-c-elec",
-   "sec": "c-elec",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "אחזקה – מערכת חשמל",
@@ -6662,12 +6842,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-elec"
+   ]
   },
   {
    "id": "pm-c-mast",
-   "sec": "c-mast",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "אחזקה – תורן",
@@ -6699,12 +6882,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-mast"
+   ]
   },
   {
    "id": "pm-c-comp",
-   "sec": "c-comp",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "אחזקה – קומפרסור",
@@ -6736,12 +6922,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-comp"
+   ]
   },
   {
    "id": "pm-cabling",
-   "sec": "c-elec",
+   "sec": "care-prev",
    "type": "guide",
    "title": {
     "he": "אחזקה – כבילה / ארון תקשורת",
@@ -6773,12 +6962,15 @@
      }
     ]
    },
-   "group": "maint",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-elec"
+   ]
   },
   {
    "id": "dtc-replay",
-   "sec": "comm-mon",
+   "sec": "ops-howto",
    "type": "guide",
    "title": {
     "he": "Domo Mesh Replay – הקלטה והשמעה של הרשת",
@@ -6960,11 +7152,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "ops"
   },
   {
    "id": "sys-aux",
-   "sec": "comm-tech",
+   "sec": "hw-spec",
    "type": "guide",
    "title": {
     "he": "בקרים, טאבלט, רחפן וקופסת מפעיל – נתונים",
@@ -7276,11 +7469,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "ctrl"
   },
   {
    "id": "container-spec",
-   "sec": "container",
+   "sec": "hw-cont",
    "type": "guide",
    "title": {
     "he": "קרון שליטה – נתונים כלליים",
@@ -9370,7 +9564,7 @@
   },
   {
    "id": "sw-nodefinder",
-   "sec": "comm-air",
+   "sec": "ops-cfg",
    "type": "software",
    "title": {
     "he": "Domo Node Finder – איתור מקמ״שים באוויר",
@@ -9404,7 +9598,8 @@
      "en": "Used to see which radios are on air at a given moment. DTC software – the file itself is kept on the company server, not in the app."
     }
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "sw"
   },
   {
    "id": "llc-brakes",
@@ -10298,7 +10493,7 @@
   },
   {
    "id": "tripod-spec",
-   "sec": "comm-tech",
+   "sec": "hw-spec",
    "type": "guide",
    "title": {
     "he": "סט ממסר חצובה (Tripod Relay Set) – נתונים",
@@ -10422,12 +10617,12 @@
      }
     ]
    },
-   "group": "tech",
+   "group": "ctrl",
    "updated": "2026-11-10"
   },
   {
    "id": "atp-sys",
-   "sec": "qa",
+   "sec": "docs-atp",
    "type": "atp",
    "title": {
     "he": "ATP System – ביזון (כל המערכת)",
@@ -10637,7 +10832,7 @@
   },
   {
    "id": "atp-container",
-   "sec": "qa",
+   "sec": "docs-atp",
    "type": "atp",
    "title": {
     "he": "ATP קרון שליטה",
@@ -10779,7 +10974,7 @@
   },
   {
    "id": "atp-rocu10",
-   "sec": "qa",
+   "sec": "docs-atp",
    "type": "atp",
    "title": {
     "he": "ATP ROCU10",
@@ -10843,7 +11038,7 @@
   },
   {
    "id": "atp-gun",
-   "sec": "qa",
+   "sec": "docs-atp",
    "type": "atp",
    "title": {
     "he": "ATP Gun System – Pitbull",
@@ -10983,7 +11178,7 @@
   },
   {
    "id": "atp-field",
-   "sec": "qa",
+   "sec": "docs-atp",
    "type": "atp",
    "title": {
     "he": "ATP Field",
@@ -11019,179 +11214,392 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "ln-um-container",
-   "sec": "container",
-   "type": "link",
+   "id": "map-rocu10",
+   "sec": "ops-map",
+   "type": "hotmap",
    "title": {
-    "he": "תצורת קרון שליטה – הקמת עמדה",
-    "en": "Control container configuration – setup"
+    "he": "ישל״ט ROCU-10",
+    "en": "ROCU-10 controller"
    },
    "summary": {
-    "he": "",
-    "en": ""
+    "he": "11 בקרים – לחצו לפרטים",
+    "en": "11 controls – tap for details"
    },
    "body": {
-    "target": "dep-container"
+    "img": "media/um-rocu10.jpg",
+    "spots": [
+     {
+      "x": 91.5,
+      "y": 21,
+      "name": {
+       "he": "כפתור הדלקה",
+       "en": "Power button"
+      },
+      "desc": {
+       "he": "הדלקה וכיבוי של הישל״ט. סיסמה: `Q1w2as34`.",
+       "en": "Turns the controller on and off. Password: `Q1w2as34`."
+      }
+     },
+     {
+      "x": 82,
+      "y": 20,
+      "name": {
+       "he": "כפתור הנעה",
+       "en": "Start button"
+      },
+      "desc": {
+       "he": "התנעת מנוע הביזון. ההתנעה מותרת רק כשבלם היד מופעל.",
+       "en": "Starts the BISON engine. Allowed only with the hand brake on."
+      }
+     },
+     {
+      "x": 13.5,
+      "y": 17,
+      "name": {
+       "he": "הילוך N – השהייה",
+       "en": "Gear N – pause"
+      },
+      "desc": {
+       "he": "העברה לניוטרל ועצירת נסיעה.",
+       "en": "Shift to neutral and stop driving."
+      }
+     },
+     {
+      "x": 14,
+      "y": 25,
+      "name": {
+       "he": "שינוי טורים",
+       "en": "RPM change"
+      },
+      "desc": {
+       "he": "העלאה והורדה של הסל״ד.",
+       "en": "Raise and lower engine rpm."
+      }
+     },
+     {
+      "x": 27.5,
+      "y": 54,
+      "name": {
+       "he": "סטיק היגוי",
+       "en": "Steering stick"
+      },
+      "desc": {
+       "he": "היגוי ימינה ושמאלה (בבלימת צד).",
+       "en": "Steer left and right (side braking)."
+      }
+     },
+     {
+      "x": 27,
+      "y": 63.5,
+      "name": {
+       "he": "הילוך D",
+       "en": "Gear D"
+      },
+      "desc": {
+       "he": "הילוך קדימה.",
+       "en": "Forward gear."
+      }
+     },
+     {
+      "x": 27,
+      "y": 71,
+      "name": {
+       "he": "הילוך R",
+       "en": "Gear R"
+      },
+      "desc": {
+       "he": "הילוך אחורי. התצוגה עוברת למצלמה האחורית.",
+       "en": "Reverse gear. The display switches to the rear camera."
+      }
+     },
+     {
+      "x": 27,
+      "y": 78,
+      "name": {
+       "he": "הילוך H/L",
+       "en": "Gear H/L"
+      },
+      "desc": {
+       "he": "מעבר בין High ל־Low. סיבוב במקום (Pivot) רק ב־Low.",
+       "en": "Switch High/Low. Pivot turns only in Low."
+      }
+     },
+     {
+      "x": 76.5,
+      "y": 54,
+      "name": {
+       "he": "סטיק מצערת",
+       "en": "Throttle stick"
+      },
+      "desc": {
+       "he": "גז.",
+       "en": "Throttle."
+      }
+     },
+     {
+      "x": 76,
+      "y": 63.5,
+      "name": {
+       "he": "היגוי רגיש",
+       "en": "Fine steering"
+      },
+      "desc": {
+       "he": "היגוי עדין לתמרון מדויק.",
+       "en": "Fine steering for precise maneuvering."
+      }
+     },
+     {
+      "x": 76,
+      "y": 71,
+      "name": {
+       "he": "בלם יד",
+       "en": "Hand brake"
+      },
+      "desc": {
+       "he": "הפעלה ושחרור של בלם היד.",
+       "en": "Engage and release the hand brake."
+      }
+     }
+    ]
    },
    "updated": "2026-11-10"
   },
   {
-   "id": "ln-um-pdf-container",
-   "sec": "container",
-   "type": "link",
+   "id": "map-panel",
+   "sec": "ops-map",
+   "type": "hotmap",
    "title": {
-    "he": "מדריך מפעיל מקוצר (PDF)",
-    "en": "Brief user manual (PDF)"
+    "he": "פאנל חיווי והדלקה (ביזון)",
+    "en": "Indication & power panel (BISON)"
    },
    "summary": {
-    "he": "",
-    "en": ""
+    "he": "7 בקרים – לחצו לפרטים",
+    "en": "7 controls – tap for details"
    },
    "body": {
-    "target": "um-pdf"
+    "img": "media/um-panel.jpg",
+    "spots": [
+     {
+      "x": 33.5,
+      "y": 41,
+      "name": {
+       "he": "מתג הפעלת מערכת",
+       "en": "System power switch"
+      },
+      "desc": {
+       "he": "מדליק את מערכות הבקרה הנמוכה והגבוהה (לא את המנוע).",
+       "en": "Powers the low- and high-level control (not the engine)."
+      }
+     },
+     {
+      "x": 53,
+      "y": 39,
+      "name": {
+       "he": "צג אחוז סוללה 48V",
+       "en": "48 V battery display"
+      },
+      "desc": {
+       "he": "מצב טעינת מצבר ה־48V. לפני הפעלה – לפחות 60%.",
+       "en": "48 V battery state. Before operation – at least 60%."
+      }
+     },
+     {
+      "x": 74,
+      "y": 38.5,
+      "name": {
+       "he": "מתג שליטה ROCU-10 / ROCU-1",
+       "en": "ROCU-10 / ROCU-1 selector"
+      },
+      "desc": {
+       "he": "למעלה – ROCU-10. למטה – ROCU-1 (שלט מנהלתי).",
+       "en": "Up – ROCU-10. Down – ROCU-1 (admin remote)."
+      }
+     },
+     {
+      "x": 33.5,
+      "y": 54,
+      "name": {
+       "he": "נורית FORT-1",
+       "en": "FORT-1 LED"
+      },
+      "desc": {
+       "he": "דולקת ברציפות כשה־FORT מחובר.",
+       "en": "Steady when FORT is connected."
+      }
+     },
+     {
+      "x": 72,
+      "y": 54,
+      "name": {
+       "he": "נורית FORT-2",
+       "en": "FORT-2 LED"
+      },
+      "desc": {
+       "he": "דולקת ברציפות כשה־FORT מחובר. אם הכלי לא מניע – לבדוק ששתי הנוריות ירוקות.",
+       "en": "Steady when FORT is connected. If the vehicle won’t start – check both are green."
+      }
+     },
+     {
+      "x": 42,
+      "y": 71,
+      "name": {
+       "he": "חיבור למטען",
+       "en": "Charger connector"
+      },
+      "desc": {
+       "he": "טעינת המצבר הפנימי.",
+       "en": "Charges the internal battery."
+      }
+     },
+     {
+      "x": 63,
+      "y": 70,
+      "name": {
+       "he": "חיבור לכבל טכנאי",
+       "en": "Tech cable connector"
+      },
+      "desc": {
+       "he": "ETH ו־CAN לטכנאי.",
+       "en": "ETH and CAN for the technician."
+      }
+     }
+    ]
    },
    "updated": "2026-11-10"
   },
   {
-   "id": "cfg-radio",
-   "sec": "cfg",
-   "type": "link",
+   "id": "map-opbox",
+   "sec": "ops-map",
+   "type": "hotmap",
    "title": {
-    "he": "קינפוג מקמ״שים",
-    "en": "Radio Configuration"
+    "he": "קופסת מפעיל",
+    "en": "Operator box"
    },
    "summary": {
-    "he": "",
-    "en": ""
+    "he": "8 בקרים – לחצו לפרטים",
+    "en": "8 controls – tap for details"
    },
    "body": {
-    "targetSec": "comm-radio"
+    "img": "media/um-opbox.jpg",
+    "spots": [
+     {
+      "x": 59,
+      "y": 22,
+      "name": {
+       "he": "אנטנות",
+       "en": "Antennas"
+      },
+      "desc": {
+       "he": "אנטנות BLUSDR לתצורה טקטית.",
+       "en": "BLUSDR antennas for the tactical configuration."
+      }
+     },
+     {
+      "x": 54,
+      "y": 44,
+      "name": {
+       "he": "סוללות",
+       "en": "Batteries"
+      },
+      "desc": {
+       "he": "2 סוללות 2791. כ־4 שעות עבודה לזוג.",
+       "en": "2 × 2791 batteries. About 4 hours per pair."
+      }
+     },
+     {
+      "x": 42,
+      "y": 61,
+      "name": {
+       "he": "חיבור מתח PWR IN",
+       "en": "PWR IN"
+      },
+      "desc": {
+       "he": "חיבור שנאי מתח במקום סוללות.",
+       "en": "Power adapter instead of batteries."
+      }
+     },
+     {
+      "x": 58,
+      "y": 61,
+      "name": {
+       "he": "מתג תקשורת טקטית",
+       "en": "Tactical comm switch"
+      },
+      "desc": {
+       "he": "BLUSDR/INT.COMM: ON בתצורה טקטית, OFF במגנן ובקרון.",
+       "en": "BLUSDR/INT.COMM: ON in tactical, OFF in relay and container."
+      }
+     },
+     {
+      "x": 41,
+      "y": 67,
+      "name": {
+       "he": "חיבור ישל״ט מערכת נשק",
+       "en": "Gun controller socket"
+      },
+      "desc": {
+       "he": "שקע GUNNER.",
+       "en": "GUNNER socket."
+      }
+     },
+     {
+      "x": 55,
+      "y": 67,
+      "name": {
+       "he": "חיבור ישל״ט ROCU-10",
+       "en": "ROCU-10 socket"
+      },
+      "desc": {
+       "he": "שקע DRIVER. לא לחבר הפוך: מתח מימין (4 פינים), תקשורת משמאל (10 פינים).",
+       "en": "DRIVER socket. Never reversed: power right (4 pins), comms left (10 pins)."
+      }
+     },
+     {
+      "x": 58.5,
+      "y": 76,
+      "name": {
+       "he": "מתג הפעלה",
+       "en": "Power switch"
+      },
+      "desc": {
+       "he": "הדלקת קופסת המפעיל (אור ירוק).",
+       "en": "Turns the operator box on (green light)."
+      }
+     },
+     {
+      "x": 45,
+      "y": 80,
+      "name": {
+       "he": "מפסק EMO",
+       "en": "EMO switch"
+      },
+      "desc": {
+       "he": "עצירת חירום: בלם NC, הילוך N וכיבוי מנוע בכלי.",
+       "en": "Emergency stop: NC brake, gear N and engine off on the vehicle."
+      }
+     }
+    ]
    },
    "updated": "2026-11-10"
   },
   {
-   "id": "b-engine-maint",
-   "sec": "b-engine",
-   "type": "link",
+   "id": "report-gen",
+   "sec": "docs-pdf",
+   "type": "report",
    "title": {
-    "he": "נתוני אחזקה: שמנים ונוזלים",
-    "en": "Maintenance data: oils & fluids"
+    "he": "דוח שטח / תקלה / טיפול",
+    "en": "Field / fault / service report"
    },
    "summary": {
-    "he": "",
-    "en": ""
+    "he": "ממלאים, חותמים ומקבלים PDF",
+    "en": "Fill in, sign and get a PDF"
    },
-   "body": {
-    "target": "m-data"
-   },
-   "updated": "2026-11-10",
-   "group": "tech"
-  },
-  {
-   "id": "ln-pm-ac-filters",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › מזגן: ניקוי מסנני אוויר",
-    "en": "Container › AC: air filter cleaning"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-ac-filters"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-table",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: לוח אחזקה",
-    "en": "Container › generator: maintenance schedule"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-table"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-oil",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: החלפת שמן מנוע",
-    "en": "Container › generator: engine oil change"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-oil"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-air",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: ניקוי פילטר אוויר",
-    "en": "Container › generator: air filter cleaning"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-air"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-pm-gen-plug",
-   "sec": "maint-prev",
-   "type": "link",
-   "title": {
-    "he": "קרון שליטה › גנרטור: טיפול מצת",
-    "en": "Container › generator: spark plug service"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "pm-gen-plug"
-   },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "ln-robox-bison",
-   "sec": "bison",
-   "type": "link",
-   "title": {
-    "he": "ROBOX System Technical Data (PDF)",
-    "en": "ROBOX System Technical Data (PDF)"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "robox-pdf"
-   },
+   "body": {},
    "updated": "2026-11-10"
   },
   {
    "id": "ln-atp-container",
-   "sec": "container",
+   "sec": "hw-cont",
    "type": "link",
    "title": {
     "he": "ATP קרון שליטה",
@@ -11243,8 +11651,144 @@
    "updated": "2026-11-10"
   },
   {
+   "id": "ln-pdf-m-pre",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "טיפול לפני תנועה (טל״ת) – חתימה ו־PDF",
+    "en": "Pre-operation – sign & PDF"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "m-pre"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pdf-m-post",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "טיפול אחרי תנועה (טא״ת) – חתימה ו־PDF",
+    "en": "Post-operation – sign & PDF"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "m-post"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pdf-atp-sys",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "ATP System – בדיקה ו־PDF",
+    "en": "ATP System – test & PDF"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "atp-sys"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pdf-atp-container",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "ATP קרון שליטה – בדיקה ו־PDF",
+    "en": "ATP Control Container – test & PDF"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "atp-container"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pdf-atp-rocu10",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "ATP ROCU10 – בדיקה ו־PDF",
+    "en": "ATP ROCU10 – test & PDF"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "atp-rocu10"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pdf-atp-gun",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "ATP Gun System – בדיקה ו־PDF",
+    "en": "ATP Gun System – test & PDF"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "atp-gun"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-pdf-atp-field",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "ATP Field – בדיקה ו־PDF",
+    "en": "ATP Field – test & PDF"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "target": "atp-field"
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ln-logbook",
+   "sec": "docs-pdf",
+   "type": "link",
+   "title": {
+    "he": "כל הטפסים שנשמרו – יומן רכבים",
+    "en": "All saved forms – vehicle logbook"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "targetSec": "care-log"
+   },
+   "updated": "2026-11-10"
+  },
+  {
    "id": "dtc-pdf",
-   "sec": "comm-tech",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "מדריך ממשק DTC (PDF)",
@@ -11262,11 +11806,12 @@
     },
     "mb": 0.8
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "comm"
   },
   {
    "id": "m-daily-pdf",
-   "sec": "maint",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "נוהל טיפולים יומיים (PDF)",
@@ -11284,11 +11829,12 @@
     },
     "mb": 0.2
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "sys"
   },
   {
    "id": "pm-pdf",
-   "sec": "maint-prev",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "מדריך אחזקת מנע (PDF)",
@@ -11306,11 +11852,12 @@
     },
     "mb": 11.0
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "sys"
   },
   {
    "id": "dtc-pdf-he",
-   "sec": "comm-tech",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "מדריך ממשק DTC – גרסה עברית (PDF)",
@@ -11328,11 +11875,12 @@
     },
     "mb": 0.8
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "comm"
   },
   {
    "id": "dtc-replay-pdf",
-   "sec": "comm-mon",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "Domo Mesh Replay – מדריך משתמש (PDF)",
@@ -11350,11 +11898,12 @@
     },
     "mb": 1.2
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "comm"
   },
   {
    "id": "robox-pdf",
-   "sec": "container",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "ROBOX System Technical Data (PDF)",
@@ -11372,11 +11921,16 @@
     },
     "mb": 5.7
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "group": "sys",
+   "rel": [
+    "hw-spec",
+    "hw-cont"
+   ]
   },
   {
    "id": "gen-manual",
-   "sec": "c-gen",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "Honda EU70is – מדריך בעלים (PDF)",
@@ -11394,12 +11948,15 @@
     },
     "mb": 4.7
    },
-   "group": "docs",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-gen"
+   ]
   },
   {
    "id": "comp-manual",
-   "sec": "c-comp",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "קומפרסור P185WYM – מדריך הפעלה ואחזקה (PDF)",
@@ -11417,12 +11974,15 @@
     },
     "mb": 1.0
    },
-   "group": "docs",
-   "updated": "2026-11-10"
+   "group": "cont",
+   "updated": "2026-11-10",
+   "rel": [
+    "c-comp"
+   ]
   },
   {
    "id": "argo-spec-pdf",
-   "sec": "b-engine",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "ARGO Aurora 950 – מפרט מספר המפעיל (PDF)",
@@ -11440,12 +12000,15 @@
     },
     "mb": 0.7
    },
-   "group": "docs",
-   "updated": "2026-11-10"
+   "group": "bison",
+   "updated": "2026-11-10",
+   "rel": [
+    "b-engine"
+   ]
   },
   {
    "id": "bison-energy-pdf",
-   "sec": "b-energy",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "מסמך מאזן הספק ואנרגיה – רוויזיה 001 (PDF)",
@@ -11463,12 +12026,15 @@
     },
     "mb": 0.5
    },
-   "group": "docs",
-   "updated": "2026-11-10"
+   "group": "sys",
+   "updated": "2026-11-10",
+   "rel": [
+    "b-energy"
+   ]
   },
   {
    "id": "um-pdf",
-   "sec": "bison",
+   "sec": "docs-lit",
    "type": "pdf",
    "title": {
     "he": "מדריך מפעיל מקוצר – שליחות קטלנית (PDF)",
@@ -11486,7 +12052,11 @@
      "en": ""
     },
     "mb": 1.4
-   }
+   },
+   "group": "sys",
+   "rel": [
+    "hw-plat"
+   ]
   },
   {
    "id": "argo-sm-gi-1",
