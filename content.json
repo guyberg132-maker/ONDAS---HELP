@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 20,
+  "version": 21,
   "updated": "2026-11-10",
   "teamHash": "81336e9189125819028ccb30e60c191974a48efc3206777b9773bfe65832c22b",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -335,8 +335,8 @@
    "parent": "care",
    "kind": "logbook",
    "name": {
-    "he": "יומן רכבים (Logbook)",
-    "en": "Vehicle logbook"
+    "he": "יומן טפסים (Logbook)",
+    "en": "Forms logbook"
    }
   },
   {
@@ -1255,10 +1255,6 @@
          "950 ק״ג (1,100 ק״ג עם זחלים)"
         ],
         [
-         "משקל נמדד בניסוי (אוג׳ 2026)",
-         "1,120 ק״ג, ללא נשק וללא מטען"
-        ],
-        [
          "אורך",
          "3,000 מ״מ"
         ],
@@ -1273,21 +1269,9 @@
         [
          "מהירות מרבית",
          "40 קמ״ש"
-        ],
-        [
-         "שיפוע מרבי מאושר (עצירה והחזקה)",
-         "30%"
         ]
        ]
       }
-     },
-     {
-      "note": "**מגבלת שיפוע:** לפי ניסוי אוגוסט 2026, הכלי מחזיק את עצמו בבטחה רק עד שיפוע של **30%**. ב־40% הוא מתגלגל מעט אחורה ב־E-STOP, וב־50% הוא לא מחזיק ומתגלגל ברציפות.",
-      "kind": "caution"
-     },
-     {
-      "note": "**אומי גלגלים:** בניסוי נשבר בורג גלגל ונפרד גלגל בגלל אומים רופפים. יש לבדוק חיזוק אומי גלגלים לפני כל הפעלה (טל״ת).",
-      "kind": "important"
      },
      {
       "h": "רכב הבסיס ARGO Aurora 950 (לפני הרכבת ערכת הבקרה)"
@@ -1343,7 +1327,7 @@
       }
      },
      {
-      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001. דוח ניסוי IRONWAVE, אוג׳ 2026.",
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
     ],
@@ -1366,10 +1350,6 @@
          "950 kg (1,100 kg with tracks)"
         ],
         [
-         "Measured weight in trial (Aug 2026)",
-         "1,120 kg, unarmed and unladen"
-        ],
-        [
          "Length",
          "3,000 mm"
         ],
@@ -1384,21 +1364,9 @@
         [
          "Max speed",
          "40 km/h"
-        ],
-        [
-         "Certified hold-on-grade",
-         "30%"
         ]
        ]
       }
-     },
-     {
-      "note": "**Grade limit:** per the August 2026 trial, the vehicle holds position safely only up to a **30%** grade. At 40% it rolls back slightly on E-STOP; at 50% it cannot hold and rolls back continuously.",
-      "kind": "caution"
-     },
-     {
-      "note": "**Wheel nuts:** in the trial a wheel stud sheared and a wheel separated because of loose nuts. Check wheel nut torque before every operation (Pre-Operation).",
-      "kind": "important"
      },
      {
       "h": "Base vehicle ARGO Aurora 950 (before control set assembly)"
@@ -1454,7 +1422,7 @@
       }
      },
      {
-      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001. IRONWAVE trial report, Aug 2026.",
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
     ]
@@ -1559,10 +1527,6 @@
       }
      },
      {
-      "note": "**סתירות בנתונים בין המסמכים:** שמן מנוע – כאן ובטבלת האחזקה המונעת **10W-40**, ובנוהל היומי ובמפרט ARGO **5W-40**. שמן תמסורת – כאן **80W90**, ובנוהל היומי וב־ARGO **75W-90**. כושר טיפוס – כאן 55%. לבירור מול גורם מוסמך לפני מילוי.",
-      "kind": "caution"
-     },
-     {
       "note": "מקור: מדריך מפעיל מקוצר – שליחות קטלנית, DOC00698-A REV.002.",
       "kind": "note"
      }
@@ -1649,10 +1613,6 @@
         ]
        ]
       }
-     },
-     {
-      "note": "**Data conflicts between documents:** engine oil – here and in the preventive maintenance table **10W-40**, in the daily procedure and ARGO spec **5W-40**. Transmission oil – here **80W90**, daily procedure and ARGO **75W-90**. Climbing – 55% here. Confirm with an authorized source before filling.",
-      "kind": "caution"
      },
      {
       "note": "Source: ROBOX brief user manual (Hebrew), DOC00698-A REV.002.",
@@ -3995,25 +3955,6 @@
    "group": "trouble"
   },
   {
-   "id": "cfg-act",
-   "sec": "ops-cfg",
-   "type": "steps",
-   "title": {
-    "he": "כיול אקטואטורים",
-    "en": "Actuator Calibration"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "he": "",
-    "en": ""
-   },
-   "updated": "2026-11-10",
-   "group": "cal"
-  },
-  {
    "id": "m-pre",
    "sec": "care-daily",
    "type": "checklist",
@@ -4264,8 +4205,8 @@
       },
       "pn": "",
       "note": {
-       "he": "שימון שרשרת כל 25 שעות מנוע. בטבלה המסכמת של האחזקה המונעת רשום Putoline DX-11.",
-       "en": "Chain lubrication every 25 engine hours. The preventive maintenance summary lists Putoline DX-11."
+       "he": "שימון שרשרת כל 25 שעות מנוע.",
+       "en": "Chain lubrication every 25 engine hours."
       }
      },
      {
@@ -4374,8 +4315,8 @@
      }
     ],
     "note": {
-     "he": "BISON. לחץ אוויר בצמיגים: קדמי 5, אמצעיים 7, אחורי 6 (PSI). **שמן מנוע ושמן תמסורת – יש סתירה בין המסמכים** (5W-40/75W-90 בנוהל היומי וב־ARGO, ‏10W-40/80W90 במדריך המפעיל ובטבלת האחזקה המונעת). לבירור לפני מילוי.",
-     "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI). **Engine and transmission oil – the documents conflict** (5W-40/75W-90 in the daily procedure and ARGO; 10W-40/80W90 in the user manual and preventive maintenance table). Confirm before filling."
+     "he": "BISON. לחץ אוויר בצמיגים: קדמי 5, אמצעיים 7, אחורי 6 (PSI).",
+     "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI)."
     }
    },
    "updated": "2026-11-10",
@@ -4769,14 +4710,14 @@
         [
          "**ביזון › מנוע › שמן מנוע**",
          "בדיקת שמן מנוע",
-         "`10W-40 (*)`",
+         "`10W-40`",
          "שדה",
          "חודשי"
         ],
         [
          "**ביזון › מנוע › שמן מנוע**",
          "החלפת שמן מנוע",
-         "`10W-40 (*)`",
+         "`10W-40`",
          "משק",
          "רבעוני"
         ],
@@ -4938,10 +4879,6 @@
       }
      },
      {
-      "note": "(*) **שמן מנוע – יש סתירה בין המסמכים:** כאן ובמדריך המפעיל רשום **10W-40**. בנוהל הטיפולים היומי ובמפרט היצרן ARGO רשום **5W-40**. גם בשמן השרשרת: כאן Putoline DX-11, ובשאר המסמכים PTFE. לבירור מול גורם מוסמך.",
-      "kind": "caution"
-     },
-     {
       "h": "הטבלה המקורית"
      },
      {
@@ -5054,14 +4991,14 @@
         [
          "**BISON › Engine › Engine oil**",
          "Engine oil check",
-         "`10W-40 (*)`",
+         "`10W-40`",
          "Field",
          "Monthly"
         ],
         [
          "**BISON › Engine › Engine oil**",
          "Engine oil change",
-         "`10W-40 (*)`",
+         "`10W-40`",
          "Workshop",
          "Quarterly"
         ],
@@ -5221,10 +5158,6 @@
         ]
        ]
       }
-     },
-     {
-      "note": "(*) **Engine oil – the documents conflict:** this table and the user manual list **10W-40**; the daily procedure and the ARGO manufacturer spec list **5W-40**. Chain lube also differs: Putoline DX-11 here, PTFE elsewhere. Confirm with an authorized source.",
-      "kind": "caution"
      },
      {
       "h": "Original table"
@@ -7723,10 +7656,6 @@
       }
      },
      {
-      "note": "שימו לב: במסמך האחזקה המונעת הדגם רשום כ־TOP-J-INV-22 X WIFI EU, ובמסמך הטכני כ־Electra Classic INV 170. לבירור איזה מותקן בפועל.",
-      "kind": "caution"
-     },
-     {
       "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
@@ -7788,10 +7717,6 @@
         ]
        ]
       }
-     },
-     {
-      "note": "Note: the preventive maintenance guide lists model TOP-J-INV-22 X WIFI EU, while the technical document lists Electra Classic INV 170. Confirm which unit is installed.",
-      "kind": "caution"
      },
      {
       "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
@@ -8550,10 +8475,6 @@
          "NGK BPR4ES"
         ],
         [
-         "מרווח מצת (כפי שמופיע במקור)",
-         ".0030 in (.08 mm)"
-        ],
-        [
          "מסנן אוויר",
          "נייר, Low Profile"
         ],
@@ -8563,10 +8484,6 @@
         ]
        ]
       }
-     },
-     {
-      "note": "מרווח המצת במסמך היצרן (0.08 מ״מ) נראה כשגיאת הקלדה במקור. הערך המקובל למצת מסוג זה הוא בסביבות 0.76 מ״מ (0.030 אינץ׳). לבדוק מול ספר השירות לפני כיוון.",
-      "kind": "caution"
      },
      {
       "h": "נוזלים וחומרים"
@@ -8682,10 +8599,6 @@
          "NGK BPR4ES"
         ],
         [
-         "Spark plug gap (as printed)",
-         ".0030 in (.08 mm)"
-        ],
-        [
          "Air filter",
          "Low profile paper"
         ],
@@ -8695,10 +8608,6 @@
         ]
        ]
       }
-     },
-     {
-      "note": "The spark plug gap printed in the manufacturer manual (0.08 mm) looks like a typo. The usual value for this plug type is about 0.76 mm (0.030 in). Check against the service manual before gapping.",
-      "kind": "caution"
      },
      {
       "h": "Fluids and lubricants"
@@ -9296,8 +9205,8 @@
    "body": {
     "he": [
      {
-      "note": "**טיוטה** – רוויזיה 001 (20.10.26). עודכן בעקבות הטמעת אלטרנטור משני למערכת המשימה.",
-      "kind": "caution"
+      "note": "מסמך מאזן הספק ואנרגיה – רוויזיה 001, ‏20.10.26.",
+      "kind": "note"
      },
      {
       "h": "מבנה מערכת החשמל"
@@ -9420,16 +9329,12 @@
      {
       "note": "הספק טעינת מצבר 12V משני: 26W בסרק ו־447W בנסיעה. כשהמצברים מלאים, האלטרנטור יורד ל־248W בסרק ו־333W בנסיעה.",
       "kind": "note"
-     },
-     {
-      "note": "במסמך זה המנוע מתואר כ־800 סמ״ק ו־40HP, ובמפרט היצרן כ־VX 950 ‏(993 סמ״ק). לבירור.",
-      "kind": "caution"
      }
     ],
     "en": [
      {
-      "note": "**DRAFT** – revision 001 (20.10.26). Updated after adding a secondary alternator to the mission system.",
-      "kind": "caution"
+      "note": "Power & energy balance document – revision 001, 20.10.26.",
+      "kind": "note"
      },
      {
       "h": "Power system layout"
@@ -9552,10 +9457,6 @@
      {
       "note": "Secondary 12 V charging power: 26 W at idle, 447 W when driving. With batteries full, the alternator drops to 248 W at idle and 333 W when driving.",
       "kind": "note"
-     },
-     {
-      "note": "This document describes the engine as 800 cc / 40 HP, while the manufacturer spec lists VX 950 (993 cc). To be confirmed.",
-      "kind": "caution"
      }
     ]
    },
@@ -9788,10 +9689,6 @@
       ]
      },
      {
-      "note": "בניסוי אוגוסט 2026 כל מצבי הכשל (ניתוק כבל שליטה, ניתוק חשמל, אובדן תקשורת, נפילת מתח) הפעילו E-STOP כנדרש. סגירת אפליקציית השליטה עוצרת את הכלי, אבל **המנוע נשאר מונע**.",
-      "kind": "important"
-     },
-     {
       "h": "לחצן EMO"
      },
      {
@@ -9911,10 +9808,6 @@
        "**EMO switch:** the NC brake engages, the gear goes to **N** and the engine shuts off.",
        "**Wireless EMO:** pressing EMO on the operator box triggers the vehicle’s wireless EMO – NC brake, gear N, engine off."
       ]
-     },
-     {
-      "note": "In the August 2026 trial every failure mode (control cable, power, comms loss, voltage drop) triggered E-STOP as designed. Closing the control application stops the vehicle, but **the engine keeps running**.",
-      "kind": "important"
      },
      {
       "h": "EMO switch"
@@ -10306,39 +10199,6 @@
       "p": "מערכת השליטה וניהול הצי מבוססת על **ROS 2**. המפעיל שולט בכלי דרך ממשק Web, רואה מצלמות וטלמטריה בזמן אמת, ויכול לנהל כמה כלים במקביל."
      },
      {
-      "h": "גרסאות בשטח (ניסוי אוגוסט 2026)"
-     },
-     {
-      "table": {
-       "head": [
-        "רכיב",
-        "גרסה"
-       ],
-       "rows": [
-        [
-         "בקרה נמוכה (LLC)",
-         "0.2.14"
-        ],
-        [
-         "בקרה גבוהה (HLC)",
-         "V1"
-        ],
-        [
-         "אפליקציית C2 (Optimus)",
-         "4.3.0"
-        ],
-        [
-         "תוכנת צה״ל (SHOR)",
-         "2.5.1"
-        ],
-        [
-         "קושחת מקמ״ש DTC",
-         "8.4.4 · MeshUltra-M"
-        ]
-       ]
-      }
-     },
-     {
       "h": "דרישות וביצועים"
      },
      {
@@ -10397,39 +10257,6 @@
     "en": [
      {
       "p": "The control and fleet management system is built on **ROS 2**. The operator drives through a web interface, sees cameras and telemetry in real time, and can manage several vehicles at once."
-     },
-     {
-      "h": "Field versions (August 2026 trial)"
-     },
-     {
-      "table": {
-       "head": [
-        "Component",
-        "Version"
-       ],
-       "rows": [
-        [
-         "Low-level control (LLC)",
-         "0.2.14"
-        ],
-        [
-         "High-level control (HLC)",
-         "V1"
-        ],
-        [
-         "C2 application (Optimus)",
-         "4.3.0"
-        ],
-        [
-         "IDF software (SHOR)",
-         "2.5.1"
-        ],
-        [
-         "DTC radio firmware",
-         "8.4.4 · MeshUltra-M"
-        ]
-       ]
-      }
      },
      {
       "h": "Requirements and performance"
@@ -11177,43 +11004,6 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "atp-field",
-   "sec": "docs-atp",
-   "type": "atp",
-   "title": {
-    "he": "ATP Field",
-    "en": "ATP Field"
-   },
-   "summary": {
-    "he": "מסמך לקריאה או בדיקה שורה שורה עם חתימה",
-    "en": "Read the document or run it line by line with a signature"
-   },
-   "body": {
-    "src": "",
-    "rows": {
-     "he": [
-      "# פרק לדוגמה – הכנה",
-      "בדיקה לדוגמה 1 – להחליף בשורות ממסמך ה־ATP",
-      "בדיקה לדוגמה 2",
-      "בדיקה לדוגמה 3",
-      "# פרק לדוגמה – תפקוד",
-      "בדיקה לדוגמה 4",
-      "בדיקה לדוגמה 5"
-     ],
-     "en": [
-      "# Sample chapter – preparation",
-      "Sample check 1 – replace with lines from the ATP document",
-      "Sample check 2",
-      "Sample check 3",
-      "# Sample chapter – function",
-      "Sample check 4",
-      "Sample check 5"
-     ]
-    }
-   },
-   "updated": "2026-11-10"
-  },
-  {
    "id": "map-rocu10",
    "sec": "ops-map",
    "type": "hotmap",
@@ -11598,6 +11388,1109 @@
    "updated": "2026-11-10"
   },
   {
+   "id": "cal-llc",
+   "sec": "ops-cfg",
+   "group": "cal",
+   "type": "guide",
+   "rel": [
+    "b-low"
+   ],
+   "title": {
+    "he": "כיול אקטואטורים – בקרה נמוכה",
+    "en": "Actuator calibration – low-level control"
+   },
+   "summary": {
+    "he": "ברקס, גיר ו־Low/High · פקודות CAN להעתקה",
+    "en": "Brake, gearshift and Low/High · CAN commands to copy"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "לחיצה על כל פקודה מעתיקה אותה, כדי להדביק אותה בטרמינל.",
+      "kind": "tip"
+     },
+     {
+      "h": "מטרה ותחולה"
+     },
+     {
+      "p": "הכיול מגדיר לבקר את מיקומי הבוכנה לכל מצב של האקטואטור, כדי שהמערכת תפעל במדויק. הנוהל חל על:"
+     },
+     {
+      "ul": [
+       "**ברקס (Brake):** מצב משוחרר ומצב לחוץ.",
+       "**גיר (Gearshift):** מצבים R, ‏N ו־D.",
+       "**Low/High (HiLow):** מצב Low ומצב High."
+      ]
+     },
+     {
+      "table": {
+       "head": [
+        "מונח",
+        "הגדרה"
+       ],
+       "rows": [
+        [
+         "**אקטואטור**",
+         "רכיב אלקטרו־מכני שמפעיל מנגנון בכלי (דוושה, ידית) באמצעות בוכנה."
+        ],
+        [
+         "**הוצאת בוכנה (Jog forward)**",
+         "הזזת הבוכנה בכיוון הוצאה."
+        ],
+        [
+         "**הכנסת בוכנה (Jog reverse)**",
+         "הזזת הבוכנה בכיוון הכנסה."
+        ],
+        [
+         "**שמירה (Save)**",
+         "שמירת המיקום הנוכחי של הבוכנה בבקר, כמיקום של מצב מוגדר."
+        ],
+        [
+         "**CAN / cansend**",
+         "פרוטוקול התקשורת לבקר, ופקודת הלינוקס ששולחת הודעה בודדת על גבי CAN."
+        ],
+        [
+         "**כבל טכנאי**",
+         "מחבר בין מחשב נייד (RJ45) לקונקטור הטכנאי או התקשורת."
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מתי נדרש כיול"
+     },
+     {
+      "ul": [
+       "התקנה ראשונה של המערכת על הכלי.",
+       "החלפה, פירוק או הזזה של אקטואטור.",
+       "אקטואטור שלא מגיע למצב הנדרש – למשל הילוך שלא נכנס עד הסוף, או ברקס שלא משתחרר לגמרי."
+      ]
+     },
+     {
+      "h": "הכנות"
+     },
+     {
+      "ul": [
+       "הכלי חונה על משטח ישר ויציב.",
+       "המנוע כבוי והפלטפורמה במצב ON (כדי שיהיה מתח לבקר ולאקטואטורים).",
+       "לחצן החירום זמין ונגיש לאורך כל הכיול."
+      ]
+     },
+     {
+      "h3": "אפשרות א׳ – מתוך ה־ROCU-10"
+     },
+     {
+      "p": "פותחים חלון טרמינל ב־ROCU-10 ושולחים ממנו את הפקודות. ציוד: מקלדת, עכבר, ומפצל USB (ל־ROCU-10 יש חיבור USB אחד בלבד)."
+     },
+     {
+      "h3": "אפשרות ב׳ – ממחשב נייד"
+     },
+     {
+      "p": "מחברים מחשב נייד עם טרמינל שתומך ב־SSH לרשת הכלי בכבל טכנאי:"
+     },
+     {
+      "table": {
+       "head": [
+        "נקודת חיבור",
+        "כבל",
+        "מק״ט"
+       ],
+       "rows": [
+        [
+         "קונקטור הטכנאי על הפלטפורמה",
+         "כבל טכנאי לקונטרול פאנל",
+         "CBL01327-A"
+        ],
+        [
+         "קונקטור תקשורת בקופסת המפעיל",
+         "כבל לקופסת מפעיל",
+         "CBL01345-A"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "אף אחד לא נמצא ליד הכלי בזמן הכיול חוץ מהצוות. לא מכניסים ידיים לאזור תנועת הבוכנה. מומלץ לעבוד בשניים: אחד שולח פקודות ואחד משגיח על האקטואטור. בכל תנועה לא צפויה – **לוחצים מיד על לחצן החירום**.",
+      "kind": "caution"
+     },
+     {
+      "h": "התחברות לבקר"
+     },
+     {
+      "p": "מתחברים ב־SSH מחלון הטרמינל, לבקר של הכלי הרצוי:"
+     },
+     {
+      "table": {
+       "head": [
+        "בקר",
+        "פקודה"
+       ],
+       "rows": [
+        [
+         "B1",
+         "`ssh aaeon@192.168.120.20`"
+        ],
+        [
+         "B2",
+         "`ssh aaeon@192.168.121.20`"
+        ]
+       ]
+      }
+     },
+     {
+      "p": "בבקשת הסיסמה מקלידים `Q1w2as34` ולוחצים Enter. הסיסמה לא מוצגת בזמן ההקלדה – זה תקין."
+     },
+     {
+      "img": "media/cal-ssh-login.png",
+      "cap": "התחברות מוצלחת לבקר"
+     },
+     {
+      "h": "מבנה הפקודה"
+     },
+     {
+      "p": "כל פקודות הכיול נשלחות למזהה 049 על ממשק can0: `cansend can0 049#AABB000000000000`. **AA** = קוד האקטואטור, **BB** = קוד הפעולה, ושאר הבתים אפסים (12 אפסים). את cansend כותבים באותיות קטנות."
+     },
+     {
+      "table": {
+       "head": [
+        "אקטואטור",
+        "קוד AA"
+       ],
+       "rows": [
+        [
+         "ברקס",
+         "32"
+        ],
+        [
+         "גיר",
+         "06"
+        ],
+        [
+         "Low/High",
+         "05"
+        ]
+       ]
+      }
+     },
+     {
+      "table": {
+       "head": [
+        "פעולה",
+        "קוד BB"
+       ],
+       "rows": [
+        [
+         "הוצאת בוכנה",
+         "FA"
+        ],
+        [
+         "הכנסת בוכנה",
+         "FB"
+        ],
+        [
+         "שמירת מצב",
+         "F1 ואילך, לפי המצב"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "תהליך הכיול"
+     },
+     {
+      "ol": [
+       "מתחברים לבקר.",
+       "שולחים פקודת הוצאה או הכנסה של הבוכנה, שוב ושוב, עד שהאקטואטור מגיע למצב הנדרש.",
+       "שולחים את פקודת השמירה של המצב.",
+       "עוברים למצב הבא וחוזרים על שלבים 2–3, עד שכל מצבי האקטואטור כוילו.",
+       "מבצעים בדיקת תקינות (בסוף העמוד)."
+      ]
+     },
+     {
+      "table": {
+       "head": [
+        "אקטואטור",
+        "מצב",
+        "מתי המצב תקין"
+       ],
+       "rows": [
+        [
+         "ברקס",
+         "משוחרר",
+         "הדוושה במצב עליון מלא, והבוכנה לא לוחצת עליה."
+        ],
+        [
+         "ברקס",
+         "לחוץ",
+         "הדוושה לחוצה עד סוף המהלך."
+        ],
+        [
+         "גיר",
+         "R / N / D",
+         "ידית ההילוכים בדיוק במצב הנדרש, ולא בין מצבים."
+        ],
+        [
+         "Low/High",
+         "Low / High",
+         "הידית עד סוף המהלך בצד הנדרש."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "הכיוון של הוצאה והכנסה נקבע לפי שמות הפקודות (Jog forward / Jog reverse). **בכיול הראשון ודאו בעין לאיזה כיוון הבוכנה זזה.**",
+      "kind": "important"
+     },
+     {
+      "h": "פקודות כיול – ברקס"
+     },
+     {
+      "table": {
+       "head": [
+        "פעולה",
+        "פקודה"
+       ],
+       "rows": [
+        [
+         "הוצאת בוכנה",
+         "`cansend can0 049#32FA000000000000`"
+        ],
+        [
+         "הכנסת בוכנה",
+         "`cansend can0 049#32FB000000000000`"
+        ],
+        [
+         "שמירה – ברקס משוחרר",
+         "`cansend can0 049#32F1000000000000`"
+        ],
+        [
+         "שמירה – ברקס לחוץ",
+         "`cansend can0 049#32F2000000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "פקודות כיול – גיר"
+     },
+     {
+      "table": {
+       "head": [
+        "פעולה",
+        "פקודה"
+       ],
+       "rows": [
+        [
+         "הוצאת בוכנה",
+         "`cansend can0 049#06FA000000000000`"
+        ],
+        [
+         "הכנסת בוכנה",
+         "`cansend can0 049#06FB000000000000`"
+        ],
+        [
+         "שמירה – R",
+         "`cansend can0 049#06F2000000000000`"
+        ],
+        [
+         "שמירה – N",
+         "`cansend can0 049#06F3000000000000`"
+        ],
+        [
+         "שמירה – D",
+         "`cansend can0 049#06F4000000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "פקודות כיול – Low/High"
+     },
+     {
+      "table": {
+       "head": [
+        "פעולה",
+        "פקודה"
+       ],
+       "rows": [
+        [
+         "הוצאת בוכנה",
+         "`cansend can0 049#05FA000000000000`"
+        ],
+        [
+         "הכנסת בוכנה",
+         "`cansend can0 049#05FB000000000000`"
+        ],
+        [
+         "שמירה – Low",
+         "`cansend can0 049#05F1000000000000`"
+        ],
+        [
+         "שמירה – High",
+         "`cansend can0 049#05F2000000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "בדיקת תקינות לאחר כיול"
+     },
+     {
+      "p": "שולחים את פקודות המעבר, ומוודאים שכל אקטואטור מגיע למצב שנשמר עבורו."
+     },
+     {
+      "table": {
+       "head": [
+        "פעולה",
+        "פקודה"
+       ],
+       "rows": [
+        [
+         "מעבר ל־R",
+         "`cansend can0 049#0002010000000000`"
+        ],
+        [
+         "מעבר ל־N",
+         "`cansend can0 049#0003010000000000`"
+        ],
+        [
+         "מעבר ל־D",
+         "`cansend can0 049#0004010000000000`"
+        ],
+        [
+         "מעבר ל־Low",
+         "`cansend can0 049#001C010000000000`"
+        ],
+        [
+         "מעבר ל־High",
+         "`cansend can0 049#001B010000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "נספח – טבלת פקודות ה־CAN המקורית"
+     },
+     {
+      "img": "media/cal-can-table.png",
+      "cap": "טבלת פקודות ה־CAN של המערכת (לחצו להגדלה)"
+     },
+     {
+      "note": "מקור: IronWave – מערכת הבקרה הנמוכה, נוהל כיול אקטואטורים, 14/10/2026.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "note": "Tap any command to copy it, then paste it in the terminal.",
+      "kind": "tip"
+     },
+     {
+      "h": "Purpose and scope"
+     },
+     {
+      "p": "Calibration tells the controller the piston position for each actuator state, so the system works precisely. It covers:"
+     },
+     {
+      "ul": [
+       "**Brake:** released and pressed.",
+       "**Gearshift:** R, N and D.",
+       "**Low/High (HiLow):** Low and High."
+      ]
+     },
+     {
+      "table": {
+       "head": [
+        "Term",
+        "Definition"
+       ],
+       "rows": [
+        [
+         "**Actuator**",
+         "Electro-mechanical unit that operates a vehicle mechanism (pedal, lever) with a piston."
+        ],
+        [
+         "**Jog forward**",
+         "Move the piston outward."
+        ],
+        [
+         "**Jog reverse**",
+         "Move the piston inward."
+        ],
+        [
+         "**Save**",
+         "Store the current piston position in the controller as a defined state."
+        ],
+        [
+         "**CAN / cansend**",
+         "The controller bus protocol, and the Linux command that sends a single CAN message."
+        ],
+        [
+         "**Tech cable**",
+         "Connects a laptop (RJ45) to the tech or communication connector."
+        ]
+       ]
+      }
+     },
+     {
+      "h": "When calibration is required"
+     },
+     {
+      "ul": [
+       "First installation of the system on the vehicle.",
+       "An actuator was replaced, removed or moved.",
+       "An actuator does not reach its state – e.g. a gear that does not fully engage, or a brake that does not fully release."
+      ]
+     },
+     {
+      "h": "Preparation"
+     },
+     {
+      "ul": [
+       "Vehicle parked on flat, stable ground.",
+       "Engine off and platform ON (power to the controller and actuators).",
+       "Emergency button available and reachable throughout."
+      ]
+     },
+     {
+      "h3": "Option A – from the ROCU-10"
+     },
+     {
+      "p": "Open a terminal on the ROCU-10 and send the commands from there. Equipment: keyboard, mouse and a USB splitter (the ROCU-10 has a single USB port)."
+     },
+     {
+      "h3": "Option B – from a laptop"
+     },
+     {
+      "p": "Connect a laptop with an SSH-capable terminal to the vehicle network with a tech cable:"
+     },
+     {
+      "table": {
+       "head": [
+        "Connection point",
+        "Cable",
+        "Part no."
+       ],
+       "rows": [
+        [
+         "Tech connector on the platform",
+         "Tech cable to control panel",
+         "CBL01327-A"
+        ],
+        [
+         "Communication connector on the operator box",
+         "Operator box cable",
+         "CBL01345-A"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Nobody near the vehicle except the team. Keep hands out of the piston path. Work in pairs: one sends commands, one watches the actuator. On any unexpected movement – **press the emergency button immediately**.",
+      "kind": "caution"
+     },
+     {
+      "h": "Connecting to the controller"
+     },
+     {
+      "p": "Connect over SSH from the terminal, to the controller of the vehicle you want:"
+     },
+     {
+      "table": {
+       "head": [
+        "Controller",
+        "Command"
+       ],
+       "rows": [
+        [
+         "B1",
+         "`ssh aaeon@192.168.120.20`"
+        ],
+        [
+         "B2",
+         "`ssh aaeon@192.168.121.20`"
+        ]
+       ]
+      }
+     },
+     {
+      "p": "At the password prompt type `Q1w2as34` and press Enter. The password is not shown while typing – that is normal."
+     },
+     {
+      "img": "media/cal-ssh-login.png",
+      "cap": "Successful controller login"
+     },
+     {
+      "h": "Command structure"
+     },
+     {
+      "p": "All calibration commands go to ID 049 on interface can0: `cansend can0 049#AABB000000000000`. **AA** = actuator code, **BB** = action code, the remaining bytes are zeros (12 zeros). Type cansend in lower case."
+     },
+     {
+      "table": {
+       "head": [
+        "Actuator",
+        "Code AA"
+       ],
+       "rows": [
+        [
+         "Brake",
+         "32"
+        ],
+        [
+         "Gearshift",
+         "06"
+        ],
+        [
+         "Low/High",
+         "05"
+        ]
+       ]
+      }
+     },
+     {
+      "table": {
+       "head": [
+        "Action",
+        "Code BB"
+       ],
+       "rows": [
+        [
+         "Jog forward",
+         "FA"
+        ],
+        [
+         "Jog reverse",
+         "FB"
+        ],
+        [
+         "Save state",
+         "F1 and up, per state"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Calibration process"
+     },
+     {
+      "ol": [
+       "Connect to the controller.",
+       "Send jog forward or reverse repeatedly until the actuator reaches the required state.",
+       "Send the save command for that state.",
+       "Move to the next state and repeat steps 2–3 until all states are calibrated.",
+       "Run the post-calibration check (end of page)."
+      ]
+     },
+     {
+      "table": {
+       "head": [
+        "Actuator",
+        "State",
+        "Correct when"
+       ],
+       "rows": [
+        [
+         "Brake",
+         "Released",
+         "Pedal fully up, piston not pressing it."
+        ],
+        [
+         "Brake",
+         "Pressed",
+         "Pedal pressed to the end of travel."
+        ],
+        [
+         "Gearshift",
+         "R / N / D",
+         "Gear lever exactly in the state, not between states."
+        ],
+        [
+         "Low/High",
+         "Low / High",
+         "Lever at the end of travel on the required side."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Forward/reverse direction follows the command names (Jog forward / Jog reverse). **On the first calibration, check visually which way the piston moves.**",
+      "kind": "important"
+     },
+     {
+      "h": "Calibration commands – brake"
+     },
+     {
+      "table": {
+       "head": [
+        "Action",
+        "Command"
+       ],
+       "rows": [
+        [
+         "Jog forward",
+         "`cansend can0 049#32FA000000000000`"
+        ],
+        [
+         "Jog reverse",
+         "`cansend can0 049#32FB000000000000`"
+        ],
+        [
+         "Save – released",
+         "`cansend can0 049#32F1000000000000`"
+        ],
+        [
+         "Save – pressed",
+         "`cansend can0 049#32F2000000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Calibration commands – gearshift"
+     },
+     {
+      "table": {
+       "head": [
+        "Action",
+        "Command"
+       ],
+       "rows": [
+        [
+         "Jog forward",
+         "`cansend can0 049#06FA000000000000`"
+        ],
+        [
+         "Jog reverse",
+         "`cansend can0 049#06FB000000000000`"
+        ],
+        [
+         "Save – R",
+         "`cansend can0 049#06F2000000000000`"
+        ],
+        [
+         "Save – N",
+         "`cansend can0 049#06F3000000000000`"
+        ],
+        [
+         "Save – D",
+         "`cansend can0 049#06F4000000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Calibration commands – Low/High"
+     },
+     {
+      "table": {
+       "head": [
+        "Action",
+        "Command"
+       ],
+       "rows": [
+        [
+         "Jog forward",
+         "`cansend can0 049#05FA000000000000`"
+        ],
+        [
+         "Jog reverse",
+         "`cansend can0 049#05FB000000000000`"
+        ],
+        [
+         "Save – Low",
+         "`cansend can0 049#05F1000000000000`"
+        ],
+        [
+         "Save – High",
+         "`cansend can0 049#05F2000000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Post-calibration check"
+     },
+     {
+      "p": "Send the shift commands and confirm each actuator reaches its saved state."
+     },
+     {
+      "table": {
+       "head": [
+        "Action",
+        "Command"
+       ],
+       "rows": [
+        [
+         "Shift to R",
+         "`cansend can0 049#0002010000000000`"
+        ],
+        [
+         "Shift to N",
+         "`cansend can0 049#0003010000000000`"
+        ],
+        [
+         "Shift to D",
+         "`cansend can0 049#0004010000000000`"
+        ],
+        [
+         "Shift to Low",
+         "`cansend can0 049#001C010000000000`"
+        ],
+        [
+         "Shift to High",
+         "`cansend can0 049#001B010000000000`"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Appendix – original CAN command table"
+     },
+     {
+      "img": "media/cal-can-table.png",
+      "cap": "System CAN command table (tap to zoom)"
+     },
+     {
+      "note": "Source: IronWave – Low-level control system, actuator calibration procedure, 14/10/2026.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ws-traffic",
+   "sec": "ops-howto",
+   "group": "mon",
+   "type": "guide",
+   "title": {
+    "he": "בדיקת תעבורה עם Wireshark",
+    "en": "Traffic test with Wireshark"
+   },
+   "summary": {
+    "he": "התקנה, הקלטה, מסננים, מדידות ומה נחשב תקין",
+    "en": "Install, capture, filters, measurements and what is normal"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "**Wireshark** היא תוכנה חינמית שמקליטה ומציגה את כל התעבורה ברשת שהמחשב מחובר אליה. בעזרתה בודקים מי מדבר עם מי, כמה תעבורה עוברת, ואם יש איבוד מנות או שידורים חוזרים. התוכנה רק מאזינה – היא לא משנה שום דבר ברשת."
+     },
+     {
+      "h": "התקנה (פעם אחת)"
+     },
+     {
+      "ol": [
+       "מורידים מהאתר הרשמי `https://www.wireshark.org/download.html` את הגרסה היציבה (Stable) למערכת ההפעלה של המחשב.",
+       "מתקינים עם הרשאות מנהל. **בזמן ההתקנה מאשרים גם את התקנת Npcap** – בלעדיו אי אפשר להקליט תעבורה ב־Windows.",
+       "מפעילים מחדש את המחשב אם ההתקנה מבקשת."
+      ]
+     },
+     {
+      "h": "חיבור לרשת הכלי"
+     },
+     {
+      "ul": [
+       "מחברים את המחשב הנייד בכבל טכנאי: **CBL01327-A** לקונקטור הטכנאי בפלטפורמה, או **CBL01345-A** לקונקטור התקשורת בקופסת המפעיל.",
+       "ודאו שלמחשב יש כתובת IP באותה רשת של הרכיבים שרוצים לבדוק – למשל ‎192.168.120.x בפלטפורמה I, או ‎192.168.121.x בפלטפורמה II.",
+       "בדיקה מהירה שהחיבור עובד: בחלון פקודה `ping 192.168.120.131` (קופסת המפעיל, פלטפורמה I) או `ping 192.168.168.133` (Phase-5, תצורת Mesh)."
+      ]
+     },
+     {
+      "h": "הקלטת תעבורה"
+     },
+     {
+      "ol": [
+       "פותחים את Wireshark. במסך הפתיחה מופיעה רשימת ממשקי רשת – בוחרים את **Ethernet** (הממשק שהקו הקטן לידו זז).",
+       "לוחצים על **סנפיר הכריש הכחול** (Start) – ההקלטה מתחילה.",
+       "מבצעים את מה שרוצים לבדוק: נסיעה, שידור וידאו, החלפת תדר וכו׳.",
+       "לוחצים על **הריבוע האדום** (Stop).",
+       "שומרים: **File > Save As**, בפורמט ‎.pcapng. בשם הקובץ כדאי לכלול תאריך, מקום ותצורה, למשל `2026-11-11_site-A_mesh.pcapng`."
+      ]
+     },
+     {
+      "note": "מקליטים פרקי זמן קצרים (כמה דקות). הקלטה ארוכה יוצרת קבצים ענקיים וקשה לנתח אותה.",
+      "kind": "tip"
+     },
+     {
+      "h": "מסננים שימושיים"
+     },
+     {
+      "p": "מקלידים בשורת **Display filter** (מעל רשימת המנות) ולוחצים Enter:"
+     },
+     {
+      "table": {
+       "head": [
+        "מסנן",
+        "מה הוא מציג"
+       ],
+       "rows": [
+        [
+         "`ip.addr == 192.168.168.133`",
+         "רק תעבורה של Phase-5 (תחנת הקרקע, תצורת Mesh)."
+        ],
+        [
+         "`ip.addr == 192.168.120.131`",
+         "רק תעבורה של קופסת המפעיל בפלטפורמה I (בפלטפורמה II: ‎192.168.121.131)."
+        ],
+        [
+         "`ip.addr == 192.168.120.0/24`",
+         "כל הרכיבים ברשת של פלטפורמה I."
+        ],
+        [
+         "`icmp`",
+         "רק הודעות ping – טוב לבדיקת זמני תגובה ואיבוד מנות."
+        ],
+        [
+         "`tcp.analysis.retransmission`",
+         "שידורים חוזרים – סימן לאיבוד מנות בקישור."
+        ],
+        [
+         "`tcp.analysis.flags`",
+         "כל הבעיות ש־Wireshark זיהה בתעבורת TCP."
+        ],
+        [
+         "`udp`",
+         "רק UDP (בדרך כלל וידאו וטלמטריה)."
+        ]
+       ]
+      }
+     },
+     {
+      "p": "כדי לחזור לכל התעבורה – מוחקים את המסנן ולוחצים Enter."
+     },
+     {
+      "h": "מדידות חשובות"
+     },
+     {
+      "table": {
+       "head": [
+        "תפריט",
+        "מה בודקים שם"
+       ],
+       "rows": [
+        [
+         "**Statistics > I/O Graphs**",
+         "קצב התעבורה לאורך זמן. מגדירים מרווח 1 שנייה, ובציר Y ‏Bits/s. ירידה חדה בגרף = ירידה בקישור."
+        ],
+        [
+         "**Statistics > Conversations**",
+         "מי מדבר עם מי, כמה בתים עברו, ובאיזה קצב (Bits/s A→B ו־B→A)."
+        ],
+        [
+         "**Statistics > Endpoints**",
+         "אילו כתובות IP פעילות ברשת – בודקים שכל הרכיבים מופיעים."
+        ],
+        [
+         "**Statistics > Protocol Hierarchy**",
+         "איזה אחוז מהתעבורה הוא וידאו, טלמטריה או משהו אחר."
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מה נחשב תקין"
+     },
+     {
+      "ul": [
+       "**רוחב פס:** לפחות **2Mbps לכל כלי** (מומלץ 5–10Mbps).",
+       "**זמן תגובה:** עד **200ms** ב־ping.",
+       "**אין שידורים חוזרים רבים** ואין קווים שחורים או אדומים ברצף ברשימת המנות.",
+       "כל הרכיבים הצפויים מופיעים ב־Endpoints: קופסאות המפעיל, הכלים, Phase-5, הממסר והרחפן (לפי התצורה)."
+      ]
+     },
+     {
+      "note": "אם הקצב נמוך או שיש הרבה איבוד מנות – משווים מול Tactical Display ו־Levels במסך DTC, ומשפרים את מיקום הממסר או הרחפן לפני שמחפשים תקלה במחשב.",
+      "kind": "tip"
+     },
+     {
+      "h": "בדיקת ping ארוכה (בלי Wireshark)"
+     },
+     {
+      "p": "בחלון פקודה של Windows: `ping 192.168.168.133 -t` – שולח ping ברציפות. **Ctrl+C** עוצר ומציג סיכום: כמה מנות אבדו ומה זמן התגובה הממוצע."
+     }
+    ],
+    "en": [
+     {
+      "p": "**Wireshark** is a free tool that captures and shows all traffic on the network the computer is connected to. Use it to see who talks to whom, how much traffic flows, and whether packets are lost or retransmitted. It only listens – it changes nothing on the network."
+     },
+     {
+      "h": "Installation (once)"
+     },
+     {
+      "ol": [
+       "Download the stable release for your OS from the official site `https://www.wireshark.org/download.html`.",
+       "Install with admin rights. **Accept the Npcap installation** – without it Windows cannot capture traffic.",
+       "Restart the computer if the installer asks."
+      ]
+     },
+     {
+      "h": "Connecting to the vehicle network"
+     },
+     {
+      "ul": [
+       "Connect the laptop with a tech cable: **CBL01327-A** to the platform tech connector, or **CBL01345-A** to the operator box communication connector.",
+       "Make sure the laptop has an IP address on the same network as the components you test – e.g. 192.168.120.x for Platform I or 192.168.121.x for Platform II.",
+       "Quick connection check, in a command window: `ping 192.168.120.131` (operator box, Platform I) or `ping 192.168.168.133` (Phase-5, Mesh)."
+      ]
+     },
+     {
+      "h": "Capturing traffic"
+     },
+     {
+      "ol": [
+       "Open Wireshark. The start screen lists network interfaces – choose **Ethernet** (the one whose small graph moves).",
+       "Click the **blue shark fin** (Start) – capture begins.",
+       "Do what you want to test: driving, video, a frequency change, etc.",
+       "Click the **red square** (Stop).",
+       "Save: **File > Save As**, .pcapng format. Include date, site and configuration in the name, e.g. `2026-11-11_site-A_mesh.pcapng`."
+      ]
+     },
+     {
+      "note": "Capture short periods (a few minutes). Long captures create huge files that are hard to analyze.",
+      "kind": "tip"
+     },
+     {
+      "h": "Useful filters"
+     },
+     {
+      "p": "Type in the **Display filter** bar (above the packet list) and press Enter:"
+     },
+     {
+      "table": {
+       "head": [
+        "Filter",
+        "Shows"
+       ],
+       "rows": [
+        [
+         "`ip.addr == 192.168.168.133`",
+         "Only Phase-5 traffic (ground station, Mesh configuration)."
+        ],
+        [
+         "`ip.addr == 192.168.120.131`",
+         "Only the Platform I operator box (Platform II: 192.168.121.131)."
+        ],
+        [
+         "`ip.addr == 192.168.120.0/24`",
+         "All components on the Platform I network."
+        ],
+        [
+         "`icmp`",
+         "Only ping messages – good for response time and packet loss."
+        ],
+        [
+         "`tcp.analysis.retransmission`",
+         "Retransmissions – a sign of packet loss on the link."
+        ],
+        [
+         "`tcp.analysis.flags`",
+         "All TCP problems Wireshark detected."
+        ],
+        [
+         "`udp`",
+         "Only UDP (usually video and telemetry)."
+        ]
+       ]
+      }
+     },
+     {
+      "p": "To return to all traffic, clear the filter and press Enter."
+     },
+     {
+      "h": "Key measurements"
+     },
+     {
+      "table": {
+       "head": [
+        "Menu",
+        "What to check"
+       ],
+       "rows": [
+        [
+         "**Statistics > I/O Graphs**",
+         "Traffic rate over time. Set a 1-second interval and Bits/s on the Y axis. A sharp drop = a link drop."
+        ],
+        [
+         "**Statistics > Conversations**",
+         "Who talks to whom, bytes transferred and rate (Bits/s A→B and B→A)."
+        ],
+        [
+         "**Statistics > Endpoints**",
+         "Which IP addresses are active – check all components appear."
+        ],
+        [
+         "**Statistics > Protocol Hierarchy**",
+         "What share of traffic is video, telemetry or other."
+        ]
+       ]
+      }
+     },
+     {
+      "h": "What is normal"
+     },
+     {
+      "ul": [
+       "**Bandwidth:** at least **2 Mbps per vehicle** (5–10 Mbps recommended).",
+       "**Response time:** up to **200 ms** on ping.",
+       "**Few retransmissions**, and no runs of black or red lines in the packet list.",
+       "All expected components appear in Endpoints: operator boxes, vehicles, Phase-5, relay and drone (per configuration)."
+      ]
+     },
+     {
+      "note": "If the rate is low or packet loss is high, compare with Tactical Display and Levels in the DTC interface, and improve the relay or drone position before looking for a computer problem.",
+      "kind": "tip"
+     },
+     {
+      "h": "Long ping test (without Wireshark)"
+     },
+     {
+      "p": "In a Windows command window: `ping 192.168.168.133 -t` – pings continuously. **Ctrl+C** stops and shows a summary: packets lost and average response time."
+     }
+    ]
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "sw-wireshark",
+   "sec": "ops-cfg",
+   "group": "sw",
+   "type": "software",
+   "title": {
+    "he": "Wireshark – ניתוח תעבורת רשת",
+    "en": "Wireshark – network traffic analysis"
+   },
+   "summary": {
+    "he": "תוכנה חינמית · להורדה מהאתר הרשמי",
+    "en": "Free software · download from the official site"
+   },
+   "body": {
+    "ver": "Stable (העדכנית)",
+    "file": "Wireshark-<version>-x64.exe",
+    "path": "",
+    "url": "https://www.wireshark.org/download.html",
+    "public": true,
+    "install": {
+     "he": [
+      "הורדה מהאתר הרשמי (כפתור „פתיחה”).",
+      "התקנה עם הרשאות מנהל, כולל Npcap.",
+      "הסבר שימוש: „בדיקת תעבורה עם Wireshark” במדריכי הפעולה."
+     ],
+     "en": [
+      "Download from the official site (Open button).",
+      "Install with admin rights, including Npcap.",
+      "How to use: “Traffic test with Wireshark” in the how-to guides."
+     ]
+    },
+    "note": {
+     "he": "",
+     "en": ""
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
    "id": "ln-atp-container",
    "sec": "hw-cont",
    "type": "link",
@@ -11753,29 +12646,12 @@
    "updated": "2026-11-10"
   },
   {
-   "id": "ln-pdf-atp-field",
-   "sec": "docs-pdf",
-   "type": "link",
-   "title": {
-    "he": "ATP Field – בדיקה ו־PDF",
-    "en": "ATP Field – test & PDF"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "target": "atp-field"
-   },
-   "updated": "2026-11-10"
-  },
-  {
    "id": "ln-logbook",
    "sec": "docs-pdf",
    "type": "link",
    "title": {
-    "he": "כל הטפסים שנשמרו – יומן רכבים",
-    "en": "All saved forms – vehicle logbook"
+    "he": "כל הטפסים שנשמרו – יומן טפסים",
+    "en": "All saved forms – forms logbook"
    },
    "summary": {
     "he": "",
@@ -12475,6 +13351,32 @@
      "en": "ARGO service manual for all 8×8 models (2022), split into small files."
     }
    }
+  },
+  {
+   "id": "cal-llc-pdf",
+   "sec": "docs-lit",
+   "group": "sys",
+   "type": "pdf",
+   "rel": [
+    "b-low"
+   ],
+   "title": {
+    "he": "נוהל כיול אקטואטורים – בקרה נמוכה (PDF)",
+    "en": "Actuator calibration procedure (PDF)"
+   },
+   "summary": {
+    "he": "14/10/2026 · 8 עמודים",
+    "en": "14/10/2026 · 8 pages"
+   },
+   "body": {
+    "src": "media/llc-calibration-procedure.pdf",
+    "note": {
+     "he": "",
+     "en": ""
+    },
+    "mb": 0.9
+   },
+   "updated": "2026-11-10"
   }
  ]
 }
