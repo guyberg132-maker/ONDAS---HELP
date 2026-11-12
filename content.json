@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 26,
+  "version": 28,
   "updated": "2026-11-11",
   "teamHash": "507fe455f4f70e3efe7445fa9634d45df46629606107c0810a5ddae4851d4963",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -53,6 +53,7 @@
     "he": "ביזון, קרון וציוד נלווה",
     "en": "BISON, container and equipment"
    },
+   "code": "SYS",
    "wide": true,
    "wideImg": "media/ui/bison.jpg"
   },
@@ -458,7 +459,8 @@
    "desc": {
     "he": "הפעלה, פריסה וחילוץ",
     "en": "Operation, deployment, recovery"
-   }
+   },
+   "code": "OPS"
   },
   {
    "id": "o-safe",
@@ -544,7 +546,8 @@
    "desc": {
     "he": "טל״ת, טא״ת ותקשורת",
     "en": "Pre/post operation, comms"
-   }
+   },
+   "code": "SVC"
   },
   {
    "id": "m",
@@ -560,7 +563,8 @@
    "desc": {
     "he": "אחזקת מנע תקופתית",
     "en": "Periodic preventive maintenance"
-   }
+   },
+   "code": "MNT"
   },
   {
    "id": "m-pm",
@@ -826,7 +830,8 @@
    "desc": {
     "he": "DTC, ניטור ו־Wireshark",
     "en": "DTC, monitoring, Wireshark"
-   }
+   },
+   "code": "COM"
   },
   {
    "id": "c-ui",
@@ -1052,7 +1057,8 @@
    "desc": {
     "he": "אקטואטורים ורכיבי תקשורת",
     "en": "Actuators and comms components"
-   }
+   },
+   "code": "CAL"
   },
   {
    "id": "k-act",
@@ -1088,7 +1094,8 @@
    "desc": {
     "he": "4 בדיקות קבלה",
     "en": "4 acceptance tests"
-   }
+   },
+   "code": "ATP"
   },
   {
    "id": "t",
@@ -1104,7 +1111,8 @@
    "desc": {
     "he": "4 נושאים",
     "en": "4 topics"
-   }
+   },
+   "code": "FLT"
   },
   {
    "id": "d",
@@ -1142,7 +1150,8 @@
    "desc": {
     "he": "מסמכים מקוריים",
     "en": "Original documents"
-   }
+   },
+   "code": "DOC"
   },
   {
    "id": "argo-sm-sec",
