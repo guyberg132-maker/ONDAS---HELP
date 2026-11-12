@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 28,
+  "version": 29,
   "updated": "2026-11-11",
   "teamHash": "507fe455f4f70e3efe7445fa9634d45df46629606107c0810a5ddae4851d4963",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -84,7 +84,7 @@
    "parent": "h-b-llc",
    "kind": "",
    "name": {
-    "he": "בוכנות",
+    "he": "אקטואטורים",
     "en": "Actuators"
    },
    "num": "1.1.1.1"
@@ -284,20 +284,10 @@
    "parent": "h-b-eng",
    "kind": "",
    "name": {
-    "he": "בלם",
-    "en": "Brake"
+    "he": "נוזל בלם",
+    "en": "Brake fluid"
    },
    "num": "1.1.3.10"
-  },
-  {
-   "id": "h-b-eng-fuel",
-   "parent": "h-b-eng",
-   "kind": "",
-   "name": {
-    "he": "מחבר דלק",
-    "en": "Fuel connector"
-   },
-   "num": "1.1.3.11"
   },
   {
    "id": "h-b-elec",
@@ -838,10 +828,70 @@
    "parent": "c",
    "kind": "",
    "name": {
-    "he": "מדריך ממשק – כניסה לאתר DTC",
-    "en": "Interface guide – DTC web login"
+    "he": "מדריך ממשק אתר DTC",
+    "en": "DTC web interface guide"
    },
    "num": "5.1"
+  },
+  {
+   "id": "c-ui-login",
+   "parent": "c-ui",
+   "kind": "",
+   "name": {
+    "he": "כניסה לממשק",
+    "en": "Logging in"
+   },
+   "num": "5.1.1"
+  },
+  {
+   "id": "c-ui-home",
+   "parent": "c-ui",
+   "kind": "",
+   "name": {
+    "he": "מסך בית",
+    "en": "Home screen"
+   },
+   "num": "5.1.2"
+  },
+  {
+   "id": "c-ui-tac",
+   "parent": "c-ui",
+   "kind": "",
+   "name": {
+    "he": "Tactical Display",
+    "en": "Tactical Display"
+   },
+   "num": "5.1.3"
+  },
+  {
+   "id": "c-ui-node",
+   "parent": "c-ui",
+   "kind": "",
+   "name": {
+    "he": "Node Table",
+    "en": "Node Table"
+   },
+   "num": "5.1.4"
+  },
+  {
+   "id": "c-ui-q",
+   "parent": "c-ui",
+   "kind": "",
+   "name": {
+    "he": "Quality Matrix",
+    "en": "Quality Matrix"
+   },
+   "num": "5.1.5"
+  },
+  {
+   "id": "c-ui-lv",
+   "parent": "c-ui",
+   "kind": "",
+   "name": {
+    "he": "Levels",
+    "en": "Levels"
+   },
+   "num": "5.1.6"
   },
   {
    "id": "c-ui-scan",
@@ -851,7 +901,7 @@
     "he": "סריקת ספקטרום",
     "en": "Spectrum scan"
    },
-   "num": "5.1.1"
+   "num": "5.1.7"
   },
   {
    "id": "c-ui-freq",
@@ -861,77 +911,17 @@
     "he": "החלפת תדר",
     "en": "Changing frequency"
    },
-   "num": "5.1.2"
+   "num": "5.1.8"
   },
   {
-   "id": "c-mon",
-   "parent": "c",
-   "kind": "",
-   "name": {
-    "he": "ניטור ובדיקת תקשורת",
-    "en": "Monitoring & testing"
-   },
-   "num": "5.2"
-  },
-  {
-   "id": "c-mon-home",
-   "parent": "c-mon",
-   "kind": "",
-   "name": {
-    "he": "מסך בית",
-    "en": "Home screen"
-   },
-   "num": "5.2.1"
-  },
-  {
-   "id": "c-mon-node",
-   "parent": "c-mon",
-   "kind": "",
-   "name": {
-    "he": "Node Table",
-    "en": "Node Table"
-   },
-   "num": "5.2.2"
-  },
-  {
-   "id": "c-mon-tac",
-   "parent": "c-mon",
-   "kind": "",
-   "name": {
-    "he": "Tactical Display",
-    "en": "Tactical Display"
-   },
-   "num": "5.2.3"
-  },
-  {
-   "id": "c-mon-q",
-   "parent": "c-mon",
-   "kind": "",
-   "name": {
-    "he": "Quality Matrix",
-    "en": "Quality Matrix"
-   },
-   "num": "5.2.4"
-  },
-  {
-   "id": "c-mon-lv",
-   "parent": "c-mon",
-   "kind": "",
-   "name": {
-    "he": "Levels",
-    "en": "Levels"
-   },
-   "num": "5.2.5"
-  },
-  {
-   "id": "c-mon-rep",
-   "parent": "c-mon",
+   "id": "c-ui-rep",
+   "parent": "c-ui",
    "kind": "",
    "name": {
     "he": "Domo Mesh Replay",
     "en": "Domo Mesh Replay"
    },
-   "num": "5.2.6"
+   "num": "5.1.9"
   },
   {
    "id": "c-nf",
@@ -941,7 +931,7 @@
     "he": "Domo Node Finder – איתור מקמ״שים באוויר",
     "en": "Domo Node Finder – radios on air"
    },
-   "num": "5.3"
+   "num": "5.2"
   },
   {
    "id": "c-ws",
@@ -951,7 +941,7 @@
     "he": "Wireshark – ניתוח תעבורת רשת",
     "en": "Wireshark – network traffic analysis"
    },
-   "num": "5.4"
+   "num": "5.3"
   },
   {
    "id": "c-ws-intro",
@@ -961,7 +951,7 @@
     "he": "מה זה ומה בודקים",
     "en": "What it is and what to check"
    },
-   "num": "5.4.1"
+   "num": "5.3.1"
   },
   {
    "id": "c-ws-inst",
@@ -971,7 +961,7 @@
     "he": "התקנה והגדרה",
     "en": "Installation and setup"
    },
-   "num": "5.4.2"
+   "num": "5.3.2"
   },
   {
    "id": "c-ws-conn",
@@ -981,7 +971,7 @@
     "he": "חיבור לרשת המערכת",
     "en": "Connecting to the network"
    },
-   "num": "5.4.3"
+   "num": "5.3.3"
   },
   {
    "id": "c-ws-cap",
@@ -991,7 +981,7 @@
     "he": "הקלטת תעבורה",
     "en": "Capturing traffic"
    },
-   "num": "5.4.4"
+   "num": "5.3.4"
   },
   {
    "id": "c-ws-flt",
@@ -1001,7 +991,7 @@
     "he": "מסנני תצוגה",
     "en": "Display filters"
    },
-   "num": "5.4.5"
+   "num": "5.3.5"
   },
   {
    "id": "c-ws-an",
@@ -1011,7 +1001,7 @@
     "he": "ניתוח התעבורה",
     "en": "Analyzing traffic"
    },
-   "num": "5.4.6"
+   "num": "5.3.6"
   },
   {
    "id": "c-ws-test",
@@ -1021,7 +1011,7 @@
     "he": "בדיקות מומלצות",
     "en": "Recommended tests"
    },
-   "num": "5.4.7"
+   "num": "5.3.7"
   },
   {
    "id": "c-ws-tr",
@@ -1031,7 +1021,7 @@
     "he": "בעיות נפוצות",
     "en": "Common problems"
    },
-   "num": "5.4.8"
+   "num": "5.3.8"
   },
   {
    "id": "c-gl",
@@ -1041,7 +1031,7 @@
     "he": "מילון מושגי תקשורת",
     "en": "Communication glossary"
    },
-   "num": "5.5"
+   "num": "5.4"
   },
   {
    "id": "k",
@@ -1608,7 +1598,7 @@
      },
      {
       "ul": [
-       "**בוכנות (אקטואטורים):** ברקס, גיר ו־Low/High, ומפעיל לינארי של בלם ה־NC.",
+       "**אקטואטורים:** ברקס, גיר, Low/High, בלם יד, גז, ומפעיל לינארי של בלם ה־NC.",
        "**תיבת בקרה (LLC Set, ‏SET00129-A):** הבקר שמפעיל את הבוכנות, יושב על מדף ה־LLC (‏MTL01107-A), עם לוח הבקרה הקדמי.",
        "**מצבר 12V ‏60Ah (AGM):** הזנת הבקרה הנמוכה.",
        "**מערכות בטיחות:** בלם NC בטוח בכשל ו־EMO."
@@ -1643,7 +1633,7 @@
      },
      {
       "ul": [
-       "**Actuators:** brake, gearshift and Low/High, plus the NC brake linear actuator.",
+       "**Actuators:** brake, gearshift, Low/High, hand brake, throttle, plus the NC brake linear actuator.",
        "**Control box (LLC Set, SET00129-A):** the controller that drives the actuators, on the LLC shelf (MTL01107-A), with the front control panel.",
        "**12 V 60 Ah AGM battery:** powers low-level control.",
        "**Safety systems:** fail-safe NC brake and EMO."
@@ -1677,17 +1667,17 @@
    "id": "llc-actuators",
    "type": "guide",
    "title": {
-    "he": "בוכנות (אקטואטורים)",
-    "en": "Actuators (pistons)"
+    "he": "אקטואטורים",
+    "en": "Actuators"
    },
    "summary": {
-    "he": "",
-    "en": ""
+    "he": "ברקס, גיר, Low/High, בלם יד, גז ובלם NC",
+    "en": "Brake, gear, Low/High, hand brake, throttle and NC brake"
    },
    "body": {
     "he": [
      {
-      "p": "בכלי ארבע בוכנות שמפעילות את המנגנונים של רכב ה־ARGO:"
+      "p": "אקטואטורים (בוכנות) מפעילים את המנגנונים של רכב ה־ARGO לפי פקודות מהבקרה הנמוכה:"
      },
      {
       "table": {
@@ -1713,6 +1703,16 @@
          "Low / High"
         ],
         [
+         "**בלם יד (Handbrake)**",
+         "בלם היד",
+         "משוחרר / לחוץ"
+        ],
+        [
+         "**גז (מצערת)**",
+         "דוושת הגז",
+         "—"
+        ],
+        [
          "**מפעיל לינארי של בלם NC**",
          "מותח את קפיץ בלם ה־NC כדי לשחרר את הבלם",
          "—"
@@ -1721,7 +1721,7 @@
       }
      },
      {
-      "h": "קודי ה־CAN של כל בוכנה"
+      "h": "קודי ה־CAN של כל אקטואטור"
      },
      {
       "table": {
@@ -1741,6 +1741,10 @@
         [
          "Low/High",
          "05"
+        ],
+        [
+         "בלם יד",
+         "08"
         ]
        ]
       }
@@ -1749,119 +1753,12 @@
       "p": "כל הפקודות נשלחות למזהה 049 על ממשק can0. הפקודות המלאות, וגם סדר הכיול, נמצאים בפרק 6.1."
      },
      {
-      "h": "בלם NC – מבנה"
-     },
-     {
-      "ul": [
-       "**ידית בלם** – מחוברת מכנית לדוושת הבלם.",
-       "**קפיץ החזרה** – מושך את הדוושה למצב בלימה.",
-       "**מפעיל לינארי** – מותח את הקפיץ כדי לשחרר את הבלם.",
-       "**מנעול אלקטרומגנטי** – מחזיק את הקפיץ מתוח כל עוד יש חשמל. בנפילת חשמל הוא משחרר, והכלי נבלם."
-      ]
-     },
-     {
-      "note": "מקור: נוהל כיול אקטואטורים – בקרה נמוכה, 14/10/2026; OBOX System Technical Data, DOC00672-A REV.001.",
+      "note": "פרטי אקטואטור הגז (קוד CAN וכיול) לא מופיעים במסמכים שהתקבלו. כשיגיע מסמך – הם ייכנסו לכאן.",
       "kind": "note"
-     }
-    ],
-    "en": [
-     {
-      "p": "Four actuators operate the ARGO vehicle mechanisms:"
      },
      {
-      "table": {
-       "head": [
-        "Actuator",
-        "Operates",
-        "Calibrated states"
-       ],
-       "rows": [
-        [
-         "**Brake**",
-         "Brake pedal",
-         "Released / pressed"
-        ],
-        [
-         "**Gearshift**",
-         "Gear lever",
-         "R / N / D"
-        ],
-        [
-         "**Low/High (HiLow)**",
-         "Low/High lever",
-         "Low / High"
-        ],
-        [
-         "**NC brake linear actuator**",
-         "Stretches the NC brake spring to release the brake",
-         "—"
-        ]
-       ]
-      }
+      "h": "מערכת הבלמים"
      },
-     {
-      "h": "CAN code of each actuator"
-     },
-     {
-      "table": {
-       "head": [
-        "Actuator",
-        "Code"
-       ],
-       "rows": [
-        [
-         "Brake",
-         "32"
-        ],
-        [
-         "Gearshift",
-         "06"
-        ],
-        [
-         "Low/High",
-         "05"
-        ]
-       ]
-      }
-     },
-     {
-      "p": "All commands are sent to ID 049 on interface can0. Full commands and the calibration order are in chapter 6.1."
-     },
-     {
-      "h": "NC brake – construction"
-     },
-     {
-      "ul": [
-       "**Brake lever** – mechanically linked to the brake pedal.",
-       "**Return spring** – pulls the pedal into braking.",
-       "**Linear actuator** – stretches the spring to release the brake.",
-       "**Electromagnet lock** – holds the spring stretched while powered. On power loss it releases and the vehicle brakes."
-      ]
-     },
-     {
-      "note": "Source: Low-level actuator calibration procedure, 14/10/2026; ROBOX System Technical Data, DOC00672-A REV.001.",
-      "kind": "note"
-     }
-    ]
-   },
-   "updated": "2026-11-11",
-   "sec": "h-b-llc-act",
-   "num": "1.1.1.1.1"
-  },
-  {
-   "id": "llc-brakes",
-   "sec": "h-b-llc-act",
-   "type": "guide",
-   "title": {
-    "he": "מערכת הבלמים – NC, בלם יד ובלם רגיל",
-    "en": "Brake system – NC, hand brake and standard brake"
-   },
-   "summary": {
-    "he": "בלם NC בטוח בכשל, בלם יד, היגוי בבלימה",
-    "en": "Fail-safe NC brake, hand brake, brake steering"
-   },
-   "body": {
-    "he": [
      {
       "p": "לכלי שלוש מערכות בלימה שפועלות במקביל: **בלם NC**, **בלם יד** ו**בלם רגיל** (בלמי הגלגלים)."
      },
@@ -1918,11 +1815,94 @@
       "kind": "tip"
      },
      {
-      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "note": "מקור: נוהל כיול אקטואטורים – בקרה נמוכה, 14/10/2026; OBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
     ],
     "en": [
+     {
+      "p": "Four actuators operate the ARGO vehicle mechanisms:"
+     },
+     {
+      "table": {
+       "head": [
+        "Actuator",
+        "Operates",
+        "Calibrated states"
+       ],
+       "rows": [
+        [
+         "**Brake**",
+         "Brake pedal",
+         "Released / pressed"
+        ],
+        [
+         "**Gearshift**",
+         "Gear lever",
+         "R / N / D"
+        ],
+        [
+         "**Low/High (HiLow)**",
+         "Low/High lever",
+         "Low / High"
+        ],
+        [
+         "**Handbrake**",
+         "Hand brake",
+         "Released / pressed"
+        ],
+        [
+         "**Throttle**",
+         "Gas pedal",
+         "—"
+        ],
+        [
+         "**NC brake linear actuator**",
+         "Stretches the NC brake spring to release the brake",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "CAN code of each actuator"
+     },
+     {
+      "table": {
+       "head": [
+        "Actuator",
+        "Code"
+       ],
+       "rows": [
+        [
+         "Brake",
+         "32"
+        ],
+        [
+         "Gearshift",
+         "06"
+        ],
+        [
+         "Low/High",
+         "05"
+        ],
+        [
+         "Handbrake",
+         "08"
+        ]
+       ]
+      }
+     },
+     {
+      "p": "All commands are sent to ID 049 on interface can0. Full commands and the calibration order are in chapter 6.1."
+     },
+     {
+      "note": "Throttle actuator details (CAN code and calibration) are not in the documents received. They will be added when a document arrives.",
+      "kind": "note"
+     },
+     {
+      "h": "Brake system"
+     },
      {
       "p": "The vehicle has three parallel brake systems: the **NC brake**, the **hand brake** and the **standard brake** (wheel brakes)."
      },
@@ -1979,13 +1959,14 @@
       "kind": "tip"
      },
      {
-      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001.",
+      "note": "Source: Low-level actuator calibration procedure, 14/10/2026; ROBOX System Technical Data, DOC00672-A REV.001.",
       "kind": "note"
      }
     ]
    },
-   "updated": "2026-11-10",
-   "num": "1.1.1.1.2"
+   "updated": "2026-11-11",
+   "sec": "h-b-llc-act",
+   "num": "1.1.1.1"
   },
   {
    "id": "llc-box",
@@ -2063,47 +2044,6 @@
       }
      },
      {
-      "h": "לוח הבקרה הקדמי"
-     },
-     {
-      "img": "media/um-panel.jpg",
-      "cap": "לוח חיווי והדלקה"
-     },
-     {
-      "table": {
-       "head": [
-        "רכיב",
-        "תפקיד"
-       ],
-       "rows": [
-        [
-         "**מתג הפעלה**",
-         "מדליק ומכבה את הבקרה הנמוכה והגבוהה (לא את המנוע)."
-        ],
-        [
-         "**צג 48V**",
-         "אחוז הטעינה של סוללת ה־48V."
-        ],
-        [
-         "**בורר ROCU-10 / ROCU-1**",
-         "למעלה – ROCU-10, למטה – ROCU-1."
-        ],
-        [
-         "**נוריות FORT-1 / FORT-2**",
-         "דולקות ברציפות כשה־FORT מחובר."
-        ],
-        [
-         "**מחבר טעינה**",
-         "טעינת המצבר הפנימי."
-        ],
-        [
-         "**מחבר טכנאי**",
-         "ETH ו־CAN."
-        ]
-       ]
-      }
-     },
-     {
       "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001; והל כיול אקטואטורים – בקרה נמוכה, 14/10/2026; דריך מפעיל מקוצר, DOC00698-A REV.002.",
       "kind": "note"
      }
@@ -2167,47 +2107,6 @@
         [
          "Weight",
          "17.5 kg"
-        ]
-       ]
-      }
-     },
-     {
-      "h": "Front control panel"
-     },
-     {
-      "img": "media/um-panel.jpg",
-      "cap": "Indication & power panel"
-     },
-     {
-      "table": {
-       "head": [
-        "Component",
-        "Function"
-       ],
-       "rows": [
-        [
-         "**Power switch**",
-         "Turns low- and high-level control on and off (not the engine)."
-        ],
-        [
-         "**48 V display**",
-         "48 V battery charge."
-        ],
-        [
-         "**ROCU-10 / ROCU-1 selector**",
-         "Up – ROCU-10, down – ROCU-1."
-        ],
-        [
-         "**FORT-1 / FORT-2 LEDs**",
-         "Steady when FORT is connected."
-        ],
-        [
-         "**Charge connector**",
-         "Charges the internal battery."
-        ],
-        [
-         "**Tech connector**",
-         "ETH and CAN."
         ]
        ]
       }
@@ -5494,8 +5393,8 @@
    "id": "eng-brake",
    "type": "guide",
    "title": {
-    "he": "בלם",
-    "en": "Brake"
+    "he": "נוזל בלם",
+    "en": "Brake fluid"
    },
    "summary": {
     "he": "",
@@ -5530,7 +5429,7 @@
       }
      },
      {
-      "p": "מערכת הבלימה של הכלי כוללת גם בלם NC ובלם יד – ראו „בוכנות” בבקרה הנמוכה."
+      "p": "מערכת הבלימה של הכלי כוללת גם בלם NC ובלם יד – ראו „אקטואטורים” בבקרה הנמוכה."
      },
      {
       "note": "מקור: נוהל טיפולים יומיים – ביזון, ומפרט ARGO Aurora 950.",
@@ -5580,8 +5479,8 @@
     {
      "v": "DOT 4",
      "l": {
-      "he": "נוזל בלמים",
-      "en": "Brake fluid"
+      "he": "סוג",
+      "en": "Type"
      }
     },
     {
@@ -5589,110 +5488,6 @@
      "l": {
       "he": "בדיקה",
       "en": "Check"
-     },
-     "hi": true
-    }
-   ]
-  },
-  {
-   "id": "eng-fuel",
-   "type": "guide",
-   "title": {
-    "he": "מערכת דלק ומחבר דלק",
-    "en": "Fuel system and fuel connector"
-   },
-   "summary": {
-    "he": "",
-    "en": ""
-   },
-   "body": {
-    "he": [
-     {
-      "table": {
-       "head": [
-        "פרמטר",
-        "ערך"
-       ],
-       "rows": [
-        [
-         "דלק",
-         "בנזין 95"
-        ],
-        [
-         "מיכל",
-         "32 ליטר"
-        ],
-        [
-         "מערכת דלק",
-         "הזרקה (EFI), משאבת דלק חשמלית בלחץ גבוה"
-        ],
-        [
-         "תדלוק",
-         "לא למלא מעל צוואר המילוי"
-        ]
-       ]
-      }
-     },
-     {
-      "p": "מפלס הדלק מוצג בלוח המחוונים בתא המנוע ובישל״ט."
-     },
-     {
-      "note": "מקור: נוהל טיפולים יומיים – ביזון, ומפרט ARGO Aurora 950.",
-      "kind": "note"
-     }
-    ],
-    "en": [
-     {
-      "table": {
-       "head": [
-        "Parameter",
-        "Value"
-       ],
-       "rows": [
-        [
-         "Fuel",
-         "95 octane gasoline"
-        ],
-        [
-         "Tank",
-         "32 L"
-        ],
-        [
-         "Fuel system",
-         "EFI, electric high-pressure fuel pump"
-        ],
-        [
-         "Refueling",
-         "Do not fill above the filler neck"
-        ]
-       ]
-      }
-     },
-     {
-      "p": "Fuel level is shown on the engine compartment dashboard and on the controller."
-     },
-     {
-      "note": "Source: BISON daily maintenance procedure and ARGO Aurora 950 specification.",
-      "kind": "note"
-     }
-    ]
-   },
-   "updated": "2026-11-11",
-   "sec": "h-b-eng-fuel",
-   "num": "1.1.3.11",
-   "facts": [
-    {
-     "v": "95",
-     "l": {
-      "he": "אוקטן",
-      "en": "Octane"
-     }
-    },
-    {
-     "v": "32 L",
-     "l": {
-      "he": "מיכל",
-      "en": "Tank"
      },
      "hi": true
     }
@@ -13782,7 +13577,7 @@
   },
   {
    "id": "dtc-login",
-   "sec": "c-ui",
+   "sec": "c-ui-login",
    "type": "guide",
    "title": {
     "he": "התחברות לממשק DTC",
@@ -13862,291 +13657,12 @@
      }
     ]
    },
-   "updated": "2026-11-10"
-  },
-  {
-   "id": "dtc-spectrum",
-   "sec": "c-ui-scan",
-   "type": "guide",
-   "title": {
-    "he": "סריקת ספקטרום (Spectrum Scan)",
-    "en": "Spectrum Scan"
-   },
-   "summary": {
-    "he": "מציאת טווח התדרים הנקי ביותר",
-    "en": "Finding the cleanest frequency range"
-   },
-   "body": {
-    "he": [
-     {
-      "p": "מריצים סריקת ספקטרום כשמגיעים לאזור פעילות חדש, כדי למצוא את טווח התדרים עם הכי מעט הפרעות."
-     },
-     {
-      "path": "Apps > Spectrum Scan",
-      "label": "פתיחה:"
-     },
-     {
-      "note": "מריצים סריקה **רק כשהרכבים קרובים למפעיל**, כחלק מההכנה למשימה. **אסור להריץ סריקה במהלך פעילות.** כשמקמ״ש מתחיל סריקה התקשורת נופלת לרגע, ורכב רחוק עלול לא להתחבר מחדש כמו שצריך.",
-      "kind": "caution"
-     },
-     {
-      "h": "הרצת הסריקה"
-     },
-     {
-      "ol": [
-       "היכנסו ל־**Apps > Spectrum Scan**.",
-       "תחת **Scan Settings** הגדירו **Start frequency** ו־**Stop frequency** של טווח הסריקה.",
-       "לחצו **Start Scan** בתחתית הדף והמתינו שהגרף יתמלא."
-      ]
-     },
-     {
-      "img": "media/dtc-07-spectrum.png",
-      "cap": "Spectrum Scan. המסגרת האדומה מסמנת טווח עם הפרעות מעטות."
-     },
-     {
-      "h": "קריאת התוצאות"
-     },
-     {
-      "ul": [
-       "**קפיצות** (עליות חדות וחריגות בגרף) מעידות על הפרעות. הימנעו מהתדרים האלה.",
-       "בחרו טווח תדרים עם הפרעות מעטות, כמו הטווח שמסומן באדום בתמונה."
-      ]
-     },
-     {
-      "note": "אם התדר שנבחר שונה מהתדר הנוכחי, עברו ל־„החלפת תדר עבודה”.",
-      "kind": "note"
-     }
-    ],
-    "en": [
-     {
-      "p": "Run a spectrum scan when you arrive in a new area of operations, to find the frequency range with the least interference."
-     },
-     {
-      "path": "Apps > Spectrum Scan",
-      "label": "To open:"
-     },
-     {
-      "note": "Run a spectrum scan **only when the vehicles are close to the operator**, as part of pre-mission preparation. **Never run it during an active operation.** When a radio starts a scan, communication drops momentarily. If a vehicle is far away, it may fail to reconnect properly.",
-      "kind": "caution"
-     },
-     {
-      "h": "Running the scan"
-     },
-     {
-      "ol": [
-       "Go to **Apps > Spectrum Scan**.",
-       "Under **Scan Settings**, set the **Start frequency** and **Stop frequency** of the scan range.",
-       "Click **Start Scan** at the bottom of the page and wait for the chart to fill in."
-      ]
-     },
-     {
-      "img": "media/dtc-07-spectrum.png",
-      "cap": "Spectrum Scan. The red box marks a range with minor interference."
-     },
-     {
-      "h": "Reading the results"
-     },
-     {
-      "ul": [
-       "**Spikes** (sudden, abnormal jumps in the chart) indicate interference. Avoid those frequencies.",
-       "Choose a frequency range where interference is minor, such as the range marked in red in the figure."
-      ]
-     },
-     {
-      "note": "If the chosen frequency differs from the current one, continue to “Changing the operating frequency”.",
-      "kind": "note"
-     }
-    ]
-   },
    "updated": "2026-11-10",
    "num": "5.1.1"
   },
   {
-   "id": "dtc-freq",
-   "sec": "c-ui-freq",
-   "type": "guide",
-   "title": {
-    "he": "החלפת תדר עבודה",
-    "en": "Changing the operating frequency"
-   },
-   "summary": {
-    "he": "עדכון כל הרשת או מקמ״ש אחר מקמ״ש",
-    "en": "Update the whole network or radio by radio"
-   },
-   "body": {
-    "he": [
-     {
-      "note": "אם התדר שנבחר שונה מהתדר הנוכחי, חובה להגדיר **את אותו תדר בכל המקמ״שים**: שני הרכבים, שתי קופסאות ה־Operator Box, אנטנת הממסר הראשית (חצובה) ורחפן הממסר. מקמ״ש שלא יוגדר לתדר החדש יאבד קשר עם הרשת.",
-      "kind": "important"
-     },
-     {
-      "note": "לפני שמשנים משהו, **רשמו את התדר הנוכחי**. אם התקשורת גרועה יותר אחרי השינוי, אפשר לחזור אליו.",
-      "kind": "tip"
-     },
-     {
-      "h": "אפשרות א׳ (מומלצת): עדכון כל הצמתים בפעולה אחת"
-     },
-     {
-      "p": "כל המקמ״שים חייבים להיות **דולקים ומחוברים לרשת ה־Mesh** לפני שמתחילים."
-     },
-     {
-      "ol": [
-       "היכנסו ל־**Global Setup > General Settings**.",
-       "תחת **Update Settings** העבירו את **Update all nodes** ל־**Yes**.",
-       "שנו **רק את התדר** (**Presets > Mesh Settings > Frequency**). אל תשנו שום הגדרה אחרת.",
-       "שמרו, הפעילו מחדש את כל המקמ״שים ובדקו (ראו „אחרי ההחלפה”)."
-      ]
-     },
-     {
-      "img": "media/dtc-08-general.png",
-      "cap": "General Settings עם האפשרות Update all nodes"
-     },
-     {
-      "h": "אפשרות ב׳: הגדרה ידנית בכל מקמ״ש"
-     },
-     {
-      "ol": [
-       "בכל מקמ״ש היכנסו ל־**Presets > Mesh Settings**.",
-       "באזור **Transmitter** הקלידו את הערך החדש בשדה **Frequency**.",
-       "שמרו.",
-       "חזרו על הפעולה בכל מקמ״ש, לפי הסדר שבטבלה."
-      ]
-     },
-     {
-      "img": "media/dtc-09-mesh.png",
-      "cap": "Mesh Settings. שדה Frequency נמצא באזור Transmitter."
-     },
-     {
-      "table": {
-       "head": [
-        "סדר",
-        "מקמ״ש"
-       ],
-       "rows": [
-        [
-         "1",
-         "רכבים: Bison 1 ו־Bison 2"
-        ],
-        [
-         "2",
-         "רחפן ממסר"
-        ],
-        [
-         "3",
-         "תחנת קרקע (GCS)"
-        ],
-        [
-         "4",
-         "Operator Box 1 ו־2"
-        ]
-       ]
-      }
-     },
-     {
-      "note": "מגדירים קודם את המקמ״שים הרחוקים ביותר, ואת ה־Operator Box אחרונים, כדי לא לאבד את הדרך למקמ״ש לפני שהוא עודכן.",
-      "kind": "note"
-     },
-     {
-      "h": "אחרי ההחלפה"
-     },
-     {
-      "ol": [
-       "הפעילו מחדש את כל המקמ״שים.",
-       "פתחו שוב את הממשק.",
-       "ודאו שכל המקמ״שים מוגדרים ומתקשרים באותה רשת (בדקו ב־Tactical Display וב־Node Table)."
-      ]
-     }
-    ],
-    "en": [
-     {
-      "note": "If the frequency you choose differs from the current one, you must set the **same frequency on every radio**: both vehicles, both Operator Boxes, the main relay antenna (tripod) and the relay drone. Any radio not set to the new frequency will lose communication with the network.",
-      "kind": "important"
-     },
-     {
-      "note": "Before you change anything, **write down the current frequency**. If communication is worse after the change, you can return to it.",
-      "kind": "tip"
-     },
-     {
-      "h": "Option A (recommended): update all nodes in one action"
-     },
-     {
-      "p": "All radios must be **powered on and connected to the Mesh network** before you start."
-     },
-     {
-      "ol": [
-       "Go to **Global Setup > General Settings**.",
-       "Under **Update Settings**, set **Update all nodes** to **Yes**.",
-       "Change **only the frequency** (**Presets > Mesh Settings > Frequency**). Do not change any other settings.",
-       "Save, then restart all radios and verify (see “After the change”)."
-      ]
-     },
-     {
-      "img": "media/dtc-08-general.png",
-      "cap": "General Settings with the Update all nodes option"
-     },
-     {
-      "h": "Option B: configure each radio manually"
-     },
-     {
-      "ol": [
-       "On each radio, go to **Presets > Mesh Settings**.",
-       "In the **Transmitter** section, enter the new value in the **Frequency** field.",
-       "Save.",
-       "Repeat on every radio, following the order in the table."
-      ]
-     },
-     {
-      "img": "media/dtc-09-mesh.png",
-      "cap": "Mesh Settings. The Frequency field is in the Transmitter section."
-     },
-     {
-      "table": {
-       "head": [
-        "Order",
-        "Radio"
-       ],
-       "rows": [
-        [
-         "1",
-         "Vehicles: Bison 1 and Bison 2"
-        ],
-        [
-         "2",
-         "Relay drone"
-        ],
-        [
-         "3",
-         "Ground Control Station (GCS)"
-        ],
-        [
-         "4",
-         "Operator Boxes 1 and 2"
-        ]
-       ]
-      }
-     },
-     {
-      "note": "The most distant radios are configured first and the Operator Boxes last, so you do not lose your path to a radio before it has been updated.",
-      "kind": "note"
-     },
-     {
-      "h": "After the change"
-     },
-     {
-      "ol": [
-       "Restart all radios.",
-       "Open the interface again.",
-       "Confirm that every radio is configured and communicating on the same network (check the Tactical Display and the Node Table)."
-      ]
-     }
-    ]
-   },
-   "updated": "2026-11-10",
-   "num": "5.1.2"
-  },
-  {
    "id": "dtc-dashboard",
-   "sec": "c-mon-home",
+   "sec": "c-ui-home",
    "type": "guide",
    "title": {
     "he": "מסך הבית ותפריטי הממשק",
@@ -14479,130 +13995,11 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.2.1"
-  },
-  {
-   "id": "dtc-nodetable",
-   "sec": "c-mon-node",
-   "type": "guide",
-   "title": {
-    "he": "Node Table – טבלת צמתים",
-    "en": "Node Table"
-   },
-   "summary": {
-    "he": "סטטוס כל המקמ״שים ברשת",
-    "en": "Status of every radio in the network"
-   },
-   "body": {
-    "he": [
-     {
-      "path": "Status > Node Table",
-      "label": "פתיחה:"
-     },
-     {
-      "p": "הטבלה מציגה כל תחנה פעילה ברשת ה־Mesh, ונותנת תמונת מצב של החיבורים, איכות הממסור והקישורים בין התחנות."
-     },
-     {
-      "img": "media/dtc-10-nodetable.png",
-      "cap": "Node Table (תצוגת Summary)"
-     },
-     {
-      "table": {
-       "head": [
-        "עמודה",
-        "מה היא אומרת"
-       ],
-       "rows": [
-        [
-         "**ID / Unit Name / IP Address**",
-         "מזהה של כל מקמ״ש ברשת."
-        ],
-        [
-         "**Battery**",
-         "מתח ההזנה של המקמ״ש."
-        ],
-        [
-         "**Temp**",
-         "טמפרטורת המעבד."
-        ],
-        [
-         "**Software version**",
-         "גרסת הקושחה שמותקנת במקמ״ש."
-        ],
-        [
-         "**Occupancy**",
-         "עומס רוחב הפס של המקמ״ש, באחוזים."
-        ],
-        [
-         "**Tx Retries**",
-         "ניסיונות שידור חוזרים. בודקים לפיה שהמקמ״ש משדר כמו שצריך."
-        ]
-       ]
-      }
-     },
-     {
-      "note": "**Occupancy מעל 20% היא קריטית.** מקמ״ש עם עומס גבוה מעמיס על כל הרשת.",
-      "kind": "caution"
-     }
-    ],
-    "en": [
-     {
-      "path": "Status > Node Table",
-      "label": "To open:"
-     },
-     {
-      "p": "The Node Table lists every active station in the Mesh network and gives a snapshot of connection status, relay quality and the links between stations."
-     },
-     {
-      "img": "media/dtc-10-nodetable.png",
-      "cap": "Node Table (Summary view)"
-     },
-     {
-      "table": {
-       "head": [
-        "Column",
-        "What it tells you"
-       ],
-       "rows": [
-        [
-         "**ID / Unit Name / IP Address**",
-         "Identifies each radio in the network."
-        ],
-        [
-         "**Battery**",
-         "Supply voltage of the radio."
-        ],
-        [
-         "**Temp**",
-         "Processor temperature."
-        ],
-        [
-         "**Software version**",
-         "Firmware version installed on the radio."
-        ],
-        [
-         "**Occupancy**",
-         "Bandwidth load of the radio, in percent."
-        ],
-        [
-         "**Tx Retries**",
-         "Transmission retries. Use it to confirm that the radio is transmitting properly."
-        ]
-       ]
-      }
-     },
-     {
-      "note": "**An Occupancy above 20% is critical.** A radio with high occupancy loads the whole network.",
-      "kind": "caution"
-     }
-    ]
-   },
-   "updated": "2026-11-10",
-   "num": "5.2.2"
+   "num": "5.1.2"
   },
   {
    "id": "dtc-tactical",
-   "sec": "c-mon-tac",
+   "sec": "c-ui-tac",
    "type": "guide",
    "title": {
     "he": "Tactical Display – איכות הקשר",
@@ -14841,11 +14238,130 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.2.3"
+   "num": "5.1.3"
+  },
+  {
+   "id": "dtc-nodetable",
+   "sec": "c-ui-node",
+   "type": "guide",
+   "title": {
+    "he": "Node Table – טבלת צמתים",
+    "en": "Node Table"
+   },
+   "summary": {
+    "he": "סטטוס כל המקמ״שים ברשת",
+    "en": "Status of every radio in the network"
+   },
+   "body": {
+    "he": [
+     {
+      "path": "Status > Node Table",
+      "label": "פתיחה:"
+     },
+     {
+      "p": "הטבלה מציגה כל תחנה פעילה ברשת ה־Mesh, ונותנת תמונת מצב של החיבורים, איכות הממסור והקישורים בין התחנות."
+     },
+     {
+      "img": "media/dtc-10-nodetable.png",
+      "cap": "Node Table (תצוגת Summary)"
+     },
+     {
+      "table": {
+       "head": [
+        "עמודה",
+        "מה היא אומרת"
+       ],
+       "rows": [
+        [
+         "**ID / Unit Name / IP Address**",
+         "מזהה של כל מקמ״ש ברשת."
+        ],
+        [
+         "**Battery**",
+         "מתח ההזנה של המקמ״ש."
+        ],
+        [
+         "**Temp**",
+         "טמפרטורת המעבד."
+        ],
+        [
+         "**Software version**",
+         "גרסת הקושחה שמותקנת במקמ״ש."
+        ],
+        [
+         "**Occupancy**",
+         "עומס רוחב הפס של המקמ״ש, באחוזים."
+        ],
+        [
+         "**Tx Retries**",
+         "ניסיונות שידור חוזרים. בודקים לפיה שהמקמ״ש משדר כמו שצריך."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**Occupancy מעל 20% היא קריטית.** מקמ״ש עם עומס גבוה מעמיס על כל הרשת.",
+      "kind": "caution"
+     }
+    ],
+    "en": [
+     {
+      "path": "Status > Node Table",
+      "label": "To open:"
+     },
+     {
+      "p": "The Node Table lists every active station in the Mesh network and gives a snapshot of connection status, relay quality and the links between stations."
+     },
+     {
+      "img": "media/dtc-10-nodetable.png",
+      "cap": "Node Table (Summary view)"
+     },
+     {
+      "table": {
+       "head": [
+        "Column",
+        "What it tells you"
+       ],
+       "rows": [
+        [
+         "**ID / Unit Name / IP Address**",
+         "Identifies each radio in the network."
+        ],
+        [
+         "**Battery**",
+         "Supply voltage of the radio."
+        ],
+        [
+         "**Temp**",
+         "Processor temperature."
+        ],
+        [
+         "**Software version**",
+         "Firmware version installed on the radio."
+        ],
+        [
+         "**Occupancy**",
+         "Bandwidth load of the radio, in percent."
+        ],
+        [
+         "**Tx Retries**",
+         "Transmission retries. Use it to confirm that the radio is transmitting properly."
+        ]
+       ]
+      }
+     },
+     {
+      "note": "**An Occupancy above 20% is critical.** A radio with high occupancy loads the whole network.",
+      "kind": "caution"
+     }
+    ]
+   },
+   "updated": "2026-11-10",
+   "num": "5.1.4"
   },
   {
    "id": "dtc-quality",
-   "sec": "c-mon-q",
+   "sec": "c-ui-q",
    "type": "guide",
    "title": {
     "he": "Quality Matrix – מטריצת איכות",
@@ -14954,11 +14470,11 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.2.4"
+   "num": "5.1.5"
   },
   {
    "id": "dtc-levels",
-   "sec": "c-mon-lv",
+   "sec": "c-ui-lv",
    "type": "guide",
    "title": {
     "he": "Levels – SNR ועוצמת אות",
@@ -15067,11 +14583,291 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.2.5"
+   "num": "5.1.6"
+  },
+  {
+   "id": "dtc-spectrum",
+   "sec": "c-ui-scan",
+   "type": "guide",
+   "title": {
+    "he": "סריקת ספקטרום (Spectrum Scan)",
+    "en": "Spectrum Scan"
+   },
+   "summary": {
+    "he": "מציאת טווח התדרים הנקי ביותר",
+    "en": "Finding the cleanest frequency range"
+   },
+   "body": {
+    "he": [
+     {
+      "p": "מריצים סריקת ספקטרום כשמגיעים לאזור פעילות חדש, כדי למצוא את טווח התדרים עם הכי מעט הפרעות."
+     },
+     {
+      "path": "Apps > Spectrum Scan",
+      "label": "פתיחה:"
+     },
+     {
+      "note": "מריצים סריקה **רק כשהרכבים קרובים למפעיל**, כחלק מההכנה למשימה. **אסור להריץ סריקה במהלך פעילות.** כשמקמ״ש מתחיל סריקה התקשורת נופלת לרגע, ורכב רחוק עלול לא להתחבר מחדש כמו שצריך.",
+      "kind": "caution"
+     },
+     {
+      "h": "הרצת הסריקה"
+     },
+     {
+      "ol": [
+       "היכנסו ל־**Apps > Spectrum Scan**.",
+       "תחת **Scan Settings** הגדירו **Start frequency** ו־**Stop frequency** של טווח הסריקה.",
+       "לחצו **Start Scan** בתחתית הדף והמתינו שהגרף יתמלא."
+      ]
+     },
+     {
+      "img": "media/dtc-07-spectrum.png",
+      "cap": "Spectrum Scan. המסגרת האדומה מסמנת טווח עם הפרעות מעטות."
+     },
+     {
+      "h": "קריאת התוצאות"
+     },
+     {
+      "ul": [
+       "**קפיצות** (עליות חדות וחריגות בגרף) מעידות על הפרעות. הימנעו מהתדרים האלה.",
+       "בחרו טווח תדרים עם הפרעות מעטות, כמו הטווח שמסומן באדום בתמונה."
+      ]
+     },
+     {
+      "note": "אם התדר שנבחר שונה מהתדר הנוכחי, עברו ל־„החלפת תדר עבודה”.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "p": "Run a spectrum scan when you arrive in a new area of operations, to find the frequency range with the least interference."
+     },
+     {
+      "path": "Apps > Spectrum Scan",
+      "label": "To open:"
+     },
+     {
+      "note": "Run a spectrum scan **only when the vehicles are close to the operator**, as part of pre-mission preparation. **Never run it during an active operation.** When a radio starts a scan, communication drops momentarily. If a vehicle is far away, it may fail to reconnect properly.",
+      "kind": "caution"
+     },
+     {
+      "h": "Running the scan"
+     },
+     {
+      "ol": [
+       "Go to **Apps > Spectrum Scan**.",
+       "Under **Scan Settings**, set the **Start frequency** and **Stop frequency** of the scan range.",
+       "Click **Start Scan** at the bottom of the page and wait for the chart to fill in."
+      ]
+     },
+     {
+      "img": "media/dtc-07-spectrum.png",
+      "cap": "Spectrum Scan. The red box marks a range with minor interference."
+     },
+     {
+      "h": "Reading the results"
+     },
+     {
+      "ul": [
+       "**Spikes** (sudden, abnormal jumps in the chart) indicate interference. Avoid those frequencies.",
+       "Choose a frequency range where interference is minor, such as the range marked in red in the figure."
+      ]
+     },
+     {
+      "note": "If the chosen frequency differs from the current one, continue to “Changing the operating frequency”.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-10",
+   "num": "5.1.7"
+  },
+  {
+   "id": "dtc-freq",
+   "sec": "c-ui-freq",
+   "type": "guide",
+   "title": {
+    "he": "החלפת תדר עבודה",
+    "en": "Changing the operating frequency"
+   },
+   "summary": {
+    "he": "עדכון כל הרשת או מקמ״ש אחר מקמ״ש",
+    "en": "Update the whole network or radio by radio"
+   },
+   "body": {
+    "he": [
+     {
+      "note": "אם התדר שנבחר שונה מהתדר הנוכחי, חובה להגדיר **את אותו תדר בכל המקמ״שים**: שני הרכבים, שתי קופסאות ה־Operator Box, אנטנת הממסר הראשית (חצובה) ורחפן הממסר. מקמ״ש שלא יוגדר לתדר החדש יאבד קשר עם הרשת.",
+      "kind": "important"
+     },
+     {
+      "note": "לפני שמשנים משהו, **רשמו את התדר הנוכחי**. אם התקשורת גרועה יותר אחרי השינוי, אפשר לחזור אליו.",
+      "kind": "tip"
+     },
+     {
+      "h": "אפשרות א׳ (מומלצת): עדכון כל הצמתים בפעולה אחת"
+     },
+     {
+      "p": "כל המקמ״שים חייבים להיות **דולקים ומחוברים לרשת ה־Mesh** לפני שמתחילים."
+     },
+     {
+      "ol": [
+       "היכנסו ל־**Global Setup > General Settings**.",
+       "תחת **Update Settings** העבירו את **Update all nodes** ל־**Yes**.",
+       "שנו **רק את התדר** (**Presets > Mesh Settings > Frequency**). אל תשנו שום הגדרה אחרת.",
+       "שמרו, הפעילו מחדש את כל המקמ״שים ובדקו (ראו „אחרי ההחלפה”)."
+      ]
+     },
+     {
+      "img": "media/dtc-08-general.png",
+      "cap": "General Settings עם האפשרות Update all nodes"
+     },
+     {
+      "h": "אפשרות ב׳: הגדרה ידנית בכל מקמ״ש"
+     },
+     {
+      "ol": [
+       "בכל מקמ״ש היכנסו ל־**Presets > Mesh Settings**.",
+       "באזור **Transmitter** הקלידו את הערך החדש בשדה **Frequency**.",
+       "שמרו.",
+       "חזרו על הפעולה בכל מקמ״ש, לפי הסדר שבטבלה."
+      ]
+     },
+     {
+      "img": "media/dtc-09-mesh.png",
+      "cap": "Mesh Settings. שדה Frequency נמצא באזור Transmitter."
+     },
+     {
+      "table": {
+       "head": [
+        "סדר",
+        "מקמ״ש"
+       ],
+       "rows": [
+        [
+         "1",
+         "רכבים: Bison 1 ו־Bison 2"
+        ],
+        [
+         "2",
+         "רחפן ממסר"
+        ],
+        [
+         "3",
+         "תחנת קרקע (GCS)"
+        ],
+        [
+         "4",
+         "Operator Box 1 ו־2"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מגדירים קודם את המקמ״שים הרחוקים ביותר, ואת ה־Operator Box אחרונים, כדי לא לאבד את הדרך למקמ״ש לפני שהוא עודכן.",
+      "kind": "note"
+     },
+     {
+      "h": "אחרי ההחלפה"
+     },
+     {
+      "ol": [
+       "הפעילו מחדש את כל המקמ״שים.",
+       "פתחו שוב את הממשק.",
+       "ודאו שכל המקמ״שים מוגדרים ומתקשרים באותה רשת (בדקו ב־Tactical Display וב־Node Table)."
+      ]
+     }
+    ],
+    "en": [
+     {
+      "note": "If the frequency you choose differs from the current one, you must set the **same frequency on every radio**: both vehicles, both Operator Boxes, the main relay antenna (tripod) and the relay drone. Any radio not set to the new frequency will lose communication with the network.",
+      "kind": "important"
+     },
+     {
+      "note": "Before you change anything, **write down the current frequency**. If communication is worse after the change, you can return to it.",
+      "kind": "tip"
+     },
+     {
+      "h": "Option A (recommended): update all nodes in one action"
+     },
+     {
+      "p": "All radios must be **powered on and connected to the Mesh network** before you start."
+     },
+     {
+      "ol": [
+       "Go to **Global Setup > General Settings**.",
+       "Under **Update Settings**, set **Update all nodes** to **Yes**.",
+       "Change **only the frequency** (**Presets > Mesh Settings > Frequency**). Do not change any other settings.",
+       "Save, then restart all radios and verify (see “After the change”)."
+      ]
+     },
+     {
+      "img": "media/dtc-08-general.png",
+      "cap": "General Settings with the Update all nodes option"
+     },
+     {
+      "h": "Option B: configure each radio manually"
+     },
+     {
+      "ol": [
+       "On each radio, go to **Presets > Mesh Settings**.",
+       "In the **Transmitter** section, enter the new value in the **Frequency** field.",
+       "Save.",
+       "Repeat on every radio, following the order in the table."
+      ]
+     },
+     {
+      "img": "media/dtc-09-mesh.png",
+      "cap": "Mesh Settings. The Frequency field is in the Transmitter section."
+     },
+     {
+      "table": {
+       "head": [
+        "Order",
+        "Radio"
+       ],
+       "rows": [
+        [
+         "1",
+         "Vehicles: Bison 1 and Bison 2"
+        ],
+        [
+         "2",
+         "Relay drone"
+        ],
+        [
+         "3",
+         "Ground Control Station (GCS)"
+        ],
+        [
+         "4",
+         "Operator Boxes 1 and 2"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "The most distant radios are configured first and the Operator Boxes last, so you do not lose your path to a radio before it has been updated.",
+      "kind": "note"
+     },
+     {
+      "h": "After the change"
+     },
+     {
+      "ol": [
+       "Restart all radios.",
+       "Open the interface again.",
+       "Confirm that every radio is configured and communicating on the same network (check the Tactical Display and the Node Table)."
+      ]
+     }
+    ]
+   },
+   "updated": "2026-11-10",
+   "num": "5.1.8"
   },
   {
    "id": "dtc-replay",
-   "sec": "c-mon-rep",
+   "sec": "c-ui-rep",
    "type": "guide",
    "title": {
     "he": "Domo Mesh Replay – הקלטה והשמעה של הרשת",
@@ -15254,7 +15050,7 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.2.6"
+   "num": "5.1.9"
   },
   {
    "id": "sw-nodefinder",
@@ -15293,7 +15089,7 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "5.3"
+   "num": "5.2"
   },
   {
    "id": "sw-wireshark",
@@ -15435,7 +15231,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-intro",
-   "num": "5.4.1"
+   "num": "5.3.1"
   },
   {
    "id": "ws-install",
@@ -15528,7 +15324,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-inst",
-   "num": "5.4.2"
+   "num": "5.3.2"
   },
   {
    "id": "ws-connect",
@@ -15701,7 +15497,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-conn",
-   "num": "5.4.3"
+   "num": "5.3.3"
   },
   {
    "id": "ws-capture",
@@ -15850,7 +15646,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-cap",
-   "num": "5.4.4"
+   "num": "5.3.4"
   },
   {
    "id": "ws-filters",
@@ -16021,7 +15817,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-flt",
-   "num": "5.4.5"
+   "num": "5.3.5"
   },
   {
    "id": "ws-analyze",
@@ -16150,7 +15946,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-an",
-   "num": "5.4.6"
+   "num": "5.3.6"
   },
   {
    "id": "ws-tests",
@@ -16293,7 +16089,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-test",
-   "num": "5.4.7"
+   "num": "5.3.7"
   },
   {
    "id": "ws-trouble",
@@ -16398,7 +16194,7 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-tr",
-   "num": "5.4.8"
+   "num": "5.3.8"
   },
   {
    "id": "dtc-glossary",
@@ -16543,7 +16339,7 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.5"
+   "num": "5.4"
   },
   {
    "id": "cal-llc",
