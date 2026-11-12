@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 25,
+  "version": 26,
   "updated": "2026-11-11",
   "teamHash": "507fe455f4f70e3efe7445fa9634d45df46629606107c0810a5ddae4851d4963",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -17,7 +17,8 @@
    "desc": {
     "he": "מערכת UGV – ביזון וקרון שליטה",
     "en": "UGV system – BISON and control container"
-   }
+   },
+   "hero": "media/ui/hero.jpg"
   },
   {
    "id": "p-otm",
@@ -45,7 +46,15 @@
     "he": "מכלולי מערכת וחומרה",
     "en": "System assemblies & hardware"
    },
-   "num": "1"
+   "num": "1",
+   "color": "#C53D27",
+   "icon": "cube",
+   "desc": {
+    "he": "ביזון, קרון וציוד נלווה",
+    "en": "BISON, container and equipment"
+   },
+   "wide": true,
+   "wideImg": "media/ui/bison.jpg"
   },
   {
    "id": "h-b",
@@ -55,7 +64,9 @@
     "he": "ביזון",
     "en": "BISON"
    },
-   "num": "1.1"
+   "num": "1.1",
+   "img": "media/ui/bison.jpg",
+   "wide": true
   },
   {
    "id": "h-b-llc",
@@ -305,7 +316,8 @@
     "he": "קרון שליטה",
     "en": "Control container"
    },
-   "num": "1.2"
+   "num": "1.2",
+   "img": "media/ui/container.jpg"
   },
   {
    "id": "h-c-lift",
@@ -385,7 +397,8 @@
     "he": "קופסת מפעיל",
     "en": "Operator box"
    },
-   "num": "1.3"
+   "num": "1.3",
+   "img": "media/ui/opbox.jpg"
   },
   {
    "id": "h-tri",
@@ -395,7 +408,8 @@
     "he": "סט ממסר חצובה",
     "en": "Tripod relay set"
    },
-   "num": "1.4"
+   "num": "1.4",
+   "img": "media/ui/tripod.jpg"
   },
   {
    "id": "h-rec",
@@ -405,7 +419,8 @@
     "he": "סט חילוץ",
     "en": "Recovery kit"
    },
-   "num": "1.5"
+   "num": "1.5",
+   "img": "media/ui/recovery.jpg"
   },
   {
    "id": "h-drone",
@@ -415,7 +430,8 @@
     "he": "רחפן",
     "en": "Drone"
    },
-   "num": "1.6"
+   "num": "1.6",
+   "img": "media/ui/drone.jpg"
   },
   {
    "id": "h-rocu",
@@ -425,7 +441,8 @@
     "he": "ישל״ט ROCU10",
     "en": "ROCU10 controller"
    },
-   "num": "1.7"
+   "num": "1.7",
+   "img": "media/ui/rocu.jpg"
   },
   {
    "id": "o",
@@ -435,7 +452,13 @@
     "he": "תפעול",
     "en": "Operation"
    },
-   "num": "2"
+   "num": "2",
+   "color": "#0E7C86",
+   "icon": "joy",
+   "desc": {
+    "he": "הפעלה, פריסה וחילוץ",
+    "en": "Operation, deployment, recovery"
+   }
   },
   {
    "id": "o-safe",
@@ -515,7 +538,13 @@
     "he": "טיפולים שוטפים",
     "en": "Routine service"
    },
-   "num": "3"
+   "num": "3",
+   "color": "#2F855A",
+   "icon": "check",
+   "desc": {
+    "he": "טל״ת, טא״ת ותקשורת",
+    "en": "Pre/post operation, comms"
+   }
   },
   {
    "id": "m",
@@ -525,7 +554,13 @@
     "he": "אחזקה",
     "en": "Maintenance"
    },
-   "num": "4"
+   "num": "4",
+   "color": "#2563A8",
+   "icon": "wrench",
+   "desc": {
+    "he": "אחזקת מנע תקופתית",
+    "en": "Periodic preventive maintenance"
+   }
   },
   {
    "id": "m-pm",
@@ -785,7 +820,13 @@
     "he": "תקשורת",
     "en": "Communication"
    },
-   "num": "5"
+   "num": "5",
+   "color": "#6D4AC1",
+   "icon": "sig",
+   "desc": {
+    "he": "DTC, ניטור ו־Wireshark",
+    "en": "DTC, monitoring, Wireshark"
+   }
   },
   {
    "id": "c-ui",
@@ -1005,7 +1046,13 @@
     "he": "כיולים וקנפוגים",
     "en": "Calibration & configuration"
    },
-   "num": "6"
+   "num": "6",
+   "color": "#5A6B7B",
+   "icon": "slid",
+   "desc": {
+    "he": "אקטואטורים ורכיבי תקשורת",
+    "en": "Actuators and comms components"
+   }
   },
   {
    "id": "k-act",
@@ -1035,7 +1082,13 @@
     "he": "טפסים ומסמכי ATP",
     "en": "Forms & ATP documents"
    },
-   "num": "7"
+   "num": "7",
+   "color": "#B83280",
+   "icon": "clip",
+   "desc": {
+    "he": "4 בדיקות קבלה",
+    "en": "4 acceptance tests"
+   }
   },
   {
    "id": "t",
@@ -1045,7 +1098,13 @@
     "he": "תקלות ופתרונות",
     "en": "Troubleshooting"
    },
-   "num": "8"
+   "num": "8",
+   "color": "#B45309",
+   "icon": "warn",
+   "desc": {
+    "he": "4 נושאים",
+    "en": "4 topics"
+   }
   },
   {
    "id": "d",
@@ -1077,7 +1136,13 @@
      "en": "Communication – DTC"
     }
    ],
-   "num": "9"
+   "num": "9",
+   "color": "#3A5583",
+   "icon": "book",
+   "desc": {
+    "he": "מסמכים מקוריים",
+    "en": "Original documents"
+   }
   },
   {
    "id": "argo-sm-sec",
@@ -1281,7 +1346,31 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "facts": [
+    {
+     "v": "1.1 t",
+     "l": {
+      "he": "משקל",
+      "en": "Weight"
+     }
+    },
+    {
+     "v": "~40 km/h",
+     "l": {
+      "he": "מהירות מרבית",
+      "en": "Max speed"
+     }
+    },
+    {
+     "v": "10 km",
+     "l": {
+      "he": "טווח קרון",
+      "en": "Container range"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bison-overview",
@@ -2806,7 +2895,31 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-hlc-comm",
-   "num": "1.1.2.2"
+   "num": "1.1.2.2",
+   "facts": [
+    {
+     "v": "Phase 5",
+     "l": {
+      "he": "רדיו",
+      "en": "Radio"
+     }
+    },
+    {
+     "v": "10W",
+     "l": {
+      "he": "הספק",
+      "en": "Power"
+     }
+    },
+    {
+     "v": "87 Mbps",
+     "l": {
+      "he": "קיבולת מרבית",
+      "en": "Max capacity"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "cam-spec",
@@ -4138,7 +4251,31 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-oil",
-   "num": "1.1.3.1"
+   "num": "1.1.3.1",
+   "facts": [
+    {
+     "v": "5W-40",
+     "l": {
+      "he": "סוג",
+      "en": "Type"
+     }
+    },
+    {
+     "v": "2.3 L",
+     "l": {
+      "he": "כמות עם פילטר",
+      "en": "Qty with filter"
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "החלפה",
+      "en": "Change"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "eng-gearoil",
@@ -4227,7 +4364,31 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-gear",
-   "num": "1.1.3.2"
+   "num": "1.1.3.2",
+   "facts": [
+    {
+     "v": "75W-90",
+     "l": {
+      "he": "סוג",
+      "en": "Type"
+     }
+    },
+    {
+     "v": "1.2 L",
+     "l": {
+      "he": "כמות",
+      "en": "Qty"
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "החלפה",
+      "en": "Change"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "eng-oilfilter",
@@ -4292,7 +4453,24 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-of",
-   "num": "1.1.3.3"
+   "num": "1.1.3.3",
+   "facts": [
+    {
+     "v": "39164PH",
+     "l": {
+      "he": "מק״ט",
+      "en": "Part no."
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "החלפה",
+      "en": "Change"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "eng-airfilter",
@@ -4381,7 +4559,31 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-af",
-   "num": "1.1.3.4"
+   "num": "1.1.3.4",
+   "facts": [
+    {
+     "v": "692519",
+     "l": {
+      "he": "מק״ט",
+      "en": "Part no."
+     }
+    },
+    {
+     "v": "Daily",
+     "l": {
+      "he": "ניקוי",
+      "en": "Clean"
+     },
+     "hi": true
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "טיפול יסודי",
+      "en": "Thorough"
+     }
+    }
+   ]
   },
   {
    "id": "eng-airfilter2",
@@ -4454,7 +4656,24 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-af2",
-   "num": "1.1.3.5"
+   "num": "1.1.3.5",
+   "facts": [
+    {
+     "v": "692520",
+     "l": {
+      "he": "מק״ט",
+      "en": "Part no."
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "בדיקה",
+      "en": "Check"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "argo-clutch",
@@ -5058,7 +5277,31 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-plug",
-   "num": "1.1.3.7"
+   "num": "1.1.3.7",
+   "facts": [
+    {
+     "v": "BPR4ES",
+     "l": {
+      "he": "סוג",
+      "en": "Type"
+     }
+    },
+    {
+     "v": "×2",
+     "l": {
+      "he": "כמות",
+      "en": "Qty"
+     }
+    },
+    {
+     "v": "1/yr",
+     "l": {
+      "he": "טיפול",
+      "en": "Service"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "eng-grease",
@@ -5129,7 +5372,24 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-grease",
-   "num": "1.1.3.8"
+   "num": "1.1.3.8",
+   "facts": [
+    {
+     "v": "NLGI #2",
+     "l": {
+      "he": "גריז",
+      "en": "Grease"
+     }
+    },
+    {
+     "v": "25h",
+     "l": {
+      "he": "תדירות",
+      "en": "Interval"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "eng-chain",
@@ -5202,7 +5462,24 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-chain",
-   "num": "1.1.3.9"
+   "num": "1.1.3.9",
+   "facts": [
+    {
+     "v": "PTFE",
+     "l": {
+      "he": "שמן שרשרת",
+      "en": "Chain lube"
+     }
+    },
+    {
+     "v": "25h",
+     "l": {
+      "he": "תדירות",
+      "en": "Interval"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "eng-brake",
@@ -5289,7 +5566,24 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-brake",
-   "num": "1.1.3.10"
+   "num": "1.1.3.10",
+   "facts": [
+    {
+     "v": "DOT 4",
+     "l": {
+      "he": "נוזל בלמים",
+      "en": "Brake fluid"
+     }
+    },
+    {
+     "v": "Daily",
+     "l": {
+      "he": "בדיקה",
+      "en": "Check"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "eng-fuel",
@@ -5376,7 +5670,24 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-eng-fuel",
-   "num": "1.1.3.11"
+   "num": "1.1.3.11",
+   "facts": [
+    {
+     "v": "95",
+     "l": {
+      "he": "אוקטן",
+      "en": "Octane"
+     }
+    },
+    {
+     "v": "32 L",
+     "l": {
+      "he": "מיכל",
+      "en": "Tank"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "veh-power",
@@ -5485,7 +5796,31 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-elec",
-   "num": "1.1.4.1"
+   "num": "1.1.4.1",
+   "facts": [
+    {
+     "v": "12V",
+     "l": {
+      "he": "תחום מתח",
+      "en": "Domain"
+     }
+    },
+    {
+     "v": "48V",
+     "l": {
+      "he": "תחום מתח",
+      "en": "Domain"
+     }
+    },
+    {
+     "v": "2.4 kWh",
+     "l": {
+      "he": "סוללת LiPo",
+      "en": "LiPo battery"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bison-energy",
@@ -6251,7 +6586,31 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.2.3"
+   "num": "1.2.3",
+   "facts": [
+    {
+     "v": "5.5 kVA",
+     "l": {
+      "he": "הספק נקוב",
+      "en": "Rated"
+     }
+    },
+    {
+     "v": "230V",
+     "l": {
+      "he": "מתח",
+      "en": "Voltage"
+     }
+    },
+    {
+     "v": "19.2 L",
+     "l": {
+      "he": "מיכל דלק",
+      "en": "Fuel tank"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "screens-spec",
@@ -6980,7 +7339,24 @@
    },
    "updated": "2026-11-11",
    "sec": "h-op",
-   "num": "1.3"
+   "num": "1.3",
+   "facts": [
+    {
+     "v": "2W",
+     "l": {
+      "he": "רדיו BLUESDR",
+      "en": "BLUESDR radio"
+     }
+    },
+    {
+     "v": "~4h",
+     "l": {
+      "he": "לזוג סוללות",
+      "en": "Per battery pair"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "tripod-full",
@@ -7173,7 +7549,31 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.4"
+   "num": "1.4",
+   "facts": [
+    {
+     "v": "5 km",
+     "l": {
+      "he": "טווח",
+      "en": "Range"
+     },
+     "hi": true
+    },
+    {
+     "v": "10h",
+     "l": {
+      "he": "זמן עבודה",
+      "en": "Run time"
+     }
+    },
+    {
+     "v": "3.5 m",
+     "l": {
+      "he": "גובה מרבי",
+      "en": "Max height"
+     }
+    }
+   ]
   },
   {
    "id": "recovery-kit",
@@ -7740,7 +8140,31 @@
    },
    "updated": "2026-11-11",
    "sec": "h-rocu",
-   "num": "1.7"
+   "num": "1.7",
+   "facts": [
+    {
+     "v": "10.1\"",
+     "l": {
+      "he": "מסך",
+      "en": "Display"
+     }
+    },
+    {
+     "v": "IP65",
+     "l": {
+      "he": "אטימות",
+      "en": "Rating"
+     }
+    },
+    {
+     "v": "<2 kg",
+     "l": {
+      "he": "משקל",
+      "en": "Weight"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "um-safety",
@@ -12230,7 +12654,31 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-eng-oil",
-   "num": "4.1.2.1.1"
+   "num": "4.1.2.1.1",
+   "facts": [
+    {
+     "v": "5W-40",
+     "l": {
+      "he": "סוג",
+      "en": "Type"
+     }
+    },
+    {
+     "v": "2.3 L",
+     "l": {
+      "he": "כמות",
+      "en": "Qty"
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "החלפה",
+      "en": "Change"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-oilfilter",
@@ -12317,7 +12765,24 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-eng-of",
-   "num": "4.1.2.1.2"
+   "num": "4.1.2.1.2",
+   "facts": [
+    {
+     "v": "39164PH",
+     "l": {
+      "he": "מק״ט",
+      "en": "Part no."
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "החלפה",
+      "en": "Change"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-gear",
@@ -12402,7 +12867,31 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-eng-gear",
-   "num": "4.1.2.1.3"
+   "num": "4.1.2.1.3",
+   "facts": [
+    {
+     "v": "75W-90",
+     "l": {
+      "he": "סוג",
+      "en": "Type"
+     }
+    },
+    {
+     "v": "1.2 L",
+     "l": {
+      "he": "כמות",
+      "en": "Qty"
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "החלפה",
+      "en": "Change"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-air",
@@ -12487,7 +12976,31 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-eng-air",
-   "num": "4.1.2.1.4"
+   "num": "4.1.2.1.4",
+   "facts": [
+    {
+     "v": "692519",
+     "l": {
+      "he": "ראשי",
+      "en": "Primary"
+     }
+    },
+    {
+     "v": "692520",
+     "l": {
+      "he": "משני",
+      "en": "Secondary"
+     }
+    },
+    {
+     "v": "100h",
+     "l": {
+      "he": "טיפול יסודי",
+      "en": "Thorough"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-belt",
@@ -12570,7 +13083,24 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-eng-belt",
-   "num": "4.1.2.1.5"
+   "num": "4.1.2.1.5",
+   "facts": [
+    {
+     "v": "127-159",
+     "l": {
+      "he": "מק״ט",
+      "en": "Part no."
+     }
+    },
+    {
+     "v": "25h",
+     "l": {
+      "he": "בדיקה",
+      "en": "Check"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-plug",
@@ -12643,7 +13173,24 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-eng-plug",
-   "num": "4.1.2.1.6"
+   "num": "4.1.2.1.6",
+   "facts": [
+    {
+     "v": "BPR4ES",
+     "l": {
+      "he": "סוג",
+      "en": "Type"
+     }
+    },
+    {
+     "v": "1/yr",
+     "l": {
+      "he": "תדירות",
+      "en": "Interval"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-chain",
@@ -12708,7 +13255,24 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-chain",
-   "num": "4.1.2.2"
+   "num": "4.1.2.2",
+   "facts": [
+    {
+     "v": "PTFE",
+     "l": {
+      "he": "חומר",
+      "en": "Material"
+     }
+    },
+    {
+     "v": "25h",
+     "l": {
+      "he": "תדירות",
+      "en": "Interval"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-grease",
@@ -12789,7 +13353,24 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-grease",
-   "num": "4.1.2.3"
+   "num": "4.1.2.3",
+   "facts": [
+    {
+     "v": "NLGI #2",
+     "l": {
+      "he": "חומר",
+      "en": "Material"
+     }
+    },
+    {
+     "v": "25h",
+     "l": {
+      "he": "תדירות",
+      "en": "Interval"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-brake",
@@ -12874,7 +13455,24 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-brake",
-   "num": "4.1.2.4"
+   "num": "4.1.2.4",
+   "facts": [
+    {
+     "v": "DOT 4",
+     "l": {
+      "he": "נוזל",
+      "en": "Fluid"
+     }
+    },
+    {
+     "v": "Daily",
+     "l": {
+      "he": "בדיקה",
+      "en": "Check"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "bm-tires",
@@ -12961,7 +13559,31 @@
    },
    "updated": "2026-11-11",
    "sec": "m-b-tires",
-   "num": "4.1.2.5"
+   "num": "4.1.2.5",
+   "facts": [
+    {
+     "v": "5",
+     "l": {
+      "he": "קדמי PSI",
+      "en": "Front PSI"
+     }
+    },
+    {
+     "v": "7",
+     "l": {
+      "he": "אמצעיים PSI",
+      "en": "Middle PSI"
+     }
+    },
+    {
+     "v": "6",
+     "l": {
+      "he": "אחורי PSI",
+      "en": "Rear PSI"
+     },
+     "hi": true
+    }
+   ]
   },
   {
    "id": "dtc-overview",
