@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 30,
+  "version": 31,
   "updated": "2026-11-11",
   "teamHash": "507fe455f4f70e3efe7445fa9634d45df46629606107c0810a5ddae4851d4963",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -18520,43 +18520,59 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
+        "יצרן / דגם",
+        "מק״ט יצרן",
         "כמות"
        ],
        "rows": [
         [
          "מערכת ROBOX",
          "`ROBOX-V01-00001`",
+         "—",
+         "—",
          "1"
         ],
         [
          "ביזון UGV",
          "`VHCR-V01-00001`",
+         "—",
+         "—",
          "2"
         ],
         [
          "קרון שליטה",
          "`RTCC-V01-00001`",
+         "—",
+         "—",
          "1"
         ],
         [
          "ישל״ט ROCU-10",
          "`OEM00356`",
+         "Winmate",
+         "—",
          "2"
         ],
         [
          "קופסת מפעיל",
          "`ASSY800388-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "סט תקשורת לרחפן",
          "`SET00135-A`",
+         "Autel EVO Max 4T (רחפן)",
+         "—",
          "1"
         ],
         [
          "סט ממסר חצובה",
          "`SET00137-A`",
+         "—",
+         "—",
          "1"
         ]
        ]
@@ -18575,43 +18591,59 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
+        "Manufacturer / model",
+        "Manufacturer P/N",
         "Qty"
        ],
        "rows": [
         [
          "ROBOX system",
          "`ROBOX-V01-00001`",
+         "—",
+         "—",
          "1"
         ],
         [
          "BISON UGV",
          "`VHCR-V01-00001`",
+         "—",
+         "—",
          "2"
         ],
         [
          "UGV controlled container",
          "`RTCC-V01-00001`",
+         "—",
+         "—",
          "1"
         ],
         [
          "ROCU-10 controller",
          "`OEM00356`",
+         "Winmate",
+         "—",
          "2"
         ],
         [
          "Operator box",
          "`ASSY800388-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "Drone COM set",
          "`SET00135-A`",
+         "Autel EVO Max 4T (drone)",
+         "—",
          "1"
         ],
         [
          "Tripod relay set",
          "`SET00137-A`",
+         "—",
+         "—",
          "1"
         ]
        ]
@@ -18647,18 +18679,24 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
+        "יצרן / דגם",
+        "מק״ט יצרן",
         "כמות"
        ],
        "rows": [
         [
          "רכב BISON",
          "`GEN00211`",
+         "ARGO Aurora 950 (רכב בסיס)",
+         "—",
          "1"
         ],
         [
          "מסמך BISON Rework",
          "`DOC00714-A`",
+         "—",
+         "—",
          "—"
         ]
        ]
@@ -18671,7 +18709,7 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
         "כמות"
        ],
        "rows": [
@@ -18715,7 +18753,7 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
         "כמות"
        ],
        "rows": [
@@ -18784,7 +18822,7 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
         "כמות"
        ],
        "rows": [
@@ -18813,58 +18851,80 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
+        "יצרן / דגם",
+        "מק״ט יצרן",
         "כמות"
        ],
        "rows": [
         [
          "רמקול",
          "`GEN00250`",
+         "—",
+         "—",
          "1"
         ],
         [
          "תיבת בקרה גבוהה (HLC Box)",
          "`OEM00378`",
+         "—",
+         "—",
          "1"
         ],
         [
          "סט בקרה נמוכה (LLC Set)",
          "`SET00129-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "סט מערכת נשק",
          "`SET00149-A`",
+         "General Robotics – Pitbull",
+         "—",
          "1"
         ],
         [
          "מכלול מיקרופון",
          "`ASSY800519-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "סט כבלים פנימי",
          "`SET00148-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "סט חלקי כלי",
          "`SET00156-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "מגן תחתון (Skid Plate)",
          "`ASSY800468-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "תיבת חשמל (Power Box)",
          "`ASSY800482-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "זחלים",
          "`MCH00746-A`",
+         "—",
+         "—",
          "2"
         ]
        ]
@@ -18883,18 +18943,24 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
+        "Manufacturer / model",
+        "Manufacturer P/N",
         "Qty"
        ],
        "rows": [
         [
          "BISON vehicle",
          "`GEN00211`",
+         "ARGO Aurora 950 (base vehicle)",
+         "—",
          "1"
         ],
         [
          "BISON Rework document",
          "`DOC00714-A`",
+         "—",
+         "—",
          "—"
         ]
        ]
@@ -18907,7 +18973,7 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
         "Qty"
        ],
        "rows": [
@@ -18951,7 +19017,7 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
         "Qty"
        ],
        "rows": [
@@ -19020,7 +19086,7 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
         "Qty"
        ],
        "rows": [
@@ -19049,58 +19115,80 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
+        "Manufacturer / model",
+        "Manufacturer P/N",
         "Qty"
        ],
        "rows": [
         [
          "Speaker",
          "`GEN00250`",
+         "—",
+         "—",
          "1"
         ],
         [
          "HLC Box",
          "`OEM00378`",
+         "—",
+         "—",
          "1"
         ],
         [
          "LLC Set",
          "`SET00129-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Gun set",
          "`SET00149-A`",
+         "General Robotics – Pitbull",
+         "—",
          "1"
         ],
         [
          "MIC assy",
          "`ASSY800519-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Internal cables set",
          "`SET00148-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Vehicle part set",
          "`SET00156-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Skid plate",
          "`ASSY800468-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Power box",
          "`ASSY800482-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Tracks",
          "`MCH00746-A`",
+         "—",
+         "—",
          "2"
         ]
        ]
@@ -19136,32 +19224,44 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
+        "יצרן / דגם",
+        "מק״ט יצרן",
         "כמות"
        ],
        "rows": [
         [
          "פילטר שמן",
+         "—",
+         "—",
          "`39164PH`",
          "1"
         ],
         [
          "פילטר אוויר ראשי",
+         "—",
+         "—",
          "`692519`",
          "1"
         ],
         [
          "פילטר אוויר משני",
+         "—",
+         "—",
          "`692520`",
          "1"
         ],
         [
-         "מצת (NGK BPR4ES)",
+         "מצת",
+         "—",
+         "NGK BPR4ES",
          "`491055S`",
          "2"
         ],
         [
-         "שמן מנוע Argo 5W-40 סינתטי",
+         "שמן מנוע",
+         "—",
+         "ARGO – 5W-40 סינתטי",
          "`130-103`",
          "2.3 L"
         ]
@@ -19175,17 +19275,23 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
+        "יצרן / דגם",
+        "מק״ט יצרן",
         "כמות"
        ],
        "rows": [
         [
          "רצועת הנעה",
+         "—",
+         "ARGO",
          "`127-159`",
          "1"
         ],
         [
          "רצועת הנעה – חזקה (HD)",
+         "—",
+         "ARGO",
          "`127-159HD`",
          "1"
         ]
@@ -19205,32 +19311,44 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
+        "Manufacturer / model",
+        "Manufacturer P/N",
         "Qty"
        ],
        "rows": [
         [
          "Oil filter",
+         "—",
+         "—",
          "`39164PH`",
          "1"
         ],
         [
          "Primary air filter",
+         "—",
+         "—",
          "`692519`",
          "1"
         ],
         [
          "Secondary air filter",
+         "—",
+         "—",
          "`692520`",
          "1"
         ],
         [
-         "Spark plug (NGK BPR4ES)",
+         "Spark plug",
+         "—",
+         "NGK BPR4ES",
          "`491055S`",
          "2"
         ],
         [
-         "Argo 5W-40 synthetic engine oil",
+         "Engine oil",
+         "—",
+         "ARGO – 5W-40 synthetic",
          "`130-103`",
          "2.3 L"
         ]
@@ -19244,17 +19362,23 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
+        "Manufacturer / model",
+        "Manufacturer P/N",
         "Qty"
        ],
        "rows": [
         [
          "Drive belt",
+         "—",
+         "ARGO",
          "`127-159`",
          "1"
         ],
         [
          "Drive belt – heavy duty",
+         "—",
+         "ARGO",
          "`127-159HD`",
          "1"
         ]
@@ -19291,37 +19415,51 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
+        "יצרן / דגם",
+        "מק״ט יצרן",
         "כמות"
        ],
        "rows": [
         [
          "קרון שליטה",
          "`RTCC-V01-00001`",
+         "—",
+         "—",
          "1"
         ],
         [
          "קרון (Control Container)",
          "`SET00132-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "סט תורן, תקשורת ואנטנות",
          "`SET00134-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "גנרטור",
          "`GEN00212 + GEN0221`",
+         "Honda EU70is",
+         "—",
          "1"
         ],
         [
          "רמסע (Ramsa-Lift)",
          "`MCH00745`",
+         "—",
+         "—",
          "1"
         ],
         [
          "מזגן",
+         "—",
+         "Electra Classic INV 170",
          "—",
          "1"
         ]
@@ -19335,7 +19473,7 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
         "כמות"
        ],
        "rows": [
@@ -19380,37 +19518,51 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
+        "Manufacturer / model",
+        "Manufacturer P/N",
         "Qty"
        ],
        "rows": [
         [
          "UGV controlled container",
          "`RTCC-V01-00001`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Control container",
          "`SET00132-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Mast COM & ANT set",
          "`SET00134-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Generator",
          "`GEN00212 + GEN0221`",
+         "Honda EU70is",
+         "—",
          "1"
         ],
         [
          "Ramsa-Lift",
          "`MCH00745`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Air conditioner",
+         "—",
+         "Electra Classic INV 170",
          "—",
          "1"
         ]
@@ -19424,7 +19576,7 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
         "Qty"
        ],
        "rows": [
@@ -19486,62 +19638,86 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
+        "יצרן / דגם",
+        "מק״ט יצרן",
         "כמות"
        ],
        "rows": [
         [
          "קופסת מפעיל",
          "`ASSY800388-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "ישל״ט ROCU-10",
          "`OEM00356`",
+         "Winmate",
+         "—",
          "2"
         ],
         [
          "כבל ROCU-10",
          "`ASSY800410-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "ישל״ט מערכת נשק",
          "`OEM00382`",
+         "General Robotics",
+         "—",
          "2"
         ],
         [
          "כבל ישל״ט מערכת נשק",
          "`ASSY800409-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "טאבלט מפקד",
          "`OEM00388`",
+         "—",
+         "—",
          "1"
         ],
         [
          "כבל טאבלט",
          "`CBL01305-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "אנטנת BLUSDR",
          "`ANT00072`",
+         "—",
+         "—",
          "4"
         ],
         [
          "שנאי מתח",
          "`ASSY800408-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "כבל שנאי מתח",
          "`ASSY800458-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "סוללה",
+         "—",
+         "—",
          "`MR-2791`",
          "2 לקופסה"
         ]
@@ -19555,7 +19731,7 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
         "כמות"
        ],
        "rows": [
@@ -19605,64 +19781,88 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
+        "Manufacturer / model",
+        "Manufacturer P/N",
         "Qty"
        ],
        "rows": [
         [
          "Operator box",
          "`ASSY800388-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "ROCU-10 controller",
          "`OEM00356`",
+         "Winmate",
+         "—",
          "2"
         ],
         [
          "ROCU-10 cable",
          "`ASSY800410-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "Gun system controller",
          "`OEM00382`",
+         "General Robotics",
+         "—",
          "2"
         ],
         [
          "Gun controller cable",
          "`ASSY800409-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "Commander tablet",
          "`OEM00388`",
+         "—",
+         "—",
          "1"
         ],
         [
          "Tablet cable",
          "`CBL01305-A`",
+         "—",
+         "—",
          "1"
         ],
         [
          "BLUSDR antenna",
          "`ANT00072`",
+         "—",
+         "—",
          "4"
         ],
         [
          "Power adapter",
          "`ASSY800408-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "Power adapter cable",
          "`ASSY800458-A`",
+         "—",
+         "—",
          "2"
         ],
         [
          "Battery",
+         "—",
+         "—",
          "`MR-2791`",
-         "2 לקופסה"
+         "2 per box"
         ]
        ]
       }
@@ -19674,7 +19874,7 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
         "Qty"
        ],
        "rows": [
@@ -19741,7 +19941,7 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
         "כמות"
        ],
        "rows": [
@@ -19775,7 +19975,7 @@
       "table": {
        "head": [
         "פריט",
-        "מק״ט",
+        "מק״ט חברה",
         "כמות"
        ],
        "rows": [
@@ -19815,7 +20015,7 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
         "Qty"
        ],
        "rows": [
@@ -19849,7 +20049,7 @@
       "table": {
        "head": [
         "Item",
-        "Part no.",
+        "Company P/N",
         "Qty"
        ],
        "rows": [
