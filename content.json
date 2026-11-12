@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 29,
+  "version": 30,
   "updated": "2026-11-11",
   "teamHash": "507fe455f4f70e3efe7445fa9634d45df46629606107c0810a5ddae4851d4963",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
@@ -1152,6 +1152,150 @@
     "en": "ARGO service manual"
    },
    "num": "9.1"
+  },
+  {
+   "id": "p",
+   "parent": "p-iw",
+   "kind": "",
+   "name": {
+    "he": "מק״טים מערכת",
+    "en": "System part numbers"
+   },
+   "num": "10",
+   "color": "#A16207",
+   "icon": "tag",
+   "desc": {
+    "he": "לפי מכלולים",
+    "en": "By assembly"
+   },
+   "code": "P/N"
+  },
+  {
+   "id": "p-top",
+   "parent": "p",
+   "kind": "",
+   "name": {
+    "he": "מערכת – רמה עליונה",
+    "en": "System – top level"
+   },
+   "num": "10.1"
+  },
+  {
+   "id": "p-bison",
+   "parent": "p",
+   "kind": "",
+   "name": {
+    "he": "ביזון",
+    "en": "BISON"
+   },
+   "num": "10.2"
+  },
+  {
+   "id": "p-cons",
+   "parent": "p",
+   "kind": "",
+   "name": {
+    "he": "ביזון – מתכלים וחלקי אחזקה",
+    "en": "BISON – consumables and service parts"
+   },
+   "num": "10.3"
+  },
+  {
+   "id": "p-cont",
+   "parent": "p",
+   "kind": "",
+   "name": {
+    "he": "קרון שליטה",
+    "en": "Control container"
+   },
+   "num": "10.4"
+  },
+  {
+   "id": "p-op",
+   "parent": "p",
+   "kind": "",
+   "name": {
+    "he": "עמדת מפעיל וממסר",
+    "en": "Operator station and relay"
+   },
+   "num": "10.5"
+  },
+  {
+   "id": "p-tools",
+   "parent": "p",
+   "kind": "",
+   "name": {
+    "he": "כבלי טכנאי, ג׳יגים וכלי עבודה",
+    "en": "Technician cables, jigs and tools"
+   },
+   "num": "10.6"
+  },
+  {
+   "id": "s",
+   "parent": "p-iw",
+   "kind": "",
+   "name": {
+    "he": "נתונים בסיסיים על מערכות קיימות",
+    "en": "Basic data on fielded systems"
+   },
+   "num": "11",
+   "color": "#4D7C0F",
+   "icon": "server",
+   "desc": {
+    "he": "זהב, אגוז, גבעתי, רבמ״ד, 869",
+    "en": "Zahav, Egoz, Givati, Ravmad, 869"
+   },
+   "code": "SYS"
+  },
+  {
+   "id": "s-zahav",
+   "parent": "s",
+   "kind": "",
+   "name": {
+    "he": "מערכת זהב",
+    "en": "Zahav system"
+   },
+   "num": "11.1"
+  },
+  {
+   "id": "s-egoz",
+   "parent": "s",
+   "kind": "",
+   "name": {
+    "he": "מערכת אגוז",
+    "en": "Egoz system"
+   },
+   "num": "11.2"
+  },
+  {
+   "id": "s-givati",
+   "parent": "s",
+   "kind": "",
+   "name": {
+    "he": "מערכת גבעתי",
+    "en": "Givati system"
+   },
+   "num": "11.3"
+  },
+  {
+   "id": "s-ravmad",
+   "parent": "s",
+   "kind": "",
+   "name": {
+    "he": "מערכת רבמ״ד",
+    "en": "Ravmad system"
+   },
+   "num": "11.4"
+  },
+  {
+   "id": "s-869",
+   "parent": "s",
+   "kind": "",
+   "name": {
+    "he": "מערכת 869",
+    "en": "869 system"
+   },
+   "num": "11.5"
   }
  ],
  "items": [
@@ -18355,6 +18499,2078 @@
    },
    "updated": "2026-11-10",
    "group": "comm"
+  },
+  {
+   "id": "pn-top",
+   "type": "guide",
+   "title": {
+    "he": "מערכת – רמה עליונה",
+    "en": "System – top level"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "ROBOX"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "מערכת ROBOX",
+         "`ROBOX-V01-00001`",
+         "1"
+        ],
+        [
+         "ביזון UGV",
+         "`VHCR-V01-00001`",
+         "2"
+        ],
+        [
+         "קרון שליטה",
+         "`RTCC-V01-00001`",
+         "1"
+        ],
+        [
+         "ישל״ט ROCU-10",
+         "`OEM00356`",
+         "2"
+        ],
+        [
+         "קופסת מפעיל",
+         "`ASSY800388-A`",
+         "2"
+        ],
+        [
+         "סט תקשורת לרחפן",
+         "`SET00135-A`",
+         "1"
+        ],
+        [
+         "סט ממסר חצובה",
+         "`SET00137-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001 (עץ מוצר).",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "ROBOX"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "ROBOX system",
+         "`ROBOX-V01-00001`",
+         "1"
+        ],
+        [
+         "BISON UGV",
+         "`VHCR-V01-00001`",
+         "2"
+        ],
+        [
+         "UGV controlled container",
+         "`RTCC-V01-00001`",
+         "1"
+        ],
+        [
+         "ROCU-10 controller",
+         "`OEM00356`",
+         "2"
+        ],
+        [
+         "Operator box",
+         "`ASSY800388-A`",
+         "2"
+        ],
+        [
+         "Drone COM set",
+         "`SET00135-A`",
+         "1"
+        ],
+        [
+         "Tripod relay set",
+         "`SET00137-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001 (BOM).",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "p-top",
+   "num": "10.1"
+  },
+  {
+   "id": "pn-bison",
+   "type": "guide",
+   "title": {
+    "he": "ביזון – עץ מוצר",
+    "en": "BISON – bill of materials"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "סט Redesign – SET00140-A"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "רכב BISON",
+         "`GEN00211`",
+         "1"
+        ],
+        [
+         "מסמך BISON Rework",
+         "`DOC00714-A`",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סט שלדה – SET00157-A"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "שלדה אחורית",
+         "`ASSY800475-A`",
+         "1"
+        ],
+        [
+         "שלדה קדמית",
+         "`ASSY800476-A`",
+         "1"
+        ],
+        [
+         "תושבת NC",
+         "`MTL01198-A`",
+         "1"
+        ],
+        [
+         "תמיכת גשר שמאל קדמי",
+         "`MTL01093-A`",
+         "1"
+        ],
+        [
+         "תמיכת גשר ימין קדמי",
+         "`MTL01094-A`",
+         "1"
+        ],
+        [
+         "מדף LLC",
+         "`MTL01107-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סט משטח עליון – SET00158-A"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "משטח עליון",
+         "`ASSY800477-A`",
+         "1"
+        ],
+        [
+         "כיסוי שמאל",
+         "`ASSY800483-A`",
+         "1"
+        ],
+        [
+         "כיסוי ימין",
+         "`ASSY800484-A`",
+         "1"
+        ],
+        [
+         "כיסוי מרכזי",
+         "`ASSY800485-A`",
+         "1"
+        ],
+        [
+         "כיסוי EMO",
+         "`ASSY800486-A`",
+         "1"
+        ],
+        [
+         "כיסוי אנטנות",
+         "`ASSY800487-A`",
+         "1"
+        ],
+        [
+         "מכלול תורן",
+         "`ASSY800488-A`",
+         "1"
+        ],
+        [
+         "מצלמת צד",
+         "`ASSY800492-A`",
+         "2"
+        ],
+        [
+         "מדף FORT",
+         "`ASSY800493-A`",
+         "1"
+        ],
+        [
+         "מדף סלולר",
+         "`ASSY800494-A`",
+         "1"
+        ],
+        [
+         "חיזוק תורן",
+         "`MTL01163-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סט כיסוי מנוע – SET00159-A"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "כיסוי מנוע",
+         "`ASSY800478-A`",
+         "1"
+        ],
+        [
+         "בסיס מנוע",
+         "`ASSY800479-A`",
+         "1"
+        ],
+        [
+         "בולם גז (Gas Spring)",
+         "`MCH00773`",
+         "2"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "אינטגרציה"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "רמקול",
+         "`GEN00250`",
+         "1"
+        ],
+        [
+         "תיבת בקרה גבוהה (HLC Box)",
+         "`OEM00378`",
+         "1"
+        ],
+        [
+         "סט בקרה נמוכה (LLC Set)",
+         "`SET00129-A`",
+         "1"
+        ],
+        [
+         "סט מערכת נשק",
+         "`SET00149-A`",
+         "1"
+        ],
+        [
+         "מכלול מיקרופון",
+         "`ASSY800519-A`",
+         "1"
+        ],
+        [
+         "סט כבלים פנימי",
+         "`SET00148-A`",
+         "1"
+        ],
+        [
+         "סט חלקי כלי",
+         "`SET00156-A`",
+         "1"
+        ],
+        [
+         "מגן תחתון (Skid Plate)",
+         "`ASSY800468-A`",
+         "1"
+        ],
+        [
+         "תיבת חשמל (Power Box)",
+         "`ASSY800482-A`",
+         "1"
+        ],
+        [
+         "זחלים",
+         "`MCH00746-A`",
+         "2"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: ROBOX System Technical Data, DOC00672-A REV.001 (עץ מוצר).",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "BISON Redesign Set – SET00140-A"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "BISON vehicle",
+         "`GEN00211`",
+         "1"
+        ],
+        [
+         "BISON Rework document",
+         "`DOC00714-A`",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Chassis Set – SET00157-A"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Chassis back",
+         "`ASSY800475-A`",
+         "1"
+        ],
+        [
+         "Chassis front",
+         "`ASSY800476-A`",
+         "1"
+        ],
+        [
+         "NC mount",
+         "`MTL01198-A`",
+         "1"
+        ],
+        [
+         "Bridge support LF",
+         "`MTL01093-A`",
+         "1"
+        ],
+        [
+         "Bridge support RF",
+         "`MTL01094-A`",
+         "1"
+        ],
+        [
+         "LLC shelf",
+         "`MTL01107-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Flat Bed Set – SET00158-A"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Flat bed assy",
+         "`ASSY800477-A`",
+         "1"
+        ],
+        [
+         "Left cover",
+         "`ASSY800483-A`",
+         "1"
+        ],
+        [
+         "Right cover",
+         "`ASSY800484-A`",
+         "1"
+        ],
+        [
+         "Center cover",
+         "`ASSY800485-A`",
+         "1"
+        ],
+        [
+         "EMO cover",
+         "`ASSY800486-A`",
+         "1"
+        ],
+        [
+         "ANT cover",
+         "`ASSY800487-A`",
+         "1"
+        ],
+        [
+         "Mast assy",
+         "`ASSY800488-A`",
+         "1"
+        ],
+        [
+         "Side camera",
+         "`ASSY800492-A`",
+         "2"
+        ],
+        [
+         "Shelf Fort",
+         "`ASSY800493-A`",
+         "1"
+        ],
+        [
+         "Shelf cellular",
+         "`ASSY800494-A`",
+         "1"
+        ],
+        [
+         "Mast brace",
+         "`MTL01163-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Motor Cover Set – SET00159-A"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Motor cover",
+         "`ASSY800478-A`",
+         "1"
+        ],
+        [
+         "Motor base",
+         "`ASSY800479-A`",
+         "1"
+        ],
+        [
+         "Gas spring",
+         "`MCH00773`",
+         "2"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Integration"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Speaker",
+         "`GEN00250`",
+         "1"
+        ],
+        [
+         "HLC Box",
+         "`OEM00378`",
+         "1"
+        ],
+        [
+         "LLC Set",
+         "`SET00129-A`",
+         "1"
+        ],
+        [
+         "Gun set",
+         "`SET00149-A`",
+         "1"
+        ],
+        [
+         "MIC assy",
+         "`ASSY800519-A`",
+         "1"
+        ],
+        [
+         "Internal cables set",
+         "`SET00148-A`",
+         "1"
+        ],
+        [
+         "Vehicle part set",
+         "`SET00156-A`",
+         "1"
+        ],
+        [
+         "Skid plate",
+         "`ASSY800468-A`",
+         "1"
+        ],
+        [
+         "Power box",
+         "`ASSY800482-A`",
+         "1"
+        ],
+        [
+         "Tracks",
+         "`MCH00746-A`",
+         "2"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: ROBOX System Technical Data, DOC00672-A REV.001 (BOM).",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "p-bison",
+   "num": "10.2"
+  },
+  {
+   "id": "pn-cons",
+   "type": "guide",
+   "title": {
+    "he": "ביזון – מתכלים וחלקי אחזקה",
+    "en": "BISON – consumables and service parts"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "מנוע"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "פילטר שמן",
+         "`39164PH`",
+         "1"
+        ],
+        [
+         "פילטר אוויר ראשי",
+         "`692519`",
+         "1"
+        ],
+        [
+         "פילטר אוויר משני",
+         "`692520`",
+         "1"
+        ],
+        [
+         "מצת (NGK BPR4ES)",
+         "`491055S`",
+         "2"
+        ],
+        [
+         "שמן מנוע Argo 5W-40 סינתטי",
+         "`130-103`",
+         "2.3 L"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "הנעה"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "רצועת הנעה",
+         "`127-159`",
+         "1"
+        ],
+        [
+         "רצועת הנעה – חזקה (HD)",
+         "`127-159HD`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: נוהל טיפולים יומיים, מפרט ARGO ומדריך אחזקת מנע.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "Engine"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Oil filter",
+         "`39164PH`",
+         "1"
+        ],
+        [
+         "Primary air filter",
+         "`692519`",
+         "1"
+        ],
+        [
+         "Secondary air filter",
+         "`692520`",
+         "1"
+        ],
+        [
+         "Spark plug (NGK BPR4ES)",
+         "`491055S`",
+         "2"
+        ],
+        [
+         "Argo 5W-40 synthetic engine oil",
+         "`130-103`",
+         "2.3 L"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Drivetrain"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Drive belt",
+         "`127-159`",
+         "1"
+        ],
+        [
+         "Drive belt – heavy duty",
+         "`127-159HD`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: Daily maintenance procedure, ARGO specification and preventive maintenance guide.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "p-cons",
+   "num": "10.3"
+  },
+  {
+   "id": "pn-cont",
+   "type": "guide",
+   "title": {
+    "he": "קרון שליטה",
+    "en": "Control container"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "עץ מוצר"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "קרון שליטה",
+         "`RTCC-V01-00001`",
+         "1"
+        ],
+        [
+         "קרון (Control Container)",
+         "`SET00132-A`",
+         "1"
+        ],
+        [
+         "סט תורן, תקשורת ואנטנות",
+         "`SET00134-A`",
+         "1"
+        ],
+        [
+         "גנרטור",
+         "`GEN00212 + GEN0221`",
+         "1"
+        ],
+        [
+         "רמסע (Ramsa-Lift)",
+         "`MCH00745`",
+         "1"
+        ],
+        [
+         "מזגן",
+         "—",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "כבלי עמדות ומסכים"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "כבל HDMI",
+         "`CBL01434`",
+         "2"
+        ],
+        [
+         "כבל HDMI",
+         "`CBL01435`",
+         "2"
+        ],
+        [
+         "כבל HDMI",
+         "`CBL01363`",
+         "2"
+        ],
+        [
+         "כבל HDMI / RJ45 לעמדה",
+         "`CBL01436`",
+         "6"
+        ],
+        [
+         "כבל תורן (ETH ומתח)",
+         "`CBL01346-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר DOC00698-A, ‏ATP קרון DOC00751-A, ‏ATP ROCU10 DOC00752-A ונוהל כיול.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "Bill of materials"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "UGV controlled container",
+         "`RTCC-V01-00001`",
+         "1"
+        ],
+        [
+         "Control container",
+         "`SET00132-A`",
+         "1"
+        ],
+        [
+         "Mast COM & ANT set",
+         "`SET00134-A`",
+         "1"
+        ],
+        [
+         "Generator",
+         "`GEN00212 + GEN0221`",
+         "1"
+        ],
+        [
+         "Ramsa-Lift",
+         "`MCH00745`",
+         "1"
+        ],
+        [
+         "Air conditioner",
+         "—",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Station and screen cables"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "HDMI cable",
+         "`CBL01434`",
+         "2"
+        ],
+        [
+         "HDMI cable",
+         "`CBL01435`",
+         "2"
+        ],
+        [
+         "HDMI cable",
+         "`CBL01363`",
+         "2"
+        ],
+        [
+         "Station HDMI / RJ45 cable",
+         "`CBL01436`",
+         "6"
+        ],
+        [
+         "Mast cable (ETH and power)",
+         "`CBL01346-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: Brief user manual DOC00698-A, container ATP DOC00751-A, ROCU10 ATP DOC00752-A and calibration procedure.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "p-cont",
+   "num": "10.4"
+  },
+  {
+   "id": "pn-op",
+   "type": "guide",
+   "title": {
+    "he": "עמדת מפעיל וממסר",
+    "en": "Operator station and relay"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "עמדת מפעיל"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "קופסת מפעיל",
+         "`ASSY800388-A`",
+         "2"
+        ],
+        [
+         "ישל״ט ROCU-10",
+         "`OEM00356`",
+         "2"
+        ],
+        [
+         "כבל ROCU-10",
+         "`ASSY800410-A`",
+         "2"
+        ],
+        [
+         "ישל״ט מערכת נשק",
+         "`OEM00382`",
+         "2"
+        ],
+        [
+         "כבל ישל״ט מערכת נשק",
+         "`ASSY800409-A`",
+         "2"
+        ],
+        [
+         "טאבלט מפקד",
+         "`OEM00388`",
+         "1"
+        ],
+        [
+         "כבל טאבלט",
+         "`CBL01305-A`",
+         "1"
+        ],
+        [
+         "אנטנת BLUSDR",
+         "`ANT00072`",
+         "4"
+        ],
+        [
+         "שנאי מתח",
+         "`ASSY800408-A`",
+         "2"
+        ],
+        [
+         "כבל שנאי מתח",
+         "`ASSY800458-A`",
+         "2"
+        ],
+        [
+         "סוללה",
+         "`MR-2791`",
+         "2 לקופסה"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "סט ממסר חצובה"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "חצובה",
+         "`GEN00202`",
+         "1"
+        ],
+        [
+         "פליקן ממסר",
+         "`ASSY800481-A`",
+         "1"
+        ],
+        [
+         "קופסת ממסר",
+         "`ASSY800474`",
+         "1"
+        ],
+        [
+         "כבל ממסר",
+         "`CBL01339-A`",
+         "1"
+        ],
+        [
+         "כבל ETH ארוך",
+         "`CBL01340-C`",
+         "1"
+        ],
+        [
+         "כבל ETH קצר",
+         "`CBL01338-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר DOC00698-A, ‏ATP קרון DOC00751-A, ‏ATP ROCU10 DOC00752-A ונוהל כיול.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "Operator station"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Operator box",
+         "`ASSY800388-A`",
+         "2"
+        ],
+        [
+         "ROCU-10 controller",
+         "`OEM00356`",
+         "2"
+        ],
+        [
+         "ROCU-10 cable",
+         "`ASSY800410-A`",
+         "2"
+        ],
+        [
+         "Gun system controller",
+         "`OEM00382`",
+         "2"
+        ],
+        [
+         "Gun controller cable",
+         "`ASSY800409-A`",
+         "2"
+        ],
+        [
+         "Commander tablet",
+         "`OEM00388`",
+         "1"
+        ],
+        [
+         "Tablet cable",
+         "`CBL01305-A`",
+         "1"
+        ],
+        [
+         "BLUSDR antenna",
+         "`ANT00072`",
+         "4"
+        ],
+        [
+         "Power adapter",
+         "`ASSY800408-A`",
+         "2"
+        ],
+        [
+         "Power adapter cable",
+         "`ASSY800458-A`",
+         "2"
+        ],
+        [
+         "Battery",
+         "`MR-2791`",
+         "2 לקופסה"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Tripod relay set"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Tripod",
+         "`GEN00202`",
+         "1"
+        ],
+        [
+         "Relay Pelican",
+         "`ASSY800481-A`",
+         "1"
+        ],
+        [
+         "Relay box",
+         "`ASSY800474`",
+         "1"
+        ],
+        [
+         "Relay cable",
+         "`CBL01339-A`",
+         "1"
+        ],
+        [
+         "Long ETH cable",
+         "`CBL01340-C`",
+         "1"
+        ],
+        [
+         "Short ETH cable",
+         "`CBL01338-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: Brief user manual DOC00698-A, container ATP DOC00751-A, ROCU10 ATP DOC00752-A and calibration procedure.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "p-op",
+   "num": "10.5"
+  },
+  {
+   "id": "pn-tools",
+   "type": "guide",
+   "title": {
+    "he": "כבלי טכנאי, ג׳יגים וכלי עבודה",
+    "en": "Technician cables, jigs and tools"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "כבלי טכנאי"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "כבל טכנאי לקונטרול פאנל",
+         "`CBL01327-A`",
+         "1"
+        ],
+        [
+         "כבל לקופסת מפעיל",
+         "`CBL01345-A`",
+         "1"
+        ],
+        [
+         "כבל מתח M10 ‏(PWR IN)",
+         "`CBL01377-A`",
+         "1"
+        ],
+        [
+         "כבל ETH ‏M10",
+         "`CBL01378-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "ג׳יגים וכלי בדיקה"
+     },
+     {
+      "table": {
+       "head": [
+        "פריט",
+        "מק״ט",
+        "כמות"
+       ],
+       "rows": [
+        [
+         "ג׳יג בדיקת שקעי RF",
+         "`JIG00301-A`",
+         "1"
+        ],
+        [
+         "ג׳יג בדיקת כבל תורן",
+         "`JIG00299-A`",
+         "1"
+        ],
+        [
+         "מד זרם צבת",
+         "`TOL00968`",
+         "1"
+        ],
+        [
+         "בודק שקעים",
+         "`TOL00947`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "מקור: מדריך מפעיל מקוצר DOC00698-A, ‏ATP קרון DOC00751-A, ‏ATP ROCU10 DOC00752-A ונוהל כיול.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "Technician cables"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "Tech cable to control panel",
+         "`CBL01327-A`",
+         "1"
+        ],
+        [
+         "Operator box cable",
+         "`CBL01345-A`",
+         "1"
+        ],
+        [
+         "M10 PWR IN cable",
+         "`CBL01377-A`",
+         "1"
+        ],
+        [
+         "M10 ETH cable",
+         "`CBL01378-A`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Jigs and test tools"
+     },
+     {
+      "table": {
+       "head": [
+        "Item",
+        "Part no.",
+        "Qty"
+       ],
+       "rows": [
+        [
+         "RF socket test jig",
+         "`JIG00301-A`",
+         "1"
+        ],
+        [
+         "Mast cable test jig",
+         "`JIG00299-A`",
+         "1"
+        ],
+        [
+         "Clamp meter",
+         "`TOL00968`",
+         "1"
+        ],
+        [
+         "Socket tester",
+         "`TOL00947`",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "Source: Brief user manual DOC00698-A, container ATP DOC00751-A, ROCU10 ATP DOC00752-A and calibration procedure.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "p-tools",
+   "num": "10.6"
+  },
+  {
+   "id": "sys-zahav",
+   "type": "guide",
+   "title": {
+    "he": "מערכת זהב",
+    "en": "Zahav system"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "גרסאות מערכת"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "גרסה"
+       ],
+       "rows": [
+        [
+         "גרסת כלי",
+         "—"
+        ],
+        [
+         "גרסת בקרה נמוכה",
+         "—"
+        ],
+        [
+         "גרסת בקרה גבוהה",
+         "—"
+        ],
+        [
+         "גרסת תוכנה",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מספרים סידוריים"
+     },
+     {
+      "table": {
+       "head": [
+        "כלי",
+        "מס׳ סידורי"
+       ],
+       "rows": [
+        [
+         "כלי 120",
+         "—"
+        ],
+        [
+         "כלי 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "הנתונים של המערכת הזו יוזנו בהמשך.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "System versions"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Version"
+       ],
+       "rows": [
+        [
+         "Vehicle version",
+         "—"
+        ],
+        [
+         "Low-level control version",
+         "—"
+        ],
+        [
+         "High-level control version",
+         "—"
+        ],
+        [
+         "Software version",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Serial numbers"
+     },
+     {
+      "table": {
+       "head": [
+        "Vehicle",
+        "Serial no."
+       ],
+       "rows": [
+        [
+         "Vehicle 120",
+         "—"
+        ],
+        [
+         "Vehicle 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "This system’s data will be added later.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "s-zahav",
+   "num": "11.1"
+  },
+  {
+   "id": "sys-egoz",
+   "type": "guide",
+   "title": {
+    "he": "מערכת אגוז",
+    "en": "Egoz system"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "גרסאות מערכת"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "גרסה"
+       ],
+       "rows": [
+        [
+         "גרסת כלי",
+         "—"
+        ],
+        [
+         "גרסת בקרה נמוכה",
+         "—"
+        ],
+        [
+         "גרסת בקרה גבוהה",
+         "—"
+        ],
+        [
+         "גרסת שו״ב",
+         "—"
+        ],
+        [
+         "גרסת שו״ר",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מספרים סידוריים"
+     },
+     {
+      "table": {
+       "head": [
+        "כלי",
+        "מס׳ סידורי"
+       ],
+       "rows": [
+        [
+         "כלי 120",
+         "—"
+        ],
+        [
+         "כלי 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "הנתונים של המערכת הזו יוזנו בהמשך.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "System versions"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Version"
+       ],
+       "rows": [
+        [
+         "Vehicle version",
+         "—"
+        ],
+        [
+         "Low-level control version",
+         "—"
+        ],
+        [
+         "High-level control version",
+         "—"
+        ],
+        [
+         "C2 (שו״ב) version",
+         "—"
+        ],
+        [
+         "שו״ר version",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Serial numbers"
+     },
+     {
+      "table": {
+       "head": [
+        "Vehicle",
+        "Serial no."
+       ],
+       "rows": [
+        [
+         "Vehicle 120",
+         "—"
+        ],
+        [
+         "Vehicle 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "This system’s data will be added later.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "s-egoz",
+   "num": "11.2"
+  },
+  {
+   "id": "sys-givati",
+   "type": "guide",
+   "title": {
+    "he": "מערכת גבעתי",
+    "en": "Givati system"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "גרסאות מערכת"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "גרסה"
+       ],
+       "rows": [
+        [
+         "גרסת כלי",
+         "—"
+        ],
+        [
+         "גרסת בקרה נמוכה",
+         "—"
+        ],
+        [
+         "גרסת בקרה גבוהה",
+         "—"
+        ],
+        [
+         "גרסת שו״ב",
+         "—"
+        ],
+        [
+         "גרסת שו״ר",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מספרים סידוריים"
+     },
+     {
+      "table": {
+       "head": [
+        "כלי",
+        "מס׳ סידורי"
+       ],
+       "rows": [
+        [
+         "כלי 120",
+         "—"
+        ],
+        [
+         "כלי 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "הנתונים של המערכת הזו יוזנו בהמשך.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "System versions"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Version"
+       ],
+       "rows": [
+        [
+         "Vehicle version",
+         "—"
+        ],
+        [
+         "Low-level control version",
+         "—"
+        ],
+        [
+         "High-level control version",
+         "—"
+        ],
+        [
+         "C2 (שו״ב) version",
+         "—"
+        ],
+        [
+         "שו״ר version",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Serial numbers"
+     },
+     {
+      "table": {
+       "head": [
+        "Vehicle",
+        "Serial no."
+       ],
+       "rows": [
+        [
+         "Vehicle 120",
+         "—"
+        ],
+        [
+         "Vehicle 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "This system’s data will be added later.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "s-givati",
+   "num": "11.3"
+  },
+  {
+   "id": "sys-ravmad",
+   "type": "guide",
+   "title": {
+    "he": "מערכת רבמ״ד",
+    "en": "Ravmad system"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "גרסאות מערכת"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "גרסה"
+       ],
+       "rows": [
+        [
+         "גרסת כלי",
+         "—"
+        ],
+        [
+         "גרסת בקרה נמוכה",
+         "—"
+        ],
+        [
+         "גרסת בקרה גבוהה",
+         "—"
+        ],
+        [
+         "גרסת שו״ב",
+         "—"
+        ],
+        [
+         "גרסת שו״ר",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מספרים סידוריים"
+     },
+     {
+      "table": {
+       "head": [
+        "כלי",
+        "מס׳ סידורי"
+       ],
+       "rows": [
+        [
+         "כלי 120",
+         "—"
+        ],
+        [
+         "כלי 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "הנתונים של המערכת הזו יוזנו בהמשך.",
+      "kind": "note"
+     }
+    ],
+    "en": [
+     {
+      "h": "System versions"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Version"
+       ],
+       "rows": [
+        [
+         "Vehicle version",
+         "—"
+        ],
+        [
+         "Low-level control version",
+         "—"
+        ],
+        [
+         "High-level control version",
+         "—"
+        ],
+        [
+         "C2 (שו״ב) version",
+         "—"
+        ],
+        [
+         "שו״ר version",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Serial numbers"
+     },
+     {
+      "table": {
+       "head": [
+        "Vehicle",
+        "Serial no."
+       ],
+       "rows": [
+        [
+         "Vehicle 120",
+         "—"
+        ],
+        [
+         "Vehicle 121",
+         "—"
+        ]
+       ]
+      }
+     },
+     {
+      "note": "This system’s data will be added later.",
+      "kind": "note"
+     }
+    ]
+   },
+   "updated": "2026-11-11",
+   "sec": "s-ravmad",
+   "num": "11.4"
+  },
+  {
+   "id": "sys-869",
+   "type": "guide",
+   "title": {
+    "he": "מערכת 869",
+    "en": "869 system"
+   },
+   "summary": {
+    "he": "",
+    "en": ""
+   },
+   "body": {
+    "he": [
+     {
+      "h": "גרסאות מערכת"
+     },
+     {
+      "table": {
+       "head": [
+        "רכיב",
+        "גרסה"
+       ],
+       "rows": [
+        [
+         "גרסת כלי",
+         "VHCR-V01-00001"
+        ],
+        [
+         "גרסת בקרה נמוכה",
+         "0.2.14"
+        ],
+        [
+         "גרסת בקרה גבוהה",
+         "V1"
+        ],
+        [
+         "גרסת שו״ב",
+         "4.3.0"
+        ],
+        [
+         "גרסת שו״ר",
+         "2.5.1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "מספרים סידוריים"
+     },
+     {
+      "table": {
+       "head": [
+        "כלי",
+        "מס׳ סידורי"
+       ],
+       "rows": [
+        [
+         "כלי 120",
+         "3192"
+        ],
+        [
+         "כלי 121",
+         "3203"
+        ]
+       ]
+      }
+     }
+    ],
+    "en": [
+     {
+      "h": "System versions"
+     },
+     {
+      "table": {
+       "head": [
+        "Component",
+        "Version"
+       ],
+       "rows": [
+        [
+         "Vehicle version",
+         "VHCR-V01-00001"
+        ],
+        [
+         "Low-level control version",
+         "0.2.14"
+        ],
+        [
+         "High-level control version",
+         "V1"
+        ],
+        [
+         "C2 (שו״ב) version",
+         "4.3.0"
+        ],
+        [
+         "שו״ר version",
+         "2.5.1"
+        ]
+       ]
+      }
+     },
+     {
+      "h": "Serial numbers"
+     },
+     {
+      "table": {
+       "head": [
+        "Vehicle",
+        "Serial no."
+       ],
+       "rows": [
+        [
+         "Vehicle 120",
+         "3192"
+        ],
+        [
+         "Vehicle 121",
+         "3203"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   "facts": [
+    {
+     "v": "3192",
+     "l": {
+      "he": "כלי 120",
+      "en": "Vehicle 120"
+     }
+    },
+    {
+     "v": "3203",
+     "l": {
+      "he": "כלי 121",
+      "en": "Vehicle 121"
+     },
+     "hi": true
+    }
+   ],
+   "updated": "2026-11-11",
+   "sec": "s-869",
+   "num": "11.5"
   },
   {
    "id": "argo-sm-gi-1",
