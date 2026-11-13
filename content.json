@@ -1,6 +1,6 @@
 {
  "app": {
-  "version": 35,
+  "version": 36,
   "updated": "2026-11-11",
   "teamHash": "507fe455f4f70e3efe7445fa9634d45df46629606107c0810a5ddae4851d4963",
   "adminHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
@@ -1515,7 +1515,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "bison-overview",
@@ -1721,7 +1722,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "data"
   },
   {
    "id": "llc-overview",
@@ -1807,7 +1809,8 @@
     ]
    },
    "updated": "2026-11-11",
-   "sec": "h-b-llc"
+   "sec": "h-b-llc",
+   "kind": "data"
   },
   {
    "id": "llc-actuators",
@@ -2112,7 +2115,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-llc-act",
-   "num": "1.1.1.1"
+   "num": "1.1.1.1",
+   "kind": "data"
   },
   {
    "id": "llc-box",
@@ -2265,7 +2269,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-llc-box",
-   "num": "1.1.1.2"
+   "num": "1.1.1.2",
+   "kind": "data"
   },
   {
    "id": "hlc-overview",
@@ -2419,7 +2424,8 @@
     ]
    },
    "updated": "2026-11-11",
-   "sec": "h-b-hlc"
+   "sec": "h-b-hlc",
+   "kind": "data"
   },
   {
    "id": "hlc-box",
@@ -2624,7 +2630,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-hlc-box",
-   "num": "1.1.2.1"
+   "num": "1.1.2.1",
+   "kind": "data"
   },
   {
    "id": "veh-comm",
@@ -2973,7 +2980,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "cam-spec",
@@ -3162,7 +3170,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.1.2.3"
+   "num": "1.1.2.3",
+   "kind": "data"
   },
   {
    "id": "gun-spec",
@@ -3443,7 +3452,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.1.2.4"
+   "num": "1.1.2.4",
+   "kind": "data"
   },
   {
    "id": "mic-spk",
@@ -3540,7 +3550,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-b-hlc-mic",
-   "num": "1.1.2.5"
+   "num": "1.1.2.5",
+   "kind": "data"
   },
   {
    "id": "llc-emo",
@@ -3799,7 +3810,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.1.2.6"
+   "num": "1.1.2.6",
+   "kind": "data"
   },
   {
    "id": "led-spec",
@@ -3902,7 +3914,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.1.2.7"
+   "num": "1.1.2.7",
+   "kind": "data"
   },
   {
    "id": "argo-spec",
@@ -4166,7 +4179,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "data"
   },
   {
    "id": "um-dash",
@@ -4216,7 +4230,8 @@
       "kind": "note"
      }
     ]
-   }
+   },
+   "kind": "data"
   },
   {
    "id": "eng-oil",
@@ -4329,7 +4344,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "eng-gearoil",
@@ -4442,7 +4458,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "eng-oilfilter",
@@ -4524,7 +4541,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "eng-airfilter",
@@ -4637,7 +4655,8 @@
       "en": "Thorough"
      }
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "eng-airfilter2",
@@ -4727,7 +4746,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "argo-clutch",
@@ -5250,7 +5270,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.1.3.6"
+   "num": "1.1.3.6",
+   "kind": "data"
   },
   {
    "id": "eng-plug",
@@ -5355,7 +5376,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "eng-grease",
@@ -5443,7 +5465,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "eng-chain",
@@ -5533,7 +5556,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "eng-brake",
@@ -5637,7 +5661,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "veh-power",
@@ -5770,7 +5795,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "bison-energy",
@@ -6043,7 +6069,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.1.4.2"
+   "num": "1.1.4.2",
+   "kind": "data"
   },
   {
    "id": "container-spec",
@@ -6151,7 +6178,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "data"
   },
   {
    "id": "cont-lift",
@@ -6240,7 +6268,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-c-lift",
-   "num": "1.2.1"
+   "num": "1.2.1",
+   "kind": "data"
   },
   {
    "id": "ac-spec",
@@ -6383,7 +6412,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.2.2"
+   "num": "1.2.2",
+   "kind": "data"
   },
   {
    "id": "gen-spec",
@@ -6560,7 +6590,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "screens-spec",
@@ -6645,7 +6676,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.2.4"
+   "num": "1.2.4",
+   "kind": "data"
   },
   {
    "id": "mast-spec",
@@ -6716,7 +6748,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.2.5"
+   "num": "1.2.5",
+   "kind": "data"
   },
   {
    "id": "comp-spec",
@@ -6861,7 +6894,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "1.2.6"
+   "num": "1.2.6",
+   "kind": "data"
   },
   {
    "id": "cont-elec",
@@ -6988,7 +7022,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-c-elec",
-   "num": "1.2.7"
+   "num": "1.2.7",
+   "kind": "data"
   },
   {
    "id": "opbox-spec",
@@ -7306,7 +7341,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "tripod-full",
@@ -7523,7 +7559,8 @@
       "en": "Max height"
      }
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "recovery-kit",
@@ -7652,7 +7689,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-rec",
-   "num": "1.5"
+   "num": "1.5",
+   "kind": "data"
   },
   {
    "id": "drone-spec",
@@ -7745,7 +7783,8 @@
    },
    "updated": "2026-11-11",
    "sec": "h-drone",
-   "num": "1.6"
+   "num": "1.6",
+   "kind": "data"
   },
   {
    "id": "rocu10-spec",
@@ -8114,7 +8153,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "data"
   },
   {
    "id": "um-safety",
@@ -8261,7 +8301,8 @@
      }
     ]
    },
-   "num": "2.1"
+   "num": "2.1",
+   "kind": "trouble"
   },
   {
    "id": "map-panel",
@@ -8365,7 +8406,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "2.2"
+   "num": "2.2",
+   "kind": "map"
   },
   {
    "id": "map-rocu10",
@@ -8517,7 +8559,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "2.3"
+   "num": "2.3",
+   "kind": "map"
   },
   {
    "id": "map-opbox",
@@ -8633,7 +8676,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "2.4"
+   "num": "2.4",
+   "kind": "map"
   },
   {
    "id": "dep-tactical",
@@ -8800,7 +8844,8 @@
      }
     ]
    },
-   "num": "2.5.1"
+   "num": "2.5.1",
+   "kind": "config"
   },
   {
    "id": "dep-relay",
@@ -8999,7 +9044,8 @@
      }
     ]
    },
-   "num": "2.5.2"
+   "num": "2.5.2",
+   "kind": "config"
   },
   {
    "id": "dep-container",
@@ -9172,7 +9218,8 @@
      }
     ]
    },
-   "num": "2.5.3"
+   "num": "2.5.3",
+   "kind": "config"
   },
   {
    "id": "cont-ops",
@@ -9353,7 +9400,8 @@
    },
    "updated": "2026-11-11",
    "sec": "o-cont",
-   "num": "2.6"
+   "num": "2.6",
+   "kind": "proc"
   },
   {
    "id": "um-recovery",
@@ -9480,7 +9528,8 @@
      }
     ]
    },
-   "num": "2.7"
+   "num": "2.7",
+   "kind": "trouble"
   },
   {
    "id": "m-pre",
@@ -9558,7 +9607,8 @@
     "sign": true
    },
    "updated": "2026-11-10",
-   "num": "3.1"
+   "num": "3.1",
+   "kind": "check"
   },
   {
    "id": "m-post",
@@ -9616,7 +9666,8 @@
     "sign": true
    },
    "updated": "2026-11-10",
-   "num": "3.2"
+   "num": "3.2",
+   "kind": "check"
   },
   {
    "id": "dtc-checklist",
@@ -9651,7 +9702,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "3.3"
+   "num": "3.3",
+   "kind": "check"
   },
   {
    "id": "um-maint-extra",
@@ -9828,7 +9880,8 @@
      }
     ]
    },
-   "num": "3.4"
+   "num": "3.4",
+   "kind": "proc"
   },
   {
    "id": "m-daily-pdf",
@@ -9857,7 +9910,8 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "3.5"
+   "num": "3.5",
+   "kind": "doc"
   },
   {
    "id": "m-daily-pdf-en",
@@ -9886,7 +9940,8 @@
    },
    "updated": "2026-11-11",
    "sec": "r",
-   "num": "3.6"
+   "num": "3.6",
+   "kind": "doc"
   },
   {
    "id": "pm-summary",
@@ -10464,7 +10519,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "proc"
   },
   {
    "id": "pm-pdf",
@@ -10492,7 +10548,8 @@
      "h": 1752
     }
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "doc"
   },
   {
    "id": "pm-gen-table",
@@ -10802,7 +10859,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "proc"
   },
   {
    "id": "pm-gen-oil",
@@ -11095,7 +11153,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.1.1"
+   "num": "4.1.1.1.1",
+   "kind": "proc"
   },
   {
    "id": "pm-gen-air",
@@ -11444,7 +11503,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.1.2"
+   "num": "4.1.1.1.2",
+   "kind": "proc"
   },
   {
    "id": "pm-gen-plug",
@@ -11699,7 +11759,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.1.3"
+   "num": "4.1.1.1.3",
+   "kind": "proc"
   },
   {
    "id": "pm-ac-table",
@@ -11801,7 +11862,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "proc"
   },
   {
    "id": "pm-ac-filters",
@@ -11952,7 +12014,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.2.1"
+   "num": "4.1.1.2.1",
+   "kind": "proc"
   },
   {
    "id": "pm-c-comp",
@@ -11989,7 +12052,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.3"
+   "num": "4.1.1.3",
+   "kind": "proc"
   },
   {
    "id": "pm-c-mast",
@@ -12026,7 +12090,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.4"
+   "num": "4.1.1.4",
+   "kind": "proc"
   },
   {
    "id": "pm-lift",
@@ -12063,7 +12128,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.5"
+   "num": "4.1.1.5",
+   "kind": "proc"
   },
   {
    "id": "pm-c-screens",
@@ -12106,7 +12172,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.6"
+   "num": "4.1.1.6",
+   "kind": "proc"
   },
   {
    "id": "pm-c-elec",
@@ -12143,7 +12210,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.7.1"
+   "num": "4.1.1.7.1",
+   "kind": "proc"
   },
   {
    "id": "pm-cabling",
@@ -12180,7 +12248,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "4.1.1.7.2"
+   "num": "4.1.1.7.2",
+   "kind": "proc"
   },
   {
    "id": "m-periodic",
@@ -12274,7 +12343,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "proc"
   },
   {
    "id": "m-data",
@@ -12507,7 +12577,8 @@
      "en": "BISON. Tire pressure: front 5, middle 7, rear 6 (PSI)."
     }
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "data"
   },
   {
    "id": "bm-oil",
@@ -12628,7 +12699,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-oilfilter",
@@ -12732,7 +12804,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-gear",
@@ -12841,7 +12914,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-air",
@@ -12950,7 +13024,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-belt",
@@ -13050,7 +13125,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-plug",
@@ -13140,7 +13216,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-chain",
@@ -13222,7 +13299,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-grease",
@@ -13320,7 +13398,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-brake",
@@ -13422,7 +13501,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "bm-tires",
@@ -13533,7 +13613,8 @@
      },
      "hi": true
     }
-   ]
+   ],
+   "kind": "proc"
   },
   {
    "id": "dtc-overview",
@@ -13719,7 +13800,8 @@
      }
     ]
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "config"
   },
   {
    "id": "dtc-login",
@@ -13804,7 +13886,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.1"
+   "num": "5.1.1",
+   "kind": "config"
   },
   {
    "id": "dtc-dashboard",
@@ -14141,7 +14224,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.2"
+   "num": "5.1.2",
+   "kind": "proc"
   },
   {
    "id": "dtc-tactical",
@@ -14384,7 +14468,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.3"
+   "num": "5.1.3",
+   "kind": "proc"
   },
   {
    "id": "dtc-nodetable",
@@ -14503,7 +14588,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.4"
+   "num": "5.1.4",
+   "kind": "proc"
   },
   {
    "id": "dtc-quality",
@@ -14616,7 +14702,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.5"
+   "num": "5.1.5",
+   "kind": "proc"
   },
   {
    "id": "dtc-levels",
@@ -14729,7 +14816,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.6"
+   "num": "5.1.6",
+   "kind": "proc"
   },
   {
    "id": "dtc-spectrum",
@@ -14826,7 +14914,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.7"
+   "num": "5.1.7",
+   "kind": "config"
   },
   {
    "id": "dtc-freq",
@@ -15009,7 +15098,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.8"
+   "num": "5.1.8",
+   "kind": "config"
   },
   {
    "id": "dtc-replay",
@@ -15196,7 +15286,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.1.9"
+   "num": "5.1.9",
+   "kind": "proc"
   },
   {
    "id": "sw-nodefinder",
@@ -15235,7 +15326,8 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "5.2"
+   "num": "5.2",
+   "kind": "config"
   },
   {
    "id": "sw-wireshark",
@@ -15272,7 +15364,8 @@
      "en": ""
     }
    },
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "config"
   },
   {
    "id": "ws-intro",
@@ -15377,7 +15470,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-intro",
-   "num": "5.3.1"
+   "num": "5.3.1",
+   "kind": "config"
   },
   {
    "id": "ws-install",
@@ -15470,7 +15564,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-inst",
-   "num": "5.3.2"
+   "num": "5.3.2",
+   "kind": "config"
   },
   {
    "id": "ws-connect",
@@ -15643,7 +15738,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-conn",
-   "num": "5.3.3"
+   "num": "5.3.3",
+   "kind": "config"
   },
   {
    "id": "ws-capture",
@@ -15792,7 +15888,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-cap",
-   "num": "5.3.4"
+   "num": "5.3.4",
+   "kind": "config"
   },
   {
    "id": "ws-filters",
@@ -15963,7 +16060,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-flt",
-   "num": "5.3.5"
+   "num": "5.3.5",
+   "kind": "config"
   },
   {
    "id": "ws-analyze",
@@ -16092,7 +16190,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-an",
-   "num": "5.3.6"
+   "num": "5.3.6",
+   "kind": "config"
   },
   {
    "id": "ws-tests",
@@ -16235,7 +16334,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-test",
-   "num": "5.3.7"
+   "num": "5.3.7",
+   "kind": "config"
   },
   {
    "id": "ws-trouble",
@@ -16340,7 +16440,8 @@
    },
    "updated": "2026-11-11",
    "sec": "c-ws-tr",
-   "num": "5.3.8"
+   "num": "5.3.8",
+   "kind": "trouble"
   },
   {
    "id": "dtc-glossary",
@@ -16485,7 +16586,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "5.4"
+   "num": "5.4",
+   "kind": "data"
   },
   {
    "id": "cal-llc",
@@ -17254,7 +17356,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "6.1.1"
+   "num": "6.1.1",
+   "kind": "config"
   },
   {
    "id": "cal-llc-pdf",
@@ -17283,7 +17386,8 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "6.1.2"
+   "num": "6.1.2",
+   "kind": "doc"
   },
   {
    "id": "atp-sys",
@@ -17500,7 +17604,8 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "7.1"
+   "num": "7.1",
+   "kind": "check"
   },
   {
    "id": "atp-container",
@@ -17649,7 +17754,8 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "7.2"
+   "num": "7.2",
+   "kind": "check"
   },
   {
    "id": "atp-rocu10",
@@ -17720,7 +17826,8 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "7.3"
+   "num": "7.3",
+   "kind": "check"
   },
   {
    "id": "atp-gun",
@@ -17867,7 +17974,8 @@
     }
    },
    "updated": "2026-11-10",
-   "num": "7.4"
+   "num": "7.4",
+   "kind": "check"
   },
   {
    "id": "dtc-trouble",
@@ -17980,7 +18088,8 @@
     ]
    },
    "updated": "2026-11-10",
-   "num": "8.1"
+   "num": "8.1",
+   "kind": "trouble"
   },
   {
    "id": "um-trouble-comm",
@@ -18053,7 +18162,8 @@
      }
     ]
    },
-   "num": "8.2"
+   "num": "8.2",
+   "kind": "trouble"
   },
   {
    "id": "um-trouble-app",
@@ -18142,7 +18252,8 @@
      }
     ]
    },
-   "num": "8.3"
+   "num": "8.3",
+   "kind": "trouble"
   },
   {
    "id": "um-trouble-mech",
@@ -18239,7 +18350,8 @@
      }
     ]
    },
-   "num": "8.4"
+   "num": "8.4",
+   "kind": "trouble"
   },
   {
    "id": "robox-pdf",
@@ -18268,7 +18380,8 @@
     }
    },
    "updated": "2026-11-10",
-   "group": "sys"
+   "group": "sys",
+   "kind": "doc"
   },
   {
    "id": "um-pdf",
@@ -18297,7 +18410,8 @@
      "h": 1752
     }
    },
-   "group": "sys"
+   "group": "sys",
+   "kind": "doc"
   },
   {
    "id": "bison-energy-pdf",
@@ -18326,7 +18440,8 @@
     }
    },
    "group": "sys",
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "doc"
   },
   {
    "id": "argo-spec-pdf",
@@ -18355,7 +18470,8 @@
     }
    },
    "group": "bison",
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "doc"
   },
   {
    "id": "gen-manual",
@@ -18384,7 +18500,8 @@
     }
    },
    "group": "cont",
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "doc"
   },
   {
    "id": "comp-manual",
@@ -18413,7 +18530,8 @@
     }
    },
    "group": "cont",
-   "updated": "2026-11-10"
+   "updated": "2026-11-10",
+   "kind": "doc"
   },
   {
    "id": "dtc-pdf",
@@ -18442,7 +18560,8 @@
     }
    },
    "updated": "2026-11-10",
-   "group": "comm"
+   "group": "comm",
+   "kind": "doc"
   },
   {
    "id": "dtc-pdf-he",
@@ -18471,7 +18590,8 @@
     }
    },
    "updated": "2026-11-10",
-   "group": "comm"
+   "group": "comm",
+   "kind": "doc"
   },
   {
    "id": "dtc-replay-pdf",
@@ -18500,7 +18620,8 @@
     }
    },
    "updated": "2026-11-10",
-   "group": "comm"
+   "group": "comm",
+   "kind": "doc"
   },
   {
    "id": "pn-top",
@@ -18659,7 +18780,8 @@
    },
    "updated": "2026-11-11",
    "sec": "p-top",
-   "num": "10.1"
+   "num": "10.1",
+   "kind": "data"
   },
   {
    "id": "pn-bison",
@@ -19204,7 +19326,8 @@
    },
    "updated": "2026-11-11",
    "sec": "p-bison",
-   "num": "10.2"
+   "num": "10.2",
+   "kind": "data"
   },
   {
    "id": "pn-cons",
@@ -19395,7 +19518,8 @@
    },
    "updated": "2026-11-11",
    "sec": "p-cons",
-   "num": "10.3"
+   "num": "10.3",
+   "kind": "data"
   },
   {
    "id": "pn-cont",
@@ -19618,7 +19742,8 @@
    },
    "updated": "2026-11-11",
    "sec": "p-cont",
-   "num": "10.4"
+   "num": "10.4",
+   "kind": "data"
   },
   {
    "id": "pn-op",
@@ -19921,7 +20046,8 @@
    },
    "updated": "2026-11-11",
    "sec": "p-op",
-   "num": "10.5"
+   "num": "10.5",
+   "kind": "data"
   },
   {
    "id": "pn-tools",
@@ -20086,7 +20212,8 @@
    },
    "updated": "2026-11-11",
    "sec": "p-tools",
-   "num": "10.6"
+   "num": "10.6",
+   "kind": "data"
   },
   {
    "id": "sys-zahav",
@@ -20215,7 +20342,8 @@
    },
    "updated": "2026-11-11",
    "sec": "s-zahav",
-   "num": "11.1"
+   "num": "11.1",
+   "kind": "data"
   },
   {
    "id": "sys-egoz",
@@ -20352,7 +20480,8 @@
    },
    "updated": "2026-11-11",
    "sec": "s-egoz",
-   "num": "11.2"
+   "num": "11.2",
+   "kind": "data"
   },
   {
    "id": "sys-givati",
@@ -20489,7 +20618,8 @@
    },
    "updated": "2026-11-11",
    "sec": "s-givati",
-   "num": "11.3"
+   "num": "11.3",
+   "kind": "data"
   },
   {
    "id": "sys-ravmad",
@@ -20626,7 +20756,8 @@
    },
    "updated": "2026-11-11",
    "sec": "s-ravmad",
-   "num": "11.4"
+   "num": "11.4",
+   "kind": "data"
   },
   {
    "id": "sys-869",
@@ -20772,7 +20903,8 @@
    ],
    "updated": "2026-11-11",
    "sec": "s-869",
-   "num": "11.5"
+   "num": "11.5",
+   "kind": "data"
   },
   {
    "id": "argo-sm-gi-1",
@@ -20800,7 +20932,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-en-1",
@@ -20828,7 +20961,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-en-2",
@@ -20856,7 +20990,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-en-3",
@@ -20884,7 +21019,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-cs-1",
@@ -20912,7 +21048,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-cs-2",
@@ -20940,7 +21077,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-cs-3",
@@ -20968,7 +21106,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-es-1",
@@ -20996,7 +21135,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-es-2",
@@ -21024,7 +21164,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-br-1",
@@ -21052,7 +21193,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-br-2",
@@ -21080,7 +21222,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-wa-1",
@@ -21108,7 +21251,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-wa-2",
@@ -21136,7 +21280,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-tr-1",
@@ -21164,7 +21309,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-tr-2",
@@ -21192,7 +21338,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-tr-3",
@@ -21220,7 +21367,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-tr-4",
@@ -21248,7 +21396,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-tr-5",
@@ -21276,7 +21425,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   },
   {
    "id": "argo-sm-tr-6",
@@ -21304,7 +21454,8 @@
      "w": 1240,
      "h": 1604
     }
-   }
+   },
+   "kind": "doc"
   }
  ]
 }
