@@ -1,6 +1,6 @@
 {
-  "name": "ONDAS Land System – Technical Help",
-  "short_name": "Ondas Land",
+  "name": "Technical Help",
+  "short_name": "Tech Help",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

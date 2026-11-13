@@ -1,9 +1,9 @@
-/* ONDAS – IRONWAVE Technical Help service worker.
+/* Technical Help service worker.
    App & content.json: network first (fresh when online). Media & libraries: cache first (offline). */
-const SHELL = "ondas-shell-v5";
+const SHELL = "th-shell-v6";
 const MEDIA = "ondas-media";
 const SHELL_FILES = ["./", "index.html", "content.json", "manifest.json", "icons/icon-192x192.png", "icons/icon-512x512.png",
-  "media/ondas-logo.png", "media/ondas-lockup-white.png", "media/ondas-symbol.png", "lib/pdf.min.js", "lib/pdf.worker.min.js", "lib/html2canvas.min.js", "lib/jspdf.umd.min.js"];
+  "lib/pdf.min.js", "lib/pdf.worker.min.js", "lib/html2canvas.min.js", "lib/jspdf.umd.min.js"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(SHELL).then(c => Promise.all(SHELL_FILES.map(u =>
